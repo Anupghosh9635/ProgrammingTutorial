@@ -693,7 +693,8 @@ tr:nth-child(even) {
 
 .naviBar{
     background: #f4feb9; /* #E3F6CE;*/
-    background-image: url('../img/navibar.jpg') !important;
+   /* background-image: url('../img/navibar.jpg') !important;*/
+    background-image: linear-gradient(to right, #acf68775, #efef5f66);
     background-repeat: repeat-y;
     padding-bottom: 15px;
 }
