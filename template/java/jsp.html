@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<div  class="pagePaddingBottom">
+    <h2 class="mainCenterAlign"> Java jsp </h2>
+
+
+<!-- <br/><br/><br/>
+ <h2 style="text-align: center;" > Coming soon .....</h2>
+ <br/><br/><br/>-->
+
+       <div class="styleShet" ng-click="toggle()">
+            <h4 >
+                Overview Of JSP
+                <span ng-hide ="jsp" class= "caretright" ></span><span ng-show="jsp" class= "caretrightUp" ></span>
+            </h4>
+        </div>
+        <div ng-show="jsp" class="view">
+            <strong>JSP : </strong> JSP is Java Server Pages is a server side technology for developing dynamic web pages.
+            <br/>
+            JSP called high level abstraction of Servlet . 
+            <br/>
+            <ul>
+                <li>Java Server Pages is a java based web technology</li>
+                <li>Jsp can also be used to access JavaBeans objects.</li>
+                <li>Jsp ia J2EE technology, For specification for web container manufacturers.</li>
+                <li>JSP is an API .</li>
+                <li>JSP is a dynamic web resource of a web application.</li>
+                <li>JSP is web server side piece of code that extends functionality of web server.</li>
+                <li>Jsp engine is a software written in java technology according to JSP specification.</li>
+                <li>JSP does not require additional files like, java class files, web.xml</li>
+                <li>Any change in the JSP code is handled by Web Container(Application server like tomcat), and doesn't require re-compilation.</li>
+                <Li>JSP can be used for separation of the view layer with the business logic in the web application.</Li>
+                <li>It is much better than Common Gateway Interface (CGI).</li>
+            </ul>
+           
+        </div>
+
+
+       <div class="styleShet" ng-click="toggle1()">
+            <h4 >
+                Advantage of JSP
+                <span ng-hide ="jsp1" class= "caretright" ></span><span ng-show="jsp1" class= "caretrightUp" ></span>
+            </h4>
+        </div>
+        <div ng-show="jsp1" class="view">
+            <strong>Advantage of JSP : </strong>
+            <br/>
+            <ul>
+                <li>Easy to maintain and code.</li>
+                <li>JSP technology is the extension to servlet technology. We can use all the features of servlet in JSP.</li>
+                <li>High Performance and Scalability.</li>
+                <li>JSP is built on Java technology, so it is platform independent.</li>
+                <li>JSP is enables to separate presentation layer with the business logic layer in the web application.</li>
+                <li>JSP can also include the database connections into it. </li>
+            </ul>
+
+        </div>
+
+
+	<div class="styleShet" ng-click="toggle2()">
+            <h4>
+                Life Cycle of JSP 
+                <span ng-hide ="jsp2" class= "caretright" ></span><span ng-show="jsp2" class= "caretrightUp" ></span>
+            </h4>
+	</div>
+	<div ng-show="jsp2" class="view">
+            
+            <strong> Life Cycle of JSP : </strong>A JSP page is converted into Servlet in order to service requests.
+            The translation of a JSP page to a Servlet is called Lifecycle of JSP. 
+            <br/>
+            <ul>
+                <li>Translation Phase</li>
+                <li>Instantiation Phase / Object Creation</li>
+                <li>Initialization Phase </li>
+                <li>Service Phase </li>
+                <li>Destroy phase </li>
+            </ul>
+            <br/>
+            <strong>Life Cycle method of JSP : </strong>
+            <br/>
+            <ul>
+                <li> jspInit() (Can be Override )</li>
+                <li>_jspService(HttpServletRequest req, HttpServletResponse resp)  (Can not Override )</li>
+                <li>jspDestroy() (Can be Override )</li>
+<!--                <li></li>-->
+            </ul>
+            <strong>Note : </strong> Most contain of JSP file into the _jspService() method . 
+	</div>
+
+
+        <div class="styleShet" ng-click="toggle3()">
+            <h4 >JSP Scripting Element <!-- JSP Scriptlets , JSP Expressions-->
+            <span ng-hide ="jsp3" class= "caretright" ></span><span ng-show="jsp3" class= "caretrightUp" ></span></h4>
+	</div>
+	<div ng-show="jsp3" class="view">
+        <table class="table table-bordered" style="text-align:center;">
+            <tr class="trHeading">
+                <th>Scripting Element</th>
+                <th>Example</th>
+            </tr>
+            <tr>
+                <td><b>Comment</b></td>
+                <td>&lt;%-- comment --%&gt;</td>
+            </tr>
+            <tr>
+                <td><b>Directive</b></td>
+                <td>&lt;%@ directive %&gt;</td>
+            </tr>
+            <tr>
+                <td><b>Declaration</b></td>
+                <td>&lt;%! declarations %&gt;</td>
+            </tr>
+            <tr>
+                <td><b>Scriptlet</b></td>
+                <td>&lt;% scriplets %&gt;</td>
+            </tr>
+            <tr>
+                <td><b>Expression</b></td>
+                <td>&lt;%= expression %&gt;</td>
+            </tr>
+
+        </table>
+            
+<!--            <strong>JSP Scriptlets : </strong> A JSP scriptlet is used to contain any code fragment that 
+            is valid for the scripting language used in a page.
+            <br/>
+            <pre>
+    <%
+        scripting-language-statements
+    %>
+            </pre>
+            
+            <br/>
+            <br/>
+            <strong> JSP Expressions : </strong>-->
+	</div>
+
+
+<!-- 		<div class="styleShet" ng-click="toggle4()">
+            <h4 >{heading Name}
+            <span ng-hide ="jsp4" class= "caretright" ></span><span ng-show="jsp4" class= "caretrightUp" ></span></h4>
+	</div>
+	<div ng-show="jsp4" class="view">
+	   {keep defination }
+	</div>
+
+
+
+	<div class="styleShet" ng-click="toggle5()">
+            <h4 >{heading Name}
+            <span ng-hide ="jsp5" class= "caretright" ></span><span ng-show="jsp5" class= "caretrightUp" ></span></h4>
+	</div>
+	<div ng-show="jsp5" class="view">
+	   {keep defination }
+	</div>
+
+
+	<div class="styleShet" ng-click="toggle6()">
+            <h4>{heading Name}
+            <span ng-hide ="jsp6" class= "caretright" ></span><span ng-show="jsp6" class= "caretrightUp" ></span></h4>
+	</div>
+	<div ng-show="jsp6" class="view">
+	   {keep defination }
+	</div>
+
+
+	<div class="styleShet" ng-click="toggle7()">
+            <h4 >{heading Name}
+            <span ng-hide ="jsp7" class= "caretright" ></span><span ng-show="jsp7" class= "caretrightUp" ></span></h4>
+	</div>
+	<div ng-show="jsp7" class="view">
+	   {keep defination }
+	</div>
+
+
+        <div class="styleShet" ng-click="toggle8()">
+            <h4 >{heading Name}
+            <span ng-hide ="jsp8" class= "caretright" ></span><span ng-show="jsp8" class= "caretrightUp" ></span></h4>
+        </div>
+        <div ng-show="jsp8" class="view">
+           {keep defination }
+        </div>
+
+        <div class="styleShet" ng-click="toggle9()">
+            <h4 >{heading Name}
+            <span ng-hide ="jsp9" class= "caretright" ></span><span ng-show="jsp9" class= "caretrightUp" ></span></h4>
+        </div>
+        <div ng-show="jsp9" class="view">
+           {keep defination }
+        </div>
+
+
+        <div class="styleShet" ng-click="toggle10()">
+            <h4 >{heading Name}
+            <span ng-hide ="jsp10" class= "caretright" ></span><span ng-show="jsp10" class= "caretrightUp" ></span></h4>
+        </div>
+        <div ng-show="jsp10" class="view">
+           {keep defination }
+        </div>
+
+        <div class="styleShet" ng-click="toggle11()">
+            <h4 >{heading Name}
+            <span ng-hide ="jsp11" class= "caretright" ></span><span ng-show="jsp11" class= "caretrightUp" ></span></h4>
+        </div>
+        <div ng-show="jsp11" class="view">
+           {keep defination }
+        </div>-->
+
+</div>

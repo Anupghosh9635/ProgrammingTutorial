@@ -1,0 +1,1280 @@
+<div class="pagePaddingBottom">
+
+    <h2 class="mainCenterAlign"> Java overview  </h2>
+
+
+    <div class="styleShet" ng-click="toggle()">
+        <h4>
+            Java
+            <span ng-hide ="overview" class= "caretright" ></span><span ng-show="overview" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="overview" class="view">
+         <strong>Java : </strong> Java is a high level programming language  and computing platform. It developed by Sun Microsystems (James Gosling in 1995).
+         <br/><br/>
+         &nbsp;&nbsp; <strong>Why Java ?</strong>
+         <ul>
+             <li>Simple</li>
+             <li>Secure</li>
+             <li>Portable</li>
+             <li>Object-oriented</li>
+             <li>Platform Independent</li>
+             <li>High performance</li>
+             <li>Robust</li>
+             <li>Multithreaded</li>
+             <li>Architecture-neutral</li>
+             <li>Interpreted</li>
+             <li>Distributed</li>
+             <li>Dynamic</li>
+
+         </ul>
+    </div>
+
+
+
+<!--
+    <div class="styleShet" ng-click="toggle11()">
+        <h4> JDK ,JVM ,JRE
+        <span ng-hide ="overview11" class= "caretright" ></span><span ng-show="overview11" class= "caretrightUp" ></span></h4>
+    </div>
+    <div ng-show="overview11" class="view">
+	<strong> Java Development Kit (JDK) : </strong>
+
+	<br/><br/>
+	<strong> Java virtual machine (JVM)  :</strong> JVM is an abstract computing machine that enables a
+	computer to run a Java program .
+	<br/>
+	JVM is platform dependent .
+	<br/>
+	JVM is a part of JRE(Java Run Environment).
+	<br/>
+	There are three notions of the JVM bellow
+	<br/>
+	<ul>
+	    <li> <b> specification : </b></li>
+	    <li><b> implementation : </b></li>
+	    <li><b> instance : </b></li>
+	</ul>
+
+	<br/><br/>
+	<strong> Java Runtime Environment (JRE)  :</strong>
+
+
+    </div>-->
+
+
+
+
+    <div class="styleShet" ng-click="toggle1()">
+        <h4>
+            Java Keywords
+            <span ng-hide ="overview1" class= "caretright" ></span><span ng-show="overview1" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="overview1" class="view">
+         The following list shows the reserved words in Java. These reserved words may not be used as constant or
+         variable or any other identifier names.
+         <br/><br/>
+         <table ng-show="isMobile" class="table table-bordered" style="text-align:center;">
+		 <tr  class="trHeading">
+		     <th colspan="3" style=" text-align: center" >Java Reserved Words</th>
+		 </tr>
+                 <tr>
+                     <td>abstract</td>
+                     <td>assert</td>
+                     <td>boolean</td>
+                 </tr>
+                 <tr>
+		     <td>break</td>
+                     <td>byte</td>
+                     <td>case</td>
+                 </tr>
+                 <tr>
+		    <td>catch</td>
+                     <td>char</td>
+                     <td>class</td>
+                 </tr>
+		 <tr>
+		      <td>const</td>
+                     <td>continue</td>
+                     <td>default</td>
+		 </tr>
+                 <tr>
+                     <td>do</td>
+                     <td>double</td>
+                     <td>else</td>
+                 </tr>
+                 <tr>
+		     <td>enum</td>
+                     <td>extends</td>
+                     <td>final</td>
+                 </tr>
+                 <tr>
+		     <td>finally</td>
+                     <td>float</td>
+                     <td>for</td>
+                 </tr>
+		 <tr>
+		     <td>goto</td>
+                     <td>if</td>
+                     <td>implements</td>
+		 </tr>
+                 <tr>
+                     <td>import</td>
+                     <td>instanceof</td>
+                     <td>int</td>
+                 </tr>
+                 <tr>
+		     <td>interface</td>
+                     <td>long</td>
+                     <td>native</td>
+                 </tr>
+                 <tr>
+		     <td>new</td>
+                     <td>package</td>
+                     <td>private</td>
+                 </tr>
+		 <tr>
+		     <td>protected</td>
+                     <td>public</td>
+                     <td>return</td>
+		 </tr>
+                 <tr>
+                     <td>short</td>
+                     <td>static</td>
+                     <td>strictfp</td>
+                 </tr>
+                 <tr>
+		     <td>super</td>
+                     <td>switch</td>
+                     <td>synchronized</td>
+                 </tr>
+                 <tr>
+		     <td>this</td>
+                     <td>throw</td>
+                     <td>throws</td>
+                 </tr>
+		 <tr>
+		     <td>transient</td>
+                     <td>try</td>
+                     <td>void</td>
+		 </tr>
+                 <tr>
+                     <td>volatile</td>
+                     <td>while</td>
+                     <td></td>
+                 </tr>
+         </table>
+	<table ng-hide="isMobile" class="table table-bordered" style="text-align:center;">
+	   <tbody>
+               <tr class="trHeading">
+		     <th colspan="4" style=" text-align: center" >Java Reserved Words</th>
+		 </tr>
+	       <tr>
+		   <td>abstract</td>
+		   <td>assert</td>
+		   <td>boolean</td>
+		   <td>break</td>
+	       </tr>
+	       <tr>
+		   <td>byte</td>
+		   <td>case</td>
+		   <td>catch</td>
+		   <td>char</td>
+	       </tr>
+	       <tr>
+		   <td>class</td>
+		   <td>const</td>
+		   <td>continue</td>
+		   <td>default</td>
+	       </tr>
+	       <tr>
+		   <td>do</td>
+		   <td>double</td>
+		   <td>else</td>
+		   <td>enum</td>
+	       </tr>
+	       <tr>
+		   <td>extends</td>
+		   <td>final</td>
+		   <td>finally</td>
+		   <td>float</td>
+	       </tr>
+	       <tr>
+		   <td>for</td>
+		   <td>goto</td>
+		   <td>if</td>
+		   <td>implements</td>
+	       </tr>
+	       <tr>
+		   <td>import</td>
+		   <td>instanceof</td>
+		   <td>int</td>
+		   <td>interface</td>
+	       </tr>
+	       <tr>
+		   <td>long</td>
+		   <td>native</td>
+		   <td>new</td>
+		   <td>package</td>
+	       </tr>
+	       <tr>
+		   <td>private</td>
+		   <td>protected</td>
+		   <td>public</td>
+		   <td>return</td>
+	       </tr>
+	       <tr>
+		   <td>short</td>
+		   <td>static</td>
+		   <td>strictfp</td>
+		   <td>super</td>
+	       </tr>
+	       <tr>
+		   <td>switch</td>
+		   <td>synchronized</td>
+		   <td>this</td>
+		   <td>throw</td>
+	       </tr>
+	       <tr>
+		   <td>throws</td>
+		   <td>transient</td>
+		   <td>try</td>
+		   <td>void</td>
+	       </tr>
+	       <tr>
+		   <td>volatile</td>
+		   <td>while</td>
+		   <td></td>
+		   <td></td>
+	       </tr>
+	   </tbody>
+	</table>
+<!--        <img  class="img-div100" alt="Smilly face" src="img/javaKeyWord.jpg">-->
+    </div>
+
+
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle2()">
+        <h4>
+            Java Modifiers
+            <span ng-hide ="overview2" class= "caretright" ></span><span ng-show="overview2" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="overview2" class="view">
+       There are two categories of modifiers:
+       <br/>
+        <strong>1. Access Modifiers</strong>
+                <ul>
+                    <li>default</li>
+                    <li>public</li>
+                    <li>protected</li>
+                    <li>private</li>
+                </ul>
+
+
+          <strong>2. Non-access Modifiers:</strong>
+                 <ul>
+                    <li>static</li>
+                    <li>final</li>
+                    <li>abstract</li>
+                    <li>strictfp</li>
+                </ul>
+       <br/><br/>
+       &nbsp;&nbsp;<strong>public :</strong> public member can refer any class any package.
+       <br/>&nbsp;&nbsp;<strong>protected :</strong> protected member can refer any class with in a same package
+                    and also it refers another package if it can be refer only subclass (inheritance) .
+       <br/>&nbsp;&nbsp;<strong>default :</strong> default member can refer in any class of the same package.
+       <br/>&nbsp;&nbsp;<strong>private :</strong> private member can refer only inside the class.
+    </div>
+
+
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle10()">
+        <h4> Literals in Java
+        <span ng-hide ="overview10" class= "caretright" ></span><span ng-show="overview10" class= "caretrightUp" ></span></h4>
+    </div>
+    <div ng-show="overview10" class="view">
+        <strong > Literals : </strong> A constant value in a program is denoted as literal.
+        You may have noticed that the new keyword isn't used when initializing a variable of a primitive type.
+        Primitive types are special data types built into the language;
+        <br/>
+         These are the various types of literals:
+         <br/><br/>
+         <strong>1. Integer Literals</strong>
+
+                <table class="table table-bordered" style="text-align:center;"  border="1" >
+                    <tbody>
+                        <tr class="trHeading">
+                            <th class ="thStyle">Type</th>
+                            <th class ="thStyle">Size</th>
+                            <th class ="thStyle">Range </th>
+                        </tr>
+                        <tr>
+                            <td class ="tdStyle">byte</td>
+                            <td class ="tdStyle"> 8-bit</td>
+                            <td class ="tdStyle"> -128 to +127 </td>
+                        </tr>
+                        <tr>
+                            <td class ="tdStyle" >short</td>
+                            <td class ="tdStyle" >16-bit</td>
+                            <td> -32,768 to +32,767 </td>
+                        </tr>
+                        <tr>
+                            <td class ="tdStyle" >int</td>
+                            <td class ="tdStyle" >32-bit</td>
+                            <td>-2<sup>31</sup> to +(2<sup>31</sup>-1) </td>
+                        </tr>
+                        <tr>
+                            <td class ="tdStyle" >long</td>
+                            <td class ="tdStyle" >64-bit</td>
+                            <td>-2^63 to +(2^63 -1) </td>
+                        </tr>
+                    </tbody>
+                </table>
+<!--                <ul>
+                    <li>byte</li>
+                    <li>short</li>
+                    <li>protected</li>
+                    <li>private</li>
+                </ul>-->
+
+        <strong>2. Floating-Point Literals </strong>
+                <table class="table table-bordered" style="text-align:center;" cellspacing="0">
+                    <tbody>
+                        <tr class="trHeading">
+                            <td width="41">
+                                <div align="center"><span style="font-size: 12pt; font-family: georgia,palatino;">Type</span></div>
+                            </td>
+                            <td colspan="2">
+                                <div align="center"><span style="font-size: 12pt; font-family: georgia,palatino;">Size</span></div>
+                            </td>
+                            <td width="93">
+                                <div align="center"><span style="font-size: 12pt; font-family: georgia,palatino;">Range</span></div>
+                            </td>
+                            <td width="97">
+                                <div align="center"><span style="font-size: 12pt; font-family: georgia,palatino;">Precision</span></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div align="center"><span style="font-size: 12pt; font-family: georgia,palatino;">name</span></div>
+                            </td>
+                            <td width="37">
+                                <div align="center"><span style="font-size: 12pt; font-family: georgia,palatino;">bytes</span></div>
+                            </td>
+                            <td width="38">
+                                <div align="center"><span style="font-size: 12pt; font-family: georgia,palatino;">bits</span></div>
+                            </td>
+                            <td>
+                                <div ng-show ="isMobile" align="center"><span style="font-size: 12pt; font-family: georgia,palatino;">approx- imate</span></div>
+				<div ng-hide ="isMobile" align="center"><span style="font-size: 12pt; font-family: georgia,palatino;">approximate</span></div>
+                            </td>
+                            <td><span style="font-size: 12pt; font-family: georgia,palatino;">in decimal digits</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div align="center"><span style="font-size: 12pt; font-family: georgia,palatino;">float</span></div>
+                            </td>
+                            <td>
+                                <div align="center"><span style="font-size: 12pt; font-family: georgia,palatino;">4</span></div>
+                            </td>
+                            <td>
+                                <div align="center"><span style="font-size: 12pt; font-family: georgia,palatino;">32</span></div>
+                            </td>
+                            <td>
+                                <div align="center"><span style="font-size: 12pt; font-family: georgia,palatino;">+/- 3.4 * 10<sup>38</sup></span></div>
+                            </td>
+                            <td>
+                                <div align="center"><span style="font-size: 12pt; font-family: georgia,palatino;">6-7</span></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div align="center"><span style="font-size: 12pt; font-family: georgia,palatino;">double</span></div>
+                            </td>
+                            <td>
+                                <div align="center"><span style="font-size: 12pt; font-family: georgia,palatino;">8</span></div>
+                            </td>
+                            <td>
+                                <div align="center"><span style="font-size: 12pt; font-family: georgia,palatino;">64</span></div>
+                            </td>
+                            <td>
+                                <div align="center"><span style="font-size: 12pt; font-family: georgia,palatino;">+/- 1.8 * 10<sup>308</sup></span></div>
+                            </td>
+                            <td>
+                                <div align="center"><span style="font-size: 12pt; font-family: georgia,palatino;">15</span></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+        <strong>3. Character Literals </strong>
+                <table class="table table-bordered" style="text-align:center;" border="1" cellpadding="0" cellspacing="0" >
+                    <tbody>
+                        <tr class="trHeading">
+                            <td width="23%">&nbsp;<b>Escape</b></td>
+                            <td width="77%">&nbsp;<b>Meaning</b></td>
+                        </tr>
+                        <tr>
+                            <td width="23%">&nbsp;\n</td>
+                            <td width="77%">&nbsp;New line</td>
+                        </tr>
+                        <tr>
+                            <td width="23%">&nbsp;\t</td>
+                            <td width="77%">&nbsp;Tab</td>
+                        </tr>
+                        <tr>
+                            <td width="23%">&nbsp;\b</td>
+                            <td width="77%">&nbsp;Backspace</td>
+                        </tr>
+                        <tr>
+                            <td width="23%">&nbsp;\r</td>
+                            <td width="77%">&nbsp;Carriage return</td>
+                        </tr>
+                        <tr>
+                            <td width="23%">&nbsp;\f</td>
+                            <td width="77%">&nbsp;Formfeed</td>
+                        </tr>
+                        <tr>
+                            <td width="23%">&nbsp;\\</td>
+                            <td width="77%">&nbsp;Backslash</td>
+                        </tr>
+                        <tr>
+                            <td width="23%">&nbsp;\'</td>
+                            <td width="77%">&nbsp;Single quotation mark</td>
+                        </tr>
+                        <tr>
+                            <td width="23%">&nbsp;\"</td>
+                            <td width="77%">&nbsp;Double quotation mark</td>
+                        </tr>
+                        <tr>
+                            <td width="23%">&nbsp;\d</td>
+                            <td width="77%">&nbsp;Octal</td>
+                        </tr>
+                        <tr>
+                            <td width="23%">&nbsp;\xd</td>
+                            <td width="77%">&nbsp;Hexadecimal</td>
+                        </tr>
+                        <tr>
+                            <td width="23%">&nbsp;\ud</td>
+                            <td width="77%">&nbsp;Unicode character</td>
+                        </tr>
+                    </tbody>
+                </table>
+        <strong>4. String Literals </strong>
+                <table class="table table-bordered" style="text-align:center;" border="1" cellpadding="0" cellspacing="0" >
+                    <tbody>
+                        <tr>
+                            <td width="37%">&nbsp;""</td>
+                            <td width="63%">&nbsp;The empty string</td>
+                        </tr>
+                        <tr>
+                            <td width="37%">&nbsp;"\"" </td>
+                            <td width="63%">&nbsp;A string containing</td>
+                        </tr>
+                        <tr>
+                            <td width="37%">&nbsp;"This is a string"</td>
+                            <td width="63%">&nbsp;A string containing 16 characters</td>
+                        </tr>
+                        <tr>
+                            <td width="37%">&nbsp;"This is a " + "two-line string" </td>
+                            <td width="63%">&nbsp;actually a string-valued constant expression, formed from two string literals</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+        <strong>5. Boolean literals </strong>
+            <ul>
+                <li>true</li>
+                <li>false</li>
+            </ul>
+        <br/>
+        <strong>6. null Literals </strong>
+            <ul>
+                <li>null</li>
+            </ul>
+
+        <br/><br/>
+        <strong>Default value :</strong>
+        <table class="table table-bordered" border="1" summary="Default values for primitive types">
+            <tbody>
+                <tr class="trHeading">
+                    <th id="h1" align="left"><strong>Data Type</strong></th>
+                    <th id="h2" align="left"><strong>Default Value (for fields)</strong></th>
+                </tr>
+                <tr>
+                    <td >byte</td>
+                    <td >0</td>
+                </tr>
+                <tr>
+                    <td >short</td>
+                    <td >0</td>
+                </tr>
+                <tr>
+                    <td >int</td>
+                    <td >0</td>
+                </tr>
+                <tr>
+                    <td >long</td>
+                    <td >0L</td>
+                </tr>
+                <tr>
+                    <td >float</td>
+                    <td >0.0f</td>
+                </tr>
+                <tr>
+                    <td >double</td>
+                    <td >0.0d</td>
+                </tr>
+                <tr>
+                    <td >char</td>
+                    <td >'\u0000'</td>
+                </tr>
+                <tr>
+                    <td >String (or any object) &nbsp;</td>
+                    <td >null</td>
+                </tr>
+                <tr>
+                    <td >boolean</td>
+                    <td >false</td>
+                </tr>
+            </tbody></table>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle11()">
+        <h4> Naming conventions in java
+            <span ng-hide ="overview11" class= "caretright" ></span><span ng-show="overview11" class= "caretrightUp" ></span></h4>
+    </div>
+    <div ng-show="overview11" class="view">
+       <table class="table table-bordered" >
+           <tbody  >
+               <tr  class="trHeading">
+                   <th width="30%" >Name</th>
+                   <th width="70%">Convention</th>
+               </tr>
+               <tr>
+                   <td>class name</td>
+                   <td> should start with uppercase letter and be a noun e.g. String, Color, Button, System, Thread etc.</td>
+               </tr>
+               <tr>
+                   <td>interface name</td>
+                   <td>should start with uppercase letter and be an adjective
+                       e.g. Runnable, Remote, ActionListener etc.</td>
+               </tr>
+               <tr>
+                   <td>method name</td>
+                   <td>should start with lowercase letter and be a verb e.g. actionPerformed(), main(), print(), println() etc. </td>
+               </tr>
+               <tr>
+                   <td>variable name</td>
+                   <td>should start with lowercase letter e.g. firstName, orderNumber etc.</td>
+               </tr>
+               <tr>
+                   <td>package name</td><td>should be in lowercase letter  e.g. java, lang, sql, util etc.  </td>
+               </tr>
+               <tr>
+                   <td>constants name</td>
+                   <td>should be in uppercase letter. e.g. RED, YELLOW, MAX_PRIORITY etc.</td>
+               </tr>
+           </tbody>
+       </table>
+    </div>
+
+
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle3()">
+        <h4> Java Basic Operators
+        <span ng-hide ="overview3" class= "caretright" ></span><span ng-show="overview3" class= "caretrightUp" ></span></h4>
+    </div>
+    <div ng-show="overview3" class="view">
+        There are four type of Operators :
+        <ul>
+            <li>Arithmetic Operators</li>
+            <li>Relational Operators</li>
+            <li>Logical Operators</li>
+            <li>Bitwise Operators</li>
+            <li>Assignment Operators</li>
+            <li>Misc Operators</li>
+        </ul>
+
+        <br/><br/>
+            <strong>Precedence of Java Operators :</strong>
+        <br/>
+        <table class="table table-bordered" style="text-align:center;">
+            <tbody>
+                <tr class="trHeading">
+                    <th >Category</th>
+                    <th >Operator</th>
+                </tr>
+                <tr>
+                    <td>Postfix</td>
+                    <td>&gt;() [] . (dot operator)</td>
+                </tr>
+                <tr>
+                    <td>Unary</td>
+                    <td>&gt;++ - - !  ~ </td>
+                </tr>
+                <tr>
+                    <td>Multiplicative</td>
+                    <td>&gt;*  /</td>
+                </tr>
+                <tr>
+                    <td>Additive</td>
+                    <td>&gt;+  -</td>
+                </tr>
+                <tr>
+                    <td>Shift</td>
+                    <td>&gt;&gt;&gt; &gt;&gt;&gt; &lt;&lt;</td>
+                </tr>
+                <tr>
+                    <td>Relational</td>
+                    <td>&gt;&gt; &gt;=  &lt; &lt;=</td>
+                </tr>
+                <tr> <td>Equality</td>
+                    <td>&gt;==  !=</td>
+                </tr>
+                <tr>
+                    <td>Bitwise AND</td>
+                    <td>&gt;&amp;</td>
+                </tr>
+                <tr>
+                    <td>Bitwise XOR</td>
+                    <td>&gt;^</td>
+                </tr>
+                <tr>
+                    <td>Bitwise OR</td>
+                    <td>&gt;|</td>
+                </tr>
+                <tr>
+                    <td>Logical AND</td>
+                    <td>&gt;&amp;&amp;</td>
+                </tr>
+                <tr>
+                    <td>Logical OR</td>
+                    <td>&gt;||</td>
+                </tr>
+                <tr>
+                    <td>Conditional</td>
+                    <td>?:</td>
+                </tr>
+                <tr>
+                    <td>Assignment</td>
+                    <td>&gt;=  +=  -=  *=  /=  %= &gt;&gt;=  &lt;&lt;=  &amp;=  ^=   |=</td>
+                </tr>
+            </tbody>
+        </table>
+<!--        <div>
+           <img  class="img-div100" alt="smiley face" src="img/PrecedenceOperarors.jpg">
+        </div>-->
+
+    </div>
+
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle4()">
+        <h4>Arithmetic Operators
+        <span ng-hide ="overview4" class= "caretright" ></span><span ng-show="overview4" class= "caretrightUp" ></span></h4>
+    </div>
+    <div ng-show="overview4" class="view">
+        <table class="table table-bordered">
+            <tbody>
+                <tr class="trHeading">
+                    <th class ="thStyle">Operator</th>
+                    <th class ="thStyle">Description</th>
+                    <th class ="thStyle">Example</th>
+                </tr>
+                <tr>
+                    <td style="width:30%; text-align:center;vertical-align:middle">+ (Addition)</td>
+                    <td style="width:40%;">Adds values on either side of the operator.</td>
+                    <td class ="tdStyle">A + B will give 30</td>
+                </tr>
+                <tr>
+                    <td class ="tdStyle">- (Subtraction)</td>
+                    <td>Subtracts right-hand operand from left-hand operand.</td>
+                    <td class ="tdStyle">A - B will give -10</td>
+                </tr>
+                <tr>
+                    <td class ="tdStyle">* (Multiplication)</td>
+                    <td>Multiplies values on either side of the operator.</td>
+                    <td class ="tdStyle">A * B will give 200</td>
+                </tr>
+                <tr>
+                    <td class ="tdStyle">/ (Division)</td>
+                    <td>Divides left-hand operand by right-hand operand.</td>
+                    <td class ="tdStyle">B / A will give 2</td>
+                </tr>
+                <tr>
+                    <td class ="tdStyle">% (Modulus)</td>
+                    <td>Divides left-hand operand by right-hand operand and returns remainder.</td>
+                    <td class ="tdStyle">B % A will give 0</td>
+                </tr>
+                <tr>
+                    <td class ="tdStyle">++ (Increment)</td>
+                    <td>Increases the value of operand by 1.</td>
+                    <td class ="tdStyle">B++ gives 21</td>
+                </tr>
+                <tr>
+                    <td class ="tdStyle">-- (Decrement)</td>
+                    <td>Decreases the value of operand by 1.</td>
+                    <td class ="tdStyle">B-- gives 19</td>
+                </tr>
+            </tbody>
+        </table>
+<!--        <img  class="img-div100" alt="smiley face" src="img/arithmeticOprators.jpg"> -->
+        <strong>Example of Arithmetic Operators :</strong>
+        <br/><br/>
+<!--        <pre class="viewPre">
+public class ArithmeticOperatorsTest {
+
+    public static void main(String [] args){
+        int a =10;
+        int b =20;
+        int c =25;
+        int d =25;
+        System.out.println("a + b = "+(a + b)); // a + b =30
+        System.out.println("a - b = "+(a - b)); // a - b =-10
+        System.out.println("a * b = "+(a * b)); // a * b =200
+        System.out.println("b / a = "+(b / a)); // b / a =2
+        System.out.println("b % a = "+(b % a)); // b % a =0
+        System.out.println("c % a = "+(c % a)); // c % a =5
+        System.out.println("--a = "+(--a)); // --a = 9  //  first decrement after doing job
+        System.out.println("a-- = "+(a--)); // a-- = 9  // first doing job after decrement
+        System.out.println("d++ = "+(d++)); // d++ = 25  // first doing job after increment
+        System.out.println("++d = "+(++d)); // ++d = 27  //  first increment after doing job
+    }
+}
+        </pre>-->
+<pre class="prettyprint viewPre prettyprinted" style=""><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">ArithmeticOperatorsTest</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> </span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">){</span><span class="pln">
+        </span><span class="kwd">int</span><span class="pln"> a </span><span class="pun">=</span><span class="lit">10</span><span class="pun">;</span><span class="pln">
+        </span><span class="kwd">int</span><span class="pln"> b </span><span class="pun">=</span><span class="lit">20</span><span class="pun">;</span><span class="pln">
+        </span><span class="kwd">int</span><span class="pln"> c </span><span class="pun">=</span><span class="lit">25</span><span class="pun">;</span><span class="pln">
+        </span><span class="kwd">int</span><span class="pln"> d </span><span class="pun">=</span><span class="lit">25</span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"a + b = "</span><span class="pun">+(</span><span class="pln">a </span><span class="pun">+</span><span class="pln"> b</span><span class="pun">));</span><span class="pln"> </span><span class="com">// a + b =30</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"a - b = "</span><span class="pun">+(</span><span class="pln">a </span><span class="pun">-</span><span class="pln"> b</span><span class="pun">));</span><span class="pln"> </span><span class="com">// a - b =-10</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"a * b = "</span><span class="pun">+(</span><span class="pln">a </span><span class="pun">*</span><span class="pln"> b</span><span class="pun">));</span><span class="pln"> </span><span class="com">// a * b =200</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"b / a = "</span><span class="pun">+(</span><span class="pln">b </span><span class="pun">/</span><span class="pln"> a</span><span class="pun">));</span><span class="pln"> </span><span class="com">// b / a =2</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"b % a = "</span><span class="pun">+(</span><span class="pln">b </span><span class="pun">%</span><span class="pln"> a</span><span class="pun">));</span><span class="pln"> </span><span class="com">// b % a =0</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"c % a = "</span><span class="pun">+(</span><span class="pln">c </span><span class="pun">%</span><span class="pln"> a</span><span class="pun">));</span><span class="pln"> </span><span class="com">// c % a =5</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"--a = "</span><span class="pun">+(--</span><span class="pln">a</span><span class="pun">));</span><span class="pln"> </span><span class="com">// --a = 9  //  first decrement after doing job</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"a-- = "</span><span class="pun">+(</span><span class="pln">a</span><span class="pun">--));</span><span class="pln"> </span><span class="com">// a-- = 9  // first doing job after decrement</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"d++ = "</span><span class="pun">+(</span><span class="pln">d</span><span class="pun">++));</span><span class="pln"> </span><span class="com">// d++ = 25  // first doing job after increment</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"++d = "</span><span class="pun">+(++</span><span class="pln">d</span><span class="pun">));</span><span class="pln"> </span><span class="com">// ++d = 27  //  first increment after doing job</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+
+    </div>
+
+
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle5()">
+        <h4>Relational Operators
+        <span ng-hide ="overview5" class= "caretright" ></span><span ng-show="overview5" class= "caretrightUp" ></span></h4>
+    </div>
+    <div ng-show="overview5" class="view">
+        <table class="table table-bordered">
+            <tbody>
+                <tr class="trHeading">
+                    <th style="width:24%; text-align:center;">Operator</th>
+                    <th style="width:48%; text-align:center;">Description</th>
+                    <th style="width:28%; text-align:center;">Example</th>
+                </tr>
+                <tr>
+                    <td class ="tdStyle">== (equal to)</td>
+                    <td>Checks if the values of two operands are equal or not, if yes then condition becomes true.</td>
+                    <td class ="tdStyle">(A == B) is not true.</td>
+                </tr>
+                <tr>
+                    <td class ="tdStyle">!= (not equal to)</td>
+                    <td>Checks if the values of two operands are equal or not, if values are not equal then condition becomes true.</td>
+                    <td class ="tdStyle">(A != B) is true.</td>
+                </tr>
+                <tr>
+                    <td class ="tdStyle">&gt; (greater than)</td>
+                    <td>Checks if the value of left operand is greater than the value of right operand, if yes then condition becomes true.</td>
+                    <td class ="tdStyle">(A &gt; B) is not true.</td>
+                </tr>
+                <tr>
+                    <td class ="tdStyle">&lt; (less than)</td>
+                    <td>Checks if the value of left operand is less than the value of right operand, if yes then condition becomes true.</td>
+                    <td class ="tdStyle">(A &lt; B) is true.</td>
+                </tr>
+                <tr>
+                    <td class ="tdStyle">&gt;= (greater than or equal to)</td>
+                    <td>Checks if the value of left operand is greater than or equal to the value of right operand, if yes then condition becomes true.</td>
+                    <td class ="tdStyle">(A &gt;= B) is not true.</td>
+                </tr>
+                <tr>
+                    <td class ="tdStyle">&lt;= (less than or equal to)</td>
+                    <td>Checks if the value of left operand is less than or equal to the value of right operand, if yes then condition becomes true.</td>
+                    <td class ="tdStyle">(A &lt;= B) is true.</td>
+                </tr>
+            </tbody>
+        </table>
+<!--        <img  class="img-div100" alt="smiley face" src="img/relationalOperators.jpg"> -->
+        <strong>Example of Relational Operators :</strong>
+        <br/><br/>
+<!--         <pre class="viewPre">
+public class RelationalOperatorsTest {
+
+    public static void main(String [] args){
+        int a =10;
+        int b =20;
+        System.out.println("a == b = "+(a == b)); // a == b = false
+        System.out.println("a != b = "+(a != b)); // a != b = true
+        System.out.println("a > b = "+(a > b)); // a > b = false
+        System.out.println("a < b = "+(a < b)); // a < b = true
+        System.out.println("b >= a = "+(b >= a)); // b >= a = true
+        System.out.println("b <= a = "+(b <= a)); // b <= a = false
+    }
+}
+        </pre>-->
+<pre class="prettyprint viewPre prettyprinted" style="">
+<span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">RelationalOperatorsTest</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> </span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">){</span><span class="pln">
+        </span><span class="kwd">int</span><span class="pln"> a </span><span class="pun">=</span><span class="lit">10</span><span class="pun">;</span><span class="pln">
+        </span><span class="kwd">int</span><span class="pln"> b </span><span class="pun">=</span><span class="lit">20</span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"a == b = "</span><span class="pun">+(</span><span class="pln">a </span><span class="pun">==</span><span class="pln"> b</span><span class="pun">));</span><span class="pln"> </span><span class="com">// a == b = false</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"a != b = "</span><span class="pun">+(</span><span class="pln">a </span><span class="pun">!=</span><span class="pln"> b</span><span class="pun">));</span><span class="pln"> </span><span class="com">// a != b = true</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"a &gt; b = "</span><span class="pun">+(</span><span class="pln">a </span><span class="pun">&gt;</span><span class="pln"> b</span><span class="pun">));</span><span class="pln"> </span><span class="com">// a &gt; b = false</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"a &lt; b = "</span><span class="pun">+(</span><span class="pln">a </span><span class="pun">&lt;</span><span class="pln"> b</span><span class="pun">));</span><span class="pln"> </span><span class="com">// a &lt; b = true</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"b &gt;= a = "</span><span class="pun">+(</span><span class="pln">b </span><span class="pun">&gt;=</span><span class="pln"> a</span><span class="pun">));</span><span class="pln"> </span><span class="com">// b &gt;= a = true</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"b &lt;= a = "</span><span class="pun">+(</span><span class="pln">b </span><span class="pun">&lt;=</span><span class="pln"> a</span><span class="pun">));</span><span class="pln"> </span><span class="com">// b &lt;= a = false</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+    </div>
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle6()">
+        <h4>Logical Operators
+        <span ng-hide ="overview6" class= "caretright" ></span><span ng-show="overview6" class= "caretrightUp" ></span></h4>
+    </div>
+    <div ng-show="overview6" class="view">
+        <table class="table table-bordered">
+            <tbody>
+                <tr class="trHeading">
+                    <th style="text-align:center;width:23%;">Operator</th>
+                    <th class ="thStyle">Description</th>
+                    <th style="text-align:center;width:24%">Example</th>
+                </tr>
+                <tr>
+                    <td class ="tdStyle">&amp;&amp; (logical and)</td>
+                    <td>Called Logical AND operator. If both the operands are non-zero, then the condition becomes true.</td>
+                    <td class ="tdStyle">(A &amp;&amp; B) is false</td>
+                </tr>
+                <tr>
+                    <td class ="tdStyle">|| (logical or)</td>
+                    <td>Called Logical OR Operator. If any of the two operands are non-zero, then the condition becomes true.</td>
+                    <td class ="tdStyle">(A || B) is true</td>
+                </tr>
+                <tr>
+                    <td class ="tdStyle">! (logical not)</td>
+                    <td>Called Logical NOT Operator. Use to reverses the logical state of its operand. If a condition is true then Logical NOT operator will make false.</td>
+                    <td class ="tdStyle">!(A &amp;&amp; B) is true</td>
+                </tr>
+            </tbody>
+        </table>
+
+<!--        <img  class="img-div100" alt="smiley face" src="img/logicalOperators.jpg">-->
+        <strong>Example of Logical Operators :</strong>
+        <br/><br/>
+<!--         <pre class="viewPre">
+public class LogicalOperatorsTest {
+
+    public static void main(String [] args){
+        boolean a =true;
+        boolean b =false;
+        System.out.println("a && b = "+(a&&b)); // a && b = false
+        System.out.println("a || b = "+(a||b)); // a || b = true
+        System.out.println("!(a && b) = "+!(a && b)); // !(a && b) = true
+    }
+}
+        </pre>-->
+<pre class="prettyprint viewPre prettyprinted" style="">
+<span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">LogicalOperatorsTest</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> </span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">){</span><span class="pln">
+        </span><span class="kwd">boolean</span><span class="pln"> a </span><span class="pun">=</span><span class="kwd">true</span><span class="pun">;</span><span class="pln">
+        </span><span class="kwd">boolean</span><span class="pln"> b </span><span class="pun">=</span><span class="kwd">false</span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"a &amp;&amp; b = "</span><span class="pun">+(</span><span class="pln">a</span><span class="pun">&amp;&amp;</span><span class="pln">b</span><span class="pun">));</span><span class="pln"> </span><span class="com">// a &amp;&amp; b = false</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"a || b = "</span><span class="pun">+(</span><span class="pln">a</span><span class="pun">||</span><span class="pln">b</span><span class="pun">));</span><span class="pln"> </span><span class="com">// a || b = true</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"!(a &amp;&amp; b) = "</span><span class="pun">+!(</span><span class="pln">a </span><span class="pun">&amp;&amp;</span><span class="pln"> b</span><span class="pun">));</span><span class="pln"> </span><span class="com">// !(a &amp;&amp; b) = true</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+
+    </div>
+
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle7()">
+        <h4>Bitwise Operators
+        <span ng-hide ="overview7" class= "caretright" ></span><span ng-show="overview7" class= "caretrightUp" ></span></h4>
+    </div>
+    <div ng-show="overview7" class="view">
+        <table class="table table-bordered" >
+            <tbody>
+                <tr class="trHeading">
+                    <th class ="thStyle">Operator</th>
+                    <th class ="thStyle">Description</th>
+                    <th class ="thStyle">Example</th>
+                </tr>
+                <tr>
+                    <td style="width:25%;text-align:center;vertical-align:middle">&amp; (bitwise and)</td>
+                    <td style="width:45%;vertical-align:middle">Binary AND Operator copies a bit to the result if it exists in both operands.</td>
+                    <td style="width:35%;text-align:center; vertical-align:middle">(A &amp; B) will give 12 which is 0000 1100</td>
+                </tr>
+                <tr>
+                    <td class ="tdStyle">| (bitwise or)</td>
+                    <td class ="tdVerticalaMiddel">Binary OR Operator copies a bit if it exists in either operand.</td>
+                    <td class ="tdStyle">(A | B) will give 61 which is 0011 1101</td>
+                </tr>
+                <tr>
+                    <td class ="tdStyle">^ (bitwise XOR)</td>
+                    <td class ="tdVerticalaMiddel">Binary XOR Operator copies the bit if it is set in one operand but not both.</td>
+                    <td class ="tdStyle">(A ^ B) will give 49 which is 0011 0001</td>
+                </tr>
+                <tr>
+                    <td class ="tdStyle">~ (bitwise compliment)</td>
+                    <td class ="tdVerticalaMiddel">Binary Ones Complement Operator is unary and has the effect of 'flipping' bits.</td>
+                    <td class ="tdStyle">(~A ) will give -61 which is 1100 0011 in 2's complement form due to a signed binary number.</td>
+                </tr>
+                <tr>
+                    <td class ="tdStyle">&lt;&lt; (left shift)</td>
+                    <td class ="tdVerticalaMiddel">Binary Left Shift Operator. The left operands value is moved left by the number of bits specified by the right operand.</td>
+                    <td class ="tdStyle">A &lt;&lt; 2 will give 240 which is 1111 0000</td>
+                </tr>
+                <tr>
+                    <td class ="tdStyle">&gt;&gt; (right shift)</td>
+                    <td>Binary Right Shift Operator. The left operands value is moved right by the number of bits specified by the right operand.</td>
+                    <td class ="tdStyle">A &gt;&gt; 2 will give 15 which is 1111</td>
+                </tr>
+                <tr>
+                    <td class ="tdStyle">&gt;&gt;&gt; (zero fill right shift)</td>
+                    <td>Shift right zero fill operator. The left operands value is moved right by the number of bits specified by the right operand and shifted values are filled up with zeros.</td>
+                    <td class ="tdStyle">A &gt;&gt;&gt;2 will give 15 which is 0000 1111</td>
+                </tr>
+            </tbody>
+        </table>
+<!--        <img  class="img-div100" alt="smiley face" src="img/bitwiseOperators.jpg">-->
+            <strong>Example of Bitwise Operators :</strong>
+            <br/><br/>
+<!--         <pre class="viewPre">
+public class BitwiseOperatorsTest {
+
+    public static void main(String [] args){
+        int a =60; // 60 = 0011 1100
+        int b =13; // 13 = 0000 1101
+        System.out.println("a & b = "+( a & b) ); // a & b = 12  = 0000 1100
+        System.out.println("a | b = "+ (a | b) ); // a | b = 61  = 0011 1101
+        System.out.println("a ^ b = "+ (a ^ b) ); // a ^ b = 49  = 0011 0001
+        System.out.println("~a = "+ (~a) ); 	  // ~a = -61   = 1100 0011
+        System.out.println("a << 2 = "+ (a <<2) ); // a << 2 = 240  = 1111 0000
+        System.out.println("a >> 2 = "+ (a >>2) ); // a >> 2 = 15  = 1111
+        System.out.println("a >>> 2 = "+(a >>>2)); // a >>> 2 = 15   = 0000 1111
+    }
+}
+        </pre>-->
+<pre class="prettyprint viewPre prettyprinted" style="">
+<span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">BitwiseOperatorsTest</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> </span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">){</span><span class="pln">
+        </span><span class="kwd">int</span><span class="pln"> a </span><span class="pun">=</span><span class="lit">60</span><span class="pun">;</span><span class="pln"> </span><span class="com">// 60 = 0011 1100</span><span class="pln">
+        </span><span class="kwd">int</span><span class="pln"> b </span><span class="pun">=</span><span class="lit">13</span><span class="pun">;</span><span class="pln"> </span><span class="com">// 13 = 0000 1101</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"a &amp; b = "</span><span class="pun">+(</span><span class="pln"> a </span><span class="pun">&amp;</span><span class="pln"> b</span><span class="pun">)</span><span class="pln"> </span><span class="pun">);</span><span class="pln"> </span><span class="com">// a &amp; b = 12  = 0000 1100</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"a | b = "</span><span class="pun">+</span><span class="pln"> </span><span class="pun">(</span><span class="pln">a </span><span class="pun">|</span><span class="pln"> b</span><span class="pun">)</span><span class="pln"> </span><span class="pun">);</span><span class="pln"> </span><span class="com">// a | b = 61  = 0011 1101</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"a ^ b = "</span><span class="pun">+</span><span class="pln"> </span><span class="pun">(</span><span class="pln">a </span><span class="pun">^</span><span class="pln"> b</span><span class="pun">)</span><span class="pln"> </span><span class="pun">);</span><span class="pln"> </span><span class="com">// a ^ b = 49  = 0011 0001</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"~a = "</span><span class="pun">+</span><span class="pln"> </span><span class="pun">(~</span><span class="pln">a</span><span class="pun">)</span><span class="pln"> </span><span class="pun">);</span><span class="pln"> 	  </span><span class="com">// ~a = -61   = 1100 0011</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"a &lt;&lt; 2 = "</span><span class="pun">+</span><span class="pln"> </span><span class="pun">(</span><span class="pln">a </span><span class="pun">&lt;&lt;</span><span class="lit">2</span><span class="pun">)</span><span class="pln"> </span><span class="pun">);</span><span class="pln"> </span><span class="com">// a &lt;&lt; 2 = 240  = 1111 0000</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"a &gt;&gt; 2 = "</span><span class="pun">+</span><span class="pln"> </span><span class="pun">(</span><span class="pln">a </span><span class="pun">&gt;&gt;</span><span class="lit">2</span><span class="pun">)</span><span class="pln"> </span><span class="pun">);</span><span class="pln"> </span><span class="com">// a &gt;&gt; 2 = 15  = 1111</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"a &gt;&gt;&gt; 2 = "</span><span class="pun">+(</span><span class="pln">a </span><span class="pun">&gt;&gt;&gt;</span><span class="lit">2</span><span class="pun">));</span><span class="pln"> </span><span class="com">// a &gt;&gt;&gt; 2 = 15   = 0000 1111</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+    </div>
+
+
+
+
+    <div class="styleShet" ng-click="toggle8()">
+        <h4>Assignment Operators
+        <span ng-hide ="overview8" class= "caretright" ></span><span ng-show="overview8" class= "caretrightUp" ></span></h4>
+    </div>
+    <div ng-show="overview8" class="view">
+        <table class="table table-bordered">
+            <tbody>
+                <tr class="trHeading">
+                    <th class ="thStyle">Operator</th>
+                    <th style="text-align:center;width:50%">Description</th>
+                    <th class ="thStyle">Example</th>
+                </tr>
+                <tr>
+                    <td class ="tdStyle">=</td>
+                    <td>Simple assignment operator. Assigns values from right side operands to left side operand.</td>
+                    <td class ="tdStyle">C = A + B will assign value of A + B into C</td>
+                </tr>
+                <tr>
+                    <td class ="tdStyle">+=</td>
+                    <td>Add AND assignment operator. It adds right operand to the left operand and assign the result to left operand.</td>
+                    <td class ="tdStyle">C += A is equivalent to C = C + A</td>
+                </tr>
+                <tr>
+                    <td class ="tdStyle">-=</td>
+                    <td>Subtract AND assignment operator. It subtracts right operand from the left operand and assign the result to left operand.</td>
+                    <td class ="tdStyle">C -= A is equivalent to C = C – A</td>
+                </tr>
+                <tr>
+                    <td class ="tdStyle">*=</td>
+                    <td>Multiply AND assignment operator. It multiplies right operand with the left operand and assign the result to left operand.</td>
+                    <td class ="tdStyle">C *= A is equivalent to C = C * A</td>
+                </tr>
+                <tr>
+                    <td class ="tdStyle">/=</td>
+                    <td>Divide AND assignment operator. It divides left operand with the right operand and assign the result to left operand.</td>
+                    <td class ="tdStyle">C /= A is equivalent to C = C / A</td>
+                </tr>
+                <tr>
+                    <td class ="tdStyle">%=</td>
+                    <td>Modulus AND assignment operator. It takes modulus using two operands and assign the result to left operand.</td>
+                    <td class ="tdStyle">C %= A is equivalent to C = C % A</td>
+                </tr>
+                <tr>
+                    <td class ="tdStyle">&lt;&lt;=</td>
+                    <td class ="tdVerticalaMiddel">Left shift AND assignment operator.</td>
+                    <td class ="tdStyle">C &lt;&lt;= 2 is same as C = C &lt;&lt; 2</td>
+                </tr>
+                <tr>
+                    <td class ="tdStyle">&gt;&gt;=</td>
+                    <td class ="tdVerticalaMiddel">Right shift AND assignment operator.</td>
+                    <td class ="tdStyle">C &gt;&gt;= 2 is same as C = C &gt;&gt; 2</td>
+                </tr>
+                <tr>
+                    <td class ="tdStyle">&amp;=</td>
+                    <td class ="tdVerticalaMiddel">Bitwise AND assignment operator.</td>
+                    <td class ="tdStyle">C &amp;= 2 is same as C = C &amp; 2</td>
+                </tr>
+                <tr>
+                    <td class ="tdStyle">^=</td>
+                    <td>bitwise exclusive OR and assignment operator.</td>
+                    <td class ="tdStyle">C ^= 2 is same as C = C ^ 2</td>
+                </tr>
+                <tr>
+                    <td class ="tdStyle">|=</td>
+                    <td>bitwise inclusive OR and assignment operator.</td>
+                    <td class ="tdStyle">C |= 2 is same as C = C | 2</td>
+                </tr>
+            </tbody>
+        </table>
+<!--        <img  class="img-div100" alt="smiley face" src="img/assignmentOperators.jpg">-->
+            <strong>Example of Assignment Operators :</strong>
+            <br/><br/>
+<!--         <pre class="viewPre">
+public class AssignmentOperatorsTest {
+
+    public static void main(String [] args){
+        int a =10;
+        int b =20;
+        int c =0;
+        c = a + b;
+        System.out.println("c = a + b = "+ c ); // c = a + b = 30
+        c += a ;
+        System.out.println("c += a = "+ c ); // c += a = 40  // c = c + a
+        c -= a ;
+        System.out.println("c -= a = "+ c ); // c -= a = 30  // c = c - a
+        c *= a ;
+        System.out.println("c *= a = "+ c ); // c *= a = 300   // c = c * a
+        a =10;	c =15; c /= a ;
+        System.out.println("c /= a = "+ c ); // c /= a = 1   // c = c / a
+        a =10; c =15; c %= a ;
+        System.out.println("c %= a = "+ c ); // c %= a = 5   // c = c % a
+        c <<=2;
+        System.out.println("c <<= 2 = "+ c ); // c <<= 2 = 20
+        c >>=2;
+        System.out.println("c >>= 2 = "+ c ); // c >>= 2 = 5
+        c >>=2;
+        System.out.println("c >>= a = "+ c ); // c >>= a = 1
+        c &= a ;
+        System.out.println("c &= 2 = "+ c ); // c &= 2 = 0
+        c ^= a ;
+        System.out.println("c ^= a = "+ c ); // c ^= a = 10
+        c |= a ;
+        System.out.println("c |= a = "+ c ); // c |= a = 10
+    }
+}
+        </pre>-->
+<pre class="prettyprint viewPre prettyprinted" style=""><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">AssignmentOperatorsTest</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> </span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">){</span><span class="pln">
+        </span><span class="kwd">int</span><span class="pln"> a </span><span class="pun">=</span><span class="lit">10</span><span class="pun">;</span><span class="pln">
+        </span><span class="kwd">int</span><span class="pln"> b </span><span class="pun">=</span><span class="lit">20</span><span class="pun">;</span><span class="pln">
+        </span><span class="kwd">int</span><span class="pln"> c </span><span class="pun">=</span><span class="lit">0</span><span class="pun">;</span><span class="pln">
+        c </span><span class="pun">=</span><span class="pln"> a </span><span class="pun">+</span><span class="pln"> b</span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"c = a + b = "</span><span class="pun">+</span><span class="pln"> c </span><span class="pun">);</span><span class="pln"> </span><span class="com">// c = a + b = 30</span><span class="pln">
+        c </span><span class="pun">+=</span><span class="pln"> a </span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"c += a = "</span><span class="pun">+</span><span class="pln"> c </span><span class="pun">);</span><span class="pln"> </span><span class="com">// c += a = 40  // c = c + a</span><span class="pln">
+        c </span><span class="pun">-=</span><span class="pln"> a </span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"c -= a = "</span><span class="pun">+</span><span class="pln"> c </span><span class="pun">);</span><span class="pln"> </span><span class="com">// c -= a = 30  // c = c - a</span><span class="pln">
+        c </span><span class="pun">*=</span><span class="pln"> a </span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"c *= a = "</span><span class="pun">+</span><span class="pln"> c </span><span class="pun">);</span><span class="pln"> </span><span class="com">// c *= a = 300   // c = c * a</span><span class="pln">
+        a </span><span class="pun">=</span><span class="lit">10</span><span class="pun">;</span><span class="pln">	c </span><span class="pun">=</span><span class="lit">15</span><span class="pun">;</span><span class="pln"> c </span><span class="pun">/=</span><span class="pln"> a </span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"c /= a = "</span><span class="pun">+</span><span class="pln"> c </span><span class="pun">);</span><span class="pln"> </span><span class="com">// c /= a = 1   // c = c / a</span><span class="pln">
+        a </span><span class="pun">=</span><span class="lit">10</span><span class="pun">;</span><span class="pln"> c </span><span class="pun">=</span><span class="lit">15</span><span class="pun">;</span><span class="pln"> c </span><span class="pun">%=</span><span class="pln"> a </span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"c %= a = "</span><span class="pun">+</span><span class="pln"> c </span><span class="pun">);</span><span class="pln"> </span><span class="com">// c %= a = 5   // c = c % a</span><span class="pln">
+        c </span><span class="pun">&lt;&lt;=</span><span class="lit">2</span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"c &lt;&lt;= 2 = "</span><span class="pun">+</span><span class="pln"> c </span><span class="pun">);</span><span class="pln"> </span><span class="com">// c &lt;&lt;= 2 = 20</span><span class="pln">
+        c </span><span class="pun">&gt;&gt;=</span><span class="lit">2</span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"c &gt;&gt;= 2 = "</span><span class="pun">+</span><span class="pln"> c </span><span class="pun">);</span><span class="pln"> </span><span class="com">// c &gt;&gt;= 2 = 5</span><span class="pln">
+        c </span><span class="pun">&gt;&gt;=</span><span class="lit">2</span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"c &gt;&gt;= a = "</span><span class="pun">+</span><span class="pln"> c </span><span class="pun">);</span><span class="pln"> </span><span class="com">// c &gt;&gt;= a = 1</span><span class="pln">
+        c </span><span class="pun">&amp;=</span><span class="pln"> a </span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"c &amp;= 2 = "</span><span class="pun">+</span><span class="pln"> c </span><span class="pun">);</span><span class="pln"> </span><span class="com">// c &amp;= 2 = 0</span><span class="pln">
+        c </span><span class="pun">^=</span><span class="pln"> a </span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"c ^= a = "</span><span class="pun">+</span><span class="pln"> c </span><span class="pun">);</span><span class="pln"> </span><span class="com">// c ^= a = 10</span><span class="pln">
+        c </span><span class="pun">|=</span><span class="pln"> a </span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"c |= a = "</span><span class="pun">+</span><span class="pln"> c </span><span class="pun">);</span><span class="pln"> </span><span class="com">// c |= a = 10</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+
+    </div>
+
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle9()">
+        <h4>Misc Operators
+        <span ng-hide ="overview9" class= "caretright" ></span><span ng-show="overview9" class= "caretrightUp" ></span></h4>
+    </div>
+    <div ng-show="overview9" class="view">
+        <table class="table table-bordered">
+            <tbody>
+                <tr class="trHeading">
+                    <th class ="thStyle">Operator</th>
+                    <th class ="thStyle">Description</th>
+                    <th class ="thStyle">Example</th>
+                </tr>
+                <tr>
+                    <td class ="tdStyle" >instanceof</td>
+                    <td >Returns the true if given reference is an instance of given type otherwise it return false .</td>
+                    <td class ="tdStyle" > a instanceof b if it right then true .</td>
+                </tr>
+                <tr>
+                    <td class ="tdStyle" >? :</td>
+                    <td >Conditional Expression</td>
+                    <td class ="tdStyle" >If Condition is true ? Then value X : Otherwise value Y</td>
+                </tr>
+            </tbody>
+        </table>
+<!--        <img  class="img-div100" alt="smiley face" src="img/MiscOperarors.jpg">-->
+            <strong>Example of Misc Operators :</strong>
+            <br/><br/>
+<!--         <pre class="viewPre">
+class Vehicle {
+    public void display() {
+        System.out.println("this is Vehicle");
+    }
+ }
+ class Car extends Vehicle{
+    @Override
+    public void display() {
+        System.out.println("this is Car");
+   }
+}
+public class MiscOperatorsTest {
+
+    public static void main(String [] args){
+        int a , b;
+        a =10;
+        b =(a ==1)?20:30;
+        System.out.println("Value of b is : "+ b ); // Value of b is : 30
+        b =(a ==10)?20:30;
+        System.out.println("Value of b is : "+ b ); // Value of b is : 20
+
+        Vehicle vehicle =new Car();
+        boolean result = vehicle instanceof Car;
+        System.out.println(result);
+    }
+}
+        </pre>-->
+<pre class="prettyprint viewPre prettyprinted" style="">
+<span class="kwd">class</span><span class="pln"> </span><span class="typ">Vehicle</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> display</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"this is Vehicle"</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+ </span><span class="pun">}</span><span class="pln">
+ </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">Car</span><span class="pln"> </span><span class="kwd">extends</span><span class="pln"> </span><span class="typ">Vehicle</span><span class="pun">{</span><span class="pln">
+    </span><span class="lit">@Override</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> display</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"this is Car"</span><span class="pun">);</span><span class="pln">
+   </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">MiscOperatorsTest</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> </span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">){</span><span class="pln">
+        </span><span class="kwd">int</span><span class="pln"> a </span><span class="pun">,</span><span class="pln"> b</span><span class="pun">;</span><span class="pln">
+        a </span><span class="pun">=</span><span class="lit">10</span><span class="pun">;</span><span class="pln">
+        b </span><span class="pun">=(</span><span class="pln">a </span><span class="pun">==</span><span class="lit">1</span><span class="pun">)?</span><span class="lit">20</span><span class="pun">:</span><span class="lit">30</span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Value of b is : "</span><span class="pun">+</span><span class="pln"> b </span><span class="pun">);</span><span class="pln"> </span><span class="com">// Value of b is : 30</span><span class="pln">
+        b </span><span class="pun">=(</span><span class="pln">a </span><span class="pun">==</span><span class="lit">10</span><span class="pun">)?</span><span class="lit">20</span><span class="pun">:</span><span class="lit">30</span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Value of b is : "</span><span class="pun">+</span><span class="pln"> b </span><span class="pun">);</span><span class="pln"> </span><span class="com">// Value of b is : 20</span><span class="pln">
+
+        </span><span class="typ">Vehicle</span><span class="pln"> vehicle </span><span class="pun">=</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Car</span><span class="pun">();</span><span class="pln">
+        </span><span class="kwd">boolean</span><span class="pln"> result </span><span class="pun">=</span><span class="pln"> vehicle </span><span class="kwd">instanceof</span><span class="pln"> </span><span class="typ">Car</span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="pln">result</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+
+    </div>
+
+
+
+
+<!--    <div class="styleShet" ng-click="toggle12()">
+        <h4>{heading Name}
+        <span ng-hide ="overview11" class= "caretright" ></span><span ng-show="overview11" class= "caretrightUp" ></span></h4>
+    </div>
+    <pre ng-show="overview11" class="view">
+       {keep defination }
+    </pre>-->
+
+
+</div>

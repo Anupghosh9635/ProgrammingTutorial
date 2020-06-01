@@ -1,0 +1,194 @@
+<div  class="pagePaddingBottom">
+    <h2 class="mainCenterAlign"> Linux </h2>
+
+
+
+    <div class="styleShet" ng-click="toggle()">
+        <h4 >
+            What is Linux ?
+            <span ng-hide ="basicLinux" class= "caretright" ></span><span ng-show="basicLinux" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="basicLinux" class="view">
+        <strong>Linux : </strong> Linux is the UNIX based open source operating system .
+        <br/>Just like Windows XP, Windows 7, Windows 8, and Mac OS X, Linux is an operating system.
+        <br/>An operating system is software that manages all of the hardware resources associated with your desktop or laptop.
+    </div>
+
+
+    <div class="styleShet" ng-click="toggle1()">
+        <h4 >
+            What is Linux Kernel?
+            <span ng-hide ="basicLinux1" class= "caretright" ></span><span ng-show="basicLinux1" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="basicLinux1" class="view">
+        <strong>Linux Kernel : </strong> The kernel is the core of the system and manages the CPU, memory, and peripheral devices.
+        The kernel serves as the connection between the hardware and software of a computer system, and it is the first program loaded during startup.
+
+        <br/> <b>or </b> The Linux Kernel is a low-level systems software whose main role is to manage
+        hardware resources for the user. It is also used to provide an interface for user-level interaction.
+        <br/>
+    </div>
+
+
+    <div class="styleShet" ng-click="toggle2()">
+        <h4 >
+            What is open source?
+            <span ng-hide ="basicLinux2" class= "caretright" ></span><span ng-show="basicLinux2" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="basicLinux2" class="view">
+        Open source is Source code that anyone can inspect, modify, and enhance.
+        <br/>
+        Open source is distribute software, including source codes freely to anyone who is interested.
+        the user can add features and even debug and correct errors that are in the source code.
+    </div>
+
+
+    <div class="styleShet" ng-click="toggle3()">
+        <h4> What is the difference between UNIX and LINUX ?
+            <span ng-hide ="basicLinux3" class= "caretright" ></span><span ng-show="basicLinux3" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="basicLinux3" class="view">
+        <table class="table table-bordered" >
+            <tr class="trHeading">
+                <th>LINUX</th>
+                <th>UNIX</th>
+            </tr>
+            <tr>
+                <td>Linux is an example of Open Source software development and Free Operating System (OS).</td>
+                <td>Unix is an operating system that is very popular in universities, companies, big enterprises etc.</td>
+            </tr>
+             <tr>
+                <td>Linux is a Graphical User Interface with an optional Command Line Interface.</td>
+                <td>Unix is a Command Line Interface.</td>
+            </tr>
+<!--            <tr>
+                <td>The Source Code of Linux is freely available to its Users.</td>
+                <td>The Source Code of Unix is not available for the general public.</td>
+            </tr>-->
+
+            <tr>
+                <td>BASH (Bourne Again SHell) is the Linux default shell. It can support multiple command interpreters.</td>
+                <td>Originally the Bourne Shell. Now it's compatible with many others including BASH, Korn & C.</td>
+            </tr>
+            <tr>
+                <td>Linux OS is portable and can be executed in different Hard Drives.</td>
+                <td>Unix is not portable.</td>
+            </tr>
+            <tr>
+                <td>In case of Linux, threat detection and solution is very fast, as Linux is mainly community driven and whenever any Linux user posts any kind of threat, several developers start working on it from different parts of the world</td>
+                <td>Because of the proprietary nature of the original Unix, users have to wait for a while, to get the proper bug fixing patch. But these are not as common.</td>
+            </tr>
+
+<!--            <tr>
+                <td>Linux is very flexible and can be installed on most of the Home Based Pcs.</td>
+                <td>Unix has a rigid requirement of the Hardware. Hence, cannot be installed on every other machine.</td>
+            </tr>-->
+<!--            <tr>
+                <td>Linux is mainly used in Home Based PC, Mobile Phones, Desktops, etc.</td>
+                <td>Unix is mainly used in Server Systems, Mainframes and High End Computers.</td>
+            </tr>-->
+
+<!--            <tr>
+                <td>Linux Installation is economical and doesn’t require much specific and high end hardware.</td>
+                <td>Unix Installation is comparatively costlier as it requires more specific hardware circuitry.</td>
+            </tr>-->
+            <tr>
+                <td>The Filesystems supported by Linux are as follows: xfs, ramfs, nfs, vfat, cramfsm ext3, ext4, ext2, ext1, ufs, autofs, devpts, ntfs</td>
+                <td>The Filesystems supported by Unix are as follows: zfs, js, hfx, gps, xfs, gps, xfs, vxfs.</td>
+            </tr>
+<!--            <tr>
+                <td>Linux is development by an active Linux Community worldwide.</td>
+                <td>Unix is developed by AT&amp;T Developers.</td>
+            </tr>-->
+            <tr>
+                <td>Examples of Linux are:  Ubuntu, Fedora, Red Hat, Debian, Archlinux, Android etc.</td>
+                <td>Examples of Unix are: OS X, Solaris, AIS, HP-UX, BSD, Iris, etc.</td>
+            </tr>
+        </table>
+    </div>
+
+
+<!--    <div class="styleShet" ng-click="toggle4()">
+        <h4>{heading Name}
+            <span ng-hide ="basicLinux4" class= "caretright" ></span><span ng-show="basicLinux4" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="basicLinux4" class="view">
+        {keep defination }
+    </div>
+
+
+
+    <div class="styleShet" ng-click="toggle5()">
+        <h4 >{heading Name}
+            <span ng-hide ="basicLinux5" class= "caretright" ></span><span ng-show="basicLinux5" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="basicLinux5" class="view">
+        {keep defination }
+    </div>
+
+
+    <div class="styleShet" ng-click="toggle6()">
+        <h4>{heading Name}
+            <span ng-hide ="basicLinux6" class= "caretright" ></span><span ng-show="basicLinux6" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="basicLinux6" class="view">
+        {keep defination }
+    </div>
+
+
+    <div class="styleShet" ng-click="toggle7()">
+        <h4 >{heading Name}
+            <span ng-hide ="basicLinux7" class= "caretright" ></span><span ng-show="basicLinux7" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="basicLinux7" class="view">
+        {keep defination }
+    </div>
+
+
+    <div class="styleShet" ng-click="toggle8()">
+        <h4 >{heading Name}
+            <span ng-hide ="basicLinux8" class= "caretright" ></span><span ng-show="basicLinux8" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="basicLinux8" class="view">
+        {keep defination }
+    </div>
+
+    <div class="styleShet" ng-click="toggle9()">
+        <h4 >{heading Name}
+            <span ng-hide ="basicLinux9" class= "caretright" ></span><span ng-show="basicLinux9" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="basicLinux9" class="view">
+        {keep defination }
+    </div>
+
+
+    <div class="styleShet" ng-click="toggle10()">
+        <h4 >{heading Name}
+            <span ng-hide ="basicLinux10" class= "caretright" ></span><span ng-show="basicLinux10" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="basicLinux10" class="view">
+        {keep defination }
+    </div>
+
+    <div class="styleShet" ng-click="toggle11()">
+        <h4 >{heading Name}
+            <span ng-hide ="basicLinux11" class= "caretright" ></span><span ng-show="basicLinux11" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="basicLinux11" class="view">
+        {keep defination }
+    </div>-->
+
+</div>
+

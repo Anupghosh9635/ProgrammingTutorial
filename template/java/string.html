@@ -1,0 +1,566 @@
+
+<div class="pagePaddingBottom">
+    <h2 class="mainCenterAlign"> Java String  </h2>
+
+
+
+
+    <div class="styleShet" ng-click="toggle()">
+        <h4 >
+            String
+            <span ng-hide ="string" class= "caretright" ></span><span ng-show="string" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="string" class="view">
+        <strong>String : </strong> String is a final class which is used to store and manage sequence of character.
+        <br/><b>or</b>&nbsp;&nbsp;String is an object that represents sequence of character values.
+        <br/><br/>
+        <ul>
+            <li>String class in  java.lang package </li>
+            <li>String class implement Serializable and CharSequence interface.</li>
+            <li>String objects are immutable in java. </li>
+            <li> String and StringBuffer objects are thread safe. </li>
+            <li> StringBuilder objects are not thread safe.</li>
+            <li> toString(),hashCode() and equals() method is overrided. </li>
+<!--            <li></li>
+            <li></li>
+            <li></li>-->
+
+        </ul>
+    </div>
+
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle1()">
+        <h4 >
+            Creating Strings
+            <span ng-hide ="string1" class= "caretright" ></span><span ng-show="string1" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="string1" class="view">
+        There are two ways to create String object:
+        <br/>
+        <ul>
+            <li>By string literal</li>
+            <li>By new keyword</li>
+        </ul>
+        <br/>
+        <strong> 1.) &nbsp;&nbsp; By string literal </strong>
+        <br/>
+        <ul>
+            <li>String object is creating in string pull </li>
+            <li>string pull does not allows duplicate object </li>
+            <li>java is created new string object in string pull if there is no existing object or contained same or constant </li>
+        </ul>
+        <br/>
+        <strong> 2.) &nbsp;&nbsp; By new keyword </strong>
+        <br/>
+        <ul>
+            <li>Each time new key word is use a new string object is created in the heap memory </li>
+        </ul>
+
+        <br/>
+        <b>Example : </b>
+        <br/><br/>
+        &nbsp;&nbsp;1.)&nbsp;&nbsp; String s1 = "apple" ;
+        <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(s1);     // It print apple
+        <br/><br/>
+        &nbsp;&nbsp;2.)&nbsp;&nbsp; String s2 = new String("apple") ;
+        <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(s2);     // It print apple
+    </div>
+
+
+
+
+	<div class="styleShet" ng-click="toggle2()">
+		<h4 >
+			String class methods
+                    <span ng-hide ="string2" class= "caretright" ></span><span ng-show="string2" class= "caretrightUp" ></span>
+		</h4>
+	</div>
+	<div ng-show="string2" class="view">
+            <table class="table table-bordered">
+                <tr class="trHeading" >
+                    <th>Method</th>
+                    <th>Description</th>
+                </tr>
+
+                <tr>
+                    <td>int length()</td>
+                    <td>returns string length</td>
+                </tr>
+                <tr>
+                    <td>String substring(int beginIndex)</td>
+                    <td>returns substring for given begin index</td>
+                </tr>
+                <tr>
+                    <td>String substring(int beginIndex, int endIndex)</td>
+                    <td>returns substring for given begin index and end index</td>
+                </tr>
+                <tr>
+                    <td>char charAt(int index)</td>
+                    <td>returns char value for the particular index</td>
+                </tr>
+                <tr>
+                    <td>String replace(char old, char new)</td>
+                    <td>replaces all occurrences of specified char value</td>
+                </tr>
+                <tr>
+                    <td>String replace(CharSequence old, CharSequence new)</td>
+                    <td>replaces all occurrences of specified CharSequence</td>
+                </tr>
+                <tr>
+                    <td>static String equalsIgnoreCase(String another)</td>
+                    <td>compares another string. It doesn't check case.</td>
+                </tr>
+                <tr>
+                    <td>String[] split(String regex)</td>
+                    <td>returns splitted string matching regex</td>
+                </tr>
+                <tr>
+                    <td>String[] split(String regex, int limit)</td>
+                    <td>returns splitted string matching regex and limit</td>
+                </tr>
+                <tr>
+                    <td>boolean isEmpty()</td>
+                    <td>checks if string is empty</td>
+                </tr>
+                <tr>
+                    <td>int indexOf(int ch)</td>
+                    <td>returns specified char value index</td>
+                </tr>
+                <tr>
+                    <td>int indexOf(int ch, int fromIndex)</td>
+                    <td>returns specified char value index starting with given index</td>
+                </tr>
+                <tr>
+                    <td>int indexOf(String substring)</td>
+                    <td>returns specified substring index</td>
+                </tr>
+                <tr>
+                    <td>int indexOf(String substring, int fromIndex)</td>
+                    <td>returns specified substring index starting with given index</td>
+                </tr>
+                <tr>
+                    <td>int lastIndexOf(int ch)</td>
+                    <td>returns the index within this string of the last occurrence of the specified character.</td>
+                </tr>
+                <tr>
+                    <td>int lastIndexOf(int ch, int fromIndex)</td>
+                    <td>returns the index within this string of the last occurrence of the specified character, searching backward starting at the specified index.</td>
+                </tr>
+                <tr>
+                    <td>int lastIndexOf(String str)</td>
+                    <td>returns the index within this string of the rightmost occurrence of the specified substring.</td>
+                </tr>
+
+                <tr>
+                    <td>int lastIndexOf(String str, int fromIndex)</td>
+                    <td>returns the index within this string of the last occurrence of the specified substring, searching backward starting at the specified index.</td>
+                </tr>
+
+                <tr>
+                    <td>String toLowerCase()</td>
+                    <td>returns string in lowercase.</td>
+                </tr>
+                <tr>
+                    <td>String toLowerCase(Locale l)</td>
+                    <td>returns string in lowercase using specified locale.</td>
+                </tr>
+                <tr>
+                    <td>String toUpperCase()</td>
+                    <td>returns string in uppercase.</td>
+                </tr>
+                <tr>
+                    <td>String toUpperCase(Locale l)</td>
+                    <td>returns string in uppercase using specified locale.</td>
+                </tr>
+                <tr>
+                    <td>String trim()</td>
+                    <td>removes beginning and ending spaces of this string.</td>
+                </tr>
+<!--                <tr>
+                    <td>String reverse()</td>
+                    <td>returns string reverse.</td>
+                </tr>-->
+                <tr>
+                    <td>static String format(String format, Object... args)</td>
+                    <td>returns formatted string</td>
+                </tr>
+                <tr>
+                    <td>static String format(Locale l, String format, Object... args)</td>
+                    <td>returns formatted string with given locale</td>
+                </tr>
+
+                <tr>
+                    <td>boolean contains( CharSequence s)</td>
+                    <td>returns true or false after matching the sequence of char value</td>
+                </tr>
+                <tr>
+                    <td>static String join( CharSequence delimiter, CharSequence... elements)</td>
+                    <td>returns a joined string</td>
+                </tr>
+                <tr>
+                    <td>static String join(CharSequence delimiter, Iterable&lt;? extends CharSequence&gt; elements)</td>
+                    <td>returns a joined string</td>
+                </tr>
+                <tr>
+                    <td>boolean equals(Object another)</td>
+                    <td>checks the equality of string with object</td>
+                </tr>
+                <tr>
+                    <td>String concat(String str)</td>
+                    <td>concatinates specified string</td>
+                </tr>
+                <tr>
+                    <td>static String valueOf(int value)</td>
+                    <td>converts given type into string. It is overloaded.</td>
+                </tr>
+                <tr>
+                    <td>String intern()</td>
+                    <td>returns interned string</td>
+                </tr>
+                <tr>
+                    <td>boolean contentEquals( StringBuffer sb)</td>
+                    <td>returns true if and only if this String represents the same sequence of characters as the specified StringBuffer.</td>
+                </tr>
+                <tr>
+                    <td>static String copyValueOf( char[] data)</td>
+                    <td>returns a String that represents the character sequence in the array specified.</td>
+                </tr>
+                <tr>
+                    <td>static String copyValueOf( char[] data, int offset, int count)</td>
+                    <td>returns a String that represents the character sequence in the array specified.</td>
+                </tr>
+                <tr>
+                    <td>boolean endsWith(String suffix)</td>
+                    <td>tests if this string ends with the specified suffix.</td>
+                </tr>
+                <tr>
+                    <td>byte getBytes()</td>
+                    <td>e this String into a sequence of bytes using the platform's default charset, storing the result into a new byte array.</td>
+                </tr>
+                <tr>
+                    <td>byte[] getBytes( String charsetName)</td>
+                    <td>encodes this String into a sequence of bytes using the named charset, storing the result into a new byte array.</td>
+                </tr>
+                <tr>
+                    <td>void getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin)</td>
+                    <td>copies characters from this string into the destination character array.</td>
+                </tr>
+                <tr>
+                    <td>int hashCode()</td>
+                    <td>returns a hash code for this string.</td>
+                </tr>
+                <tr>
+                    <td>boolean matches(String regex)</td>
+                    <td>check whether or not this string matches the given regular expression.</td>
+                </tr>
+                <tr>
+                    <td>boolean regionMatches( int toffset, String other, int ooffset, int len)</td>
+                    <td>tests if two string regions are equal.</td>
+                </tr>
+                <tr>
+                    <td>boolean regionMatches( boolean ignoreCase, int toffset, String other, int ooffset, int len)</td>
+                    <td>tests if two string regions are equal.</td>
+                </tr>
+                <tr>
+                    <td>String replaceFirst( String regex, String replacement)</td>
+                    <td>replaces the first substring of this string that matches the given regular expression with the given replacement.</td>
+                </tr>
+                <tr>
+                    <td>boolean startsWith( String prefix)</td>
+                    <td>tests if this string starts with the specified prefix.</td>
+                </tr>
+                <tr>
+                    <td>boolean startsWith(String prefix, int toffset)</td>
+                    <td>tests if this string starts with the specified prefix beginning a specified index.</td>
+                </tr>
+                <tr>
+                    <td>CharSequence subSequence( int beginIndex, int endIndex)</td>
+                    <td>returns a new character sequence that is a subsequence of this sequence.</td>
+                </tr>
+            </table>
+	</div>
+
+
+
+
+
+
+
+	<div class="styleShet" ng-click="toggle3()">
+		<h4 >Immutable Object
+		<span ng-hide ="string3" class= "caretright" ></span><span ng-show="string3" class= "caretrightUp" ></span></h4>
+	</div>
+	<div ng-show="string3" class="view">
+            <strong>Immutable : </strong> Immutable Object are those object whose state can not be changes.
+            <br/><br/>
+            To make type(class) immutable defined all the data member in final and initialize data member in a constructor.
+            <br/><br/>
+            <b>Example</b>
+            <br/><br/>
+<!--            <pre class ="viewPre">
+public class Rectangle {
+    final int length ;
+    final int breadth ;
+
+    Rectangle(int length , int breadth) {
+        this.length = length ;
+        this.breadth = breadth ;
+    }
+
+    @Override
+    public String toString() {
+        return "Rectangle [length = " + length + ",  breadth = " + breadth + "]";
+    }
+}
+            </pre>-->
+<pre class="prettyprint viewPre prettyprinted" style=""><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">Rectangle</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">final</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> length </span><span class="pun">;</span><span class="pln">
+    </span><span class="kwd">final</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> breadth </span><span class="pun">;</span><span class="pln">
+
+    </span><span class="typ">Rectangle</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> length </span><span class="pun">,</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> breadth</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">length </span><span class="pun">=</span><span class="pln"> length </span><span class="pun">;</span><span class="pln">
+        </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">breadth </span><span class="pun">=</span><span class="pln"> breadth </span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="lit">@Override</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> toString</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> </span><span class="str">"Rectangle [length = "</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> length </span><span class="pun">+</span><span class="pln"> </span><span class="str">",  breadth = "</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> breadth </span><span class="pun">+</span><span class="pln"> </span><span class="str">"]"</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+	</div>
+
+
+
+
+
+
+	<div class="styleShet" ng-click="toggle4()">
+	    <h4 > String is Immutable means
+	    <span ng-hide ="string4" class= "caretright" ></span><span ng-show="string4" class= "caretrightUp" ></span></h4>
+	</div>
+	<div ng-show="string4" class="view">
+            String is Immutable that means when string instance is created the same time instance can be change.
+            <br/>
+            If we try to modify String , java create new object inside of modifing the existing object.
+        <br/><br/>
+            <b>Example : </b>
+        <br/><br/>
+<!--	<pre class="viewPre">
+public class ImmutableTest {
+    public static void main(String[] args) {
+        String s1 = "java";
+        System.out.println("Before modifing - "+s1); // Before modifing the s1 object
+        String s2 = s1;
+        s1 = "developer" ; // modifing the s1 object
+        System.out.println("After modifing - "+s1);// After modifing the s1 object
+        System.out.println("Before modifing s1 object assigned S2 - "+s2);
+    }
+}
+	</pre>-->
+<pre class="prettyprint viewPre prettyprinted" style=""><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">ImmutableTest</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">String</span><span class="pln"> s1 </span><span class="pun">=</span><span class="pln"> </span><span class="str">"java"</span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Before modifing - "</span><span class="pun">+</span><span class="pln">s1</span><span class="pun">);</span><span class="pln"> </span><span class="com">// Before modifing the s1 object</span><span class="pln">
+        </span><span class="typ">String</span><span class="pln"> s2 </span><span class="pun">=</span><span class="pln"> s1</span><span class="pun">;</span><span class="pln">
+        s1 </span><span class="pun">=</span><span class="pln"> </span><span class="str">"developer"</span><span class="pln"> </span><span class="pun">;</span><span class="pln"> </span><span class="com">// modifing the s1 object</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"After modifing - "</span><span class="pun">+</span><span class="pln">s1</span><span class="pun">);</span><span class="com">// After modifing the s1 object</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Before modifing s1 object assigned S2 - "</span><span class="pun">+</span><span class="pln">s2</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+	</div>
+
+
+
+
+
+        <div class="styleShet" ng-click="toggle8()">
+            <h4 >Why String is Immutable ?
+            <span ng-hide ="string8" class= "caretright" ></span><span ng-show="string8" class= "caretrightUp" ></span></h4>
+        </div>
+        <div ng-show="string8" class="view">
+            String object is share with many program change made by one program ,can effect other program so that why String is Immutable.
+        </div>
+
+
+	<div class="styleShet" ng-click="toggle5()">
+		<h4 > String Reverse in java or with recurcation function
+		<span ng-hide ="string5" class= "caretright" ></span><span ng-show="string5" class= "caretrightUp" ></span></h4>
+	</div>
+	<div ng-show="string5" class="view">
+<!--	<pre class="viewPre">
+public class StringReverse {
+    public static void main(String[] args) {
+        String s = "java programs";
+        System.out.println(reverse(s));
+        System.out.println(reverseWithRecartion("Hello")); // method call recurcation function
+//*****  reverse with built in method call  **//
+        StringBuilder input = new StringBuilder("how are you");
+        System.out.println(input.reverse());
+    }
+//*****  reverse with simple way ***//
+    public static String reverse(String s){
+        StringBuilder sb = new StringBuilder();
+        for (int i = s.length() - 1 ; i >= 0 ; i--) {
+            sb.append(s.charAt(i));
+        }
+        return sb.toString() ;
+    }
+//***** reverse with recurcation function   ***//
+    public static String reverseWithRecartion(String s){
+        if((s == null) || (s.length() <= 1)){
+            return s;
+        }
+        return reverseWithRecartion(s.substring(1)) + s.charAt(0) ;
+    }
+}
+	</pre>-->
+<pre class="prettyprint viewPre prettyprinted" style=""><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">StringReverse</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">String</span><span class="pln"> s </span><span class="pun">=</span><span class="pln"> </span><span class="str">"java programs"</span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="pln">reverse</span><span class="pun">(</span><span class="pln">s</span><span class="pun">));</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="pln">reverseWithRecartion</span><span class="pun">(</span><span class="str">"Hello"</span><span class="pun">));</span><span class="pln"> </span><span class="com">// method call recurcation function</span><span class="pln">
+</span><span class="com">//*****  reverse with built in method call  **//</span><span class="pln">
+        </span><span class="typ">StringBuilder</span><span class="pln"> input </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">StringBuilder</span><span class="pun">(</span><span class="str">"how are you"</span><span class="pun">);</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="pln">input</span><span class="pun">.</span><span class="pln">reverse</span><span class="pun">());</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="com">//*****  reverse with simple way ***//</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> reverse</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> s</span><span class="pun">){</span><span class="pln">
+        </span><span class="typ">StringBuilder</span><span class="pln"> sb </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">StringBuilder</span><span class="pun">();</span><span class="pln">
+        </span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> i </span><span class="pun">=</span><span class="pln"> s</span><span class="pun">.</span><span class="pln">length</span><span class="pun">()</span><span class="pln"> </span><span class="pun">-</span><span class="pln"> </span><span class="lit">1</span><span class="pln"> </span><span class="pun">;</span><span class="pln"> i </span><span class="pun">&gt;=</span><span class="pln"> </span><span class="lit">0</span><span class="pln"> </span><span class="pun">;</span><span class="pln"> i</span><span class="pun">--)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            sb</span><span class="pun">.</span><span class="pln">append</span><span class="pun">(</span><span class="pln">s</span><span class="pun">.</span><span class="pln">charAt</span><span class="pun">(</span><span class="pln">i</span><span class="pun">));</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> sb</span><span class="pun">.</span><span class="pln">toString</span><span class="pun">()</span><span class="pln"> </span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="com">//***** reverse with recurcation function   ***//</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> reverseWithRecartion</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> s</span><span class="pun">){</span><span class="pln">
+        </span><span class="kwd">if</span><span class="pun">((</span><span class="pln">s </span><span class="pun">==</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">)</span><span class="pln"> </span><span class="pun">||</span><span class="pln"> </span><span class="pun">(</span><span class="pln">s</span><span class="pun">.</span><span class="pln">length</span><span class="pun">()</span><span class="pln"> </span><span class="pun">&lt;=</span><span class="pln"> </span><span class="lit">1</span><span class="pun">)){</span><span class="pln">
+            </span><span class="kwd">return</span><span class="pln"> s</span><span class="pun">;</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> reverseWithRecartion</span><span class="pun">(</span><span class="pln">s</span><span class="pun">.</span><span class="pln">substring</span><span class="pun">(</span><span class="lit">1</span><span class="pun">))</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> s</span><span class="pun">.</span><span class="pln">charAt</span><span class="pun">(</span><span class="lit">0</span><span class="pun">)</span><span class="pln"> </span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+	</div>
+
+
+
+
+
+
+	<div class="styleShet" ng-click="toggle6()">
+		<h4>Palindrome check in java
+		<span ng-hide ="string6" class= "caretright" ></span><span ng-show="string6" class= "caretrightUp" ></span></h4>
+	</div>
+	<div ng-show="string6" class="view">
+<!--            <pre class="viewPre">
+public class PalindromeTest {
+    public static void main(String[] args) {
+        System.out.println(PalindromeCheck("Madam"));
+    }
+    public static boolean  PalindromeCheck(String s) {
+    	s = s.toLowerCase();
+    	boolean isPalindrome = true ;
+    	int n = s.length();
+    	for (int i = 0; i < n/2 ; i++) {
+            if(s.charAt(i) != s.charAt(n -1 -i))
+            {
+                isPalindrome = false ;
+                break ;
+            }
+        }
+     return isPalindrome;
+    }
+}
+            </pre>-->
+<pre class="prettyprint viewPre prettyprinted" style=""><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">PalindromeTest</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="typ">PalindromeCheck</span><span class="pun">(</span><span class="str">"Madam"</span><span class="pun">));</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">boolean</span><span class="pln">  </span><span class="typ">PalindromeCheck</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> s</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    	s </span><span class="pun">=</span><span class="pln"> s</span><span class="pun">.</span><span class="pln">toLowerCase</span><span class="pun">();</span><span class="pln">
+    	</span><span class="kwd">boolean</span><span class="pln"> isPalindrome </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">true</span><span class="pln"> </span><span class="pun">;</span><span class="pln">
+    	</span><span class="kwd">int</span><span class="pln"> n </span><span class="pun">=</span><span class="pln"> s</span><span class="pun">.</span><span class="pln">length</span><span class="pun">();</span><span class="pln">
+    	</span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> i </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln"> i </span><span class="pun">&lt;</span><span class="pln"> n</span><span class="pun">/</span><span class="lit">2</span><span class="pln"> </span><span class="pun">;</span><span class="pln"> i</span><span class="pun">++)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">s</span><span class="pun">.</span><span class="pln">charAt</span><span class="pun">(</span><span class="pln">i</span><span class="pun">)</span><span class="pln"> </span><span class="pun">!=</span><span class="pln"> s</span><span class="pun">.</span><span class="pln">charAt</span><span class="pun">(</span><span class="pln">n </span><span class="pun">-</span><span class="lit">1</span><span class="pln"> </span><span class="pun">-</span><span class="pln">i</span><span class="pun">))</span><span class="pln">
+            </span><span class="pun">{</span><span class="pln">
+                isPalindrome </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">false</span><span class="pln"> </span><span class="pun">;</span><span class="pln">
+                </span><span class="kwd">break</span><span class="pln"> </span><span class="pun">;</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+     </span><span class="kwd">return</span><span class="pln"> isPalindrome</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+	</div>
+
+
+
+
+
+
+	<div class="styleShet" ng-click="toggle7()">
+		<h4 > difference between StringBuffer and StringBuilder class?
+		<span ng-hide ="string7" class= "caretright" ></span><span ng-show="string7" class= "caretrightUp" ></span></h4>
+	</div>
+	<div ng-show="string7" class="view">
+           <table class="table table-bordered">
+                <tr class="trHeading" >
+                   <th>StringBuffer</th>
+                   <th>StringBuilder</th>
+               </tr>
+               <tr>
+                   <td>StringBuffer class is thread safe .</td>
+                   <td>StringBuilder class is not thread safe .</td>
+               </tr>
+               <tr>
+                   <td>StringBuffer is more slower thanStringBuilder .</td>
+                   <td>StringBuilder is more faster than StringBuÙer .</td>
+               </tr>
+               <tr>
+                   <td></td>
+                   <td></td>
+               </tr>
+           </table>
+
+	</div>
+
+
+
+
+
+<!--        <div class="styleShet" ng-click="toggle9()">
+            <h4 >{heading Name}
+            <span ng-hide ="string9" class= "caretright" ></span><span ng-show="string9" class= "caretrightUp" ></span></h4>
+        </div>
+        <div ng-show="string9" class="view">
+           {keep defination }
+        </div>
+
+
+        <div class="styleShet" ng-click="toggle10()">
+            <h4 >{heading Name}
+            <span ng-hide ="string10" class= "caretright" ></span><span ng-show="string10" class= "caretrightUp" ></span></h4>
+        </div>
+        <div ng-show="string10" class="view">
+           {keep defination }
+        </div>
+
+        <div class="styleShet" ng-click="toggle11()">
+            <h4 >{heading Name}
+            <span ng-hide ="string11" class= "caretright" ></span><span ng-show="string11" class= "caretrightUp" ></span></h4>
+        </div>
+        <div ng-show="string11" class="view">
+           {keep defination }
+        </div>-->
+
+</div>
+
+

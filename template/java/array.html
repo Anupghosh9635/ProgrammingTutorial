@@ -1,0 +1,466 @@
+<div class="pagePaddingBottom">
+    <h2 class="mainCenterAlign"> Java Array    </h2>
+
+
+
+    	<div class="styleShet"  ng-click="toggle3()">
+		<h4> Array
+		<span ng-hide ="array3" class= "caretright" ></span><span ng-show="array3" class= "caretrightUp" ></span></h4>
+	</div>
+	<div ng-show="array3" class="view">
+            <strong> Array : </strong> Array is a group of same type.
+            <br/> <b>or</b> &nbsp;&nbsp; Array is a set of values where each value is identified by an index.
+            <br/> <b>or</b> &nbsp;&nbsp; Array is a collection of similar type of elements that have contiguous memory location.
+            <br/>
+                &nbsp;&nbsp; Array is a Object.
+            <br/>
+                &nbsp;&nbsp; An array is a very common type of data structure where in all elements must be of the same data type.
+                Once defined , the size of an array is fixed and cannot increase to accommodate more elements.
+                The first element of an array starts with zero.
+
+	</div>
+
+
+
+
+
+        <div class="styleShet"  ng-click="toggle5()">
+		<h4>Declaring Arrays In Java
+		<span ng-hide ="array5" class= "caretright" ></span><span ng-show="array5" class= "caretrightUp" ></span></h4>
+	</div>
+	<div ng-show="array5" class="view">
+            In java, you can declare arrays in two ways.
+            <br/>
+           <ul>
+                <li>DataType [] VariableName ;</li>
+                <li>DataType VariableName [] ;</li>
+            </ul>
+
+	    <strong> Example : </strong>
+	    <br/><br/>
+<!--            <pre class="viewPre">
+class Studet{
+
+}
+
+public class ArraysDeclare
+{
+    public static void main(String[] args)
+    {
+        int[] arrayOfInts;          //Declaring an array of int type
+        int arrayOfIntsOherWay []; //Declaring an array of int type another way
+
+        double [] arrayOfDoubles ;          //Declaring an array of double type
+        double arrayOfDoublesOherWay [] ;  //Declaring an array of double type another way
+
+        char[] arrayOfChars;           //Declaring an array of character type
+        char arrayOfCharsOherWay [] ; //Declaring an array of character type another way
+
+        boolean [] arrayOfBooleans;          //Declaring an array of boolean type
+        boolean arrayOfBooleansOherWay [] ; //Declaring an array of character type another way
+
+        Studet [] student;          //   Declaring an array any class or object type
+        Studet studentOherWay [];  //   Declaring an array any class or object type another way
+    }
+}
+            </pre>-->
+<pre class="prettyprint prettyprinted viewPre " style=""><span class="kwd">class</span><span class="pln"> </span><span class="typ">Studet</span><span class="pun">{</span><span class="pln">
+
+</span><span class="pun">}</span><span class="pln">
+
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">ArraysDeclare</span><span class="pln">
+</span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln">
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">int</span><span class="pun">[]</span><span class="pln"> arrayOfInts</span><span class="pun">;</span><span class="pln">          </span><span class="com">//Declaring an array of int type</span><span class="pln">
+        </span><span class="kwd">int</span><span class="pln"> arrayOfIntsOherWay </span><span class="pun">[];</span><span class="pln"> </span><span class="com">//Declaring an array of int type another way</span><span class="pln">
+
+        </span><span class="kwd">double</span><span class="pln"> </span><span class="pun">[]</span><span class="pln"> arrayOfDoubles </span><span class="pun">;</span><span class="pln">          </span><span class="com">//Declaring an array of double type</span><span class="pln">
+        </span><span class="kwd">double</span><span class="pln"> arrayOfDoublesOherWay </span><span class="pun">[]</span><span class="pln"> </span><span class="pun">;</span><span class="pln">  </span><span class="com">//Declaring an array of double type another way</span><span class="pln">
+
+        </span><span class="kwd">char</span><span class="pun">[]</span><span class="pln"> arrayOfChars</span><span class="pun">;</span><span class="pln">           </span><span class="com">//Declaring an array of character type</span><span class="pln">
+        </span><span class="kwd">char</span><span class="pln"> arrayOfCharsOherWay </span><span class="pun">[]</span><span class="pln"> </span><span class="pun">;</span><span class="pln"> </span><span class="com">//Declaring an array of character type another way</span><span class="pln">
+
+        </span><span class="kwd">boolean</span><span class="pln"> </span><span class="pun">[]</span><span class="pln"> arrayOfBooleans</span><span class="pun">;</span><span class="pln">          </span><span class="com">//Declaring an array of boolean type</span><span class="pln">
+        </span><span class="kwd">boolean</span><span class="pln"> arrayOfBooleansOherWay </span><span class="pun">[]</span><span class="pln"> </span><span class="pun">;</span><span class="pln"> </span><span class="com">//Declaring an array of character type another way</span><span class="pln">
+
+        </span><span class="typ">Studet</span><span class="pln"> </span><span class="pun">[]</span><span class="pln"> student</span><span class="pun">;</span><span class="pln">          </span><span class="com">//   Declaring an array any class or object type</span><span class="pln">
+        </span><span class="typ">Studet</span><span class="pln"> studentOherWay </span><span class="pun">[];</span><span class="pln">  </span><span class="com">//   Declaring an array any class or object type another way</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+	</div>
+
+
+
+
+
+	<div class="styleShet"  ng-click="toggle6()">
+            <h4 >Instantiating  Arrays In Java
+            <span ng-hide ="array6" class= "caretright" ></span><span ng-show="array6" class= "caretrightUp" ></span></h4>
+	</div>
+	<div ng-show="array6" class="view">
+	   new operator is used to initialize an array.
+	   <br/><br/>
+
+<!--           <pre class="viewPre">
+public class ArraysInstantiating
+{
+    public static void main(String[] args)
+    {
+    	int[] arrayOfInts = new int[5];  //Instantiating an array of int type
+
+        int[] arrayOfIntsOtherWay = {12, 21, 0, 5, 7}; //Instantiating and initialization both same time an array of int type
+
+    }
+}
+           </pre>-->
+	<pre class="prettyprint prettyprinted viewPre" style="">
+<span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">ArraysInstantiating</span><span class="pln">
+</span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln">
+    </span><span class="pun">{</span><span class="pln">
+    	</span><span class="kwd">int</span><span class="pun">[]</span><span class="pln"> arrayOfInts </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="kwd">int</span><span class="pun">[</span><span class="lit">5</span><span class="pun">];</span><span class="pln">  </span><span class="com">//Instantiating an array of int type</span><span class="pln">
+
+        </span><span class="kwd">int</span><span class="pun">[]</span><span class="pln"> arrayOfIntsOtherWay </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="lit">12</span><span class="pun">,</span><span class="pln"> </span><span class="lit">21</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="lit">5</span><span class="pun">,</span><span class="pln"> </span><span class="lit">7</span><span class="pun">};</span><span class="pln"> </span><span class="com">//Instantiating and initialization both same time an array of int type</span><span class="pln">
+
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+	</pre>
+
+	</div>
+
+
+
+
+
+
+
+	<div class="styleShet"  ng-click="toggle7()">
+		<h4>Initializing  Arrays In Java
+		<span ng-hide ="array7" class= "caretright" ></span><span ng-show="array7" class= "caretrightUp" ></span></h4>
+	</div>
+	<div ng-show="array7" class="view">
+
+<!--            <pre class="viewPre">
+public class ArraysInitializing
+{
+    public static void main(String[] args)
+    {
+        int[]  arrayOfInts = new int[3];   //Instantiating an array of int using new operator
+        arrayOfInts[0] = 5;     //Initializing 1st element in 0 index
+        arrayOfInts[1] = 10;    //Initializing 2nd element in 1 index
+        arrayOfInts[2] = 15;    //Initializing 3rd element in 2 index
+
+        int[]  arrayOfIntsOtherWay = {5,10,15}; //Declaring, instantiating and Initializing an array in one statement
+
+    }
+}
+            </pre>-->
+	<pre class="prettyprint prettyprinted viewPre" style=""><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">ArraysInitializing</span><span class="pln">
+</span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln">
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">int</span><span class="pun">[]</span><span class="pln">  arrayOfInts </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="kwd">int</span><span class="pun">[</span><span class="lit">3</span><span class="pun">];</span><span class="pln">   </span><span class="com">//Instantiating an array of int using new operator</span><span class="pln">
+        arrayOfInts</span><span class="pun">[</span><span class="lit">0</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="lit">5</span><span class="pun">;</span><span class="pln">     </span><span class="com">//Initializing 1st element in 0 index</span><span class="pln">
+        arrayOfInts</span><span class="pun">[</span><span class="lit">1</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="lit">10</span><span class="pun">;</span><span class="pln">    </span><span class="com">//Initializing 2nd element in 1 index</span><span class="pln">
+        arrayOfInts</span><span class="pun">[</span><span class="lit">2</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="lit">15</span><span class="pun">;</span><span class="pln">    </span><span class="com">//Initializing 3rd element in 2 index</span><span class="pln">
+
+        </span><span class="kwd">int</span><span class="pun">[]</span><span class="pln">  arrayOfIntsOtherWay </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="lit">5</span><span class="pun">,</span><span class="lit">10</span><span class="pun">,</span><span class="lit">15</span><span class="pun">};</span><span class="pln"> </span><span class="com">//Declaring, instantiating and Initializing an array in one statement</span><span class="pln">
+
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+	</pre>
+
+	</div>
+
+
+
+
+
+
+    	<div class="styleShet"  ng-click="toggle4()">
+		<h4> Types of Array in java
+		<span ng-hide ="array4" class= "caretright" ></span><span ng-show="array4" class= "caretrightUp" ></span></h4>
+	</div>
+	<div ng-show="array4" class="view">
+	   There are two types of array.
+            <ul>
+                <li>Single Dimensional Array</li>
+                <li>Multidimensional Array</li>
+            </ul>
+	</div>
+
+    <div class="styleShet" ng-click="toggle()">
+        <h4>
+            single dimensional Array Declaration And Instantiation
+            <span ng-hide ="array" class= "caretright" ></span><span ng-show="array" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="array" class="view">
+<!--        <pre class="viewPre">
+public class ArrayTest{
+    public static void main(String[] a){
+    int arr[]=new int[5];   //Aray declaration with size
+    arr[0]=5;  //initialization
+    arr[1]=10;
+    arr[2]=15;
+    arr[3]=20;
+    arr[4]=30;
+    for(int i=0;i< arr.length;i++) //length is the property of array
+      System.out.println(arr[i]);
+    }
+}
+---------------------------------------------------------------------
+public class ArrayTest1{
+    public static void main(String[] a){
+    int arr[]={10,20,30,40,50,60}  //declaration and instantiation
+
+    for(int i=0;i< arr.length;i++)
+      System.out.println(arr[i]);
+    }
+}
+    </pre>-->
+	<pre class="prettyprint prettyprinted viewPre" style=""><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">ArrayTest</span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> a</span><span class="pun">){</span><span class="pln">
+    </span><span class="kwd">int</span><span class="pln"> arr</span><span class="pun">[]=</span><span class="kwd">new</span><span class="pln"> </span><span class="kwd">int</span><span class="pun">[</span><span class="lit">5</span><span class="pun">];</span><span class="pln">   </span><span class="com">//Aray declaration with size</span><span class="pln">
+    arr</span><span class="pun">[</span><span class="lit">0</span><span class="pun">]=</span><span class="lit">5</span><span class="pun">;</span><span class="pln">  </span><span class="com">//initialization</span><span class="pln">
+    arr</span><span class="pun">[</span><span class="lit">1</span><span class="pun">]=</span><span class="lit">10</span><span class="pun">;</span><span class="pln">
+    arr</span><span class="pun">[</span><span class="lit">2</span><span class="pun">]=</span><span class="lit">15</span><span class="pun">;</span><span class="pln">
+    arr</span><span class="pun">[</span><span class="lit">3</span><span class="pun">]=</span><span class="lit">20</span><span class="pun">;</span><span class="pln">
+    arr</span><span class="pun">[</span><span class="lit">4</span><span class="pun">]=</span><span class="lit">30</span><span class="pun">;</span><span class="pln">
+    </span><span class="kwd">for</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> i</span><span class="pun">=</span><span class="lit">0</span><span class="pun">;</span><span class="pln">i</span><span class="pun">&lt;</span><span class="pln"> arr</span><span class="pun">.</span><span class="pln">length</span><span class="pun">;</span><span class="pln">i</span><span class="pun">++)</span><span class="pln"> </span><span class="com">//length is the property of array</span><span class="pln">
+      </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="pln">arr</span><span class="pun">[</span><span class="pln">i</span><span class="pun">]);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="pun">---------------------------------------------------------------------</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">ArrayTest1</span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> a</span><span class="pun">){</span><span class="pln">
+    </span><span class="kwd">int</span><span class="pln"> arr</span><span class="pun">[]={</span><span class="lit">10</span><span class="pun">,</span><span class="lit">20</span><span class="pun">,</span><span class="lit">30</span><span class="pun">,</span><span class="lit">40</span><span class="pun">,</span><span class="lit">50</span><span class="pun">,</span><span class="lit">60</span><span class="pun">}</span><span class="pln">  </span><span class="com">//declaration and instantiation</span><span class="pln">
+
+    </span><span class="kwd">for</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> i</span><span class="pun">=</span><span class="lit">0</span><span class="pun">;</span><span class="pln">i</span><span class="pun">&lt;</span><span class="pln"> arr</span><span class="pun">.</span><span class="pln">length</span><span class="pun">;</span><span class="pln">i</span><span class="pun">++)</span><span class="pln">
+      </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="pln">arr</span><span class="pun">[</span><span class="pln">i</span><span class="pun">]);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+	</pre>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle1()">
+        <h4>
+            Multidimensional Array
+            <span ng-hide ="array1" class= "caretright" ></span><span ng-show="array1" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="array1" class="view">
+<!--        <Pre class="viewPre">
+public class MultiDimantional {
+    public static void main(String[] args) {
+        int[][] arr = new int[2][2];  //2 row and 2 column
+        arr[0][0] = 1;
+        arr[0][1] = 2;
+        arr[1][0] = 3;
+        arr[1][1] = 4;
+
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length ; j++) {
+                System.out.print(arr[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+------------------------------------------------------------------------
+public class MultiDimantional {
+    public static void main(String[] args) {
+        int[][] arr ={ {1,2,3},{3,4,5},{7,8,9} };  //declaring and initializing 2D array (2 row and 3 column)
+
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                System.out.print(arr[i][j] + " ");
+            }
+            System.out.println();
+        }
+      }
+}
+            </Pre>-->
+<pre class="prettyprint prettyprinted viewPre" style=""><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">MultiDimantional</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">int</span><span class="pun">[][]</span><span class="pln"> arr </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="kwd">int</span><span class="pun">[</span><span class="lit">2</span><span class="pun">][</span><span class="lit">2</span><span class="pun">];</span><span class="pln">  </span><span class="com">//2 row and 2 column</span><span class="pln">
+        arr</span><span class="pun">[</span><span class="lit">0</span><span class="pun">][</span><span class="lit">0</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span><span class="pln">
+        arr</span><span class="pun">[</span><span class="lit">0</span><span class="pun">][</span><span class="lit">1</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="lit">2</span><span class="pun">;</span><span class="pln">
+        arr</span><span class="pun">[</span><span class="lit">1</span><span class="pun">][</span><span class="lit">0</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="lit">3</span><span class="pun">;</span><span class="pln">
+        arr</span><span class="pun">[</span><span class="lit">1</span><span class="pun">][</span><span class="lit">1</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="lit">4</span><span class="pun">;</span><span class="pln">
+
+        </span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> i </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln"> i </span><span class="pun">&lt;</span><span class="pln"> arr</span><span class="pun">.</span><span class="pln">length</span><span class="pun">;</span><span class="pln"> i</span><span class="pun">++)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            </span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> j </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln"> j </span><span class="pun">&lt;</span><span class="pln"> arr</span><span class="pun">[</span><span class="pln">i</span><span class="pun">].</span><span class="pln">length </span><span class="pun">;</span><span class="pln"> j</span><span class="pun">++)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="kwd">print</span><span class="pun">(</span><span class="pln">arr</span><span class="pun">[</span><span class="pln">i</span><span class="pun">][</span><span class="pln">j</span><span class="pun">]</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> </span><span class="str">" "</span><span class="pun">);</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln">
+            </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">();</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="pun">------------------------------------------------------------------------</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">MultiDimantional</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">int</span><span class="pun">[][]</span><span class="pln"> arr </span><span class="pun">={</span><span class="pln"> </span><span class="pun">{</span><span class="lit">1</span><span class="pun">,</span><span class="lit">2</span><span class="pun">,</span><span class="lit">3</span><span class="pun">},{</span><span class="lit">3</span><span class="pun">,</span><span class="lit">4</span><span class="pun">,</span><span class="lit">5</span><span class="pun">},{</span><span class="lit">7</span><span class="pun">,</span><span class="lit">8</span><span class="pun">,</span><span class="lit">9</span><span class="pun">}</span><span class="pln"> </span><span class="pun">};</span><span class="pln">  </span><span class="com">//declaring and initializing 2D array (2 row and 3 column)</span><span class="pln">
+
+        </span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> i </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln"> i </span><span class="pun">&lt;</span><span class="pln"> </span><span class="lit">3</span><span class="pun">;</span><span class="pln"> i</span><span class="pun">++)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            </span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> j </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln"> j </span><span class="pun">&lt;</span><span class="pln"> </span><span class="lit">3</span><span class="pun">;</span><span class="pln"> j</span><span class="pun">++)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="kwd">print</span><span class="pun">(</span><span class="pln">arr</span><span class="pun">[</span><span class="pln">i</span><span class="pun">][</span><span class="pln">j</span><span class="pun">]</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> </span><span class="str">" "</span><span class="pun">);</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln">
+            </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">();</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+      </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+        </div>
+
+
+
+
+
+
+
+
+	<div class="styleShet"  ng-click="toggle2()">
+		<h4>
+                    Advantage and Disadvantage of Java Array
+                    <span ng-hide ="array2" class= "caretright" ></span><span ng-show="array2" class= "caretrightUp" ></span>
+		</h4>
+	</div>
+	<div ng-show="array2" class="view">
+            <strong>Advantage : </strong>
+            <br/>
+            <ul>
+                <li>It makes the code optimized, we can retrieve or sort the data easily.</li>
+                <li>We can get any data located at any index position.</li>
+                <!--<li></li>-->
+            </ul>
+
+            <br/>
+
+            <strong>Disadvantage : </strong>
+            <br/>
+            <ul>
+                <li>We can store only fixed size of elements in the array. It doesn't grow its size at runtime.
+                    To solve this problem, collection framework is used in java.</li>
+<!--                <li></li>
+                <li></li>-->
+            </ul>
+
+	</div>
+
+        <div class="styleShet" ng-click="toggle8()">
+            <h4 >Copying An Array
+            <span ng-hide ="array8" class= "caretright" ></span><span ng-show="array8" class= "caretrightUp" ></span></h4>
+        </div>
+        <div ng-show="array8" class="view">
+<!--            <pre class="viewPre">
+public class ArraysCopy{
+
+    public static void main(String[] args)
+    {
+        int[]  arrayOfInts = new int[3];
+        arrayOfInts[0] = 10;
+        arrayOfInts[1] = 15;
+        arrayOfInts[2] = 20;
+
+      //Copying in looping Way
+        int[] arrayOfIntsCopyByLooping = new int[arrayOfInts.length];
+        for (int i = 0; i < arrayOfInts.length; i++) {
+            arrayOfIntsCopyByLooping[i] = arrayOfInts[i];
+        }
+        System.out.println("arrayOfIntsCopyByLooping - " + java.util.Arrays.toString(arrayOfIntsCopyByLooping));
+
+      // Copying Using copyOf() Method
+        int[] arrayOfIntsCopyByCopyOf = Arrays.copyOf(arrayOfInts, arrayOfInts.length);
+        System.out.println("arrayOfIntsCopyByCopyOf - " + java.util.Arrays.toString(arrayOfIntsCopyByCopyOf));
+
+     // Copying Using arraycopy() Method
+        int[] arrayOfIntsCopyByArraycopy = new int[arrayOfInts.length];
+        System.arraycopy(arrayOfInts, 0, arrayOfIntsCopyByArraycopy, 0, arrayOfInts.length);
+        System.out.println("arrayOfIntsCopyByArraycopy - " + java.util.Arrays.toString(arrayOfIntsCopyByArraycopy));
+
+     // CopyingUsing  clone() Method
+        int[] arrayOfIntsCopyByClone = arrayOfInts.clone();
+        System.out.println("arrayOfIntsCopyByClone - " + java.util.Arrays.toString(arrayOfIntsCopyByClone));
+
+    }
+}
+            </pre>-->
+<pre class="prettyprint prettyprinted viewPre" style=""><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">ArraysCopy</span><span class="pun">{</span><span class="pln">
+
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln">
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">int</span><span class="pun">[]</span><span class="pln">  arrayOfInts </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="kwd">int</span><span class="pun">[</span><span class="lit">3</span><span class="pun">];</span><span class="pln">
+        arrayOfInts</span><span class="pun">[</span><span class="lit">0</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="lit">10</span><span class="pun">;</span><span class="pln">
+        arrayOfInts</span><span class="pun">[</span><span class="lit">1</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="lit">15</span><span class="pun">;</span><span class="pln">
+        arrayOfInts</span><span class="pun">[</span><span class="lit">2</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="lit">20</span><span class="pun">;</span><span class="pln">
+
+      </span><span class="com">//Copying in looping Way</span><span class="pln">
+        </span><span class="kwd">int</span><span class="pun">[]</span><span class="pln"> arrayOfIntsCopyByLooping </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="kwd">int</span><span class="pun">[</span><span class="pln">arrayOfInts</span><span class="pun">.</span><span class="pln">length</span><span class="pun">];</span><span class="pln">
+        </span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> i </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln"> i </span><span class="pun">&lt;</span><span class="pln"> arrayOfInts</span><span class="pun">.</span><span class="pln">length</span><span class="pun">;</span><span class="pln"> i</span><span class="pun">++)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            arrayOfIntsCopyByLooping</span><span class="pun">[</span><span class="pln">i</span><span class="pun">]</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> arrayOfInts</span><span class="pun">[</span><span class="pln">i</span><span class="pun">];</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"arrayOfIntsCopyByLooping - "</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">util</span><span class="pun">.</span><span class="typ">Arrays</span><span class="pun">.</span><span class="pln">toString</span><span class="pun">(</span><span class="pln">arrayOfIntsCopyByLooping</span><span class="pun">));</span><span class="pln">
+
+      </span><span class="com">// Copying Using copyOf() Method</span><span class="pln">
+        </span><span class="kwd">int</span><span class="pun">[]</span><span class="pln"> arrayOfIntsCopyByCopyOf </span><span class="pun">=</span><span class="pln"> </span><span class="typ">Arrays</span><span class="pun">.</span><span class="pln">copyOf</span><span class="pun">(</span><span class="pln">arrayOfInts</span><span class="pun">,</span><span class="pln"> arrayOfInts</span><span class="pun">.</span><span class="pln">length</span><span class="pun">);</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"arrayOfIntsCopyByCopyOf - "</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">util</span><span class="pun">.</span><span class="typ">Arrays</span><span class="pun">.</span><span class="pln">toString</span><span class="pun">(</span><span class="pln">arrayOfIntsCopyByCopyOf</span><span class="pun">));</span><span class="pln">
+
+     </span><span class="com">// Copying Using arraycopy() Method</span><span class="pln">
+        </span><span class="kwd">int</span><span class="pun">[]</span><span class="pln"> arrayOfIntsCopyByArraycopy </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="kwd">int</span><span class="pun">[</span><span class="pln">arrayOfInts</span><span class="pun">.</span><span class="pln">length</span><span class="pun">];</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="pln">arraycopy</span><span class="pun">(</span><span class="pln">arrayOfInts</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> arrayOfIntsCopyByArraycopy</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> arrayOfInts</span><span class="pun">.</span><span class="pln">length</span><span class="pun">);</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"arrayOfIntsCopyByArraycopy - "</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">util</span><span class="pun">.</span><span class="typ">Arrays</span><span class="pun">.</span><span class="pln">toString</span><span class="pun">(</span><span class="pln">arrayOfIntsCopyByArraycopy</span><span class="pun">));</span><span class="pln">
+
+     </span><span class="com">// CopyingUsing  clone() Method</span><span class="pln">
+        </span><span class="kwd">int</span><span class="pun">[]</span><span class="pln"> arrayOfIntsCopyByClone </span><span class="pun">=</span><span class="pln"> arrayOfInts</span><span class="pun">.</span><span class="pln">clone</span><span class="pun">();</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"arrayOfIntsCopyByClone - "</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">util</span><span class="pun">.</span><span class="typ">Arrays</span><span class="pun">.</span><span class="pln">toString</span><span class="pun">(</span><span class="pln">arrayOfIntsCopyByClone</span><span class="pun">));</span><span class="pln">
+
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+        </div>
+
+
+
+
+
+
+
+      <div class="styleShet" ng-click="toggle9()">
+            <h4 > Can you change the size of the array once you define it?
+            <span ng-hide ="array9" class= "caretright" ></span><span ng-show="array9" class= "caretrightUp" ></span></h4>
+        </div>
+        <div ng-show="array9" class="view">
+           No. You can’t change the size of the array once you define it. You can not insert or delete the elements after creating an array. Only you can do is change the value of the elements.
+        </div>
+
+
+
+
+
+<!--          <div class="styleShet" ng-click="toggle10()">
+            <h4 >{heading Name}
+            <span ng-hide ="array10" class= "caretright" ></span><span ng-show="array10" class= "caretrightUp" ></span></h4>
+        </div>
+        <div ng-show="array10" class="view">
+           {keep defination }
+        </div>
+
+        <div class="styleShet" ng-click="toggle11()">
+            <h4 >{heading Name}
+            <span ng-hide ="array11" class= "caretright" ></span><span ng-show="array11" class= "caretrightUp" ></span></h4>
+        </div>
+        <div ng-show="array11" class="view">
+           {keep defination }
+        </div>-->
+
+</div>

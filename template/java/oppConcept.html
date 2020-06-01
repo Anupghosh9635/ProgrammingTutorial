@@ -1,0 +1,504 @@
+<div class="pagePaddingBottom">
+    <h2 class="mainCenterAlign"> Java OPPS Concept </h2>
+
+
+    <div class="styleShet" ng-click="toggle()">
+        <h4 >
+            Java OOPs Concepts
+            <span ng-hide ="opps" class= "caretright" ></span><span ng-show="opps" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="opps" class="view">
+        <strong>Java OOPs Concepts :</strong> OOPs stands for Object Oriented Programming.
+        The object-oriented paradigm supports four major principles: abstraction, encapsulation, inheritance, and polymorphism.
+        <br/><br/>
+        <!--        <img  class="img-div80" alt="Smilly face" src="img/oops.jpg">-->
+        <img class="img-div80" alt="Smilly face" src="img/oopsConcept.jpg">
+
+    </div>
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle1()">
+        <h4>
+            What Is an Object ?
+            <span ng-hide ="opps1" class= "caretright" ></span><span ng-show="opps1" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="opps1" class="view">
+        <strong> Object :</strong> object is a real world entity which has state and behavior .
+        <br/> Software object which has variable and method variable represent state and method represent  behavior.
+        <br/>Example: &nbsp;  A dog has states-color, name, breed as well as behaviors -wagging, barking, eating.
+        </br></br>
+        <ul>
+            <li>An object is an instance of a class.</li>
+            <li>To create an object at the run time a class is require .</li>
+            <li>Non static variable represent state of an object , use non static variable to store
+                information which is specification object</li>
+            <li>static variable represent state of an class, use static variable to store information
+                <strong> not </strong> a specific to a particular object </li>
+            <li>The reference values (often just  references) are pointers to these objects, and a
+                special null reference, which refers to no object</li>
+        </ul>
+    </div>
+
+
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle2()">
+        <h4 >
+            What Is a Class?
+            <span ng-hide ="opps2" class= "caretright" ></span><span ng-show="opps2" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="opps2" class="view">
+        <strong>Class :  </strong>  A class is the template or blueprint from which individual objects are created.
+        <br/>  It can't be physical.
+        <br/><br/>
+        A class can contain:
+        <ul>
+            <li>fields</li>
+            <li>constructors</li>
+            <li>methods</li>
+            <li>blocks</li>
+            <li> inner class and interface</li>
+        </ul>
+    </div>
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle4()">
+        <h4 > Object Class
+            <span ng-hide ="opps4" class= "caretright" ></span><span ng-show="opps4" class= "caretrightUp" ></span></h4>
+    </div>
+    <div ng-show="opps4" class="view">
+        <strong>Object Class : </strong> Object Class is a builtin class which is default supermost (topmost/parent ) class .
+
+        <br/><br/>
+        <ul>
+            <li>If we create a class with out suppetr class , then java bydefault extends Object class .</li>
+            <li>Every class in a java direct or in direct subclass of Object Class .</li>
+            <li> Object Class is available in the default package java.lang .</li>
+        </ul>
+
+        <br/><br/>
+        <strong>Method of Object Class</strong>
+        <br/><br/>
+        <table class="table table-bordered">
+            <tr class="trHeading">
+                <th width='30%'>Method</th>
+                <th width='70%'>Description</th>
+            </tr>
+            <tr>
+                <td>public final Class getClass()</td>
+                <td>returns the Class class object of this object. The Class class can further be used to get the metadata of this class.</td>
+            </tr>
+            <tr>
+                <td>public int hashCode()</td>
+                <td> returns the hashcode number for this object.</td>
+            </tr>
+            <tr>
+                <td>public boolean equals(Object obj)</td>
+                <td> compares the given object to this object.</td>
+            </tr>
+            <tr>
+                <td ng-hide="isMobile">protected Object clone() throws CloneNotSupportedException</td>
+                <td ng-show="isMobile">protected Object clone() throws CloneNotSupported -Exception</td>
+                <td> creates and returns the exact copy (clone) of this object.</td>
+            </tr>
+            <tr>
+                <td>public String toString()</td>
+                <td> returns the string representation of this object.</td>
+            </tr>
+            <tr>
+                <td>public final void notify()</td>
+                <td> wakes up single thread, waiting on this object's monitor.</td>
+            </tr>
+            <tr>
+                <td>public final void notifyAll()</td>
+                <td> wakes up all the threads, waiting on this object's monitor.</td>
+            </tr>
+            <tr>
+                <td>public final void wait(long timeout)throws InterruptedException</td>
+                <td> causes the current thread to wait for the specified milliseconds, until another thread notifies (invokes notify() or notifyAll() method).</td>
+            </tr>
+            <tr>
+                <td>public final void wait(long timeout,int nanos)throws InterruptedException</td>
+                <td>causes the current thread to wait for the specified milliseconds and nanoseconds, until another thread notifies (invokes notify() or notifyAll() method).</td>
+            </tr>
+            <tr>
+                <td>public final void wait()throws InterruptedException</td>
+                <td> causes the current thread to wait, until another thread notifies (invokes notify() or notifyAll() method).</td>
+            </tr>
+            <tr>
+                <td>protected void finalize()throws Throwable</td>
+                <td> is invoked by the garbage collector before object is being garbage collected.</td>
+            </tr>
+        </table>
+
+    </div>
+
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle3()">
+        <h4>Inheritance in Java
+            <span ng-hide ="opps3" class= "caretright" ></span><span ng-show="opps3" class= "caretrightUp" ></span></h4>
+    </div>
+    <div ng-show="opps3" class="view">
+        <strong>Inheritance : </strong> process of acquiring member of property from one class to another class is known as Inheritance.
+        <br/>
+        <ul>
+            <li>extends is the keyword used to inherit the properties of a class.</li>
+            <li>Inheritance represents the IS-A relationship.</li>
+            <li>The main Purpose of Inheritance is code reusablety. </li>
+            <li>By default Object Class is extends every class.</li>
+<!--            <li> </li>-->
+        </ul>
+
+        <br/>
+        <strong> SubClass extends SuperClass </strong>
+        <br/>
+        <strong>SubClass : </strong> The class which inherits property of other class is known as SubClass.
+        <br/>
+        <strong>SuperClass : </strong> The class whose  property are inherited is known as SubClass.
+
+        <br/><br/>
+        <strong> Example : </strong>
+        <br/><br/>
+<!--        <pre class="viewPre">
+class A {
+    int i = 10 ;
+}
+class B extends A {
+    int j = 20 ;
+    void display(){
+        System.out.println("i = "+ i);
+        System.out.println("j = "+ j);
+    }
+}
+public class Test {
+    public static void main(String[] args) {
+        B b1 =new B();
+        b1.display();
+    }
+}
+        </pre>-->
+
+<pre class="prettyprint viewPre prettyprinted" style=""><span class="kwd">class</span><span class="pln"> A </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">int</span><span class="pln"> i </span><span class="pun">=</span><span class="pln"> </span><span class="lit">10</span><span class="pln"> </span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="kwd">class</span><span class="pln"> B </span><span class="kwd">extends</span><span class="pln"> A </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">int</span><span class="pln"> j </span><span class="pun">=</span><span class="pln"> </span><span class="lit">20</span><span class="pln"> </span><span class="pun">;</span><span class="pln">
+    </span><span class="kwd">void</span><span class="pln"> display</span><span class="pun">(){</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"i = "</span><span class="pun">+</span><span class="pln"> i</span><span class="pun">);</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"j = "</span><span class="pun">+</span><span class="pln"> j</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">Test</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        B b1 </span><span class="pun">=</span><span class="kwd">new</span><span class="pln"> B</span><span class="pun">();</span><span class="pln">
+        b1</span><span class="pun">.</span><span class="pln">display</span><span class="pun">();</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+
+    </div>
+
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle5()">
+        <h4>Polymorphism
+            <span ng-hide ="opps5" class= "caretright" ></span><span ng-show="opps5" class= "caretrightUp" ></span></h4>
+    </div>
+    <div ng-show="opps5" class="view">
+        <strong>Polymorphism : </strong> One object or one method call shows different behavior in different
+        context (situation) it known as polymorphism .
+
+        <br/><br/>
+        There are two types of polymorphism
+        <ul>
+            <li>Compile time polymorphism .</li>
+            <li>Runtime polymorphism .</li>
+        </ul>
+
+        <br/>
+        <strong>Compile time polymorphism : </strong> Call to overloaded method is resolved in compile time
+        based on parameter type is known as Compile time polymorphism .
+        <br/><br/>
+
+        <strong>Runtime polymorphism : </strong> Call to overridden method is resolved at run time
+        based on instance type is known as runtime polymorphism .
+        <br/><br/>
+
+        <strong> Example : </strong>
+        <br/><br/>
+<!--        <pre class="viewPre">
+class Bike{
+    public void start(){
+        System.out.println("Bike is Start ");
+    }
+}
+class Pulsar extends Bike{
+    @Override
+    public void start(){
+        System.out.println("Pulsar is Start ");
+    }
+}
+class BikeRide{
+    public void ride(Bike b){
+        b.start();
+        System.out.println("ride Bike");
+    }
+    public void ride(Pulsar p){
+        p.start();
+        System.out.println("ride Pulsar");
+    }
+}
+public class PolymorphismTest {
+    public static void main(String[] args) {
+        BikeRide bikeRide = new BikeRide();
+        Bike bike = new Pulsar();
+        bikeRide.ride(bike);
+    }
+}
+        </pre>-->
+<pre class="prettyprint viewPre prettyprinted" style="">
+<span class="kwd">class</span><span class="pln"> </span><span class="typ">Bike</span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> start</span><span class="pun">(){</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Bike is Start "</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="kwd">class</span><span class="pln"> </span><span class="typ">Pulsar</span><span class="pln"> </span><span class="kwd">extends</span><span class="pln"> </span><span class="typ">Bike</span><span class="pun">{</span><span class="pln">
+    </span><span class="lit">@Override</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> start</span><span class="pun">(){</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Pulsar is Start "</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="kwd">class</span><span class="pln"> </span><span class="typ">BikeRide</span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> ride</span><span class="pun">(</span><span class="typ">Bike</span><span class="pln"> b</span><span class="pun">){</span><span class="pln">
+        b</span><span class="pun">.</span><span class="pln">start</span><span class="pun">();</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"ride Bike"</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> ride</span><span class="pun">(</span><span class="typ">Pulsar</span><span class="pln"> p</span><span class="pun">){</span><span class="pln">
+        p</span><span class="pun">.</span><span class="pln">start</span><span class="pun">();</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"ride Pulsar"</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">PolymorphismTest</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">BikeRide</span><span class="pln"> bikeRide </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">BikeRide</span><span class="pun">();</span><span class="pln">
+        </span><span class="typ">Bike</span><span class="pln"> bike </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Pulsar</span><span class="pun">();</span><span class="pln">
+        bikeRide</span><span class="pun">.</span><span class="pln">ride</span><span class="pun">(</span><span class="pln">bike</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+    </div>
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle6()">
+        <h4> Encapsulation
+            <span ng-hide ="opps6" class= "caretright" ></span><span ng-show="opps6" class= "caretrightUp" ></span></h4>
+    </div>
+    <div ng-show="opps6" class="view">
+        <strong>Encapsulation :</strong> process of wrapping code and data together into a single unit is known as
+        encapsulation.
+        <br/>
+        <b>or </b>encapsulation is a technique hiding field (data member) and providing public method to access the field
+	    is known as encapsulation.
+        <br/>
+	<ul>
+	    <li> public method which which is use to set the private field is known setter method.</li>
+	    <li> public method which which is use to set the private field is known setter method.</li>
+	    <li>encapsulation is also refer as data hiding .</li>
+	</ul>
+	<br/><br/>
+
+        <strong> Example : </strong>
+        <br/><br/>
+<!--	<pre class="viewPre">
+class Employee {
+    private String name;
+    public void setName(String name) {
+        this.name = name;
+    }
+    public String getName() {
+        return name;
+    }
+}
+
+public class EncapsulationTest {
+    public static void main(String[] args) {
+        Employee employee = new Employee();
+        employee.setName("Anup");
+        System.out.println("Employee Name -> "+employee.getName());
+
+    }
+}
+	</pre>-->
+<pre class="prettyprint viewPre prettyprinted" style="">
+<span class="kwd">class</span><span class="pln"> </span><span class="typ">Employee</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">private</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> name</span><span class="pun">;</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> setName</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> name</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">this</span><span class="pun">.</span><span class="pln">name </span><span class="pun">=</span><span class="pln"> name</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> getName</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> name</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+
+
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">EncapsulationTest</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">Employee</span><span class="pln"> employee </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Employee</span><span class="pun">();</span><span class="pln">
+        employee</span><span class="pun">.</span><span class="pln">setName</span><span class="pun">(</span><span class="str">"Anup"</span><span class="pun">);</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Employee Name -&gt; "</span><span class="pun">+</span><span class="pln">employee</span><span class="pun">.</span><span class="pln">getName</span><span class="pun">());</span><span class="pln">
+
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+
+	<br/><br/>
+        <strong>Advantage of Encapsulation : </strong>
+        <br/>
+        <ul>
+	    <li>A class can have full control on its data member. </li>
+	    <li>class can make it data member either read or write by providing request setter, getter </li>
+            <li>Encapsulation allows you to change one part of code without affecting other parts of code.</li>
+	    <li>Encapsulation in Java makes unit testing easy.</li>
+        </ul>
+    </div>
+
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle7()">
+	<h4> Abstraction
+	<span ng-hide ="opps7" class= "caretright" ></span><span ng-show="opps7" class= "caretrightUp" ></span></h4>
+    </div>
+    <div ng-show="opps7" class="view">
+	<strong>Abstraction : </strong> process of hiding complex implementation and providing required
+	    functionality to the user is known as Abstraction .
+	<br/><br/>
+	<strong> Abstract method : </strong> A method with out an implementation is known as abstract method.
+	<br/>
+	<ul>
+	    <li>Abstract method is declared with abstract key word </li>
+	    <li>Abstract method is must be end with semicolon (<b>;</b>) .</li>
+	    <li> Example :
+	    <br/><br/>
+<!--	    <pre class="viewPre">
+abstract class AbstractClass {
+    abstract public void start();
+}</pre>-->
+<pre class="prettyprint viewPre prettyprinted" style="">
+<span class="kwd">abstract</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">AbstractClass</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">abstract</span><span class="pln"> </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> start</span><span class="pun">();</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+	    </li>
+	</ul>
+	<br/><br/>
+	<strong> Abstract class : </strong> A class which has abstract method is known as abstract class .
+	<br/>
+	<ul>
+	    <li>Abstract class is declared with abstract modifier word </li>
+	    <li>Abstract class can be instantiated .</li>
+	    <li>With out abstract method we can declared as abstract .</li>
+	    <li>If class has one abstract method then it is mandatory to declared class abstract,
+		other wise get Compile time error.
+	    </li>
+	    <li>Abstract class can be content  only concrete method.</li>
+	    <li>When a class extends abstract class all abstract method must be Override in subclass,
+		otherwise subclass became abstract class .
+	    </li>
+	</ul>
+	<br/>
+	<strong>Invalid combination of abstract modifiers :</strong>
+	<br/>
+	<ul>
+	    <li>abstract and final </li>
+	    <li>abstract and static </li>
+	    <li>abstract and private </li>
+	</ul>
+	<br/><br/>
+	<strong> Real time Example of Abstraction : </strong>
+	    If we think in car they are provide staring for moving the direction , but inside of
+	    this complex implementation of every company they are hiding by the cover , for control
+	    this they are providing staring .
+
+	<br/><br/>
+	<strong>Example : </strong>
+	<br/><br/>
+<!--	<pre class="viewPre">
+abstract class Animal {
+    abstract public void move();
+}
+class Dog extends Animal {
+    @Override
+    public void move() {
+        System.out.println("Dog can move by run .");
+    }
+}
+class Fish extends Animal{
+    @Override
+    public void move() {
+        System.out.println("Fish can move by swing .");
+    }
+}
+public class AbstractTest {
+    public static void main(String[] args) {
+        Animal animal = new Dog();
+        animal.move();
+        animal = new Fish();
+        animal.move();
+    }
+}
+	</pre>-->
+<pre class="prettyprint viewPre prettyprinted" style="">
+<span class="kwd">abstract</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">Animal</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">abstract</span><span class="pln"> </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> move</span><span class="pun">();</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="kwd">class</span><span class="pln"> </span><span class="typ">Dog</span><span class="pln"> </span><span class="kwd">extends</span><span class="pln"> </span><span class="typ">Animal</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="lit">@Override</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> move</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Dog can move by run ."</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="kwd">class</span><span class="pln"> </span><span class="typ">Fish</span><span class="pln"> </span><span class="kwd">extends</span><span class="pln"> </span><span class="typ">Animal</span><span class="pun">{</span><span class="pln">
+    </span><span class="lit">@Override</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> move</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Fish can move by swing ."</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">AbstractTest</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">Animal</span><span class="pln"> animal </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Dog</span><span class="pun">();</span><span class="pln">
+        animal</span><span class="pun">.</span><span class="pln">move</span><span class="pun">();</span><span class="pln">
+        animal </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Fish</span><span class="pun">();</span><span class="pln">
+        animal</span><span class="pun">.</span><span class="pln">move</span><span class="pun">();</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+    </div>
+
+
+
+</div>

@@ -1,0 +1,287 @@
+<div class="pagePaddingBottom">
+    <h2 class="mainCenterAlign"> Java Constructor </h2>
+
+
+
+    <div class="styleShet"  ng-click="toggle2()">
+        <h4>
+            Introduction
+            <span ng-hide ="constructor2" class= "caretright" ></span><span ng-show="constructor2" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="constructor2" class="view">
+
+        <strong> Constructor : </strong> Constructor is a special type of method which execute each time when an Object is created with
+        the help of new key word. Constructor is used to initialize the Object.
+        </br></br>
+        <ul>
+            <li>Constructor is always  same as its class name</li>
+            <li>There is no return type of Constructor</li>
+            <li>static modifiers is not allow for Constructor</li>
+            <li>There are two type of Constructor 1. Defaul Constructor 2. Paramiterize Constructor</li>
+            <li>If in class there is no Constructor then java implicitly (automatically) add default Constructor </li>
+            <li>In one class we can create more Constructor but every Constructor should different  type of parameters or number of parameters </li>
+        </ul>
+        <strong> Constructor Overloading : </strong> Multiple Constructor in a class with differ in parameter lists is known as Constructor Overloading.
+    </div>
+
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle()">
+        <h4>
+            Defaul Constructor
+            <span ng-hide ="constructor" class= "caretright" ></span><span ng-show="constructor" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+   <div pre ng-show="constructor" class="view">
+<!--        <pre class="viewPre">
+public class DefaulConstructor{
+    public DefaulConstructor()// default Constructor
+    {
+        System.out.println("Default Constructor Call");
+    }
+
+    public static void main(String[] args) {
+        DefaulConstructor de =new DefaulConstructor();
+    }
+}
+    </pre>-->
+<pre class="prettyprint viewPre prettyprinted" style=""><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">DefaulConstructor</span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="typ">DefaulConstructor</span><span class="pun">()</span><span class="com">// default Constructor</span><span class="pln">
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Default Constructor Call"</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">DefaulConstructor</span><span class="pln"> de </span><span class="pun">=</span><span class="kwd">new</span><span class="pln"> </span><span class="typ">DefaulConstructor</span><span class="pun">();</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+   </div>
+
+
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle1()">
+        <h4>
+            Paramiterize Constructor
+            <span ng-hide ="constructor1" class= "caretright" ></span><span ng-show="constructor1" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div pre ng-show="constructor1" class="view">
+<!--        <pre class="viewPre">
+public class Student {
+    int id;
+    String name;
+    Student(int i, String n) {     // 1 Paramiterize Constructor
+        id = i;
+        name = n;
+    }
+    void display() {
+        System.out.println(id + " " + name + " " + age);
+    }
+
+    public static void main(String args[]) {
+        Student s1 = new Student(111, "Rahul");
+        s2.display();
+    }
+}
+		</Pre>-->
+<pre class="prettyprint viewPre prettyprinted" style=""><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">Student</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">int</span><span class="pln"> id</span><span class="pun">;</span><span class="pln">
+    </span><span class="typ">String</span><span class="pln"> name</span><span class="pun">;</span><span class="pln">
+    </span><span class="typ">Student</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> i</span><span class="pun">,</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> n</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">     </span><span class="com">// 1 Paramiterize Constructor</span><span class="pln">
+        id </span><span class="pun">=</span><span class="pln"> i</span><span class="pun">;</span><span class="pln">
+        name </span><span class="pun">=</span><span class="pln"> n</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+    </span><span class="kwd">void</span><span class="pln"> display</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="pln">id </span><span class="pun">+</span><span class="pln"> </span><span class="str">" "</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> name </span><span class="pun">+</span><span class="pln"> </span><span class="str">" "</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> age</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> args</span><span class="pun">[])</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">Student</span><span class="pln"> s1 </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Student</span><span class="pun">(</span><span class="lit">111</span><span class="pun">,</span><span class="pln"> </span><span class="str">"Rahul"</span><span class="pun">);</span><span class="pln">
+        s2</span><span class="pun">.</span><span class="pln">display</span><span class="pun">();</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="styleShet"  ng-click="toggle3()">
+		<h4>Constructor Overloading
+		<span ng-hide ="constructor3" class= "caretright" ></span><span ng-show="constructor3" class= "caretrightUp" ></span></h4>
+	</div>
+	<div pre ng-show="constructor3" class="view">
+<!--        <pre class="viewPre">
+public class Student {
+    int id;
+    String name;
+    int age;
+    Student(int i, String n) {
+        id = i;
+        name = n;
+    }
+    Student(int i, String n, int a) {
+        id = i;
+        name = n;
+        age = a;
+    }
+    void display() {
+        System.out.println(id + " " + name + " " + age);
+    }
+
+    public static void main(String args[]) {
+        Student s1 = new Student(100, "Anup");
+        Student s2 = new Student(101, "Kamal", 20);
+        s1.display();
+        s2.display();
+    }
+}
+	</pre>-->
+<pre class="prettyprint viewPre prettyprinted" style=""><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">Student</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">int</span><span class="pln"> id</span><span class="pun">;</span><span class="pln">
+    </span><span class="typ">String</span><span class="pln"> name</span><span class="pun">;</span><span class="pln">
+    </span><span class="kwd">int</span><span class="pln"> age</span><span class="pun">;</span><span class="pln">
+    </span><span class="typ">Student</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> i</span><span class="pun">,</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> n</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        id </span><span class="pun">=</span><span class="pln"> i</span><span class="pun">;</span><span class="pln">
+        name </span><span class="pun">=</span><span class="pln"> n</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+    </span><span class="typ">Student</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> i</span><span class="pun">,</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> n</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> a</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        id </span><span class="pun">=</span><span class="pln"> i</span><span class="pun">;</span><span class="pln">
+        name </span><span class="pun">=</span><span class="pln"> n</span><span class="pun">;</span><span class="pln">
+        age </span><span class="pun">=</span><span class="pln"> a</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+    </span><span class="kwd">void</span><span class="pln"> display</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="pln">id </span><span class="pun">+</span><span class="pln"> </span><span class="str">" "</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> name </span><span class="pun">+</span><span class="pln"> </span><span class="str">" "</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> age</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> args</span><span class="pun">[])</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">Student</span><span class="pln"> s1 </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Student</span><span class="pun">(</span><span class="lit">100</span><span class="pun">,</span><span class="pln"> </span><span class="str">"Anup"</span><span class="pun">);</span><span class="pln">
+        </span><span class="typ">Student</span><span class="pln"> s2 </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Student</span><span class="pun">(</span><span class="lit">101</span><span class="pun">,</span><span class="pln"> </span><span class="str">"Kamal"</span><span class="pun">,</span><span class="pln"> </span><span class="lit">20</span><span class="pun">);</span><span class="pln">
+        s1</span><span class="pun">.</span><span class="pln">display</span><span class="pun">();</span><span class="pln">
+        s2</span><span class="pun">.</span><span class="pln">display</span><span class="pun">();</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+    </div>
+
+
+
+
+
+
+
+
+	<div class="styleShet"  ng-click="toggle4()">
+            <h4>Copy Constructor
+            <span ng-hide ="constructor4" class= "caretright" ></span><span ng-show="constructor4" class= "caretrightUp" ></span></h4>
+	</div>
+	<div pre ng-show="constructor4" class="view">
+<!--        <pre class="viewPre">
+public class Employee {
+    int id;
+    String name;
+    Employee(int i,String n){
+    id = i;
+    name = n;
+    }
+    Employee(Employee e){
+        id = e.id;
+        name =e.name;
+    }
+    void display(){
+        System.out.println(id+" "+name);
+    }
+
+    public static void main(String args[]){
+    Employee e1 = new Employee(111,"Rahul");
+    Employee e2 = new Employee(e1);
+    e1.display();
+    e2.display();
+   }
+}
+	</pre>-->
+<pre class="prettyprint viewPre prettyprinted" style=""><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">Employee</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">int</span><span class="pln"> id</span><span class="pun">;</span><span class="pln">
+    </span><span class="typ">String</span><span class="pln"> name</span><span class="pun">;</span><span class="pln">
+    </span><span class="typ">Employee</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> i</span><span class="pun">,</span><span class="typ">String</span><span class="pln"> n</span><span class="pun">){</span><span class="pln">
+    id </span><span class="pun">=</span><span class="pln"> i</span><span class="pun">;</span><span class="pln">
+    name </span><span class="pun">=</span><span class="pln"> n</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+    </span><span class="typ">Employee</span><span class="pun">(</span><span class="typ">Employee</span><span class="pln"> e</span><span class="pun">){</span><span class="pln">
+        id </span><span class="pun">=</span><span class="pln"> e</span><span class="pun">.</span><span class="pln">id</span><span class="pun">;</span><span class="pln">
+        name </span><span class="pun">=</span><span class="pln">e</span><span class="pun">.</span><span class="pln">name</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+    </span><span class="kwd">void</span><span class="pln"> display</span><span class="pun">(){</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="pln">id</span><span class="pun">+</span><span class="str">" "</span><span class="pun">+</span><span class="pln">name</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> args</span><span class="pun">[]){</span><span class="pln">
+    </span><span class="typ">Employee</span><span class="pln"> e1 </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Employee</span><span class="pun">(</span><span class="lit">111</span><span class="pun">,</span><span class="str">"Rahul"</span><span class="pun">);</span><span class="pln">
+    </span><span class="typ">Employee</span><span class="pln"> e2 </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Employee</span><span class="pun">(</span><span class="pln">e1</span><span class="pun">);</span><span class="pln">
+    e1</span><span class="pun">.</span><span class="pln">display</span><span class="pun">();</span><span class="pln">
+    e2</span><span class="pun">.</span><span class="pln">display</span><span class="pun">();</span><span class="pln">
+   </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+    </div>
+
+
+
+
+
+
+
+	<div class="styleShet"  ng-click="toggle5()">
+		<h4> If we place return type in constructor What will happen ?
+		<span ng-hide ="constructor5" class= "caretright" ></span><span ng-show="constructor5" class= "caretrightUp" ></span></h4>
+	</div>
+	<div ng-show="constructor5" class="view">
+	   It will not given any compile or run time error , because compiler and JVM considers it as a method.
+	</div>
+
+
+
+
+
+
+
+	<div class="styleShet"  ng-click="toggle6()">
+		<h4 >Can we declare constructor as private?
+		<span ng-hide ="constructor6" class= "caretright" ></span><span ng-show="constructor6" class= "caretrightUp" ></span></h4>
+	</div>
+	<div ng-show="constructor6" class="view">
+	   Yes we can declare constructor as private. All four access modifiers are allowed to constructor. we declare private constructor for Singleton class.
+	</div>
+
+
+
+
+
+
+	<div class="styleShet"  ng-click="toggle7()">
+		<h4>When compiler provides default constructor?
+		<span ng-hide ="constructor7" class= "caretright" ></span><span ng-show="constructor7" class= "caretrightUp" ></span></h4>
+	</div>
+	<div ng-show="constructor7" class="view">
+	    If there is no constructor defined by developer then compiler provides default constructor .
+            compiler provide default constructor only if there is no explicit constructor.
+<!--            If there is constructor -->
+	</div>
+
+
+
+</div>

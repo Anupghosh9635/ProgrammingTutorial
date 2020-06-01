@@ -1,0 +1,795 @@
+
+<div class="pagePaddingBottom" id="basicProgram">
+
+    <span class="icons arrowDownWhite inlBlk rel"></span>
+    <h2 class="mainCenterAlign" >Java Basic Programming Concept </h2>
+
+    <div class="styleShet" ng-click="toggle()">
+        <h4 id="click">
+            Hello World<span ng-hide ="basicPro" class= "caretright" ></span><span ng-show="basicPro" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div id="tg" ng-show="basicPro" class="view" >
+<!--        <pre class="viewPre">
+public class HelloWorld
+{
+    public static void main(String[] args)
+    {
+        System.out.println("Hello World!");
+    }
+}
+        </pre>-->
+<pre class="prettyprint viewPre prettyprinted ">
+<span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">HelloWorld</span><span class="pln">
+</span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln">
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Hello World!"</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+    </div>
+
+
+
+
+
+    <!--            <div class="styleShet" ng-click="toggle1()">
+                    <h4>
+                        List any five features of Java? <span ng-hide ="basicPro1" class= "caretright" ></span><span ng-show="basicPro1" class= "caretrightUp" ></span>
+                    </h4>
+                </div>
+
+                <P ng-show="basicPro1" class="view">Some features include Object
+                    Oriented, Platform Independent, Robust, Interpreted, Multi-threaded
+                </P>-->
+
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle2()">
+        <h4>
+            Prime Number  <span ng-hide ="basicPro2" class= "caretright" ></span><span ng-show="basicPro2" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="basicPro2" class="view" >
+<!--        <pre class="viewPre">
+// To check  Prime number
+public class Prime
+{
+    public static void main(String[] args)
+    {
+        java.util.Scanner scn=new java.util.Scanner(System.in);
+        System.out.println("Enter the number to Chake");
+        int n =scn.nextInt();
+        int i;
+        int a=0;
+        if(n<=1)
+        {
+            System.out.println("Enter the invalid code");
+        }
+        else
+        {
+            for(i=2;i< n;i++)
+            {
+                if(n%i==0)
+                {
+                    a=2;
+                    break;
+                }
+                System.out.println(i);
+            }
+            if(a==0)
+            {
+                System.out.println("The number "+n+" is PRIME");
+            }
+            else System.out.println("The number "+n+" is NOT a PRIME");
+        }
+    }
+}
+-------------------------------------------------------------------
+//To print Prime number 1 to n
+public class PrimeNumber
+{
+    public static void main(String[] args)
+    {
+        java.util.Scanner scn= new java.util.Scanner(System.in);
+        System.out.println("Enter how many number 1 to print ");
+        int i=scn.nextInt();
+        System.out.println("Prime number is ");
+        for(int j=1;j<=i;j++)
+        {
+            if(!m1(j))
+        System.out.println(j);
+        }
+    }
+    static boolean m1(int a)
+    {
+        if(a<=1)  return false;
+        for(int i=2;i< a;i++)
+        {
+            if(a%i==0) return false;
+        }
+        return true;
+    }
+}
+        </pre>-->
+<pre class="prettyprint viewPre prettyprinted" ><span class="com">// To check  Prime number</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">Prime</span><span class="pln">
+</span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln">
+    </span><span class="pun">{</span><span class="pln">
+        java</span><span class="pun">.</span><span class="pln">util</span><span class="pun">.</span><span class="typ">Scanner</span><span class="pln"> scn</span><span class="pun">=</span><span class="kwd">new</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">util</span><span class="pun">.</span><span class="typ">Scanner</span><span class="pun">(</span><span class="typ">System</span><span class="pun">.</span><span class="kwd">in</span><span class="pun">);</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Enter the number to Chake"</span><span class="pun">);</span><span class="pln">
+        </span><span class="kwd">int</span><span class="pln"> n </span><span class="pun">=</span><span class="pln">scn</span><span class="pun">.</span><span class="pln">nextInt</span><span class="pun">();</span><span class="pln">
+        </span><span class="kwd">int</span><span class="pln"> i</span><span class="pun">;</span><span class="pln">
+        </span><span class="kwd">int</span><span class="pln"> a</span><span class="pun">=</span><span class="lit">0</span><span class="pun">;</span><span class="pln">
+        </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">n</span><span class="pun">&lt;=</span><span class="lit">1</span><span class="pun">)</span><span class="pln">
+        </span><span class="pun">{</span><span class="pln">
+            </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Enter the invalid code"</span><span class="pun">);</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+        </span><span class="kwd">else</span><span class="pln">
+        </span><span class="pun">{</span><span class="pln">
+            </span><span class="kwd">for</span><span class="pun">(</span><span class="pln">i</span><span class="pun">=</span><span class="lit">2</span><span class="pun">;</span><span class="pln">i</span><span class="pun">&lt;</span><span class="pln"> n</span><span class="pun">;</span><span class="pln">i</span><span class="pun">++)</span><span class="pln">
+            </span><span class="pun">{</span><span class="pln">
+                </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">n</span><span class="pun">%</span><span class="pln">i</span><span class="pun">==</span><span class="lit">0</span><span class="pun">)</span><span class="pln">
+                </span><span class="pun">{</span><span class="pln">
+                    a</span><span class="pun">=</span><span class="lit">2</span><span class="pun">;</span><span class="pln">
+                    </span><span class="kwd">break</span><span class="pun">;</span><span class="pln">
+                </span><span class="pun">}</span><span class="pln">
+                </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="pln">i</span><span class="pun">);</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln">
+            </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">a</span><span class="pun">==</span><span class="lit">0</span><span class="pun">)</span><span class="pln">
+            </span><span class="pun">{</span><span class="pln">
+                </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"The number "</span><span class="pun">+</span><span class="pln">n</span><span class="pun">+</span><span class="str">" is PRIME"</span><span class="pun">);</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln">
+            </span><span class="kwd">else</span><span class="pln"> </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"The number "</span><span class="pun">+</span><span class="pln">n</span><span class="pun">+</span><span class="str">" is NOT a PRIME"</span><span class="pun">);</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="pun">-------------------------------------------------------------------</span><span class="pln">
+</span><span class="com">//To print Prime number 1 to n</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">PrimeNumber</span><span class="pln">
+</span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln">
+    </span><span class="pun">{</span><span class="pln">
+        java</span><span class="pun">.</span><span class="pln">util</span><span class="pun">.</span><span class="typ">Scanner</span><span class="pln"> scn</span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">util</span><span class="pun">.</span><span class="typ">Scanner</span><span class="pun">(</span><span class="typ">System</span><span class="pun">.</span><span class="kwd">in</span><span class="pun">);</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Enter how many number 1 to print "</span><span class="pun">);</span><span class="pln">
+        </span><span class="kwd">int</span><span class="pln"> i</span><span class="pun">=</span><span class="pln">scn</span><span class="pun">.</span><span class="pln">nextInt</span><span class="pun">();</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Prime number is "</span><span class="pun">);</span><span class="pln">
+        </span><span class="kwd">for</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> j</span><span class="pun">=</span><span class="lit">1</span><span class="pun">;</span><span class="pln">j</span><span class="pun">&lt;=</span><span class="pln">i</span><span class="pun">;</span><span class="pln">j</span><span class="pun">++)</span><span class="pln">
+        </span><span class="pun">{</span><span class="pln">
+            </span><span class="kwd">if</span><span class="pun">(!</span><span class="pln">m1</span><span class="pun">(</span><span class="pln">j</span><span class="pun">))</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="pln">j</span><span class="pun">);</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+    </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">boolean</span><span class="pln"> m1</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> a</span><span class="pun">)</span><span class="pln">
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">a</span><span class="pun">&lt;=</span><span class="lit">1</span><span class="pun">)</span><span class="pln">  </span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">;</span><span class="pln">
+        </span><span class="kwd">for</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> i</span><span class="pun">=</span><span class="lit">2</span><span class="pun">;</span><span class="pln">i</span><span class="pun">&lt;</span><span class="pln"> a</span><span class="pun">;</span><span class="pln">i</span><span class="pun">++)</span><span class="pln">
+        </span><span class="pun">{</span><span class="pln">
+            </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">a</span><span class="pun">%</span><span class="pln">i</span><span class="pun">==</span><span class="lit">0</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">;</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle3()">
+        <h4>
+            Alphabet print <span ng-hide ="basicPro3" class= "caretright" ></span><span ng-show="basicPro3" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="basicPro3" class="view" >
+<!--        <pre class="viewPre">
+public class AlphabetBig{
+    public static void main(String[] args) {
+        for(int i=65; i<=90;i++)
+        {
+            System.out.print((char)i+ "  ");
+        }
+    }
+}
+-----------------------------------------------------------------------
+public class AlphabetSmall {
+
+    public static void main(String[] args) {
+        for(int i=97; i<=122;i++)
+        {
+            System.out.print((char)i+ "  ");
+        }
+    }
+}
+        </pre>-->
+<pre class="prettyprint viewPre prettyprinted" ><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">AlphabetBig</span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">for</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> i</span><span class="pun">=</span><span class="lit">65</span><span class="pun">;</span><span class="pln"> i</span><span class="pun">&lt;=</span><span class="lit">90</span><span class="pun">;</span><span class="pln">i</span><span class="pun">++)</span><span class="pln">
+        </span><span class="pun">{</span><span class="pln">
+            </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="kwd">print</span><span class="pun">((</span><span class="kwd">char</span><span class="pun">)</span><span class="pln">i</span><span class="pun">+</span><span class="pln"> </span><span class="str">"  "</span><span class="pun">);</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="pun">-----------------------------------------------------------------------</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">AlphabetSmall</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">for</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> i</span><span class="pun">=</span><span class="lit">97</span><span class="pun">;</span><span class="pln"> i</span><span class="pun">&lt;=</span><span class="lit">122</span><span class="pun">;</span><span class="pln">i</span><span class="pun">++)</span><span class="pln">
+        </span><span class="pun">{</span><span class="pln">
+            </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="kwd">print</span><span class="pun">((</span><span class="kwd">char</span><span class="pun">)</span><span class="pln">i</span><span class="pun">+</span><span class="pln"> </span><span class="str">"  "</span><span class="pun">);</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle4()">
+        <h4>
+            Day Print in Switch Case <span ng-hide ="basicPro4" class= "caretright" ></span><span ng-show="basicPro4" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="basicPro4" class="view" >
+<!--        <pre class="viewPre">
+public class Day
+{
+    public static void main(String[] args)
+    {
+        java.util.Scanner scn = new java.util.Scanner (System.in);
+        System.out.println("Entre the valur of N ");
+        int n= scn.nextInt();
+        switch(n)
+        {
+            case 1:
+                    System.out.println("SUNDAY");
+                        break;
+            case 2:
+                    System.out.println("MONDAY");
+                        break;
+            case 3:
+                    System.out.println("TUESDAY");
+                        break;
+            case 4:
+                    System.out.println("WEDNESAY");
+                        break;
+            case 5:
+                    System.out.println("THURSTDAY");
+                        break;
+            case 6:
+                    System.out.println("FRYDAY");
+                        break;
+            case 7:
+                    System.out.println("SATARDAY");
+                        break;
+            default:
+                    System.out.println("Enter invalid input ");
+        }
+
+    }
+}
+        </pre>-->
+<pre class="prettyprint viewPre prettyprinted" ><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">Day</span><span class="pln">
+</span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln">
+    </span><span class="pun">{</span><span class="pln">
+        java</span><span class="pun">.</span><span class="pln">util</span><span class="pun">.</span><span class="typ">Scanner</span><span class="pln"> scn </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">util</span><span class="pun">.</span><span class="typ">Scanner</span><span class="pln"> </span><span class="pun">(</span><span class="typ">System</span><span class="pun">.</span><span class="kwd">in</span><span class="pun">);</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Entre the valur of N "</span><span class="pun">);</span><span class="pln">
+        </span><span class="kwd">int</span><span class="pln"> n</span><span class="pun">=</span><span class="pln"> scn</span><span class="pun">.</span><span class="pln">nextInt</span><span class="pun">();</span><span class="pln">
+        </span><span class="kwd">switch</span><span class="pun">(</span><span class="pln">n</span><span class="pun">)</span><span class="pln">
+        </span><span class="pun">{</span><span class="pln">
+            </span><span class="kwd">case</span><span class="pln"> </span><span class="lit">1</span><span class="pun">:</span><span class="pln">
+                    </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"SUNDAY"</span><span class="pun">);</span><span class="pln">
+                        </span><span class="kwd">break</span><span class="pun">;</span><span class="pln">
+            </span><span class="kwd">case</span><span class="pln"> </span><span class="lit">2</span><span class="pun">:</span><span class="pln">
+                    </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"MONDAY"</span><span class="pun">);</span><span class="pln">
+                        </span><span class="kwd">break</span><span class="pun">;</span><span class="pln">
+            </span><span class="kwd">case</span><span class="pln"> </span><span class="lit">3</span><span class="pun">:</span><span class="pln">
+                    </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"TUESDAY"</span><span class="pun">);</span><span class="pln">
+                        </span><span class="kwd">break</span><span class="pun">;</span><span class="pln">
+            </span><span class="kwd">case</span><span class="pln"> </span><span class="lit">4</span><span class="pun">:</span><span class="pln">
+                    </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"WEDNESAY"</span><span class="pun">);</span><span class="pln">
+                        </span><span class="kwd">break</span><span class="pun">;</span><span class="pln">
+            </span><span class="kwd">case</span><span class="pln"> </span><span class="lit">5</span><span class="pun">:</span><span class="pln">
+                    </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"THURSTDAY"</span><span class="pun">);</span><span class="pln">
+                        </span><span class="kwd">break</span><span class="pun">;</span><span class="pln">
+            </span><span class="kwd">case</span><span class="pln"> </span><span class="lit">6</span><span class="pun">:</span><span class="pln">
+                    </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"FRYDAY"</span><span class="pun">);</span><span class="pln">
+                        </span><span class="kwd">break</span><span class="pun">;</span><span class="pln">
+            </span><span class="kwd">case</span><span class="pln"> </span><span class="lit">7</span><span class="pun">:</span><span class="pln">
+                    </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"SATARDAY"</span><span class="pun">);</span><span class="pln">
+                        </span><span class="kwd">break</span><span class="pun">;</span><span class="pln">
+            </span><span class="kwd">default</span><span class="pun">:</span><span class="pln">
+                    </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Enter invalid input "</span><span class="pun">);</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span>
+</pre>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle5()">
+        <h4>
+            MethodOverloading Example <span ng-hide ="basicPro5" class= "caretright" ></span><span ng-show="basicPro5" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="basicPro5" class="view" >
+<!--        <pre class="viewPre">
+public class MethodOverloading_AddNumber
+{
+    public static void main(String[] args)
+    {
+        System.out.println("Execution start");
+        sum(2,4);
+        sum(55);
+        sum(2,5,9);
+
+    }
+    static void sum(int a)
+    {
+        System.out.println("execution sum "+a);
+    }
+    static void sum(int a, int b)
+    {
+        System.out.println("execution sum(int a ,int b) "+(a+b));
+    }
+    static void sum(int a, int b,int c)
+    {
+        System.out.println("execution sum(int a ,int b,int c) "+(a+b+c));
+    }
+}
+        </pre>-->
+<pre class="prettyprint viewPre prettyprinted" ><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">MethodOverloading_AddNumber</span><span class="pln">
+</span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln">
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Execution start"</span><span class="pun">);</span><span class="pln">
+        sum</span><span class="pun">(</span><span class="lit">2</span><span class="pun">,</span><span class="lit">4</span><span class="pun">);</span><span class="pln">
+        sum</span><span class="pun">(</span><span class="lit">55</span><span class="pun">);</span><span class="pln">
+        sum</span><span class="pun">(</span><span class="lit">2</span><span class="pun">,</span><span class="lit">5</span><span class="pun">,</span><span class="lit">9</span><span class="pun">);</span><span class="pln">
+
+    </span><span class="pun">}</span><span class="pln">
+    </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> sum</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> a</span><span class="pun">)</span><span class="pln">
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"execution sum "</span><span class="pun">+</span><span class="pln">a</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+    </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> sum</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> a</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> b</span><span class="pun">)</span><span class="pln">
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"execution sum(int a ,int b) "</span><span class="pun">+(</span><span class="pln">a</span><span class="pun">+</span><span class="pln">b</span><span class="pun">));</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+    </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> sum</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> a</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> b</span><span class="pun">,</span><span class="kwd">int</span><span class="pln"> c</span><span class="pun">)</span><span class="pln">
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"execution sum(int a ,int b,int c) "</span><span class="pun">+(</span><span class="pln">a</span><span class="pun">+</span><span class="pln">b</span><span class="pun">+</span><span class="pln">c</span><span class="pun">));</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="styleShet"  ng-click="toggle7()">
+        <h4>
+            Print 1 to N number <span ng-hide ="basicPro7" class= "caretright" ></span><span ng-show="basicPro7" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="basicPro7" class="view" >
+<!--        <pre class="viewPre">
+public class Pint_Number {
+    public static void main(String[] args) {
+        java.util.Scanner sc=new java.util.Scanner(System.in);
+        System.out.print("Enter value >- ");
+        int n =sc.nextInt();
+        for (int i = 1; i <= n; i++) {
+            System.out.println(i);
+        }
+    }
+}
+        </pre>-->
+<pre class="prettyprint viewPre prettyprinted" ><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">Pint_Number</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        java</span><span class="pun">.</span><span class="pln">util</span><span class="pun">.</span><span class="typ">Scanner</span><span class="pln"> sc</span><span class="pun">=</span><span class="kwd">new</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">util</span><span class="pun">.</span><span class="typ">Scanner</span><span class="pun">(</span><span class="typ">System</span><span class="pun">.</span><span class="kwd">in</span><span class="pun">);</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="kwd">print</span><span class="pun">(</span><span class="str">"Enter value &gt;- "</span><span class="pun">);</span><span class="pln">
+        </span><span class="kwd">int</span><span class="pln"> n </span><span class="pun">=</span><span class="pln">sc</span><span class="pun">.</span><span class="pln">nextInt</span><span class="pun">();</span><span class="pln">
+        </span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> i </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span><span class="pln"> i </span><span class="pun">&lt;=</span><span class="pln"> n</span><span class="pun">;</span><span class="pln"> i</span><span class="pun">++)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="pln">i</span><span class="pun">);</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+    </div>
+
+
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle6()">
+        <h4>
+            Print 1 to N  with out any loop <span ng-hide ="basicPro6" class= "caretright" ></span><span ng-show="basicPro6" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="basicPro6" class="view" >
+<!--        <pre class="viewPre">
+public class PrintNumber
+{
+    public static void main(String[] args)
+    {
+        System.out.println("EXECUTION START ");
+        java.util.Scanner sc=new java.util.Scanner(System.in);
+        System.out.print("Enter value >- ");
+        int n =sc.nextInt();
+        System.out.println("the value");
+        m1(1,n);
+
+    }
+    static void m1(int a ,int b)
+    {
+        System.out.println("           "+a);
+        if(a>=b) return;
+        m1(++a,b);
+    }
+}
+        </pre>-->
+<pre class="prettyprint viewPre prettyprinted" ><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">PrintNumber</span><span class="pln">
+</span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln">
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"EXECUTION START "</span><span class="pun">);</span><span class="pln">
+        java</span><span class="pun">.</span><span class="pln">util</span><span class="pun">.</span><span class="typ">Scanner</span><span class="pln"> sc</span><span class="pun">=</span><span class="kwd">new</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">util</span><span class="pun">.</span><span class="typ">Scanner</span><span class="pun">(</span><span class="typ">System</span><span class="pun">.</span><span class="kwd">in</span><span class="pun">);</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="kwd">print</span><span class="pun">(</span><span class="str">"Enter value &gt;- "</span><span class="pun">);</span><span class="pln">
+        </span><span class="kwd">int</span><span class="pln"> n </span><span class="pun">=</span><span class="pln">sc</span><span class="pun">.</span><span class="pln">nextInt</span><span class="pun">();</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"the value"</span><span class="pun">);</span><span class="pln">
+        m1</span><span class="pun">(</span><span class="lit">1</span><span class="pun">,</span><span class="pln">n</span><span class="pun">);</span><span class="pln">
+
+    </span><span class="pun">}</span><span class="pln">
+    </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> m1</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> a </span><span class="pun">,</span><span class="kwd">int</span><span class="pln"> b</span><span class="pun">)</span><span class="pln">
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"           "</span><span class="pun">+</span><span class="pln">a</span><span class="pun">);</span><span class="pln">
+        </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">a</span><span class="pun">&gt;=</span><span class="pln">b</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">return</span><span class="pun">;</span><span class="pln">
+        m1</span><span class="pun">(++</span><span class="pln">a</span><span class="pun">,</span><span class="pln">b</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle8()">
+        <h4>
+            Factriol Program <span ng-hide ="basicPro8" class= "caretright" ></span><span ng-show="basicPro8" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="basicPro8" class="view" >
+<!--        <pre class="viewPre">
+public class Factriol{
+    public static void main(String[] args) {
+        java.util.Scanner scn = new java.util.Scanner(System.in);
+        System.out.println("Entre the valur of N ");
+        int n = scn.nextInt();
+        long j = 1;
+        if (n < 0) {
+                System.out.println("Enter the inviled input ");
+        } else if (n == 0) {
+            System.out.println("Facrial is= 1");
+        } else
+
+        {
+            for (int i = 1; i <= n; i++) {
+                j = j * i;
+            }
+
+            System.out.println("Fctriol is = " + j);
+        }
+    }
+}
+------------------------------------------------------------------
+public class FactFunc {
+
+    public static void main(String[] args)
+    {
+        java.util.Scanner scn=new java.util.Scanner(System.in);
+        System.out.println("Enter number ");
+        int n= scn.nextInt();
+        System.out.println("= "+fac(n));
+    }
+    static int fac(int a)
+    {
+        if (a==0)return 1;
+        //int n=fac(a-1);
+        return a*fac(--a);  //return a*n;
+    }
+}
+        </pre>-->
+<pre class="prettyprint viewPre prettyprinted" ><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">Factriol</span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        java</span><span class="pun">.</span><span class="pln">util</span><span class="pun">.</span><span class="typ">Scanner</span><span class="pln"> scn </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">util</span><span class="pun">.</span><span class="typ">Scanner</span><span class="pun">(</span><span class="typ">System</span><span class="pun">.</span><span class="kwd">in</span><span class="pun">);</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Entre the valur of N "</span><span class="pun">);</span><span class="pln">
+        </span><span class="kwd">int</span><span class="pln"> n </span><span class="pun">=</span><span class="pln"> scn</span><span class="pun">.</span><span class="pln">nextInt</span><span class="pun">();</span><span class="pln">
+        </span><span class="kwd">long</span><span class="pln"> j </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span><span class="pln">
+        </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">n </span><span class="pun">&lt;</span><span class="pln"> </span><span class="lit">0</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Enter the inviled input "</span><span class="pun">);</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">else</span><span class="pln"> </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">n </span><span class="pun">==</span><span class="pln"> </span><span class="lit">0</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Facrial is= 1"</span><span class="pun">);</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">else</span><span class="pln">
+
+        </span><span class="pun">{</span><span class="pln">
+            </span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> i </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span><span class="pln"> i </span><span class="pun">&lt;=</span><span class="pln"> n</span><span class="pun">;</span><span class="pln"> i</span><span class="pun">++)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                j </span><span class="pun">=</span><span class="pln"> j </span><span class="pun">*</span><span class="pln"> i</span><span class="pun">;</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln">
+
+            </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Fctriol is = "</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> j</span><span class="pun">);</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="pun">------------------------------------------------------------------</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">FactFunc</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln">
+    </span><span class="pun">{</span><span class="pln">
+        java</span><span class="pun">.</span><span class="pln">util</span><span class="pun">.</span><span class="typ">Scanner</span><span class="pln"> scn</span><span class="pun">=</span><span class="kwd">new</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">util</span><span class="pun">.</span><span class="typ">Scanner</span><span class="pun">(</span><span class="typ">System</span><span class="pun">.</span><span class="kwd">in</span><span class="pun">);</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Enter number "</span><span class="pun">);</span><span class="pln">
+        </span><span class="kwd">int</span><span class="pln"> n</span><span class="pun">=</span><span class="pln"> scn</span><span class="pun">.</span><span class="pln">nextInt</span><span class="pun">();</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"= "</span><span class="pun">+</span><span class="pln">fac</span><span class="pun">(</span><span class="pln">n</span><span class="pun">));</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+    </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> fac</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> a</span><span class="pun">)</span><span class="pln">
+    </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">a</span><span class="pun">==</span><span class="lit">0</span><span class="pun">)</span><span class="kwd">return</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span><span class="pln">
+        </span><span class="com">//int n=fac(a-1);</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> a</span><span class="pun">*</span><span class="pln">fac</span><span class="pun">(--</span><span class="pln">a</span><span class="pun">);</span><span class="pln">  </span><span class="com">//return a*n;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+    </div>
+
+
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle9()">
+        <h4>
+            Factrioal <span ng-hide ="basicPro9" class= "caretright" ></span><span ng-show="basicPro9" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="basicPro9" class="view" >
+<!--    <pre class="viewPre">
+public class Factroial {
+    public static void main(String[] args) {
+        java.util.Scanner scn = new java.util.Scanner(System.in);
+        System.out.println("Enter the fibbonick Nth serise No");
+        int n = scn.nextInt();
+        int i = 0, j = 1, sum;
+        System.out.print("Fibbonicak serise is >-- ");
+        if (n < 1)
+            System.out.print(" You Enter the wrong input ");
+        else if (n == 1) {
+            System.out.print(i + " ");
+        } else {
+            System.out.print(i + " ");
+            System.out.print(j + " ");
+            for (int a = 3; a <= n; a++) {
+                sum = i + j;
+                System.out.print(sum + " ");
+                i = j;
+                j = sum;
+            }
+        }
+    }
+}
+        </pre>-->
+<pre class="prettyprint viewPre prettyprinted" ><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">Factroial</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        java</span><span class="pun">.</span><span class="pln">util</span><span class="pun">.</span><span class="typ">Scanner</span><span class="pln"> scn </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">util</span><span class="pun">.</span><span class="typ">Scanner</span><span class="pun">(</span><span class="typ">System</span><span class="pun">.</span><span class="kwd">in</span><span class="pun">);</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Enter the fibbonick Nth serise No"</span><span class="pun">);</span><span class="pln">
+        </span><span class="kwd">int</span><span class="pln"> n </span><span class="pun">=</span><span class="pln"> scn</span><span class="pun">.</span><span class="pln">nextInt</span><span class="pun">();</span><span class="pln">
+        </span><span class="kwd">int</span><span class="pln"> i </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> j </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> sum</span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="kwd">print</span><span class="pun">(</span><span class="str">"Fibbonicak serise is &gt;-- "</span><span class="pun">);</span><span class="pln">
+        </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">n </span><span class="pun">&lt;</span><span class="pln"> </span><span class="lit">1</span><span class="pun">)</span><span class="pln">
+            </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="kwd">print</span><span class="pun">(</span><span class="str">" You Enter the wrong input "</span><span class="pun">);</span><span class="pln">
+        </span><span class="kwd">else</span><span class="pln"> </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">n </span><span class="pun">==</span><span class="pln"> </span><span class="lit">1</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="kwd">print</span><span class="pun">(</span><span class="pln">i </span><span class="pun">+</span><span class="pln"> </span><span class="str">" "</span><span class="pun">);</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">else</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="kwd">print</span><span class="pun">(</span><span class="pln">i </span><span class="pun">+</span><span class="pln"> </span><span class="str">" "</span><span class="pun">);</span><span class="pln">
+            </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="kwd">print</span><span class="pun">(</span><span class="pln">j </span><span class="pun">+</span><span class="pln"> </span><span class="str">" "</span><span class="pun">);</span><span class="pln">
+            </span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> a </span><span class="pun">=</span><span class="pln"> </span><span class="lit">3</span><span class="pun">;</span><span class="pln"> a </span><span class="pun">&lt;=</span><span class="pln"> n</span><span class="pun">;</span><span class="pln"> a</span><span class="pun">++)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                sum </span><span class="pun">=</span><span class="pln"> i </span><span class="pun">+</span><span class="pln"> j</span><span class="pun">;</span><span class="pln">
+                </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="kwd">print</span><span class="pun">(</span><span class="pln">sum </span><span class="pun">+</span><span class="pln"> </span><span class="str">" "</span><span class="pun">);</span><span class="pln">
+                i </span><span class="pun">=</span><span class="pln"> j</span><span class="pun">;</span><span class="pln">
+                j </span><span class="pun">=</span><span class="pln"> sum</span><span class="pun">;</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+    </div>
+
+
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle10()">
+        <h4>
+            Amstrong Number Checking <span ng-hide ="basicPro10" class= "caretright" ></span><span ng-show="basicPro10" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="basicPro10" class="view" >
+<!--    <pre class="viewPre">
+public class AmstrongNumber
+{
+    public static void main(String[] args)
+    {
+        java.util.Scanner scn= new java.util.Scanner (System.in);
+        System.out.println("Enter The Number ");
+        int n=scn.nextInt();
+        int k=n;
+        int c;
+        int a=0;
+        while(n>0)
+        {
+            c=n%10;
+            n=n/10;
+            a=a+(c*c*c);
+        }
+        if(a==k)
+        System.out.println(k+" =it is Amstromg number");
+        else
+        System.out.println("it is not Amstromg number");
+    }
+}
+         </pre>-->
+<pre class="prettyprint viewPre prettyprinted" ><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">AmstrongNumber</span><span class="pln">
+</span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln">
+    </span><span class="pun">{</span><span class="pln">
+        java</span><span class="pun">.</span><span class="pln">util</span><span class="pun">.</span><span class="typ">Scanner</span><span class="pln"> scn</span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">util</span><span class="pun">.</span><span class="typ">Scanner</span><span class="pln"> </span><span class="pun">(</span><span class="typ">System</span><span class="pun">.</span><span class="kwd">in</span><span class="pun">);</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Enter The Number "</span><span class="pun">);</span><span class="pln">
+        </span><span class="kwd">int</span><span class="pln"> n</span><span class="pun">=</span><span class="pln">scn</span><span class="pun">.</span><span class="pln">nextInt</span><span class="pun">();</span><span class="pln">
+        </span><span class="kwd">int</span><span class="pln"> k</span><span class="pun">=</span><span class="pln">n</span><span class="pun">;</span><span class="pln">
+        </span><span class="kwd">int</span><span class="pln"> c</span><span class="pun">;</span><span class="pln">
+        </span><span class="kwd">int</span><span class="pln"> a</span><span class="pun">=</span><span class="lit">0</span><span class="pun">;</span><span class="pln">
+        </span><span class="kwd">while</span><span class="pun">(</span><span class="pln">n</span><span class="pun">&gt;</span><span class="lit">0</span><span class="pun">)</span><span class="pln">
+        </span><span class="pun">{</span><span class="pln">
+            c</span><span class="pun">=</span><span class="pln">n</span><span class="pun">%</span><span class="lit">10</span><span class="pun">;</span><span class="pln">
+            n</span><span class="pun">=</span><span class="pln">n</span><span class="pun">/</span><span class="lit">10</span><span class="pun">;</span><span class="pln">
+            a</span><span class="pun">=</span><span class="pln">a</span><span class="pun">+(</span><span class="pln">c</span><span class="pun">*</span><span class="pln">c</span><span class="pun">*</span><span class="pln">c</span><span class="pun">);</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+        </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">a</span><span class="pun">==</span><span class="pln">k</span><span class="pun">)</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="pln">k</span><span class="pun">+</span><span class="str">" =it is Amstromg number"</span><span class="pun">);</span><span class="pln">
+        </span><span class="kwd">else</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"it is not Amstromg number"</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+    </div>
+
+
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle11()">
+        <h4>
+            Swap Two number <span ng-hide ="basicPro11" class= "caretright" ></span><span ng-show="basicPro11" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="basicPro11" class="view" >
+<!--    <pre class="viewPre">
+public class SwapingNumber {
+    public static void main(String [] args){
+        swap(5,6);
+    }
+    public static void swap(int a, int b){
+        int temp =a;
+        a=b;
+        b=temp;
+        System.out.println("a= "+a+", b="+b);
+    }
+}
+    ----------------------------------------------------------
+// Swaping programe with out third Variable
+public class SwapingWithOutThirdVariable {
+    public static void main(String [] args){
+        swapNumb(2,4);
+    }
+    public static void swapNumb(int a, int b){
+        a=a+b;
+        b=a-b;
+        a=a-b;
+        System.out.println("a= "+a+", b="+b);
+    }
+}
+        </pre>-->
+<pre class="prettyprint viewPre prettyprinted" ><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">SwapingNumber</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> </span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">){</span><span class="pln">
+        swap</span><span class="pun">(</span><span class="lit">5</span><span class="pun">,</span><span class="lit">6</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> swap</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> a</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> b</span><span class="pun">){</span><span class="pln">
+        </span><span class="kwd">int</span><span class="pln"> temp </span><span class="pun">=</span><span class="pln">a</span><span class="pun">;</span><span class="pln">
+        a</span><span class="pun">=</span><span class="pln">b</span><span class="pun">;</span><span class="pln">
+        b</span><span class="pun">=</span><span class="pln">temp</span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"a= "</span><span class="pun">+</span><span class="pln">a</span><span class="pun">+</span><span class="str">", b="</span><span class="pun">+</span><span class="pln">b</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">----------------------------------------------------------</span><span class="pln">
+</span><span class="com">// Swaping programe with out third Variable</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">SwapingWithOutThirdVariable</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> </span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">){</span><span class="pln">
+        swapNumb</span><span class="pun">(</span><span class="lit">2</span><span class="pun">,</span><span class="lit">4</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> swapNumb</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> a</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> b</span><span class="pun">){</span><span class="pln">
+        a</span><span class="pun">=</span><span class="pln">a</span><span class="pun">+</span><span class="pln">b</span><span class="pun">;</span><span class="pln">
+        b</span><span class="pun">=</span><span class="pln">a</span><span class="pun">-</span><span class="pln">b</span><span class="pun">;</span><span class="pln">
+        a</span><span class="pun">=</span><span class="pln">a</span><span class="pun">-</span><span class="pln">b</span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"a= "</span><span class="pun">+</span><span class="pln">a</span><span class="pun">+</span><span class="str">", b="</span><span class="pun">+</span><span class="pln">b</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+    </div>
+
+
+
+
+
+
+    <!--
+                <div class="styleShet" ng-click="toggle12()">
+                    <h4>
+                        {heading Name} <span ng-hide ="basicPro12" class= "caretright" ></span><span ng-show="basicPro12" class= "caretrightUp" ></span>
+                    </h4>
+                </div>
+                <pre ng-show="basicPro12" class="view">
+               {keep defination }
+                </pre>
+
+
+
+                <div class="styleShet" ng-click="toggle13()">
+                    <h4>
+                        {heading Name} <span ng-hide ="basicPro13" class= "caretright" ></span><span ng-show="basicPro13" class= "caretrightUp" ></span>
+                    </h4>
+                </div>
+                <pre ng-show="basicPro13" class="view">
+               {keep defination }
+                </pre>-->
+
+</div>

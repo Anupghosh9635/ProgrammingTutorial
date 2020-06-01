@@ -1,0 +1,332 @@
+<div  class="pagePaddingBottom">
+
+    <h2 class="mainCenterAlign"> Java Method Overriding And Methods Hiding  </h2>
+
+
+
+
+        <div class="styleShet" ng-click="toggle()">
+            <h4 >
+                Method Overriding
+                <span ng-hide ="overriding" class= "caretright" ></span><span ng-show="overriding" class= "caretrightUp" ></span>
+            </h4>
+        </div>
+        <div ng-show="overriding" class="view">
+            <strong>Method Overriding : </strong>
+            <br/>
+            Changing the implementation of inherit super class method in
+            sub class is known as method  overriding .
+            <br/>or<br/>
+            Providing the implementation of super class method signature in sub class is known as method  overriding .
+        </div>
+
+
+
+
+
+        <div class="styleShet" ng-click="toggle1()">
+            <h4 >
+                Rules of method overriding
+                <span ng-hide ="overriding1" class= "caretright" ></span><span ng-show="overriding1" class= "caretrightUp" ></span>
+            </h4>
+        </div>
+        <div ng-show="overriding1" class="view">
+              <strong>Rules of method overriding is : </strong>
+              <br/>
+            <ul>
+                <li>Inheritance is must be required (It is only be written in sub class ).</li>
+                <li>Method name ,argument and return type must be same as super class method .</li>
+                <li>Access modifier can be change ,but weaker access privilege can not assigned with respect to
+                    super class method .
+                    <br/> <b>Access modifier lower to higher : </b>
+                    <br/> private -> default -> protected -> public .
+                </li>
+                <li>private method of super class can not overriding </li>
+                <li>final method of super class can not overriding </li>
+                <li>A sub class in a difference package can only overriding the non-final and declared public and protected method .</li>
+            </ul>
+        </div>
+
+
+
+
+
+	<div class="styleShet" ng-click="toggle2()">
+            <h4 >
+                Example of Method Overriding
+                <span ng-hide ="overriding2" class= "caretright" ></span><span ng-show="overriding2" class= "caretrightUp" ></span>
+            </h4>
+	</div>
+	<div ng-show="overriding2" class="view">
+            <strong>Example :</strong>
+            <br/><br/>
+<!--            <pre class="viewPre">
+class A{
+    void m1(){
+        System.out.println("m1() method in A class");
+    }
+    void m2(){
+        System.out.println("m2() method in A class");
+    }
+}
+class B extends A {
+    void m1(){
+        System.out.println("m1() method in B class");
+    }
+}
+public class OverridingTest {
+    public static void main(String[] args)
+    {
+        B b = new B();
+        b.m1();     // m1() method in B class // class A m1() method is Override by class B m1() method.
+        b.m2();     //  m2() method in A class
+    }
+}
+            </pre>-->
+<pre class="prettyprint viewPre prettyprinted" style=""><span class="kwd">class</span><span class="pln"> A</span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">void</span><span class="pln"> m1</span><span class="pun">(){</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"m1() method in A class"</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+    </span><span class="kwd">void</span><span class="pln"> m2</span><span class="pun">(){</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"m2() method in A class"</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="kwd">class</span><span class="pln"> B </span><span class="kwd">extends</span><span class="pln"> A </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">void</span><span class="pln"> m1</span><span class="pun">(){</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"m1() method in B class"</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">OverridingTest</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln">
+    </span><span class="pun">{</span><span class="pln">
+        B b </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> B</span><span class="pun">();</span><span class="pln">
+        b</span><span class="pun">.</span><span class="pln">m1</span><span class="pun">();</span><span class="pln">     </span><span class="com">// m1() method in B class // class A m1() method is Override by class B m1() method.</span><span class="pln">
+        b</span><span class="pun">.</span><span class="pln">m2</span><span class="pun">();</span><span class="pln">     </span><span class="com">//  m2() method in A class</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+
+	</div>
+
+
+
+
+
+
+        <div class="styleShet" ng-click="toggle5()">
+            <h4 >Example of Method Overriding with super class reference
+            <span ng-hide ="overriding5" class= "caretright" ></span><span ng-show="overriding5" class= "caretrightUp" ></span></h4>
+	</div>
+	<div ng-show="overriding5" class="view">
+            <strong>Example :</strong>
+            <br/><br/>
+<!--            <pre class="viewPre">
+class Person{
+    public void isEducted (){
+        System.out.println("Person can be educated or not");
+    }
+
+    public void isMove (){
+        System.out.println("Person can move");
+    }
+}
+class Student extends Person{
+
+    @Override
+    public void isEducted (){
+        System.out.println("Students are educated");
+    }
+}
+public class OverrideTest1 {
+    public static void main(String[] args) {
+        Person person = new Student();
+        person.isEducted();  // isEducted() method is execute in Student class
+        person.isMove();    // isMove() method is execute in Person class
+
+    }
+}
+            </pre>-->
+<pre class="prettyprint viewPre prettyprinted" style=""><span class="kwd">class</span><span class="pln"> </span><span class="typ">Person</span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> isEducted </span><span class="pun">(){</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Person can be educated or not"</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> isMove </span><span class="pun">(){</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Person can move"</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="kwd">class</span><span class="pln"> </span><span class="typ">Student</span><span class="pln"> </span><span class="kwd">extends</span><span class="pln"> </span><span class="typ">Person</span><span class="pun">{</span><span class="pln">
+
+    </span><span class="lit">@Override</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> isEducted </span><span class="pun">(){</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Students are educated"</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">OverrideTest1</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">Person</span><span class="pln"> person </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Student</span><span class="pun">();</span><span class="pln">
+        person</span><span class="pun">.</span><span class="pln">isEducted</span><span class="pun">();</span><span class="pln">  </span><span class="com">// isEducted() method is execute in Student class</span><span class="pln">
+        person</span><span class="pun">.</span><span class="pln">isMove</span><span class="pun">();</span><span class="pln">    </span><span class="com">// isMove() method is execute in Person class</span><span class="pln">
+
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+	</div>
+
+
+
+
+
+	<div class="styleShet" ng-click="toggle3()">
+            <h4 >Can we Override java main() method ?
+            <span ng-hide ="overriding3" class= "caretright" ></span><span ng-show="overriding3" class= "caretrightUp" ></span></h4>
+	</div>
+	<div ng-show="overriding3" class="view">
+	   No ,we can not overload java main() method.
+
+        </div>
+
+
+
+
+
+	<div class="styleShet" ng-click="toggle4()">
+            <h4 > Can we override static method ?
+            <span ng-hide ="overriding4" class= "caretright" ></span><span ng-show="overriding4" class= "caretrightUp" ></span></h4>
+	</div>
+	<div ng-show="overriding4" class="view">
+	   No, static method cannot be overridden.
+            Because static method is bound with class , If we can try to do then then it is called Hiding .
+	</div>
+
+
+
+
+
+	<div class="styleShet" ng-click="toggle6()">
+            <h4> Can we override private methods ?
+            <span ng-hide ="overriding6" class= "caretright" ></span><span ng-show="overriding6" class= "caretrightUp" ></span></h4>
+	</div>
+	<div ng-show="overriding6" class="view">
+	   No, private method cannot be overridden. They are not at all inherited to sub class.
+	</div>
+
+
+
+
+
+
+
+	<div class="styleShet" ng-click="toggle7()">
+            <h4 > Methods Hiding
+            <span ng-hide ="overriding7" class= "caretright" ></span><span ng-show="overriding7" class= "caretrightUp" ></span></h4>
+	</div>
+	<div ng-show="overriding7" class="view">
+            <strong> Methods Hiding : </strong> Creating static method in sub class with same signature as super class is known as method Hiding.
+
+        </div>
+
+
+
+
+
+        <div class="styleShet" ng-click="toggle8()">
+            <h4 >Super class & sub class in Methods Overriding and Hiding
+            <span ng-hide ="overriding8" class= "caretright" ></span><span ng-show="overriding8" class= "caretrightUp" ></span></h4>
+        </div>
+        <div ng-show="overriding8" class="view">
+            <table class="table table-bordered" >
+                <tr class="trHeading">
+                    <th width="40%">Super Class</th>
+                    <th width="60%">Sub Class</th>
+                </tr>
+                <tr>
+                    <td>Non-static method </td>
+                    <td>Non-static method same signature is known as Methods Overriding</td>
+                </tr>
+                <tr>
+                    <td>Static method</td>
+                    <td>Static method same signature is known as Methods Hiding</td>
+                </tr>
+                <tr>
+                    <td>Static method</td>
+                    <td>Non-static method same signature , Compile time error</td>
+                </tr>
+                <tr>
+                    <td>Non-static method</td>
+                    <td>Static method same signature , Compile time error</td>
+                </tr>
+            </table>
+        </div>
+
+
+
+
+
+
+        <div class="styleShet" ng-click="toggle9()">
+            <h4 >Difference between Overloading and Overriding ?
+            <span ng-hide ="overriding9" class= "caretright" ></span><span ng-show="overriding9" class= "caretrightUp" ></span></h4>
+        </div>
+        <div ng-show="overriding9" class="view">
+            <table class="table table-bordered">
+                <tr class="trHeading">
+                    <th width="45%">Method Overloading </th>
+                    <th width="55%">Method Overriding</th>
+                </tr>
+                <tr>
+                    <td> Overloaded method have same name but different argument </td>
+                    <td> Overriding method have same name same argument with respect to super class method.</td>
+                </tr>
+                <tr>
+                    <td> Overloaded method have any return type .</td>
+                    <td> Overriding method have same return type .</td>
+                </tr>
+                <tr>
+                    <td>Method overloading is used <em>to increase the readability</em> of the program.</td>
+                    <td>Method overriding is used <em>to provide the specific implementation</em> of the method that is already provided by its super class.</td>
+                </tr>
+                <tr>
+                    <td>Inheritance is not required for method Overloading .</td>
+                    <td>Inheritance is not mandatory for method Overriding (IS-A relationship) .</td>
+                </tr>
+                <tr>
+                    <td> Overloading achieve in either same class or different class .</td>
+                    <td> Overriding is situated in sub class .</td>
+                </tr>
+                <tr>
+                    <td>Private static and final method can be Overloaded </td>
+                    <td>Private static and final method can not  be Overriding</td>
+                </tr>
+                <tr>
+                    <td>Method overloading is the example of <em>compile time polymorphism</em>.</td>
+                    <td>Method overriding is the example of <em>run time polymorphism</em>.</td>
+                </tr>
+                <tr>
+                    <td>Constructor can be Overloaded </td>
+                    <td>Constructor can not  be Overriding</td>
+                </tr>
+            </table>
+        </div>
+
+
+
+
+
+<!--        <div class="styleShet" ng-click="toggle10()">
+            <h4 >{heading Name}
+            <span ng-hide ="overriding10" class= "caretright" ></span><span ng-show="overriding10" class= "caretrightUp" ></span></h4>
+        </div>
+        <div ng-show="overriding10" class="view">
+           {keep defination }
+        </div>
+
+        <div class="styleShet" ng-click="toggle11()">
+            <h4 >{heading Name}
+            <span ng-hide ="overriding11" class= "caretright" ></span><span ng-show="overriding11" class= "caretrightUp" ></span></h4>
+        </div>
+        <div ng-show="overriding11" class="view">
+           {keep defination }
+        </div>-->
+
+</div>

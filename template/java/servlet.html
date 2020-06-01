@@ -1,0 +1,407 @@
+<div class="pagePaddingBottom">
+    <h2 class="mainCenterAlign"> Java Servlet </h2>
+
+<!-- <br/><br/><br/>
+ <h2 style="text-align: center;" > Coming soon .....</h2>
+ <br/><br/><br/>-->
+
+
+       <div class="styleShet" ng-click="toggle()">
+            <h4>
+                Server side programming
+                <span ng-hide ="servlet" class= "caretright" ></span><span ng-show="servlet" class= "caretrightUp" ></span>
+            </h4>
+        </div>
+        <div ng-show="servlet" class="view">
+	    <strong>Web server : </strong> It is a software which stores and manage the resources .
+	    <br/><br/>
+	    <strong>Deployment : </strong> Making the resources available to the server is known as deployment .
+	    <br/>
+	    The resources of any kind are always deploy on to the server .
+	    <br/>
+	    There are two different type of deployment which are
+	    <br/>
+	    <strong>Manual Deployment : </strong>In case manually deployment all the resources are made available
+	    to the server by manually .
+	    <br/>
+	    <strong>Automated Deployment : </strong>In case automated deployment all resources are deploy no
+	    to the server with the help of automated tool such as ANT, MAVEN etc.
+	    <br/><br/>
+	    Whenever we have to deploy a web application onto server we deploy it in the form of 'war' file ,
+	    that is the compress version of web application .
+	    <br/><br/>
+	    <strong>Note : </strong> In case of Apache Tomcat we deploy all the web application on to a folder
+	    of called webapps , present within the Apache Tomcat server .
+	    <br/>
+	    we can deploy either a web application or created war file and deploy onto webapps folder of
+	    application Apache Tomcat server .
+	    <br/><br/>
+
+	    <strong>Note : </strong>
+	    <br/>
+	    <ul>
+		<li>Any server is basically used to provide a run time environment . </li>
+		<li>A web server can run only web application . </li>
+		<li>An application server can run both web application and enterprise application . </li>
+	    </ul>
+
+
+	</div>
+
+
+
+
+
+
+        <div class="styleShet" ng-click="toggle1()">
+            <h4>
+                Apache Tomcat server
+                <span ng-hide ="servlet1" class= "caretright" ></span><span ng-show="servlet1" class= "caretrightUp" ></span>
+            </h4>
+        </div>
+        <div ng-show="servlet1" class="view">
+                     <strong>Pre-required for Apache Tomcat server : </strong> There are three different pre-required
+	    for Apache Tomcat server
+	    <br>
+	    <ul>
+		<li>JAVA_HOME</li>
+		<li>CATALINA_HOME</li>
+		<li>PATH</li>
+		<li>JRE_HOME (optional)</li>
+	    </ul>
+	    <strong>JAVA_HOME : </strong> This is the path contain all the related folder with respect to JDK
+	    which is a part of java folder present in Program File of C drive .
+	    <br/><br/>
+	    <strong>CATALINA_HOME : </strong> This is the path contain all the related folder with respect
+	    to Apache Tomcat server present in respective drive or directory .
+	    <br/><br/>
+	    <strong>PATH : </strong>This is the part of Environment variable which contains the enter path of
+	    Apache Tomcat server ,including with bin folder .
+	    <br/><br/>
+	    <strong> JRE_HOME: </strong>This is the path contain all the related folder with respect to JRE
+	    which is a part of java folder present in Program File of C drive .
+	    <br/>
+
+	    <br/>
+	    <strong>The different folder of Apache Tomcat server : </strong>
+	    <br/>
+	    <spn style="margin-left : 20px">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 ) bin , &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2 ) conf ,
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3 ) lib ,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4 ) logs ,
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5 ) webapps ,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6 ) work
+	    </spn>
+	    <br/> <br/>
+	    <strong>bin : </strong> bin folder contains a startup batch file and a shutdown batch file which is
+	    use to start and stop the server .
+	    <br/> <br/>
+	    <strong>conf : </strong> conf folder contains a set of configuration files with Apache Tomcat server .
+	    <br/> <br/>
+	    <strong>lib : </strong> lib folder contains a set of library in the from of jar file .
+	    <br/> <br/>
+	    <strong>logs : </strong>logs folder contains log message which display on server console , since
+	    server console has limited memory .
+	    <br/> <br/>
+	    <strong>webapps : </strong>webapps folder is use to peploy web application onto the Apache Tomcat server .
+	    <br/> <br/>
+	    <strong>work : </strong>work folder contains the data with respect to translated server .
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+ 	<div class="styleShet" ng-click="toggle2()">
+            <h4>
+                JEE Container
+                <span ng-hide ="servlet2" class= "caretright" ></span><span ng-show="servlet2" class= "caretrightUp" ></span>
+            </h4>
+	</div>
+	<div ng-show="servlet2" class="view">
+	    <strong>JEE Container : </strong>JEE Container is an engine which is use to manage the JEE components
+	    such as servlet container , JSP container , EJB container .
+	    <br/><br/>
+<!--	    <img class="img-div90" alt="Smilly face" src="img/jeeContainer.png" />-->
+
+	    <a href="img/jeeContainer.png">
+		<img class="img-div90" src="img/jeeContainer.png" >
+	    </a>
+	    <br/>
+	</div>
+
+
+
+
+
+
+
+
+	<div class="styleShet" ng-click="toggle3()">
+            <h4>Servlet
+            <span ng-hide ="servlet3" class= "caretright" ></span><span ng-show="servlet3" class= "caretrightUp" ></span></h4>
+	</div>
+	<div ng-show="servlet3" class="view">
+	    <strong>Servlet : </strong> Servlet is a server side program which can perform all the three default
+	    type of logic , process the http client request and give http response .
+	    <br/><br/>
+	    <strong>Note : </strong>
+	    <br/>
+	    All the application in a server is manage by JEE Container .
+	    <br/>
+	    All the servlet with in an application is manage by Servlet Container .
+	    <br/><br/>
+	    <strong>Types of Servlet : </strong>
+	    <br/>
+	    There are two different type of servlet which are as flow
+	    <br/><br/>
+	    <ul>
+		<li>Generic servlets</li>
+		<li>HTTP servlets</li>
+	    </ul>
+
+	</div>
+
+
+
+
+
+
+
+	<div class="styleShet" ng-click="toggle4()">
+            <h4>Generic servlets
+            <span ng-hide ="servlet4" class= "caretright" ></span><span ng-show="servlet4" class= "caretrightUp" ></span></h4>
+	</div>
+	<div ng-show="servlet4" class="view">
+	    <strong>Generic servlet : </strong>
+	    <br/><br/>
+	    Generic servlet is not specific to any protocol .
+	    <br/>
+	    Generic servlet does not support session  .
+	    <br/>
+	    GenericServlet is an abstract class which contain abstract method called service() need to
+	    overriding mandatory , science it is abstract method .
+	    <br/>
+	    Whenever we try to override the service() method it throw an exception ServletException and IOException .
+	    <br/>
+	    GenericServlet contain two different concrete method where overriding this method are optional as flow
+	    <br/>
+	    <ul>
+		<li> <span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> init</span><span class="pun">(</span><span class="typ">ServletConfig</span><span class="pln"> config</span><span class="pun">)</span><span class="pln"></span>
+		<li> <span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> destroy</span><span class="pun">()</span> </li>
+	    </ul>
+
+	    GenericServlet as present in the package call <b>javax.servlet;</b>
+
+	    <br/><br/>
+	    <strong>Syntax : </strong>
+	    <br/><br/>
+
+<!--	    <pre class="viewPre">
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+/**
+ *
+ * @author anupg
+ */
+public class MyGenericServlet extends javax.servlet.GenericServlet{
+
+    @Override
+    public void service(ServletRequest req, ServletResponse resp) throws ServletException, IOException {
+
+        //Write all the implementation logic
+
+    }
+}
+</pre>-->
+
+	    <pre class="viewPre">
+<span class="kwd">import</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">io</span><span class="pun">.</span><span class="typ">IOException</span><span class="pun">;</span><span class="pln">
+</span><span class="kwd">import</span><span class="pln"> javax</span><span class="pun">.</span><span class="pln">servlet</span><span class="pun">.</span><span class="typ">ServletException</span><span class="pun">;</span><span class="pln">
+</span><span class="kwd">import</span><span class="pln"> javax</span><span class="pun">.</span><span class="pln">servlet</span><span class="pun">.</span><span class="typ">ServletRequest</span><span class="pun">;</span><span class="pln">
+</span><span class="kwd">import</span><span class="pln"> javax</span><span class="pun">.</span><span class="pln">servlet</span><span class="pun">.</span><span class="typ">ServletResponse</span><span class="pun">;</span><span class="pln">
+
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">MyGenericServlet</span><span class="pln"> </span><span class="kwd">extends</span><span class="pln"> javax</span><span class="pun">.</span><span class="pln">servlet</span><span class="pun">.</span><span class="typ">GenericServlet</span><span class="pun">{</span><span class="pln">
+
+    </span><span class="lit">@Override</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> service</span><span class="pun">(</span><span class="typ">ServletRequest</span><span class="pln"> req</span><span class="pun">,</span><span class="pln"> </span><span class="typ">ServletResponse</span><span class="pln"> resp</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">throws</span><span class="pln"> </span><span class="typ">ServletException</span><span class="pun">,</span><span class="pln"> </span><span class="typ">IOException</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+        </span><span class="com">//Write all the implementation logic</span><span class="pln">
+
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+	    </pre>
+
+	</div>
+
+
+
+	<div class="styleShet" ng-click="toggle5()">
+            <h4>Http Servlet
+            <span ng-hide ="servlet5" class= "caretright" ></span><span ng-show="servlet5" class= "caretrightUp" ></span></h4>
+	</div>
+	<div ng-show="servlet5" class="view">
+	    <strong>Http Servlet : </strong>
+	    <br/><br/>
+	    Http Servlet is specific to particular type of protocol http protocol only .
+	    <br/>
+	    Http Servlet dose supported session .
+	    <br/>
+	    HttpServlet is abstract class which is present in javax.servlet.http package .
+	    <br/>
+	    HttpServlet dose not contain any abstract method .
+	    <br/>
+	    HttpServlet give appropriate doXxx() method for every type of http request .
+	    <br/>
+	    Science HttpServlet contain only concrete method where need to override suitable doXxx() method such as
+	    <br/>
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1 ) doGet ,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2 ) doPost ,
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3 )  doPut ,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  4 ) doDelete ,
+	    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5 )  doOptions ,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6 ) doHead
+	    <br/><br/>
+	    <strong>Example : </strong>
+	    <br/><br/>
+<span class="kwd">protected</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> doGet</span><span class="pun">(</span><span class="typ">HttpServletRequest</span><span class="pln"> req</span><span class="pun">,</span><span class="pln"> </span><span class="typ">HttpServletResponse</span><span class="pln"> resp</span><span class="pun">)</span>
+
+	    <br/><br/>
+	    <strong>Syntax : </strong>
+	    <br/><br>
+
+<!--	    <pre class="viewPre">
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+/**
+ *
+ * @author anupg
+ */
+public class MyHttpServlet extends HttpServlet{
+
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+        //Write all the implementation logic
+
+    }
+}
+</pre>-->
+
+
+	    <pre class="viewPre">
+<span class="kwd">import</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">io</span><span class="pun">.</span><span class="typ">IOException</span><span class="pun">;</span><span class="pln">
+</span><span class="kwd">import</span><span class="pln"> javax</span><span class="pun">.</span><span class="pln">servlet</span><span class="pun">.</span><span class="typ">ServletException</span><span class="pun">;</span><span class="pln">
+</span><span class="kwd">import</span><span class="pln"> javax</span><span class="pun">.</span><span class="pln">servlet</span><span class="pun">.</span><span class="pln">http</span><span class="pun">.</span><span class="typ">HttpServlet</span><span class="pun">;</span><span class="pln">
+</span><span class="kwd">import</span><span class="pln"> javax</span><span class="pun">.</span><span class="pln">servlet</span><span class="pun">.</span><span class="pln">http</span><span class="pun">.</span><span class="typ">HttpServletRequest</span><span class="pun">;</span><span class="pln">
+</span><span class="kwd">import</span><span class="pln"> javax</span><span class="pun">.</span><span class="pln">servlet</span><span class="pun">.</span><span class="pln">http</span><span class="pun">.</span><span class="typ">HttpServletResponse</span><span class="pun">;</span><span class="pln">
+
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">MyHttpServlet</span><span class="pln"> </span><span class="kwd">extends</span><span class="pln"> </span><span class="typ">HttpServlet</span><span class="pun">{</span><span class="pln">
+
+    </span><span class="lit">@Override</span><span class="pln">
+    </span><span class="kwd">protected</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> doGet</span><span class="pun">(</span><span class="typ">HttpServletRequest</span><span class="pln"> req</span><span class="pun">,</span><span class="pln"> </span><span class="typ">HttpServletResponse</span><span class="pln"> resp</span><span class="pun">)</span><span class="pln"> </span><span class="kwd">throws</span><span class="pln"> </span><span class="typ">ServletException</span><span class="pun">,</span><span class="pln"> </span><span class="typ">IOException</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+        </span><span class="com">//Write all the implementation logic</span><span class="pln">
+
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+	    </pre>
+
+	    <br/><br/>
+	    <a href="img/servlet.png">
+		<img class="img-div80" src="img/servlet.png" >
+	    </a>
+
+	    <br/><br/>
+	    <strong>Servlet method : </strong>
+	    <br/><br>
+	    <ul>
+<!--		<li>public void init(ServletConfig config)</li>
+		<li>public void service(ServletRequest req, ServletResponse res)</li>
+		<li>public ServletConfig getServletConfig()</li>
+		<li>public String getServletInfo()</li>
+		<li>public void destroy()</li>-->
+		<li><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> init</span><span class="pun">(</span><span class="typ">ServletConfig</span><span class="pln"> config</span><span class="pun">)</span></li>
+		<li><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> service</span><span class="pun">(</span><span class="typ">ServletRequest</span><span class="pln"> req</span><span class="pun">,</span><span class="pln"> </span><span class="typ">ServletResponse</span><span class="pln"> res</span><span class="pun">)</span></li>
+		<li><span class="kwd">public</span><span class="pln"> </span><span class="typ">ServletConfig</span><span class="pln"> getServletConfig</span><span class="pun">()</span></li>
+		<li><span class="kwd">public</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> getServletInfo</span><span class="pun">()</span></li>
+		<li><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> destroy</span><span class="pun">()</span></li>
+	    </ul>
+	    <br/><br/>
+	    <strong>Method of ServletConfig : </strong>
+	    <br/><br>
+	    <ul>
+<!--		<li>public Enumeration<String> getInitParameterNames()</li>
+		<li>public String getInitParameter(String name)</li>
+		<li>ServletContext getServletContext()</li>
+		<li>public String getServletName()</li>-->
+		<li><span class="kwd">public</span><span class="pln"> </span><span class="typ">Enumeration</span><string><span class="pln"> getInitParameterNames</span><span class="pun">()</span></string></li><span class="pln"></span>
+		<li><span class="kwd">public</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> getInitParameter</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> name</span><span class="pun">)</span></li>
+		<li><span class="typ">ServletContext</span><span class="pln"> getServletContext</span><span class="pun">()</span></li>
+		<li><span class="kwd">public</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> getServletName</span><span class="pun">()</span></li>
+	    </ul>
+
+<!--	    <iframe src="http://docs.google.com/gview?url=http://localhost:8084/ProgrammingTutorial/doc/myProgramCopy.ppt&embedded=true" style="width:100%; height:500px;" frameborder="0"></iframe>-->
+
+	</div>
+
+
+<!--	<div class="styleShet" ng-click="toggle6()">
+            <h4>{heading Name}
+            <span ng-hide ="servlet6" class= "caretright" ></span><span ng-show="servlet6" class= "caretrightUp" ></span></h4>
+	</div>
+	<div ng-show="servlet6" class="view">
+	   {keep defination }
+	</div>
+
+
+	<div class="styleShet" ng-click="toggle7()">
+            <h4>{heading Name}
+            <span ng-hide ="servlet7" class= "caretright" ></span><span ng-show="servlet7" class= "caretrightUp" ></span></h4>
+	</div>
+	<div ng-show="servlet7" class="view">
+	   {keep defination }
+	</div>
+
+
+        <div class="styleShet" ng-click="toggle8()">
+            <h4>{heading Name}
+            <span ng-hide ="servlet8" class= "caretright" ></span><span ng-show="servlet8" class= "caretrightUp" ></span></h4>
+        </div>
+        <div ng-show="servlet8" class="view">
+           {keep defination }
+        </div>
+
+        <div class="styleShet" ng-click="toggle9()">
+            <h4>{heading Name}
+            <span ng-hide ="servlet9" class= "caretright" ></span><span ng-show="servlet9" class= "caretrightUp" ></span></h4>
+        </div>
+        <div ng-show="servlet9" class="view">
+           {keep defination }
+        </div>
+
+
+        <div class="styleShet" ng-click="toggle10()">
+            <h4>{heading Name}
+            <span ng-hide ="servlet10" class= "caretright" ></span><span ng-show="servlet10" class= "caretrightUp" ></span></h4>
+        </div>
+        <div ng-show="servlet10" class="view">
+           {keep defination }
+        </div>
+
+        <div class="styleShet" ng-click="toggle11()">
+            <h4>{heading Name}
+            <span ng-hide ="servlet11" class= "caretright" ></span><span ng-show="servlet11" class= "caretrightUp" ></span></h4>
+        </div>
+        <div ng-show="servlet11" class="view">
+           {keep defination }
+        </div>-->
+</div>
+

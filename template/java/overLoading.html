@@ -1,0 +1,338 @@
+<div  class="pagePaddingBottom">
+
+    <h2 class="mainCenterAlign"> Method OverLoading and  Method Hiding </h2>
+
+
+        <div class="styleShet" ng-click="toggle()">
+            <h4 >
+                Method OverLoading
+                <span ng-hide ="overloading" class= "caretright" ></span><span ng-show="overloading" class= "caretrightUp" ></span>
+            </h4>
+        </div>
+        <div ng-show="overloading" class="view">
+            <strong>Method OverLoading : </strong> Creating multiple method with same name and different argument is known as Method OverLoading.
+            <br/><br/>
+            <ul>
+                <li>Argument are should be different only when there is different either with <b>number of Argument </b>or <b>Argument type</b> .</li>
+                <li>When overload method is called java involve method base on arrguments. </li>
+                <li>Method overloading increases the readability of the program.</li>
+                <li>You can not define more than one method with the same name, Order and the type of the arguments. It would be compiler error.</li>
+            </ul>
+        </div>
+
+
+
+
+
+
+        <div class="styleShet" ng-click="toggle1()">
+            <h4 >
+                Different ways of doing overloading methods
+                <span ng-hide ="overloading1" class= "caretright" ></span><span ng-show="overloading1" class= "caretrightUp" ></span>
+            </h4>
+        </div>
+        <div ng-show="overloading1" class="view">
+            <strong>There are three ways of doing overloading methods  : </strong>
+
+            <br/><br/>
+            <ul>
+                <li>The data types of the parameters of methods.</li>
+                <li>The number of parameters in two methods.</li>
+                <li>The Order of the parameters of methods.</li>
+            </ul>
+          <br/><br/>
+          <strong>The number of parameters in two methods :</strong>
+<!--            <pre class="viewPre" >
+class Box{
+    public void area(int a){
+        System.out.println( "Area of square is - "+a * a);
+    }
+    public void area(int a, int b){
+        System.out.println( "Area of rectangle is - "+ a * b);
+    }
+}
+
+public class AreaTest{
+     public static void main(String[] args) {
+         Box box = new Box();
+         box.area(10);
+         box.area(10,15);
+     }
+ }
+            </pre>-->
+
+<pre class="prettyprint viewPre prettyprinted" style=""><span class="kwd">class</span><span class="pln"> </span><span class="typ">Box</span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> area</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> a</span><span class="pun">){</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="pln"> </span><span class="str">"Area of square is - "</span><span class="pun">+</span><span class="pln">a </span><span class="pun">*</span><span class="pln"> a</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> area</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> a</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> b</span><span class="pun">){</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="pln"> </span><span class="str">"Area of rectangle is - "</span><span class="pun">+</span><span class="pln"> a </span><span class="pun">*</span><span class="pln"> b</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">AreaTest</span><span class="pun">{</span><span class="pln">
+     </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+         </span><span class="typ">Box</span><span class="pln"> box </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Box</span><span class="pun">();</span><span class="pln">
+         box</span><span class="pun">.</span><span class="pln">area</span><span class="pun">(</span><span class="lit">10</span><span class="pun">);</span><span class="pln">
+         box</span><span class="pun">.</span><span class="pln">area</span><span class="pun">(</span><span class="lit">10</span><span class="pun">,</span><span class="lit">15</span><span class="pun">);</span><span class="pln">
+     </span><span class="pun">}</span><span class="pln">
+ </span><span class="pun">}</span>
+</pre>
+            <br/><br/>
+            <strong>The data types of the parameters of methods : </strong>
+<!--            <pre class="viewPre" >
+class Addition{
+    public void add(int a, int b){
+        System.out.println("integer addition - "+ (a+b) );
+    }
+    public void add(double a, double b){
+        System.out.println("double addition - "+ (a+b) );
+    }
+}
+
+public class AdditionTest{
+     public static void main(String[] args) {
+         Addition addition = new Addition();
+         addition.add(10,15);
+         addition.add(10.00,15.00);
+     }
+ }
+            </pre>-->
+            <pre class="prettyprint viewPre prettyprinted" style="">
+<span class="kwd">class</span><span class="pln"> </span><span class="typ">Addition</span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> </span><span class="kwd">add</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> a</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> b</span><span class="pun">){</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"integer addition - "</span><span class="pun">+</span><span class="pln"> </span><span class="pun">(</span><span class="pln">a</span><span class="pun">+</span><span class="pln">b</span><span class="pun">)</span><span class="pln"> </span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> </span><span class="kwd">add</span><span class="pun">(</span><span class="kwd">double</span><span class="pln"> a</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">double</span><span class="pln"> b</span><span class="pun">){</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"double addition - "</span><span class="pun">+</span><span class="pln"> </span><span class="pun">(</span><span class="pln">a</span><span class="pun">+</span><span class="pln">b</span><span class="pun">)</span><span class="pln"> </span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">AdditionTest</span><span class="pun">{</span><span class="pln">
+     </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+         </span><span class="typ">Addition</span><span class="pln"> addition </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Addition</span><span class="pun">();</span><span class="pln">
+         addition</span><span class="pun">.</span><span class="kwd">add</span><span class="pun">(</span><span class="lit">10</span><span class="pun">,</span><span class="lit">15</span><span class="pun">);</span><span class="pln">
+         addition</span><span class="pun">.</span><span class="kwd">add</span><span class="pun">(</span><span class="lit">10.00</span><span class="pun">,</span><span class="lit">15.00</span><span class="pun">);</span><span class="pln">
+     </span><span class="pun">}</span><span class="pln">
+ </span><span class="pun">}</span>
+	    </pre>
+
+            <br/><br/>
+            <strong>The Order of the parameters of methods :</strong>
+<!--            <pre class="viewPre" >
+class Student {
+    public void display(String name, int id){
+         System.out.println( "The student name - "+ name +"  Id - "+id);
+    }
+    public void display(int id, String name){
+         System.out.println( "The student name - "+ name +"  Id - "+id);
+    }
+}
+
+public class StudentTest{
+     public static void main(String[] args) {
+         Student student = new Student();
+         student.display("Akash",10);
+         student.display(10,"kamal");
+     }
+ }
+            </pre>-->
+<pre class="prettyprint viewPre prettyprinted" style=""><span class="kwd">class</span><span class="pln"> </span><span class="typ">Student</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> display</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> name</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> id</span><span class="pun">){</span><span class="pln">
+         </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="pln"> </span><span class="str">"The student name - "</span><span class="pun">+</span><span class="pln"> name </span><span class="pun">+</span><span class="str">"  Id - "</span><span class="pun">+</span><span class="pln">id</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> display</span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> id</span><span class="pun">,</span><span class="pln"> </span><span class="typ">String</span><span class="pln"> name</span><span class="pun">){</span><span class="pln">
+         </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="pln"> </span><span class="str">"The student name - "</span><span class="pun">+</span><span class="pln"> name </span><span class="pun">+</span><span class="str">"  Id - "</span><span class="pun">+</span><span class="pln">id</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">StudentTest</span><span class="pun">{</span><span class="pln">
+     </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+         </span><span class="typ">Student</span><span class="pln"> student </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Student</span><span class="pun">();</span><span class="pln">
+         student</span><span class="pun">.</span><span class="pln">display</span><span class="pun">(</span><span class="str">"Akash"</span><span class="pun">,</span><span class="lit">10</span><span class="pun">);</span><span class="pln">
+         student</span><span class="pun">.</span><span class="pln">display</span><span class="pun">(</span><span class="lit">10</span><span class="pun">,</span><span class="str">"kamal"</span><span class="pun">);</span><span class="pln">
+     </span><span class="pun">}</span><span class="pln">
+ </span><span class="pun">}</span>
+</pre>
+        </div>
+
+
+
+
+
+
+	<div class="styleShet" ng-click="toggle2()">
+            <h4 >
+                Can we overload java main() method?
+                <span ng-hide ="overloading2" class= "caretright" ></span><span ng-show="overloading2" class= "caretrightUp" ></span>
+            </h4>
+	</div>
+	<div ng-show="overloading2" class="view">
+	   yes ,we can overload java main() method. But JVM calls main() method which receives string array as arguments only.
+           <br/><br/>
+           <strong>Example : </strong>
+           <br/>
+<!--           <pre class="viewPre">
+public class TestMainMethodOverloading{
+
+    public static void main(String[] args){
+        System.out.println("main with String[]");
+    }
+    public static void main(String args){
+        System.out.println("main with String");
+    }
+    public static void main(){
+        System.out.println("main without args");
+    }
+}
+           </pre>-->
+<pre class="prettyprint viewPre prettyprinted" style="">
+<span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">TestMainMethodOverloading</span><span class="pun">{</span><span class="pln">
+
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">){</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"main with String[]"</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> args</span><span class="pun">){</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"main with String"</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(){</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"main without args"</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+
+        </div>
+
+
+
+
+
+	<div class="styleShet" ng-click="toggle3()">
+            <h4 > Can we overload changing the return type ?
+            <span ng-hide ="overloading3" class= "caretright" ></span><span ng-show="overloading3" class= "caretrightUp" ></span></h4>
+	</div>
+	<div ng-show="overloading3" class="view">
+	   No, method overloading is not possible by changing the return type of the method only because of ambiguity .
+           If try to write then you will get Compile tome error .
+	</div>
+
+
+
+
+
+	<div class="styleShet" ng-click="toggle4()">
+            <h4 >Can we declare overloaded methods as final?
+            <span ng-hide ="overloading4" class= "caretright" ></span><span ng-show="overloading4" class= "caretrightUp" ></span></h4>
+	</div>
+	<div ng-show="overloading4" class="view">
+	   Yes, we can declare overloaded methods as final.
+	</div>
+
+
+
+
+
+
+	<div class="styleShet" ng-click="toggle5()">
+            <h4 > Best example of Method Overloading in java
+            <span ng-hide ="overloading5" class= "caretright" ></span><span ng-show="overloading5" class= "caretrightUp" ></span></h4>
+	</div>
+	<div ng-show="overloading5" class="view">
+	   println() method is the best example of method overloading.
+<!--           java.lang package System class and out is the static variable of PrintStream class-->
+
+           <br/><br/>
+           <strong>Example : </strong>
+           <br/><br/>
+           System.out.println(); &nbsp; This method is generated new line.
+
+           <br/><br/>
+           String s ="hello ..... ";
+           <br/>
+           System.out.println(s); &nbsp; This method is print String and generated new line.
+
+           <br/><br/>
+           int i = 10 ;
+           <br/>
+           System.out.println(i); &nbsp;  This method is print integer number and generated new line.
+
+           <br/><br/>
+           double d = 10.05 ;
+           <br/>
+           System.out.println(d); &nbsp; This method is print double and generated new line.
+
+
+           <br/><br/>
+           char c = 'a' ;
+           <br/>
+           System.out.println(c); &nbsp; This method is print character and generated new line.
+           <br/><br/>
+           etc...
+
+	</div>
+
+
+
+
+
+
+	<div class="styleShet" ng-click="toggle6()">
+            <h4> Advantage of Method Overloading
+            <span ng-hide ="overloading6" class= "caretright" ></span><span ng-show="overloading6" class= "caretrightUp" ></span></h4>
+	</div>
+	<div ng-show="overloading6" class="view">
+            <strong>Advantage of Method Overloading is : </strong>
+            <br/><br/>
+            <ul>
+                <li>user can remember one method name for same functionality .</li>
+                <li>compile time polymorphism is achieved .</li>
+                <li>Method overloading increases the readability of the program.</li>
+            </ul>
+	</div>
+
+
+
+
+
+<!--	<div class="styleShet" ng-click="toggle7()">
+            <h4 >{heading Name}
+            <span ng-hide ="overloading7" class= "caretright" ></span><span ng-show="overloading7" class= "caretrightUp" ></span></h4>
+	</div>
+	<div ng-show="overloading7" class="view">
+	   {keep defination }
+	</div>
+
+
+        <div class="styleShet" ng-click="toggle8()">
+            <h4 >{heading Name}
+            <span ng-hide ="overloading8" class= "caretright" ></span><span ng-show="overloading8" class= "caretrightUp" ></span></h4>
+        </div>
+        <div ng-show="overloading8" class="view">
+           {keep defination }
+        </div>
+
+        <div class="styleShet" ng-click="toggle9()">
+            <h4 >{heading Name}
+            <span ng-hide ="overloading9" class= "caretright" ></span><span ng-show="overloading9" class= "caretrightUp" ></span></h4>
+        </div>
+        <div ng-show="overloading9" class="view">
+           {keep defination }
+        </div>
+
+
+        <div class="styleShet" ng-click="toggle10()">
+            <h4 >{heading Name}
+            <span ng-hide ="overloading10" class= "caretright" ></span><span ng-show="overloading10" class= "caretrightUp" ></span></h4>
+        </div>
+        <div ng-show="overloading10" class="view">
+           {keep defination }
+        </div>
+
+        <div class="styleShet" ng-click="toggle11()">
+            <h4 >{heading Name}
+            <span ng-hide ="overloading11" class= "caretright" ></span><span ng-show="overloading11" class= "caretrightUp" ></span></h4>
+        </div>
+        <div ng-show="overloading11" class="view">
+           {keep defination }
+        </div>-->
+</div>

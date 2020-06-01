@@ -1,0 +1,665 @@
+<div  class="pagePaddingBottom">
+    <h2 class="mainCenterAlign"> Capital </h2>
+
+
+    
+    
+    
+    <div class="styleShet" ng-click="toggle()">
+        <h4>
+             Countries Capital& Currency 
+            <span ng-hide ="capital" class= "caretright" ></span><span ng-show="capital" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="capital" class="view">
+        <table  class="table table-bordered" >
+        <tr class="trHeading">
+            <td><b>Countries</b></td>
+            <td><b>Capitals</b></td>
+            <td><b>Currencies</b></td>
+        </tr>
+        <tr>
+            <td>Australia</td>
+            <td>Canberra</td>
+            <td>Australian Dollar</td>
+        </tr>
+        <tr>
+            <td>Afghanistan</td>
+            <td>Kabul</td>
+            <td>Afghani</td>
+        </tr>
+        <tr>
+            <td>Algeria</td>
+            <td>Algiers</td>
+            <td>Dinar</td>
+        </tr>
+        <tr>
+            <td>Argentina</td>
+            <td>Buenos Aires</td>
+            <td>Peso</td>
+        </tr>
+        <tr>
+            <td>Austria</td>
+            <td>Vienna</td>
+            <td>Euro</td>
+        </tr>
+        <tr>
+            <td>Bangladesh</td>
+            <td>Dhaka</td>
+            <td>Taka</td>
+        </tr>
+        <tr>
+            <td>Belgium</td>
+            <td>City of Brussels</td>
+            <td>Euro</td>
+        </tr>
+        <tr>
+            <td>Brazil</td>
+            <td>Brasilia</td>
+            <td>Real</td>
+        </tr>
+        <tr>
+            <td>Canada</td>
+            <td>Ottawa</td>
+            <td>Canadian Dollar</td>
+        </tr>
+        <tr>
+            <td>China</td>
+            <td>Beijing</td>
+            <td>Yuan</td>
+        </tr>
+        <tr>
+            <td>Cuba</td>
+            <td>Havana</td>
+            <td>Cuban Peso</td>
+        </tr>
+        <tr>
+            <td>Cambodia</td>
+            <td>Phnom Penh</td>
+            <td>Cambodian Riel</td>
+        </tr>
+        <tr>
+            <td>Cyprus</td>
+            <td>Nicosia</td>
+            <td>Euro</td>
+        </tr>
+        <tr>
+            <td>Denmark</td>
+            <td>Copenhagen</td>
+            <td>Krone</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Egypt</td>
+            <td>Cairo</td>
+            <td>Egyptian Pound</td>
+        </tr>
+        <tr>
+            <td>Ethiopia</td>
+            <td>Addis Ababa</td>
+            <td>Ethiopian Birr</td>
+        </tr>
+        <tr>
+            <td>Estonia</td>
+            <td>Tallinn</td>
+            <td>Kroon</td>
+        </tr>
+        <tr>
+            <td>Ecuador</td>
+            <td>Quito</td>
+            <td>United States Dollar</td>
+        </tr>
+        <tr>
+            <td>France, Finland</td>
+            <td>Paris, Helsinki</td>
+            <td>Euro</td>
+        </tr>
+        <tr>
+            <td>Fiji</td>
+            <td>Suva</td>
+            <td>Fijian Dollar</td>
+        </tr>
+        <tr>
+            <td>Germany, Greece</td>
+            <td>Berlin, Athens</td>
+            <td>Euro</td>
+        </tr>
+        <tr>
+            <td>Ghana</td>
+            <td>Accra</td>
+            <td>Ghana Cedi</td>
+        </tr>
+        <tr>
+            <td>Guernsey</td>
+            <td>Saint Peter Port</td>
+            <td>Guernsey Pound</td>
+        </tr>
+        <tr>
+            <td>Gambia</td>
+            <td>Banjul</td>
+            <td>Gambian dalasi</td>
+        </tr>
+        <tr>
+            <td>India</td>
+            <td>New Delhi</td>
+            <td>Indian Rupee</td>
+        </tr>
+        <tr>
+            <td>Indonesia</td>
+            <td>Jakarta</td>
+            <td>Indonesian Rupiah</td>
+        </tr>
+        <tr>
+            <td>Iran</td>
+            <td>Tehran</td>
+            <td>Rial</td>
+        </tr>
+        <tr>
+            <td>Iraq</td>
+            <td>Baghdad</td>
+            <td>Iraqi Diner</td>
+        </tr>
+        <tr>
+            <td>Ireland, Italy</td>
+            <td>Dublin, Rome</td>
+            <td>Euro</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Israel</td>
+            <td>Jerusalem</td>
+            <td>Israeli new shekel</td>
+        </tr>
+        <tr>
+            <td>Iceland</td>
+            <td>Reykjavik</td>
+            <td>Icelandic Krona</td>
+        </tr>
+        <tr>
+            <td>Japan</td>
+            <td>Tokyo</td>
+            <td>Japanese Yen</td>
+        </tr>
+        <tr>
+            <td>Jamaica</td>
+            <td>Kingston</td>
+            <td>Jamaican Dollar</td>
+        </tr>
+        <tr>
+            <td>Jordan</td>
+            <td>Amman</td>
+            <td>Jordanian dinar</td>
+        </tr>
+        <tr>
+            <td>Kenya</td>
+            <td>Nairobi</td>
+            <td>Kenyan Shilling</td>
+        </tr>
+        <tr>
+            <td>Kuwait</td>
+            <td>Kuwait City</td>
+            <td>Kuwaiti Dinar</td>
+        </tr>
+        <tr>
+            <td>Korea</td>
+            <td>Seoul</td>
+            <td>South Korean Won</td>
+        </tr>
+        <tr>
+            <td>Malaysia</td>
+            <td>Kuala Lumpur</td>
+            <td>Malaysian Ringgit</td>
+        </tr>
+        <tr>
+            <td>Mexico</td>
+            <td>Mexico City</td>
+            <td>Mexican Peso</td>
+        </tr>
+        <tr>
+            <td>Malta</td>
+            <td>Valletta</td>
+            <td>Maltese lira</td>
+        </tr>
+        <tr>
+            <td>Nigeria</td>
+            <td>Abuja</td>
+            <td>Nigerian Naira</td>
+        </tr>
+        <tr>
+            <td>Netherlands</td>
+            <td>Amsterdam</td>
+            <td>Euro</td>
+        </tr>
+        <tr>
+            <td>Norway</td>
+            <td>Oslo</td>
+            <td>Norwegian Krone</td>
+        </tr>
+        <tr>
+            <td>New Zealand</td>
+            <td>Wellington</td>
+            <td>New Zealand Dollar</td>
+        </tr>
+        <tr>
+            <td>Nepal</td>
+            <td>Kathmandu</td>
+            <td>Nepalese Rupee</td>
+        </tr>
+        <tr>
+            <td>Namibia</td>
+            <td>Windhoek</td>
+            <td>Namibian Dollar</td>
+        </tr>
+        <tr>
+            <td>Pakistan</td>
+            <td>Islamabad</td>
+            <td>Pakistani Rupee</td>
+        </tr>
+        <tr>
+            <td>Peru</td>
+            <td>Lima</td>
+            <td>Peruvian Nuevo Sol</td>
+        </tr>
+        <tr>
+            <td>Portugal</td>
+            <td>Lisbon</td>
+            <td>Euro</td>
+        </tr>
+        <tr>
+            <td>Russia</td>
+            <td>Moscow</td>
+            <td>Russian Ruble</td>
+        </tr>
+        <tr>
+            <td>Romania</td>
+            <td>Bucharest</td>
+            <td>Romanian Leu</td>
+        </tr>
+        <tr>
+            <td>Sweden</td>
+            <td>Stockholm</td>
+            <td>Swedish Krona</td>
+        </tr>
+        <tr>
+            <td>Switzerland</td>
+            <td>Bern</td>
+            <td>Swiss Franc</td>
+        </tr>
+        <tr>
+            <td>Sri Lanka</td>
+            <td>Sri Jayewardenepura Kotte</td>
+            <td>Sri Lankan Rupee</td>
+        </tr>
+        <tr>
+            <td>Spain</td>
+            <td>Madrid</td>
+            <td>Euro</td>
+        </tr>
+        <tr>
+            <td>Thailand</td>
+            <td>Bangkok</td>
+            <td>Thai baht</td>
+        </tr>
+        <tr>
+            <td>Taiwan</td>
+            <td>Taipei</td>
+            <td>New Taiwan Dollar</td>
+        </tr>
+        <tr>
+            <td>Turkey</td>
+            <td>Ankara</td>
+            <td>Turkish Lira</td>
+        </tr>
+        <tr>
+            <td>United Kingdom</td>
+            <td>London</td>
+            <td>Pound</td>
+        </tr>
+        <tr>
+            <td>United States</td>
+            <td>Washington, D.C.</td>
+            <td>United States Dollar</td>
+        </tr>
+        <tr>
+            <td>Uruguay</td>
+            <td>Montevideo</td>
+            <td>Uruguayan Dollar</td>
+        </tr>
+        <tr>
+            <td>Venezuela</td>
+            <td>Caracas</td>
+            <td>Venezuelan Bolivar</td>
+        </tr>
+        <tr>
+            <td>Yugoslavia</td>
+            <td>Belgrade</td>
+            <td>Yugoslav Dinar</td>
+        </tr>
+        <tr>
+            <td>Zimbabwe</td>
+            <td>Harare</td>
+            <td>Zimbabwean dollar</td>
+        </tr>
+        <tr>
+            <td>Zambia</td>
+            <td>Lusaka</td>
+            <td>Zambian Kwacha</td>
+        </tr>
+    </table>
+    </div>
+
+
+    <div class="styleShet" ng-click="toggle1()">
+        <h4>
+             States & Capitals & Minister 
+            <span ng-hide ="capital1" class= "caretright" ></span><span ng-show="capital1" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="capital1" class="view">
+        <table class="table table-bordered">
+        <tr class="trHeading">
+            <td><b> States</b></td>
+            <td><b>Capitals</b></td>
+            <td><b>Minister</b></td>
+        </tr>
+
+        <tr>
+            <td>Andhra Pradesh</td>
+            <td>Amravathi (*Hyderabad initially )</td>
+            <td>Chandrababu Naidu (TDP)</td>
+        </tr>
+        <tr>
+            <td>Arunachal Pradesh</td>
+            <td>Itanagar</td>
+            <td>Pema Khandu (PPA)</td>
+        </tr>
+        <tr>
+            <td>Assam</td>
+            <td>Dispur</td>
+            <td>Sarbananda Sonowal (BJP)</td>
+        </tr>
+        <tr>
+            <td>Bihar</td>
+            <td>Patna</td>
+            <td>Nitish Kumar (JDU)</td>
+        </tr>
+        <tr>
+            <td>Chhattisgarh</td>
+            <td>Raipur</td>
+            <td>Raman Singh (BJP)</td>
+        </tr>
+        <tr>
+            <td>Goa</td>
+            <td>Panaji</td>
+            <td>Manohar Parrikar (BJP)</td>
+        </tr>
+        <tr>
+            <td>Gujarat</td>
+            <td>Gandhinagar</td>
+            <td>Vijay Rupani (BJP)</td>
+        </tr>
+        <tr>
+            <td>Haryana</td>
+            <td>Chandigarh (shared with Punjab)</td>
+            <td>Manohar Lal Khatter (BJP)</td>
+        </tr>
+        <tr>
+            <td>Himachal Pradesh</td>
+            <td>Shimla</td>
+            <td>Jai Ram Thakur (BJP)</td>
+        </tr>
+        <tr>
+            <td>Jammu &amp; Kashmir</td>
+            <td>Srinagar (Summer) Jammu (Winter)</td>
+            <td>Mufti Mohammed Sayeed (PDP)</td>
+        </tr>
+        <tr>
+            <td>Jharkhand</td>
+            <td>Ranchi</td>
+            <td>Raghubar Das (BJP)</td>
+        </tr>
+        <tr>
+            <td>Karnataka</td>
+            <td>Bangalore</td>
+            <td>Siddaramaiah (Congress)</td>
+        </tr>
+        <tr>
+            <td>Kerala</td>
+            <td>Thiruvananthapuram</td>
+            <td>Pinarayi Vijayan (CPM)</td>
+        </tr>
+        <tr>
+            <td>Madhya Pradesh</td>
+            <td>Bhopal</td>
+            <td>Shivraj Singh Chauhan (BJP)</td>
+        </tr>
+        <tr>
+            <td>Maharashtra</td>
+            <td>Mumbai</td>
+            <td>Devendra Fadnavis (BJP)</td>
+        </tr>
+        <tr>
+            <td>Manipur</td>
+            <td>Imphal</td>
+            <td>Biren Singh ( BJP ) </td>
+        </tr>
+        <tr>
+            <td>Meghalaya</td>
+            <td>Shillong</td>
+            <td>Mukul Sangma (Congress)</td>
+        </tr>
+        <tr>
+            <td>Mizoram</td>
+            <td>Aizawl</td>
+            <td>Pu Lalthanhawla (Congress)</td>
+        </tr>
+        <tr>
+            <td>Nagaland</td>
+            <td>Kohima </td>
+            <td>T.R. Zeliang (Nagaland People’s Front)</td>
+        </tr>
+        <tr>
+            <td>Odisha (Orissa)</td>
+            <td>Bhubaneshwar</td>
+            <td>Naveen Patnaik (BJD)</td>
+        </tr>
+        <tr>
+            <td>Punjab </td>
+            <td>Chandigarh (shared with Haryana)</td>
+            <td>Capt Amrinder Singh (Congress)</td>
+        </tr>
+        <tr>
+            <td>Rajasthan</td>
+            <td>Jaipur</td>
+            <td>Vasundhara Raje (BJP)</td>
+        </tr>
+        <tr>
+            <td>Sikkim </td>
+            <td>Gangtok</td>
+            <td>Pawan Chamling (SDF)</td>
+        </tr>
+        <tr>
+            <td>Tamil Nadu</td>
+            <td>Chennai</td>
+            <td>Edapadi Palanisamy (AIADMK)</td>
+        </tr>
+        <tr>
+            <td>Telangana (from June 2, 2014)</td>
+            <td>Hyderabad</td>
+            <td>K Chandrashekhar Rao (TRS)</td>
+        </tr>
+        <tr>
+            <td>Tripura</td>
+            <td>Agartala</td>
+            <td>Manik Sarkar (CPM)</td>
+        </tr>
+        <tr>
+            <td>Uttar Pradesh</td>
+            <td>Lucknow</td>
+            <td>Yogi Adityanath (BJP)</td>
+        </tr>
+        <tr>
+            <td>Uttarakhand</td>
+            <td>Dehradun</td>
+            <td>Trivendra Singh Rawat (BJP)</td>
+        </tr>
+        <tr>
+            <td>West Bengal</td>
+            <td>Kolkata</td>
+            <td>Mamata Banerjee (Trinamool Congress)</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>Andaman and Nicobar Islands</td>
+            <td>Port Blair</td>
+            <td>A.K. SinghChandigarh</td>
+        </tr>
+        <tr>
+            <td>Chandigarh</td>
+            <td>Chandigarh</td>
+            <td>Kaptan Singh Solanki (Add. Ch.)</td>
+        </tr>
+        <tr>
+            <td>Dadra and Nagar Haveli</td>
+            <td>Silvassa</td>
+            <td>Kaptan Singh Solanki (Add. Ch.)</td>
+        </tr>
+        <tr>
+            <td>Daman and Diu</td>
+            <td>Daman</td>
+            <td>Ashish Kundra</td>
+        </tr>
+        <tr>
+            <td>Lakshadweep</td>
+            <td>Kavaratti</td>
+            <td>Kaptan Singh Solanki (Add. Ch.)</td>
+        </tr>
+        <tr>
+            <td>Delhi – National Capital Territory</td>
+            <td>Delhi</td>
+            <td>Arvind Kejriwal (AAP)</td>
+        </tr>
+        <tr>
+            <td>Puducherry (Pondicherry)</td>
+            <td>Pondicherry </td>
+            <td>Kaptan Singh Solanki (Add. Ch.)</td>
+        </tr>
+    </table>
+    </div>
+
+
+<!--    <div class="styleShet" ng-click="toggle2()">
+        <h4>
+            {heading Name}
+            <span ng-hide ="capital2" class= "caretright" ></span><span ng-show="capital2" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="capital2" class="view">
+	   {keep defination }
+    </div>
+
+
+    <div class="styleShet" ng-click="toggle3()">
+        <h4>{heading Name}
+            <span ng-hide ="capital3" class= "caretright" ></span><span ng-show="capital3" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="capital3" class="view">
+	   {keep defination }
+    </div>
+
+
+    <div class="styleShet" ng-click="toggle4()">
+        <h4>{heading Name}
+            <span ng-hide ="capital4" class= "caretright" ></span><span ng-show="capital4" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="capital4" class="view">
+	   {keep defination }
+    </div>
+
+
+
+    <div class="styleShet" ng-click="toggle5()">
+        <h4>{heading Name}
+            <span ng-hide ="capital5" class= "caretright" ></span><span ng-show="capital5" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="capital5" class="view">
+	   {keep defination }
+    </div>
+
+
+    <div class="styleShet" ng-click="toggle6()">
+        <h4>{heading Name}
+            <span ng-hide ="capital6" class= "caretright" ></span><span ng-show="capital6" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="capital6" class="view">
+	   {keep defination }
+    </div>
+
+
+    <div class="styleShet" ng-click="toggle7()">
+        <h4>{heading Name}
+            <span ng-hide ="capital7" class= "caretright" ></span><span ng-show="capital7" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="capital7" class="view">
+	   {keep defination }
+    </div>
+
+
+    <div class="styleShet" ng-click="toggle8()">
+        <h4>{heading Name}
+            <span ng-hide ="capital8" class= "caretright" ></span><span ng-show="capital8" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="capital8" class="view">
+           {keep defination }
+    </div>
+
+    <div class="styleShet" ng-click="toggle9()">
+        <h4>{heading Name}
+            <span ng-hide ="capital9" class= "caretright" ></span><span ng-show="capital9" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="capital9" class="view">
+           {keep defination }
+    </div>
+
+
+    <div class="styleShet" ng-click="toggle10()">
+        <h4>{heading Name}
+            <span ng-hide ="capital10" class= "caretright" ></span><span ng-show="capital10" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="capital10" class="view">
+           {keep defination }
+    </div>
+
+    <div class="styleShet" ng-click="toggle11()">
+        <h4>{heading Name}
+            <span ng-hide ="capital11" class= "caretright" ></span><span ng-show="capital11" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="capital11" class="view">
+           {keep defination }
+    </div>
+-->
+
+    
+</div>

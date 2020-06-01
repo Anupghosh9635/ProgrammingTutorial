@@ -1,0 +1,567 @@
+<div class="pagePaddingBottom">
+    <h2 class="mainCenterAlign"> Java MultiThreading </h2>
+
+<!-- <br/><br/><br/>
+ <h2 style="text-align: center;" > Coming soon .....</h2>
+ <br/><br/><br/>-->
+
+
+        <div class="styleShet" ng-click="toggle()">
+            <h4 >
+                MultiTasking
+                <span ng-hide ="multiThrading" class= "caretright" ></span><span ng-show="multiThrading" class= "caretrightUp" ></span>
+            </h4>
+        </div>
+        <div ng-show="multiThrading" class="view">
+            <ul>
+                <li>Execute multiple programs concurrently is known as MultiTasking .</li>
+                <li>In the java MultiTasking is achieved by thread . </li>
+                <li>Thread is light weight subprocess .</li>
+                <li>Each Thread forms an independent path of execution .</li>
+            </ul>
+        </div>
+
+
+
+
+
+        <div class="styleShet" ng-click="toggle1()">
+            <h4 >
+                MultiThreading
+                <span ng-hide ="multiThrading1" class= "caretright" ></span><span ng-show="multiThrading1" class= "caretrightUp" ></span>
+            </h4>
+        </div>
+        <div ng-show="multiThrading1" class="view">
+             <strong>Threading : </strong> Thread is light weight subprocess.
+             <br/><br/>
+            <strong>MultiThreading : </strong> Process of executing multiple threads simultaneously is known as MultiThreading .
+        </div>
+
+
+
+
+
+
+	<div class="styleShet" ng-click="toggle2()">
+            <h4>
+		Default Threading
+                <span ng-hide ="multiThrading2" class= "caretright" ></span><span ng-show="multiThrading2" class= "caretrightUp" ></span>
+            </h4>
+	</div>
+	<div ng-show="multiThrading2" class="view">
+	    When java class is executed the JVM create three thread by default, those are .
+            <ul>
+                <li> Garbage collector thread .</li>
+                <li> Thread Scheduler .</li>
+                <li> Main thread .</li>
+            </ul>
+	</div>
+
+
+
+
+
+
+	<div class="styleShet" ng-click="toggle3()">
+            <h4 >Way of created thread
+                <span ng-hide ="multiThrading3" class= "caretright" ></span><span ng-show="multiThrading3" class= "caretrightUp" ></span>
+            </h4>
+	</div>
+	<div ng-show="multiThrading3" class="view">
+	   There are two way to create thread
+           <br/>
+           1. ) <ul>
+                    <li>Create a class which is extends Thread class .</li>
+                    <li>Override the run method .</li>
+                    <li>Create an Object of sub class and call start() method .</li>
+                </ul>
+           2. ) <ul>
+                    <li>Create a class which is implements Runnable interface .</li>
+                    <li>Create a Thread object by initialing Runnable object and call start() method of the thread object .</li>
+                </ul>
+	</div>
+
+
+
+
+
+	<div class="styleShet" ng-click="toggle4()">
+		<h4 > methods of Thread class
+		<span ng-hide ="multiThrading4" class= "caretright" ></span><span ng-show="multiThrading4" class= "caretrightUp" ></span></h4>
+	</div>
+	<div ng-show="multiThrading4" class="view">
+            <table class="table table-bordered">
+                   <tr class="trHeading">
+                       <th> Method</th>
+                       <th>Description</th>
+                   </tr>
+                   <tr>
+                       <td>public void run()</td>
+                       <td>this method is used to perform action for a thread</td>
+                   </tr>
+                   <tr>
+                       <td>public void start()</td>
+                       <td>starts the execution of the thread.JVM calls the run() method on the thread.</td>
+                   </tr>
+                   <tr>
+                       <td>public void sleep(long miliseconds)</td>
+                       <td>Causes the currently executing thread to sleep (temporarily cease execution)
+                           for the specified number of milliseconds.</td>
+                   </tr>
+                   <tr>
+                       <td>public int getPriority()</td>
+                       <td>returns the priority of the thread.</td>
+                   </tr>
+                   <tr>
+                       <td>public int setPriority(int priority)</td>
+                       <td>changes the priority of the thread.</td>
+                   </tr>
+                   <tr>
+                       <td>public String getName()</td>
+                       <td>returns the name of the thread.</td>
+                   </tr>
+                   <tr>
+                       <td>public void setName(String name)</td>
+                       <td>changes the name of the thread.</td>
+                   </tr>
+                   <tr>
+                       <td>public int getId()</td>
+                       <td>returns the id of the thread.</td>
+                   </tr>
+                   <tr>
+                       <td>public void join()</td>
+                       <td>waits for a thread to die.</td>
+                   </tr>
+                   <tr>
+                       <td>public void join(long miliseconds)</td>
+                       <td>waits for a thread to die for the specified miliseconds.</td>
+                   </tr>
+                     <tr>
+                       <td>public boolean isAlive()</td>
+                       <td>tests if the thread is alive.</td>
+                   </tr>
+                   <tr>
+                       <td>public Thread currentThread()</td>
+                       <td>returns the reference of currently executing thread.</td>
+                   </tr>
+                   <tr>
+                       <td>public Thread.State getState()</td>
+                       <td>returns the state of the thread.</td>
+                   </tr>
+                    <tr>
+                       <td>public void resume()</td>
+                       <td>is used to resume the suspended thread(depricated).</td>
+                   </tr>
+                   <tr>
+                       <td>public boolean isDaemon()</td>
+                       <td>tests if the thread is a daemon thread.</td>
+                   </tr>
+                   <tr>
+                       <td>public void setDaemon(boolean b)</td>
+                       <td>marks the thread as daemon or user thread.</td>
+                   </tr>
+                   <tr>
+                       <td>public void yield()</td>
+                       <td>causes the currently executing thread object to temporarily pause
+                           and allow other threads to execute.</td>
+                   </tr>
+                   <tr>
+                       <td>public void interrupt()</td>
+                       <td>interrupts the thread.</td>
+                   </tr>
+                   <tr>
+                       <td>public boolean isInterrupted()</td>
+                       <td>tests if the thread has been interrupted.</td>
+                   </tr>
+                   <tr>
+                       <td>public static boolean interrupted()</td>
+                       <td>tests if the current thread has been interrupted.</td>
+                   </tr>
+                   <tr>
+                       <td>public void suspend()</td>
+                       <td>is used to suspend the thread(depricated).</td>
+                   </tr>
+                   <tr>
+                       <td>public void stop()</td>
+                       <td>is used to stop the thread(depricated).</td>
+                   </tr>
+            </table>
+	</div>
+
+
+
+
+
+
+
+	<div class="styleShet" ng-click="toggle5()">
+		<h4 > Thread Example by extending Thread class
+		<span ng-hide ="multiThrading5" class= "caretright" ></span><span ng-show="multiThrading5" class= "caretrightUp" ></span></h4>
+	</div>
+	<div ng-show="multiThrading5" class="view">
+<!--            <pre class="viewPre">
+public class ThreadTest {
+    public static void main(String[] args) {
+        Thread th1 = new Thread1();
+        Thread th2 = new Thread2();
+        th1.start();
+        th2.start();
+    }
+}
+
+class Thread1 extends Thread {
+    @Override
+    public void run(){
+        System.out.println("Character Print Thread is Start");
+        for (char c = 'a'; c <= 'z'; c++) {
+            System.out.println(c);
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException ex) {
+                ex.printStackTrace();
+            }
+        }
+        System.out.println("Character Print Thread is End");
+    }
+}
+
+class Thread2 extends Thread {
+    @Override
+    public void run(){
+        System.out.println("Number Print Thread is Start");
+        for (int i = 0; i < 50; i++) {
+            System.out.println(i);
+
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException ex) {
+                ex.printStackTrace();
+            }
+        }
+        System.out.println("Number Print Thread is End");
+    }
+}
+            </pre>-->
+
+<pre class="prettyprint viewPre prettyprinted" style=""><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">ThreadTest</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">Thread</span><span class="pln"> th1 </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Thread1</span><span class="pun">();</span><span class="pln">
+        </span><span class="typ">Thread</span><span class="pln"> th2 </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Thread2</span><span class="pun">();</span><span class="pln">
+        th1</span><span class="pun">.</span><span class="pln">start</span><span class="pun">();</span><span class="pln">
+        th2</span><span class="pun">.</span><span class="pln">start</span><span class="pun">();</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+
+</span><span class="kwd">class</span><span class="pln"> </span><span class="typ">Thread1</span><span class="pln"> </span><span class="kwd">extends</span><span class="pln"> </span><span class="typ">Thread</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="lit">@Override</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> run</span><span class="pun">(){</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Character Print Thread is Start"</span><span class="pun">);</span><span class="pln">
+        </span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">char</span><span class="pln"> c </span><span class="pun">=</span><span class="pln"> </span><span class="str">'a'</span><span class="pun">;</span><span class="pln"> c </span><span class="pun">&lt;=</span><span class="pln"> </span><span class="str">'z'</span><span class="pun">;</span><span class="pln"> c</span><span class="pun">++)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="pln">c</span><span class="pun">);</span><span class="pln">
+            </span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                </span><span class="typ">Thread</span><span class="pun">.</span><span class="pln">sleep</span><span class="pun">(</span><span class="lit">500</span><span class="pun">);</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">InterruptedException</span><span class="pln"> ex</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                ex</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Character Print Thread is End"</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+
+</span><span class="kwd">class</span><span class="pln"> </span><span class="typ">Thread2</span><span class="pln"> </span><span class="kwd">extends</span><span class="pln"> </span><span class="typ">Thread</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="lit">@Override</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> run</span><span class="pun">(){</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Number Print Thread is Start"</span><span class="pun">);</span><span class="pln">
+        </span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> i </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln"> i </span><span class="pun">&lt;</span><span class="pln"> </span><span class="lit">50</span><span class="pun">;</span><span class="pln"> i</span><span class="pun">++)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="pln">i</span><span class="pun">);</span><span class="pln">
+
+            </span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                </span><span class="typ">Thread</span><span class="pun">.</span><span class="pln">sleep</span><span class="pun">(</span><span class="lit">500</span><span class="pun">);</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">InterruptedException</span><span class="pln"> ex</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                ex</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Number Print Thread is End"</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+
+	</div>
+
+
+
+
+
+
+
+	<div class="styleShet" ng-click="toggle6()">
+		<h4>Thread Example by implementing Runnable interface
+		<span ng-hide ="multiThrading6" class= "caretright" ></span><span ng-show="multiThrading6" class= "caretrightUp" ></span></h4>
+	</div>
+	<div ng-show="multiThrading6" class="view">
+<!--            <pre class="viewPre">
+public class ThreadTestByRunnaable {
+    public static void main(String[] args) {
+        Runnable rb1 = new Runnable1();
+        Thread th1 = new Thread(rb1);
+        Runnable rb2 = new Runnable2();
+        Thread th2 = new Thread(rb2);
+        th1.start();
+        th2.start();
+    }
+}
+
+class Runnable1 implements Runnable {
+    public void run(){
+        System.out.println("Character Print Thread is Start");
+        for (char c = 'a'; c <= 'z'; c++) {
+            System.out.println(c);
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException ex) {
+                ex.printStackTrace();
+            }
+        }
+        System.out.println("Character Print Thread is End");
+    }
+}
+
+class Runnable2 implements Runnable {
+    public void run(){
+        System.out.println("Number Print Thread is Start");
+        for (int i = 1; i <= 26; i++) {
+            System.out.println(i);
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException ex) {
+                ex.printStackTrace();
+            }
+        }
+        System.out.println("Number Print Thread is End");
+    }
+}
+            </pre>-->
+
+<pre class="prettyprint viewPre prettyprinted" style=""><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">ThreadTestByRunnaable</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">Runnable</span><span class="pln"> rb1 </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Runnable1</span><span class="pun">();</span><span class="pln">
+        </span><span class="typ">Thread</span><span class="pln"> th1 </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Thread</span><span class="pun">(</span><span class="pln">rb1</span><span class="pun">);</span><span class="pln">
+        </span><span class="typ">Runnable</span><span class="pln"> rb2 </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Runnable2</span><span class="pun">();</span><span class="pln">
+        </span><span class="typ">Thread</span><span class="pln"> th2 </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Thread</span><span class="pun">(</span><span class="pln">rb2</span><span class="pun">);</span><span class="pln">
+        th1</span><span class="pun">.</span><span class="pln">start</span><span class="pun">();</span><span class="pln">
+        th2</span><span class="pun">.</span><span class="pln">start</span><span class="pun">();</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+
+</span><span class="kwd">class</span><span class="pln"> </span><span class="typ">Runnable1</span><span class="pln"> </span><span class="kwd">implements</span><span class="pln"> </span><span class="typ">Runnable</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> run</span><span class="pun">(){</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Character Print Thread is Start"</span><span class="pun">);</span><span class="pln">
+        </span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">char</span><span class="pln"> c </span><span class="pun">=</span><span class="pln"> </span><span class="str">'a'</span><span class="pun">;</span><span class="pln"> c </span><span class="pun">&lt;=</span><span class="pln"> </span><span class="str">'z'</span><span class="pun">;</span><span class="pln"> c</span><span class="pun">++)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="pln">c</span><span class="pun">);</span><span class="pln">
+            </span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                </span><span class="typ">Thread</span><span class="pun">.</span><span class="pln">sleep</span><span class="pun">(</span><span class="lit">500</span><span class="pun">);</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">InterruptedException</span><span class="pln"> ex</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                ex</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Character Print Thread is End"</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+
+</span><span class="kwd">class</span><span class="pln"> </span><span class="typ">Runnable2</span><span class="pln"> </span><span class="kwd">implements</span><span class="pln"> </span><span class="typ">Runnable</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> run</span><span class="pun">(){</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Number Print Thread is Start"</span><span class="pun">);</span><span class="pln">
+        </span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> i </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span><span class="pln"> i </span><span class="pun">&lt;=</span><span class="pln"> </span><span class="lit">26</span><span class="pun">;</span><span class="pln"> i</span><span class="pun">++)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="pln">i</span><span class="pun">);</span><span class="pln">
+            </span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                </span><span class="typ">Thread</span><span class="pun">.</span><span class="pln">sleep</span><span class="pun">(</span><span class="lit">500</span><span class="pun">);</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">InterruptedException</span><span class="pln"> ex</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                ex</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Number Print Thread is End"</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+
+	</div>
+
+
+
+
+
+
+
+	<div class="styleShet" ng-click="toggle7()">
+	    <h4> Why do we need threads ?
+	    <span ng-hide ="multiThrading7" class= "caretright" ></span><span ng-show="multiThrading7" class= "caretrightUp" ></span></h4>
+	</div>
+	<div ng-show="multiThrading7" class="view">
+            <ul>
+                <li>To enhance parallel processing</li>
+                <li>To increase response to the user</li>
+                <li>To utilize the idle time of the CPU</li>
+                <li>Prioritize your work depending on priority</li>
+            </ul>
+	</div>
+
+
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle8()">
+	<h4> Daemon Thread
+	    <span ng-hide ="multiThrading8" class= "caretright" ></span><span ng-show="multiThrading8" class= "caretrightUp" ></span>
+	</h4>
+    </div>
+    <div ng-show="multiThrading8" class="view">
+	<strong>Thread types : </strong>there are manly two type of thread ,this are bellow.
+	<ul>
+	    <li>Daemon Thread</li>
+	    <li>Non Daemon Thread</li>
+	</ul>
+	<br/><br/>
+	<strong>Daemon Thread : </strong>
+	<br/>
+	<ul>
+	    <li>Daemon Thread are service provider thread for non daemon thread .</li>
+	    <li>To execute daemon thread at least one non daemon thread should be execute .</li>
+	    <li>All the daemon thread are terminated immediately when last non daemon thread is terminated in the application </li>
+	    <li>In the thread class provide a method  setDaemon(boolean b), by default it is non Daemon thread . </li>
+	    <li>setDaemon() method should be call before the calling of start() method . </li>
+	    <li>Example of non daemon thread is <b>Main thread</b> . Example of daemon thread is
+		1.<b> Thread Scheduler</b> 2.<b> Garbage collector thread</b> </li>
+	</ul>
+<!--	<pre class="viewPre">
+class ThreadNumberPrint extends Thread {
+    @Override
+    public void run(){
+        for (int i = 0; i < 20; i++) {
+            System.out.println(i);
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException ex) {
+                ex.printStackTrace();
+            }
+        }
+    }
+}
+
+class ThreadDaemon extends Thread {
+    @Override
+    public void run(){
+    	while(true){
+            System.out.println("--");
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException ex) {
+                ex.printStackTrace();
+            }
+        }
+    }
+}
+public class DaemonThreadTest {
+    public static void main(String[] args) {
+	Thread th1 = new ThreadNumberPrint();
+	th1.start();
+
+	Thread th2 = new ThreadDaemon();
+        th2.setDaemon(true);
+        th2.start();
+
+    }
+}
+	</pre>-->
+
+<pre class="prettyprint viewPre prettyprinted" style=""><span class="kwd">class</span><span class="pln"> </span><span class="typ">ThreadNumberPrint</span><span class="pln"> </span><span class="kwd">extends</span><span class="pln"> </span><span class="typ">Thread</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="lit">@Override</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> run</span><span class="pun">(){</span><span class="pln">
+        </span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> i </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln"> i </span><span class="pun">&lt;</span><span class="pln"> </span><span class="lit">20</span><span class="pun">;</span><span class="pln"> i</span><span class="pun">++)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="pln">i</span><span class="pun">);</span><span class="pln">
+            </span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                </span><span class="typ">Thread</span><span class="pun">.</span><span class="pln">sleep</span><span class="pun">(</span><span class="lit">500</span><span class="pun">);</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">InterruptedException</span><span class="pln"> ex</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                ex</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+
+</span><span class="kwd">class</span><span class="pln"> </span><span class="typ">ThreadDaemon</span><span class="pln"> </span><span class="kwd">extends</span><span class="pln"> </span><span class="typ">Thread</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="lit">@Override</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> run</span><span class="pun">(){</span><span class="pln">
+    	</span><span class="kwd">while</span><span class="pun">(</span><span class="kwd">true</span><span class="pun">){</span><span class="pln">
+            </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"--"</span><span class="pun">);</span><span class="pln">
+            </span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                </span><span class="typ">Thread</span><span class="pun">.</span><span class="pln">sleep</span><span class="pun">(</span><span class="lit">500</span><span class="pun">);</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">InterruptedException</span><span class="pln"> ex</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                ex</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">DaemonThreadTest</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+	</span><span class="typ">Thread</span><span class="pln"> th1 </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">ThreadNumberPrint</span><span class="pun">();</span><span class="pln">
+	th1</span><span class="pun">.</span><span class="pln">start</span><span class="pun">();</span><span class="pln">
+
+	</span><span class="typ">Thread</span><span class="pln"> th2 </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">ThreadDaemon</span><span class="pun">();</span><span class="pln">
+        th2</span><span class="pun">.</span><span class="pln">setDaemon</span><span class="pun">(</span><span class="kwd">true</span><span class="pun">);</span><span class="pln">
+        th2</span><span class="pun">.</span><span class="pln">start</span><span class="pun">();</span><span class="pln">
+
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+
+    </div>
+
+
+
+
+
+
+   <div class="styleShet" ng-click="toggle9()">
+        <h4> Thread-safe in java
+            <span ng-hide ="multiThrading9" class= "caretright" ></span><span ng-show="multiThrading9" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="multiThrading9" class="view">
+        <ul>
+	    <li>When multiple thread are using to share object of the same time modified made by one thread can
+		be effect to other thread execution .</li>
+	    <li> to avoid this conflict object method should be synchronize .</li>
+	    <li>When the thread enter in synchronize non static method a lock will be create of an same object
+		other thread cant be used the same thread until the lock is reliesed .</li>
+	</ul>
+	Thread-safe class does not allowed more then one thtead at a same time .
+
+	<br/>
+	To make object thread-safe method should be synchronize.
+    </div>
+
+
+
+
+
+
+<!--   <div class="styleShet" ng-click="toggle10()">
+        <h4 >{heading Name}
+            <span ng-hide ="multiThrading10" class= "caretright" ></span><span ng-show="multiThrading10" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="multiThrading10" class="view">
+           {keep defination }
+    </div>
+
+    <div class="styleShet" ng-click="toggle11()">
+        <h4 >{heading Name}
+            <span ng-hide ="multiThrading11" class= "caretright" ></span><span ng-show="multiThrading11" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="multiThrading11" class="view">
+           {keep defination }
+    </div> -->
+
+</div>

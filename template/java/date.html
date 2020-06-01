@@ -1,0 +1,628 @@
+
+<div class="pagePaddingBottom">
+
+    <h2 class="mainCenterAlign"> Java Date and Time </h2>
+
+
+<!--     <br/><br/><br/>
+ <h2 style="text-align: center;" > Coming soon .....</h2>
+ <br/><br/><br/>-->
+
+
+   <div class="styleShet" ng-click="toggle4()">
+	<h4> Date
+	<span ng-hide ="date4" class= "caretright" ></span><span ng-show="date4" class= "caretrightUp" ></span></h4>
+    </div>
+    <div ng-show="date4" class="view">
+	<strong>Date : </strong> java Date class present in java.util package,
+	this class given the current date and time .
+	<br/><br/>
+	<strong>Method of java Date Class </strong>
+	<br/><br/>
+	    <table class="table table-bordered" >
+		<tr class="trHeading">
+		    <th>Method</th>
+		    <th>Description</th>
+		</tr>
+		<tr>
+		    <td>boolean after(Date date)</td>
+		    <td>tests if current date is after the given date.</td>
+		</tr>
+		<tr>
+		    <td>boolean before(Date date)</td>
+		    <td>tests if current date is before the given date.</td>
+		</tr>
+		<tr>
+		    <td>Object clone()</td>
+		    <td>returns the clone object of current date.</td>
+		</tr>
+		<tr>
+		    <td>int compareTo(Date date)</td>
+		    <td>compares current date with given date.</td>
+		</tr>
+		<tr>
+		    <td>boolean equals(Date date)</td>
+		    <td>compares current date with given date for equality.</td>
+		</tr>
+		<tr>
+		    <td>static Date from(Instant instant)</td>
+		    <td>returns an instance of Date object from Instant date.</td>
+		</tr>
+		<tr>
+		    <td>long getTime()</td>
+		    <td>returns the time represented by this date object.</td>
+		</tr>
+		<tr>
+		    <td>int hashCode()</td>
+		    <td>returns the hash code value for this date object.</td>
+		</tr>
+		<tr>
+		    <td>void setTime(long time)</td>
+		    <td>changes the current date and time to given time.</td>
+		</tr>
+		<tr>
+		    <td>Instant toInstant()</td>
+		    <td>converts current date into Instant object.</td>
+		</tr>
+		<tr>
+		    <td>String toString()</td>
+		    <td>converts this date into Instant object.</td>
+		</tr>
+	    </table>
+	<strong>Example : </strong>
+	<br/><br/>
+<!--	<pre class="viewPre">
+import java.util.Date;
+public class DateTest {
+    public static void main(String[] args) {
+	Date date = new Date();
+	System.out.println("date - "+date);
+
+	long dateLong =System.currentTimeMillis();
+	Date dateAnotherWay = new Date(dateLong);
+	System.out.println("dateAnotherWay - "+dateAnotherWay);
+
+	Date yesterday = new Date(dateLong - 1000L * 60L * 60L * 24L);
+	System.out.println("yesterday - "+yesterday);
+
+	boolean isBefore= yesterday.before(date);
+	System.out.println("Check date is Before toyday date - "+isBefore);
+
+	boolean isAfter= yesterday.after(date);
+	System.out.println("Check date is After toyday date - "+isAfter);
+
+	System.out.println(date.getTime());
+
+    }
+}
+	</pre>-->
+
+<pre class="prettyprint viewPre prettyprinted" style=""><span class="kwd">import</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">util</span><span class="pun">.</span><span class="typ">Date</span><span class="pun">;</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">DateTest</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+	</span><span class="typ">Date</span><span class="pln"> date </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Date</span><span class="pun">();</span><span class="pln">
+	</span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"date - "</span><span class="pun">+</span><span class="pln">date</span><span class="pun">);</span><span class="pln">
+
+	</span><span class="kwd">long</span><span class="pln"> dateLong </span><span class="pun">=</span><span class="typ">System</span><span class="pun">.</span><span class="pln">currentTimeMillis</span><span class="pun">();</span><span class="pln">
+	</span><span class="typ">Date</span><span class="pln"> dateAnotherWay </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Date</span><span class="pun">(</span><span class="pln">dateLong</span><span class="pun">);</span><span class="pln">
+	</span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"dateAnotherWay - "</span><span class="pun">+</span><span class="pln">dateAnotherWay</span><span class="pun">);</span><span class="pln">
+
+	</span><span class="typ">Date</span><span class="pln"> yesterday </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Date</span><span class="pun">(</span><span class="pln">dateLong </span><span class="pun">-</span><span class="pln"> </span><span class="lit">1000L</span><span class="pln"> </span><span class="pun">*</span><span class="pln"> </span><span class="lit">60L</span><span class="pln"> </span><span class="pun">*</span><span class="pln"> </span><span class="lit">60L</span><span class="pln"> </span><span class="pun">*</span><span class="pln"> </span><span class="lit">24L</span><span class="pun">);</span><span class="pln">
+	</span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"yesterday - "</span><span class="pun">+</span><span class="pln">yesterday</span><span class="pun">);</span><span class="pln">
+
+	</span><span class="kwd">boolean</span><span class="pln"> isBefore</span><span class="pun">=</span><span class="pln"> yesterday</span><span class="pun">.</span><span class="pln">before</span><span class="pun">(</span><span class="pln">date</span><span class="pun">);</span><span class="pln">
+	</span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Check date is Before toyday date - "</span><span class="pun">+</span><span class="pln">isBefore</span><span class="pun">);</span><span class="pln">
+
+	</span><span class="kwd">boolean</span><span class="pln"> isAfter</span><span class="pun">=</span><span class="pln"> yesterday</span><span class="pun">.</span><span class="pln">after</span><span class="pun">(</span><span class="pln">date</span><span class="pun">);</span><span class="pln">
+	</span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Check date is After toyday date - "</span><span class="pun">+</span><span class="pln">isAfter</span><span class="pun">);</span><span class="pln">
+
+	</span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="pln">date</span><span class="pun">.</span><span class="pln">getTime</span><span class="pun">());</span><span class="pln">
+
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+
+    </div>
+
+
+
+
+
+
+<div class="styleShet" ng-click="toggle5()">
+    <h4> SimpleDateFormat
+	<span ng-hide ="date5" class= "caretright" ></span><span ng-show="date5" class= "caretrightUp" ></span></h4>
+</div>
+<div ng-show="date5" class="view">
+    <strong>SimpleDateFormat : </strong> SimpleDateFormat is used to format and parse date and time in java, you can set your own date patterns .
+    <table class="table table-bordered" >
+	    <tr class="trHeading">
+		<th>Letter</th>
+		<th>Date or Time Component</th>
+		<th>Examples</th>
+	    </tr>
+	    <tr>
+		<td><b>G</b></td>
+		<td>Era designator</td>
+		<td>AD</td>
+	    </tr>
+	    <tr>
+		<td><b>y</b></td>
+		<td>Year</td>
+		<td>1996; 96</td>
+	    </tr>
+	    <tr>
+		<td><b>M</b></td>
+		<td>Month in year</td>
+		<td>July; Jul; 07</td>
+	    </tr>
+	    <tr>
+		<td><b>w</b>
+		</td><td>Week in year</td>
+		<td>27</td>
+	    </tr>
+	    <tr>
+		<td><b>W</b></td>
+		<td>Week in month</td>
+		<td>2</td>
+	    </tr>
+	    <tr>
+		<td><b>D</b></td>
+		<td>Day in year</td>
+		<td>189</td>
+	    </tr>
+	    <tr>
+		<td><b>d</b></td>
+		<td>Day in month</td>
+		<td>10</td>
+	    </tr>
+	    <tr>
+		<td><b>F</b></td>
+		<td>Day of week in month</td>
+		<td>2</td>
+	    </tr>
+	    <tr>
+		<td><b>E</b></td>
+		<td>Day in week</td>
+		<td>Tuesday; Tue</td>
+	    </tr>
+	    <tr>
+		<td><b>a</b></td>
+		<td>Am/pm marker</td>
+		<td>PM</td>
+	    </tr>
+	    <tr>
+		<td><b>H</b></td>
+		<td>Hour in day (0-23)</td>
+		<td>0</td>
+	    </tr>
+	    <tr>
+		<td><b>k</b></td>
+		<td>Hour in day (1-24)</td>
+		<td>24</td>
+	    </tr>
+	    <tr>
+		<td><b>K</b></td>
+		<td>Hour in am/pm (0-11)</td>
+		<td><b>0</b></td>
+	    </tr>
+	    <tr>
+		<td><b>h</b></td>
+		<td>Hour in am/pm (1-12)</td>
+		<td>12</td>
+	    </tr>
+	    <tr>
+		<td><b>m</b></td>
+		<td>Minute in hour</td>
+		<td>30</td>
+	    </tr>
+	    <tr>
+		<td><b>s</b>
+		<td>Second in minute</td>
+		<td>55</td>
+	    </tr>
+	    <tr>
+		<td><b>S</b>
+		</td><td>Millisecond</td>
+		<td>978</td>
+	    </tr>
+	    <tr>
+		<td><b>z</b></td>
+		<td>Time zone</td>
+		<td>Pacific Standard Time; PST; GMT-08:00</td>
+	    </tr>
+	    <tr>
+		<td>Z</td>
+		<td>Time zone</td>
+		<td>-0800</td>
+	    </tr>
+    </table>
+    <strong>Example : </strong>
+	<br/><br/>
+<!--    <pre class="viewPre">
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class SimpleDateFormatTest {
+    public static void main(String[] args) {
+	Date date = new Date();
+	SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
+	String strDate = formatter.format(date);  //  18/08/2017
+	System.out.println("Date Format with dd/MM/yyyy : "+strDate);
+
+	formatter = new SimpleDateFormat("dd-MM-yyyy");
+	strDate = formatter.format(date);  // 18-08-2017
+	System.out.println("Date Format with dd-MM-yyyy : "+strDate);
+
+	formatter = new SimpleDateFormat("dd-MM-yy");
+	strDate = formatter.format(date);  //  18-08-17
+	System.out.println("Date Format with dd-MM-yy   : "+strDate);
+
+	formatter = new SimpleDateFormat("dd MMMM yyyy");
+	strDate = formatter.format(date);  // 18 August 2017
+	System.out.println("Date Format with dd MMMM yyyy : "+strDate);
+
+	formatter = new SimpleDateFormat("dd-MM-yyyy hh:mm:ss");
+	strDate = formatter.format(date);  // 18-08-2017 06:25:19
+	System.out.println("Date Format with dd-MM-yyyy hh:mm:ss : "+strDate);
+
+	formatter = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss.SSS");
+	strDate = formatter.format(date);  // 18-08-2017 18:34:11.511
+	System.out.println("Date Format with yyyy-MM-dd HH:mm:ss.SSS : "+strDate);
+
+	formatter = new SimpleDateFormat("dd MMMM yyyy zzzz");
+	strDate = formatter.format(date);  // 18 August 2017 India Standard Time
+	System.out.println("Date Format with dd MMMM yyyy zzzz : "+strDate);
+
+	formatter = new SimpleDateFormat("E, dd MMM yyyy HH:mm:ss z");
+	strDate = formatter.format(date);  // Fri, 18 Aug 2017 18:31:38 IST
+	System.out.println("Date Format with E, dd MMM yyyy HH:mm:ss z : "+strDate);
+
+	formatter = new SimpleDateFormat("EEEEE MMMMM yyyy HH:mm:ss.SSSZ");
+	strDate = formatter.format(date);  // Friday August 2017 18:31:38.823+0530
+	System.out.println("Date Format with EEEEE MMMMM yyyy HH:mm:ss.SSSZ : "+strDate);
+    }
+}
+    </pre>-->
+
+    <pre class="prettyprint viewPre prettyprinted" style="">
+<span class="kwd">import</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">text</span><span class="pun">.</span><span class="typ">SimpleDateFormat</span><span class="pun">;</span><span class="pln">
+</span><span class="kwd">import</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">util</span><span class="pun">.</span><span class="typ">Date</span><span class="pun">;</span><span class="pln">
+
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">SimpleDateFormatTest</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+	</span><span class="typ">Date</span><span class="pln"> date </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Date</span><span class="pun">();</span><span class="pln">
+	</span><span class="typ">SimpleDateFormat</span><span class="pln"> formatter </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">SimpleDateFormat</span><span class="pun">(</span><span class="str">"dd/MM/yyyy"</span><span class="pun">);</span><span class="pln">
+	</span><span class="typ">String</span><span class="pln"> strDate </span><span class="pun">=</span><span class="pln"> formatter</span><span class="pun">.</span><span class="pln">format</span><span class="pun">(</span><span class="pln">date</span><span class="pun">);</span><span class="pln">  </span><span class="com">//  18/08/2017</span><span class="pln">
+	</span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Date Format with dd/MM/yyyy : "</span><span class="pun">+</span><span class="pln">strDate</span><span class="pun">);</span><span class="pln">
+
+	formatter </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">SimpleDateFormat</span><span class="pun">(</span><span class="str">"dd-MM-yyyy"</span><span class="pun">);</span><span class="pln">
+	strDate </span><span class="pun">=</span><span class="pln"> formatter</span><span class="pun">.</span><span class="pln">format</span><span class="pun">(</span><span class="pln">date</span><span class="pun">);</span><span class="pln">  </span><span class="com">// 18-08-2017</span><span class="pln">
+	</span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Date Format with dd-MM-yyyy : "</span><span class="pun">+</span><span class="pln">strDate</span><span class="pun">);</span><span class="pln">
+
+	formatter </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">SimpleDateFormat</span><span class="pun">(</span><span class="str">"dd-MM-yy"</span><span class="pun">);</span><span class="pln">
+	strDate </span><span class="pun">=</span><span class="pln"> formatter</span><span class="pun">.</span><span class="pln">format</span><span class="pun">(</span><span class="pln">date</span><span class="pun">);</span><span class="pln">  </span><span class="com">//  18-08-17</span><span class="pln">
+	</span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Date Format with dd-MM-yy   : "</span><span class="pun">+</span><span class="pln">strDate</span><span class="pun">);</span><span class="pln">
+
+	formatter </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">SimpleDateFormat</span><span class="pun">(</span><span class="str">"dd MMMM yyyy"</span><span class="pun">);</span><span class="pln">
+	strDate </span><span class="pun">=</span><span class="pln"> formatter</span><span class="pun">.</span><span class="pln">format</span><span class="pun">(</span><span class="pln">date</span><span class="pun">);</span><span class="pln">  </span><span class="com">// 18 August 2017</span><span class="pln">
+	</span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Date Format with dd MMMM yyyy : "</span><span class="pun">+</span><span class="pln">strDate</span><span class="pun">);</span><span class="pln">
+
+	formatter </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">SimpleDateFormat</span><span class="pun">(</span><span class="str">"dd-MM-yyyy hh:mm:ss"</span><span class="pun">);</span><span class="pln">
+	strDate </span><span class="pun">=</span><span class="pln"> formatter</span><span class="pun">.</span><span class="pln">format</span><span class="pun">(</span><span class="pln">date</span><span class="pun">);</span><span class="pln">  </span><span class="com">// 18-08-2017 06:25:19</span><span class="pln">
+	</span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Date Format with dd-MM-yyyy hh:mm:ss : "</span><span class="pun">+</span><span class="pln">strDate</span><span class="pun">);</span><span class="pln">
+
+	formatter </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">SimpleDateFormat</span><span class="pun">(</span><span class="str">"dd-MM-yyyy HH:mm:ss.SSS"</span><span class="pun">);</span><span class="pln">
+	strDate </span><span class="pun">=</span><span class="pln"> formatter</span><span class="pun">.</span><span class="pln">format</span><span class="pun">(</span><span class="pln">date</span><span class="pun">);</span><span class="pln">  </span><span class="com">// 18-08-2017 18:34:11.511</span><span class="pln">
+	</span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Date Format with yyyy-MM-dd HH:mm:ss.SSS : "</span><span class="pun">+</span><span class="pln">strDate</span><span class="pun">);</span><span class="pln">
+
+	formatter </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">SimpleDateFormat</span><span class="pun">(</span><span class="str">"dd MMMM yyyy zzzz"</span><span class="pun">);</span><span class="pln">
+	strDate </span><span class="pun">=</span><span class="pln"> formatter</span><span class="pun">.</span><span class="pln">format</span><span class="pun">(</span><span class="pln">date</span><span class="pun">);</span><span class="pln">  </span><span class="com">// 18 August 2017 India Standard Time</span><span class="pln">
+	</span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Date Format with dd MMMM yyyy zzzz : "</span><span class="pun">+</span><span class="pln">strDate</span><span class="pun">);</span><span class="pln">
+
+	formatter </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">SimpleDateFormat</span><span class="pun">(</span><span class="str">"E, dd MMM yyyy HH:mm:ss z"</span><span class="pun">);</span><span class="pln">
+	strDate </span><span class="pun">=</span><span class="pln"> formatter</span><span class="pun">.</span><span class="pln">format</span><span class="pun">(</span><span class="pln">date</span><span class="pun">);</span><span class="pln">  </span><span class="com">// Fri, 18 Aug 2017 18:31:38 IST</span><span class="pln">
+	</span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Date Format with E, dd MMM yyyy HH:mm:ss z : "</span><span class="pun">+</span><span class="pln">strDate</span><span class="pun">);</span><span class="pln">
+
+	formatter </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">SimpleDateFormat</span><span class="pun">(</span><span class="str">"EEEEE MMMMM yyyy HH:mm:ss.SSSZ"</span><span class="pun">);</span><span class="pln">
+	strDate </span><span class="pun">=</span><span class="pln"> formatter</span><span class="pun">.</span><span class="pln">format</span><span class="pun">(</span><span class="pln">date</span><span class="pun">);</span><span class="pln">  </span><span class="com">// Friday August 2017 18:31:38.823+0530</span><span class="pln">
+	</span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Date Format with EEEEE MMMMM yyyy HH:mm:ss.SSSZ : "</span><span class="pun">+</span><span class="pln">strDate</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+
+</div>
+
+
+
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle()">
+        <h4> LocalDate
+            <span ng-hide ="date" class= "caretright" ></span><span ng-show="date" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="date" class="view">
+	A LocalDate represents a year-month-day in the ISO calendar and is useful for representing
+	a date without a time.
+	<br/><br/>
+	<strong> Example : </strong>
+	<br/><br/>
+<!--	<pre class="viewPre">
+import java.time.DayOfWeek;
+import java.time.LocalDate;
+import java.time.Month;
+
+public class DateTimeTest {
+    public static void main(String[] args) {
+        LocalDate date = LocalDate.now();
+        System.out.println("print date- "+date);
+        // print day
+        DayOfWeek dow = date.getDayOfWeek();
+        System.out.println("print day name - "+ dow);
+        int dateNo = date.getDayOfMonth();
+        System.out.println("print day (number) - "+ dateNo);
+        // print month
+        Month monthName = date.getMonth();
+        System.out.println("print month name - "+ monthName);
+        int monthNo = date.getMonthValue();
+        System.out.println("print month (Number) - "+ monthNo);
+        // print month
+        int year = date.getYear();
+        System.out.println("print year - "+ year);
+        // print particuller date like birth day
+        LocalDate birthDay = LocalDate.of(1990, Month.NOVEMBER, 20);
+        System.out.println("print particuller date - "+birthDay);
+    }
+}
+	</pre>-->
+
+<pre class="prettyprint viewPre prettyprinted" style=""><span class="kwd">import</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">time</span><span class="pun">.</span><span class="typ">DayOfWeek</span><span class="pun">;</span><span class="pln">
+</span><span class="kwd">import</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">time</span><span class="pun">.</span><span class="typ">LocalDate</span><span class="pun">;</span><span class="pln">
+</span><span class="kwd">import</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">time</span><span class="pun">.</span><span class="typ">Month</span><span class="pun">;</span><span class="pln">
+
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">DateTimeTest</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">LocalDate</span><span class="pln"> date </span><span class="pun">=</span><span class="pln"> </span><span class="typ">LocalDate</span><span class="pun">.</span><span class="pln">now</span><span class="pun">();</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"print date- "</span><span class="pun">+</span><span class="pln">date</span><span class="pun">);</span><span class="pln">
+        </span><span class="com">// print day</span><span class="pln">
+        </span><span class="typ">DayOfWeek</span><span class="pln"> dow </span><span class="pun">=</span><span class="pln"> date</span><span class="pun">.</span><span class="pln">getDayOfWeek</span><span class="pun">();</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"print day name - "</span><span class="pun">+</span><span class="pln"> dow</span><span class="pun">);</span><span class="pln">
+        </span><span class="kwd">int</span><span class="pln"> dateNo </span><span class="pun">=</span><span class="pln"> date</span><span class="pun">.</span><span class="pln">getDayOfMonth</span><span class="pun">();</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"print day (number) - "</span><span class="pun">+</span><span class="pln"> dateNo</span><span class="pun">);</span><span class="pln">
+        </span><span class="com">// print month</span><span class="pln">
+        </span><span class="typ">Month</span><span class="pln"> monthName </span><span class="pun">=</span><span class="pln"> date</span><span class="pun">.</span><span class="pln">getMonth</span><span class="pun">();</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"print month name - "</span><span class="pun">+</span><span class="pln"> monthName</span><span class="pun">);</span><span class="pln">
+        </span><span class="kwd">int</span><span class="pln"> monthNo </span><span class="pun">=</span><span class="pln"> date</span><span class="pun">.</span><span class="pln">getMonthValue</span><span class="pun">();</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"print month (Number) - "</span><span class="pun">+</span><span class="pln"> monthNo</span><span class="pun">);</span><span class="pln">
+        </span><span class="com">// print month</span><span class="pln">
+        </span><span class="kwd">int</span><span class="pln"> year </span><span class="pun">=</span><span class="pln"> date</span><span class="pun">.</span><span class="pln">getYear</span><span class="pun">();</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"print year - "</span><span class="pun">+</span><span class="pln"> year</span><span class="pun">);</span><span class="pln">
+        </span><span class="com">// print particuller date like birth day</span><span class="pln">
+        </span><span class="typ">LocalDate</span><span class="pln"> birthDay </span><span class="pun">=</span><span class="pln"> </span><span class="typ">LocalDate</span><span class="pun">.</span><span class="pln">of</span><span class="pun">(</span><span class="lit">1990</span><span class="pun">,</span><span class="pln"> </span><span class="typ">Month</span><span class="pun">.</span><span class="pln">NOVEMBER</span><span class="pun">,</span><span class="pln"> </span><span class="lit">20</span><span class="pun">);</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"print particuller date - "</span><span class="pun">+</span><span class="pln">birthDay</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle1()">
+        <h4 >
+            YearMonth
+            <span ng-hide ="date1" class= "caretright" ></span><span ng-show="date1" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="date1" class="view">
+	The YearMonth class represents the month of a specific year.
+	<br/><br/>
+	<strong> Example : </strong>
+	<br/><br/>
+<!--	<pre class="viewPre">
+import java.time.*;
+public class YearMonthTest {
+    public static void main(String[] args) {
+        YearMonth date = YearMonth.now();
+        System.out.println("print Year Momth - "+date);
+        Month monthName = date.getMonth();
+        System.out.println("print month name - "+monthName);
+        int monthNo = date.getMonthValue();
+        System.out.println("print month (Number) - "+ monthNo);
+        int year = date.getYear();
+        System.out.println("print year - "+ year);
+
+        LocalDate endDateofTheMonth = date.atEndOfMonth();
+        System.out.println("End Date Of The Month - "+endDateofTheMonth);
+
+        YearMonth date1 = YearMonth.of(2012, Month.FEBRUARY);
+        int lengthOfMonth = date1.lengthOfMonth();
+        System.out.println("length Of \" 2012 FEBRUARY \" Month is - "+lengthOfMonth);
+
+    }
+}
+	</pre>-->
+
+<pre class="prettyprint viewPre prettyprinted" style=""><span class="kwd">import</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">time</span><span class="pun">.*;</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">YearMonthTest</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">YearMonth</span><span class="pln"> date </span><span class="pun">=</span><span class="pln"> </span><span class="typ">YearMonth</span><span class="pun">.</span><span class="pln">now</span><span class="pun">();</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"print Year Momth - "</span><span class="pun">+</span><span class="pln">date</span><span class="pun">);</span><span class="pln">
+        </span><span class="typ">Month</span><span class="pln"> monthName </span><span class="pun">=</span><span class="pln"> date</span><span class="pun">.</span><span class="pln">getMonth</span><span class="pun">();</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"print month name - "</span><span class="pun">+</span><span class="pln">monthName</span><span class="pun">);</span><span class="pln">
+        </span><span class="kwd">int</span><span class="pln"> monthNo </span><span class="pun">=</span><span class="pln"> date</span><span class="pun">.</span><span class="pln">getMonthValue</span><span class="pun">();</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"print month (Number) - "</span><span class="pun">+</span><span class="pln"> monthNo</span><span class="pun">);</span><span class="pln">
+        </span><span class="kwd">int</span><span class="pln"> year </span><span class="pun">=</span><span class="pln"> date</span><span class="pun">.</span><span class="pln">getYear</span><span class="pun">();</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"print year - "</span><span class="pun">+</span><span class="pln"> year</span><span class="pun">);</span><span class="pln">
+
+        </span><span class="typ">LocalDate</span><span class="pln"> endDateofTheMonth </span><span class="pun">=</span><span class="pln"> date</span><span class="pun">.</span><span class="pln">atEndOfMonth</span><span class="pun">();</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"End Date Of The Month - "</span><span class="pun">+</span><span class="pln">endDateofTheMonth</span><span class="pun">);</span><span class="pln">
+
+        </span><span class="typ">YearMonth</span><span class="pln"> date1 </span><span class="pun">=</span><span class="pln"> </span><span class="typ">YearMonth</span><span class="pun">.</span><span class="pln">of</span><span class="pun">(</span><span class="lit">2012</span><span class="pun">,</span><span class="pln"> </span><span class="typ">Month</span><span class="pun">.</span><span class="pln">FEBRUARY</span><span class="pun">);</span><span class="pln">
+        </span><span class="kwd">int</span><span class="pln"> lengthOfMonth </span><span class="pun">=</span><span class="pln"> date1</span><span class="pun">.</span><span class="pln">lengthOfMonth</span><span class="pun">();</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"length Of \" 2012 FEBRUARY \" Month is - "</span><span class="pun">+</span><span class="pln">lengthOfMonth</span><span class="pun">);</span><span class="pln">
+
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+   <div class="styleShet" ng-click="toggle2()">
+	<h4 >
+	    MonthDay and Year
+	    <span ng-hide ="date2" class= "caretright" ></span><span ng-show="date2" class= "caretrightUp" ></span>
+	</h4>
+    </div>
+    <div ng-show="date2" class="view">
+	<strong>MonthDay : </strong>The MonthDay class represents the day of a particular month, such as New Year's Day on January 1.
+	<br/><br/>
+	<strong>Year : </strong> The Year class represents a year.
+	<br/><br/>
+	<strong> Example : </strong>
+	<br/><br/>
+<!--	<pre class="viewPre">
+import java.time.*;
+public class MonthDayYearTest {
+    public static void main(String[] args) {
+        MonthDay date = MonthDay.of(Month.FEBRUARY, 29);
+        boolean validLeapYear = date.isValidYear(2010);
+        System.out.println("validLeapYear of MonthDay in 2010 - "+validLeapYear);
+
+        boolean validLeapYear1 = Year.of(2012).isLeap();
+        System.out.println("validLeapYear of Year in  2012 - "+validLeapYear1);
+    }
+}
+	</pre>-->
+
+<pre class="prettyprint viewPre prettyprinted" style="">
+<span class="kwd">import</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">time</span><span class="pun">.*;</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">MonthDayYearTest</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">MonthDay</span><span class="pln"> date </span><span class="pun">=</span><span class="pln"> </span><span class="typ">MonthDay</span><span class="pun">.</span><span class="pln">of</span><span class="pun">(</span><span class="typ">Month</span><span class="pun">.</span><span class="pln">FEBRUARY</span><span class="pun">,</span><span class="pln"> </span><span class="lit">29</span><span class="pun">);</span><span class="pln">
+        </span><span class="kwd">boolean</span><span class="pln"> validLeapYear </span><span class="pun">=</span><span class="pln"> date</span><span class="pun">.</span><span class="pln">isValidYear</span><span class="pun">(</span><span class="lit">2010</span><span class="pun">);</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"validLeapYear of MonthDay in 2010 - "</span><span class="pun">+</span><span class="pln">validLeapYear</span><span class="pun">);</span><span class="pln">
+
+        </span><span class="kwd">boolean</span><span class="pln"> validLeapYear1 </span><span class="pun">=</span><span class="pln"> </span><span class="typ">Year</span><span class="pun">.</span><span class="pln">of</span><span class="pun">(</span><span class="lit">2012</span><span class="pun">).</span><span class="pln">isLeap</span><span class="pun">();</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"validLeapYear of Year in  2012 - "</span><span class="pun">+</span><span class="pln">validLeapYear1</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle3()">
+	<h4> LocalDateTime
+	<span ng-hide ="date3" class= "caretright" ></span><span ng-show="date3" class= "caretrightUp" ></span></h4>
+    </div>
+    <div ng-show="date3" class="view">
+       <strong> LocalDateTime : </strong>
+	    The class that handles both date and time, without a time zone, is LocalDateTime,
+	    one of the core classes of the Date-Time API.
+	    This class is used to represent date (month-day-year) together with time (hour-minute-second-nanosecond)
+	    and is, in effect, a combination of LocalDate with LocalTime.
+	    <br/><br/>
+	    <strong> Example : </strong>
+	<br/><br/>
+<!--	<pre class="viewPre">
+import java.time.*;
+public class LocalDateTimeTest {
+    public static void main(String[] args) {
+
+        LocalDateTime dateTime = LocalDateTime.now();
+//      LocalDateTime dateTime = LocalDateTime.ofInstant(Instant.now(), ZoneId.systemDefault());
+        System.out.println("print date and time - "+dateTime);
+
+        LocalDateTime befour6MonthsDateTime = dateTime.minusMonths(6);
+        System.out.println("6 months ago - "+befour6MonthsDateTime);
+
+        LocalDateTime after6MonthsDateTime = dateTime.plusMonths(6);
+        System.out.println("6 months after - "+after6MonthsDateTime);
+
+        LocalDateTime particullerDateTime = LocalDateTime.of(1990, Month.APRIL, 15, 11, 30);
+        System.out.println("particuller DateTime print - "+ particullerDateTime );
+
+    }
+}
+	</pre>-->
+
+<pre class="prettyprint viewPre prettyprinted" style=""><span class="kwd">import</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">time</span><span class="pun">.*;</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">LocalDateTimeTest</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+        </span><span class="typ">LocalDateTime</span><span class="pln"> dateTime </span><span class="pun">=</span><span class="pln"> </span><span class="typ">LocalDateTime</span><span class="pun">.</span><span class="pln">now</span><span class="pun">();</span><span class="pln">
+</span><span class="com">//      LocalDateTime dateTime = LocalDateTime.ofInstant(Instant.now(), ZoneId.systemDefault());</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"print date and time - "</span><span class="pun">+</span><span class="pln">dateTime</span><span class="pun">);</span><span class="pln">
+
+        </span><span class="typ">LocalDateTime</span><span class="pln"> befour6MonthsDateTime </span><span class="pun">=</span><span class="pln"> dateTime</span><span class="pun">.</span><span class="pln">minusMonths</span><span class="pun">(</span><span class="lit">6</span><span class="pun">);</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"6 months ago - "</span><span class="pun">+</span><span class="pln">befour6MonthsDateTime</span><span class="pun">);</span><span class="pln">
+
+        </span><span class="typ">LocalDateTime</span><span class="pln"> after6MonthsDateTime </span><span class="pun">=</span><span class="pln"> dateTime</span><span class="pun">.</span><span class="pln">plusMonths</span><span class="pun">(</span><span class="lit">6</span><span class="pun">);</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"6 months after - "</span><span class="pun">+</span><span class="pln">after6MonthsDateTime</span><span class="pun">);</span><span class="pln">
+
+        </span><span class="typ">LocalDateTime</span><span class="pln"> particullerDateTime </span><span class="pun">=</span><span class="pln"> </span><span class="typ">LocalDateTime</span><span class="pun">.</span><span class="pln">of</span><span class="pun">(</span><span class="lit">1990</span><span class="pun">,</span><span class="pln"> </span><span class="typ">Month</span><span class="pun">.</span><span class="pln">APRIL</span><span class="pun">,</span><span class="pln"> </span><span class="lit">15</span><span class="pun">,</span><span class="pln"> </span><span class="lit">11</span><span class="pun">,</span><span class="pln"> </span><span class="lit">30</span><span class="pun">);</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"particuller DateTime print - "</span><span class="pun">+</span><span class="pln"> particullerDateTime </span><span class="pun">);</span><span class="pln">
+
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+
+    </div>
+
+
+
+
+
+
+
+
+
+  <!--
+
+
+    <div class="styleShet" ng-click="toggle6()">
+            <h4>{heading Name}
+            <span ng-hide ="date6" class= "caretright" ></span><span ng-show="date6" class= "caretrightUp" ></span></h4>
+    </div>
+    <pre ng-show="date6" class="view">
+       {keep defination }
+    </pre>
+
+
+
+    <div class="styleShet" ng-click="toggle7()">
+            <h4 >{heading Name}
+            <span ng-hide ="date7" class= "caretright" ></span><span ng-show="date7" class= "caretrightUp" ></span></h4>
+    </div>
+    <pre ng-show="date7" class="view">
+       {keep defination }
+    </pre>-->
+
+</div>

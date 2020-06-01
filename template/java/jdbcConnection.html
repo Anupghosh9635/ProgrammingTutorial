@@ -1,0 +1,2249 @@
+
+<div class="pagePaddingBottom">
+    <h2 class="mainCenterAlign"> Java JdbcConnection  </h2>
+
+
+
+
+
+   <div class="styleShet" ng-click="toggle()">
+        <h4>
+	    API
+            <span ng-hide ="jdbcConnection" class= "caretright" ></span><span ng-show="jdbcConnection" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="jdbcConnection" class="view">
+	Back bone of API is abstraction .
+	<br/>
+	Application program interface (API) is used to to inter application commination One application
+	communicate to another process is known as API .
+	<br/>
+	To achieve the loose coupling .
+	<br/><br/>
+	<strong> Example : </strong>
+        <br/><br/>
+	<b> 1 ) . </b> Apache POI
+	<br/>
+	<b> 2 ) . </b> JExcelApi , JDBC , Servlet etc .
+	<br/><br/>
+	If the API is developed in java then we getting from of the jar file .
+	<br/><br/>
+	mainly there are two types of API .
+	<ul>
+	    <li>First from of API</li>
+	    <li>Second from API</li>
+	</ul>
+
+
+	<br/><br/><br/>
+	<strong>First from of API </strong>
+	<br/><br/>
+	<a href="img/firstFromApi.jpg">
+	    <img class="img-div90" alt="Smilly face" src="img/firstFromApi.jpg">
+	</a>
+	  <br/><br/>
+	<ul>
+	    <li>This from of API helps us to get some work done .</li>
+	    <li>This API is given in the from of jar file which contain interfaces , helper classes
+		and implementation classes </li>
+	    <li>This from of API is expose to the developer for writing consumer logic or utilization logic </li>
+	    <li> Example : Apache POI , JExcelApi </li>
+	</ul>
+
+
+	 <br/><br/><br/>
+	 <strong>Second from API : </strong>
+	 <br/><br/>
+	 <a href="img/secondFromApi.jpg">
+	     <img class="img-div90" alt="Smilly face" src="img/secondFromApi.jpg" />
+	 </a>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle3()">
+	<h4> JDBC API
+	<span ng-hide ="jdbcConnection3" class= "caretright" ></span><span ng-show="jdbcConnection3" class= "caretrightUp" ></span></h4>
+    </div>
+    <div ng-show="jdbcConnection3" class="view">
+	<a href="img/jdbcArchitecture.jpg">
+	    <img class="img-div90" alt="Smilly face" src="img/jdbcArchitecture.jpg" />
+	</a>
+	<br/><br/>
+	<strong>JDBC API : </strong>
+	<br/><br/>
+	<ul>
+	    <li>JDBC API was given by sun micro System to achieved loose coupling between
+		java application and Db server </li>
+	    <li>JDBC API contains interfaces , helper classes and few common implementation classes . </li>
+	    <li>JDBC API is distribute into two different package 1 ) java.sql &nbsp; &nbsp; 2 ) javax.sql &nbsp; &nbsp;.</li>
+	    <li>The interfaces of JDBC class
+		<ul>
+		    <li>Driver</li>
+		    <li>Connection</li>
+		    <li>Statement</li>
+		    <li>PreparedStatement</li>
+		    <li>CallableStatement</li>
+		    <li>MetaData</li>
+		</ul>
+	    </li>
+	    <li>The helper class of JDBC API is DriverManager .</li>
+	</ul>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle4()">
+	<h4> JDBC Driver
+	<span ng-hide ="jdbcConnection4" class= "caretright" ></span><span ng-show="jdbcConnection4" class= "caretrightUp" ></span></h4>
+    </div>
+    <div ng-show="jdbcConnection4" class="view">
+       <strong>JDBC Driver : </strong>
+	<br/><br/>
+	<ul>
+	    <li>JDBC Driver is an implementation of  JDBC API .</li>
+	    <li>JDBC Driver contains fet of  class file as a part of implementation class,
+		which is given the from of   jar file .</li>
+	    <li>JDBC Driver are provided by particular DB server or vender .</li>
+	    <li>JDBC Driver is specific to the particular DB server or vender . </li>
+	    <li>JDBC Driver is the example of  Second from API .</li>
+	</ul>
+	<br/>
+	For us communication with DataBase server and performe any database operation
+	we need to have JDBC API and JDBC Driver .
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle5()">
+	<h4> JDBC
+	<span ng-hide ="jdbcConnection5" class= "caretright" ></span><span ng-show="jdbcConnection5" class= "caretrightUp" ></span></h4>
+    </div>
+    <div ng-show="jdbcConnection5" class="view">
+	<strong>Advantage of JDBC : </strong>
+	<br/><br/>
+	<ul>
+	    <li> we can achieved loose coupling between java aplication and DB server .</li>
+	    <li>platform independent</li>
+	</ul>
+
+	<br/><br/>
+	In java JDBC program we written only Consumer logic .
+	<br/><br/>
+
+	<strong>Default port no : </strong>
+	<br/><br/>
+	<ul>
+	    <li> Oracle port No - > 1521</li>
+	    <li> Mysql  port No - > 3306</li>
+	    <li> Derby port No - > 1527</li>
+	    <li> IBM DB2 port No - > 50000</li>
+	    <li> Mongodb port No - > 27017</li>
+	    <li> MS SQL Server port No - > 1433</li>
+	</ul>
+
+	<br/><br/>
+	<strong>Different database server name : </strong>
+	<br/><br/>
+	    1 ) Oracle  &nbsp;&nbsp;
+	    2 ) Mysql  &nbsp;&nbsp;
+	    3 ) MS SQL Serve  &nbsp;&nbsp;
+	    4 ) Mongodb &nbsp;&nbsp;
+	    5 ) Derby   &nbsp;&nbsp;
+	    6 ) IBM DB2  &nbsp;&nbsp;
+	    7 ) Sybase   &nbsp;&nbsp;
+	    8 ) Informix &nbsp;&nbsp;
+	<br/><br/>
+
+
+	<strong>Different Application server (Business Logic ): </strong>
+	<br/><br/>
+	    1 ) IBM WebSphere  &nbsp;&nbsp;
+	    2 ) Oracle WebLogic  &nbsp;&nbsp;
+	    3 ) JBoss  &nbsp;&nbsp;
+	<br/><br/>
+
+	<strong>Different web server : </strong>
+	<br/><br/>
+	    1 ) Apache Tomcat  &nbsp;&nbsp;
+	    2 ) GlassFish  &nbsp;&nbsp;
+	<br/><br/>
+
+	<strong>Different web client : </strong>
+	<br/><br/>
+	    1 ) Browser &nbsp;&nbsp;
+	    2 ) Skype  &nbsp;&nbsp;
+	    3 ) Google Talk &nbsp;&nbsp;
+	    4 ) Yahoo Messenger  &nbsp;&nbsp;
+	<br/><br/>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle6()">
+	<h4> Server
+	<span ng-hide ="jdbcConnection6" class= "caretright" ></span><span ng-show="jdbcConnection6" class= "caretrightUp" ></span></h4>
+    </div>
+    <div ng-show="jdbcConnection6" class="view">
+	<strong>Server : </strong> Server is a software which manage the resources  process
+	the client request and served the response .
+
+	<br/><br/>
+	<strong>Types of client applications : </strong>
+       <br/><br/>
+	<strong>Thin client application : </strong>It is light weight software which is use to
+		communicate with server .
+	<br/>
+	There are two different type of thin client
+	<br/>
+	<ul>
+	    <li> <b>Mobile client application : </b>  Whatsapp , Hike , Mobile banking etc.</li>
+	    <li> <b>Database client application : </b>  Toad , SQuirreL , SQLyog etc.</li>
+	</ul>
+
+
+	<br/><br/>
+	<strong> host : </strong>There is two type of host
+	<br/>
+	<strong> 1 ) &nbsp;&nbsp;localhost : </strong>localhost is fixed to a particular system or all the action
+	    takes place with the same system .
+	<br/>
+	<strong> 2 ) &nbsp;&nbsp;remoathost : </strong> It is not fixed in a particular system that means all the
+	    action take place on the same way with respected all the system .
+	<br/><br/>
+
+
+	<strong> URL : </strong> A Uniform Resource Locator (URL) is the path or address using which can be
+	    access the resource uniquely over the network .
+        <br/>
+	<strong> contend of URL : </strong> protocol, host+port , domainName, resourceName, data(optional)
+	<br/>
+	<strong>protocol of web application : </strong> http / https
+	<br/>
+	<strong>protocol for JDBC : </strong> jdbc:sub-protocol
+	<br/>
+	<strong>Exemple : </strong> http://localhost:8084/jdbcConnection.html
+	<br/>
+	The UI or from data can be sent to the server as a part of URL in the from of key and value pair
+	and key must be unique . From data is optional in a URL .
+	<br/>
+	<strong>Exemple : </strong>
+	<a href="img/urlExamp.jpg">
+	    <img class="img-div90" alt="Smilly face" src="img/urlExamp.jpg">
+	</a>
+
+	<br/><br/>
+	<strong>Exemple of jdbc URL : </strong>
+	<br/>
+	mainProtocol:subProtocol://host+port/dbName(optional)
+	<br/><br/>
+	<strong>Exemple of mysql jdbc URL : </strong>
+	<br/>
+	<ul>
+	    <li><b>localhost : </b> jdbc:mysql://localhost:3306/Student_db?user=root&password=dinga
+		<br/><b>or</b> &nbsp; &nbsp; jdbc:mysql://localhost:3306
+	    </li>
+	    <li><b>remoathost : </b> jdbc:mysql://192.168.201.52:3306/Student_db?user=root&password=dinga
+		<br/><b>or</b> &nbsp; &nbsp; jdbc:mysql://192.168.201.52:3306
+	    </li>
+	</ul>
+
+
+	<br/><br/>
+	<strong>Different driver class : </strong>
+	<ul>
+	    <li><b>MS SQL Server : </b>&nbsp;&nbsp; com.microsoft.sqlserver.jdbc.SQLServerDriver </li>
+	    <li><b>MySQL : </b>&nbsp;&nbsp; com.mysql.jdbc.Driver</li>
+	    <li><b>Oracle :</b>&nbsp;&nbsp; oracle.jdbc.driver.OracleDriver</li>
+	    <li><b>Derby : </b>&nbsp;&nbsp;org.apache.derby.jdbc.EmbeddedDriver </li>
+	</ul>
+	<strong>Note : </strong> All the driver class are provided by default DB server or vender .
+	<br/>All the driver class must be implement <b>java.sql.Driver</b> interface .
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle1()">
+        <h4> JDBC and step of JDBC Connection
+            <span ng-hide ="jdbcConnection1" class= "caretright" ></span><span ng-show="jdbcConnection1" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="jdbcConnection1" class="view">
+	<strong>JDBC : </strong>java is given the specifically given of the from of abstraction API to
+	communicate between java application and database server, in a loosely couple mannar or databse
+	independent way .
+	<br/><br/>
+	<strong>Step of JDBC Connection</strong>
+	<ol type="1">
+	    <li> Load and register the driver (class) .</li>
+	    <li> Establish a connection with the database server .</li>
+	    <li> Create Statement or platform . </li>
+	    <li> Execute sql query or statement .</li>
+	    <li> Process the Result set data (optional) .</li>
+	    <li> Close the all costly resources .</li>
+	</ol>
+
+	<br/><br/>
+	<strong>Internal of Driver : </strong>
+	<br/>
+	<a href="img/internalOfDriver.jpg">
+	    <img class="img-div90" alt="Smilly face" src="img/internalOfDriver.jpg" />
+	</a>
+	<strong>Criteria of of Driver Implementation  :</strong>
+	<br/>All Driver class must have static block in it .
+	<br/>All the driver class must be implement <b>java.sql.Driver</b> interface .
+	<br/>All the Driver class must be register with the helper class of JDBC API DriverManager
+	    using static method called registerDriver().
+
+
+	<br/><br/><br/>
+	<center><strong style="font-size: 125%;"><u> JDBC 1st Step </u></strong></center>
+	<br/>
+	<strong>Load and register the driver (class) :</strong>
+	<br/><br/>
+	In this step we have to load and register the Driver class with JDBC API which can be done in different
+	ways .
+	<br/>
+	<b>1 ) &nbsp;</b> Creating an object of driver class and register in with DriverManager by using registerDriver() method
+	as flow
+	<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	Driver d = new Driver();
+	<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	DriverManager.registerDriver(d);
+	<br/>
+	this is not a good practice since it cause tight coupling between java application and database server.
+	<br/><br/>
+	<b>2 ) &nbsp;</b> Another way is using static method called forName() method .
+	<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	Class.forName("com.mysql.jdbc.Driver");
+	<br/><br/>
+	<strong>Example JDBC 1st Step :</strong>
+	<br/><br/>
+<!--	<pre class="viewPre">
+public class JDBC1stStep {
+    public static void main(String[] args) {
+	try {
+	    Class.forName("com.mysql.jdbc.Driver");
+	    System.out.println("Driver loaded Sucessfully ........");
+	} catch (ClassNotFoundException e) {
+	    e.printStackTrace();
+	}
+    }
+}
+	</pre>-->
+<pre class="viewPre " >
+<span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> JDBC1stStep </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+	</span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+	    </span><span class="typ">Class</span><span class="pun">.</span><span class="pln">forName</span><span class="pun">(</span><span class="str">"com.mysql.jdbc.Driver"</span><span class="pun">);</span><span class="pln">
+	    </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Driver loaded Sucessfully ........"</span><span class="pun">);</span><span class="pln">
+	</span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">ClassNotFoundException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+	    e</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+	</span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+
+
+
+	<br/><br/><br/>
+	<center><strong style="font-size: 125%;"><u> JDBC 2nd Step </u></strong></center>
+	<br/>
+	<strong>Establish a connection with the database server : </strong>
+	<br/><br/>
+	<a href="img/connectionInterface.jpg">
+	    <img class="img-div90" alt="Smilly face" src="img/connectionInterface.jpg">
+	</a>
+	<br/>
+	We can establish a connection with the database server by using the getConnection() method .
+	<br/>
+	getConnection() method is static factory method method or helper method which is used to establish
+	a connection  with the data base server .
+	<br/>
+	getConnection() method is given three(3) different overloaded method as flow
+	<ul>
+	    <li> public static Connection getConnection(String url); </li>
+	    <li> public static Connection getConnection(String url, java.util.Properties info); </li>
+	    <li> public static Connection getConnection(String url, String user, String password); </li>
+	</ul>
+	When ever we try to used either of this overloaded method then the method throw a checked Exception
+	called SQLException .
+
+
+	<br/><br/>
+	<strong> Connection interface : </strong>
+	<br/><br/>
+	java.sql.Connection is a interface which is a part of JDBC API and the implementation are provide
+	by different data base server or vender as a part of JDBC Driver .
+	<br/>
+	Since Connection is costly resources ,it has to close within finally block using if condition to avoid
+	NullPointerException ,since the costly resource it effect the performance of an application .
+
+	<br/><br/>
+	<strong> DriverManager : </strong>
+	<br/><br/>
+	java.sql.DriverManager is a helper class which is a part of JDBC API and which contain
+	the important static method called
+	<ul>
+	    <li>public static synchronized void registerDriver(java.sql.Driver driver) ;</li>
+	    <li> public static Connection getConnection() (overloaded method) </li>
+	</ul>
+	<br/>
+	<strong> getConnection() method : </strong>
+	<br/><br/>
+	getConnection() method  is used to establish a connection  with the data base server .
+	<br/>
+	getConnection() method return appropriate implementation object of Connection interface base of url .
+	<br/>
+	<strong>Syntax : </strong>
+	<br/>
+	Connection con = DriverManager.getConnection( "jdbc:mysql://localhost:3306?user=root&password=password");
+
+	<br/><br/>
+	<strong>Example JDBC 2nd Step :</strong>
+	<br/><br/>
+<!--	<pre class="viewPre">
+import java.sql.*;
+public class JDBC2ndStep {
+    public static void main(String[] args) {
+	Connection con = null;
+	try {
+	    Class.forName("com.mysql.jdbc.Driver");
+	    System.out.println("Driver loaded Sucessfully ........");
+	    con = DriverManager.getConnection("jdbc:mysql://localhost:3306?user=root&password=password");
+	    System.out.println("Connection established .... ");
+	} catch (ClassNotFoundException | SQLException e) {
+	    e.printStackTrace();
+	}
+    }
+}
+	</pre>-->
+<pre class="viewPre " ><span class="kwd">import</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">sql</span><span class="pun">.*;</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> JDBC2ndStep </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+	</span><span class="typ">Connection</span><span class="pln"> con </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln">
+	</span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+	    </span><span class="typ">Class</span><span class="pun">.</span><span class="pln">forName</span><span class="pun">(</span><span class="str">"com.mysql.jdbc.Driver"</span><span class="pun">);</span><span class="pln">
+	    </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Driver loaded Sucessfully ........"</span><span class="pun">);</span><span class="pln">
+	    con </span><span class="pun">=</span><span class="pln"> </span><span class="typ">DriverManager</span><span class="pun">.</span><span class="pln">getConnection</span><span class="pun">(</span><span class="str">"jdbc:mysql://localhost:3306?user=root&amp;password=password"</span><span class="pun">);</span><span class="pln">
+	    </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Connection established .... "</span><span class="pun">);</span><span class="pln">
+	</span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">ClassNotFoundException</span><span class="pln"> </span><span class="pun">|</span><span class="pln"> </span><span class="typ">SQLException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+	    e</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+	</span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+
+
+
+	<br/><br/><br/>
+	<center><strong style="font-size: 125%;"><u> JDBC 3rd Step </u></strong></center>
+	<br/>
+	<strong>Create Statement or platform : </strong>
+	<br/><br/>
+	<b>Different type of SQL Statement are flows : </b>
+	<ul>
+	    <li> <b>DML : </b> insert, update, delete </li>
+	    <li> <b>DDL : </b> create, alter, drop, rename, truncate </li>
+	    <li> <b>DQL : </b> select </li>
+	</ul>
+	To execute  any kind of SQL statement we need a statement or platform this platform
+	can be creating by using either Statement, PreparedStatement, CallableStatement
+	<br/>
+	All this are interface is a part of JDBC API and implementation are provide
+	by different data base server or vender as a part of JDBC Driver .
+	<br/>
+	<strong>Syntax : </strong>
+	<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<!--	Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306","root","password");
+	<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+	Statement stmt = con.createStatement();
+	<ul>
+	    <li>createStatement() method is non-static method of which is declared in Connection interface </li>
+	    <li>createStatement() method is a factory method or helper method which is used to execute and
+		return implementation object of Statement interface .</li>
+	    <li></li>
+	</ul>
+	<br/><br/>
+	<strong>Example JDBC 3rd Step :</strong>
+	<br/><br/>
+<!--	<pre class="viewPre">
+import java.sql.*;
+public class JDBC3rdStep {
+    public static void main(String[] args) {
+	Connection con = null;
+	Statement stmt = null;
+	try {
+	    Class.forName("com.mysql.jdbc.Driver");
+	    System.out.println("Driver loaded Sucessfully ........");
+	    con = DriverManager.getConnection("jdbc:mysql://localhost:3306?user=root&password=password");
+	    System.out.println("Connection established .... ");
+	    stmt = con.createStatement();
+	    System.out.println("Statement is created ... ");
+	} catch (ClassNotFoundException | SQLException e) {
+	    e.printStackTrace();
+	}
+    }
+}
+	</pre>-->
+<pre class="viewPre " >
+<span class="kwd">import</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">sql</span><span class="pun">.*;</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> JDBC3rdStep </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+	</span><span class="typ">Connection</span><span class="pln"> con </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln">
+	</span><span class="typ">Statement</span><span class="pln"> stmt </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln">
+	</span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+	    </span><span class="typ">Class</span><span class="pun">.</span><span class="pln">forName</span><span class="pun">(</span><span class="str">"com.mysql.jdbc.Driver"</span><span class="pun">);</span><span class="pln">
+	    </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Driver loaded Sucessfully ........"</span><span class="pun">);</span><span class="pln">
+	    con </span><span class="pun">=</span><span class="pln"> </span><span class="typ">DriverManager</span><span class="pun">.</span><span class="pln">getConnection</span><span class="pun">(</span><span class="str">"jdbc:mysql://localhost:3306?user=root&amp;password=password"</span><span class="pun">);</span><span class="pln">
+	    </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Connection established .... "</span><span class="pun">);</span><span class="pln">
+	    stmt </span><span class="pun">=</span><span class="pln"> con</span><span class="pun">.</span><span class="pln">createStatement</span><span class="pun">();</span><span class="pln">
+	    </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Statement is created ... "</span><span class="pun">);</span><span class="pln">
+	</span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">ClassNotFoundException</span><span class="pln"> </span><span class="pun">|</span><span class="pln"> </span><span class="typ">SQLException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+	    e</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+	</span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+	<br/><br/>
+	<strong>Note : </strong>
+	<br/>
+	Whenever we are executed similar reapetade query , Statement interface compile and execute the query
+	on every instance of execution .
+	<br/>&nbsp;&nbsp;&nbsp;
+	In this case compilation is unnecessary since it is a similarity reapetade query .
+	<br/>
+	Hence Statement is not good choice for execution  of similar reapetade query .
+	We can do pass of query  at the time of implementation of object creation .
+	<br/><br/>
+	<strong>PreparedStatement : </strong>
+	<br/><br/>
+	<ul>
+	    <li>java.sql.PreparedStatement interface is a part of JDBC API and implementation are provide
+		by different data base server or vender as a part of JDBC Driver . </li>
+	    <li>PreparedStatement is sub interface of Statement interface </li>
+	    <li>PreparedStatement is known as preCompile Statement</li>
+	    <li>PreparedStatement support the concept of compile once and execute many time (Execution plane) .</li>
+	    <li>PreparedStatement support the concept of place holder to pass the value dynamically at the run time .</li>
+	    <li>We pass the query at the time of implementation of object creation of PreparedStatement </li>
+	</ul>
+	<strong>place holder : </strong>
+	place holder is a parameter which hold the value dynamically at the run time .
+	<br/>
+	In JDBC place holder represent as <b>?</b> .
+	<br/>
+	<strong>Syntax : </strong>
+	<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	String insertQuery = "insert into student.login_info (name, password, mobile_no, sex) values(?,?,?,?)" ;
+	<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	String deleteQuery = "delete from student.login_info Where id= ?";
+	<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	String updateQuery = "update student.login_info set password=? where id =? ";
+	<br/><br/>
+	<strong>Setting the value for place holder : </strong>
+	<br/><br/>
+	<ul>
+	    <li>We have to set the data to the place holder before the execution .</li>
+	    <li>The number of data must exactly match with the number of place holder . </li>
+	    <li>To set the data to the place holder , we have to use setXxx() method </li>
+	</ul>
+	<strong>Syntax : </strong>
+	<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	+ void setXxx(int placeHolderNo_Index, Xxx data )
+	<br/><b>e.g.</b>
+	<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	rs.setInt(1,101);
+	<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	rs.setInt(2,"Anup");
+
+	<br/><br/>
+<!--	<pre class="viewPre">
+import java.sql.*;
+public class MySqlPreparedStatementTest {
+    public static void main(String[] args) {
+	Connection con = null;
+	PreparedStatement pstmt = null;
+	String insertQuery = "insert into student.login_info (name, password, mobile_no, sex) values(?,?,?,?)";
+
+	try {
+	    //  Loading and register the driver
+	    Class.forName("com.mysql.jdbc.Driver");
+	    // Establish a connection with the database server
+	    con = DriverManager.getConnection("jdbc:mysql://localhost:3306?user=root&password=password");
+	    // Createing Statement or platform
+	    pstmt = con.prepareStatement(insertQuery);
+
+	    System.out.println("Execute successfully ...");
+	} catch (ClassNotFoundException | SQLException e) {
+	    e.printStackTrace();
+	    System.out.println("Execute Faild ...");
+	}
+    }
+}
+	</pre>-->
+<pre class="viewPre " >
+<span class="kwd">import</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">sql</span><span class="pun">.*;</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">MySqlPreparedStatementTest</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+	</span><span class="typ">Connection</span><span class="pln"> con </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln">
+	</span><span class="typ">PreparedStatement</span><span class="pln"> pstmt </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln">
+	</span><span class="typ">String</span><span class="pln"> insertQuery </span><span class="pun">=</span><span class="pln"> </span><span class="str">"insert into student.login_info (name, password, mobile_no, sex) values(?,?,?,?)"</span><span class="pun">;</span><span class="pln">
+
+	</span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+	    </span><span class="com">//  Loading and register the driver</span><span class="pln">
+	    </span><span class="typ">Class</span><span class="pun">.</span><span class="pln">forName</span><span class="pun">(</span><span class="str">"com.mysql.jdbc.Driver"</span><span class="pun">);</span><span class="pln">
+	    </span><span class="com">// Establish a connection with the database server</span><span class="pln">
+	    con </span><span class="pun">=</span><span class="pln"> </span><span class="typ">DriverManager</span><span class="pun">.</span><span class="pln">getConnection</span><span class="pun">(</span><span class="str">"jdbc:mysql://localhost:3306?user=root&amp;password=password"</span><span class="pun">);</span><span class="pln">
+	    </span><span class="com">// Createing Statement or platform</span><span class="pln">
+	    pstmt </span><span class="pun">=</span><span class="pln"> con</span><span class="pun">.</span><span class="pln">prepareStatement</span><span class="pun">(</span><span class="pln">insertQuery</span><span class="pun">);</span><span class="pln">
+
+	    </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Execute successfully ..."</span><span class="pun">);</span><span class="pln">
+	</span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">ClassNotFoundException</span><span class="pln"> </span><span class="pun">|</span><span class="pln"> </span><span class="typ">SQLException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+	    e</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+	    </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Execute Faild ..."</span><span class="pun">);</span><span class="pln">
+	</span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+
+
+
+
+	<br/><br/><br/>
+	<center><strong style="font-size: 125%;"><u> JDBC 4th Step </u></strong></center>
+	<br/>
+	<strong>Execute sql query or statement : </strong>
+	<br/><br/>
+	To execute any kind of sql statement or query , we have three different method
+	<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	execute()
+	<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	executeUpdate()
+	<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	executeQuery()
+	<br/>
+	All this method declared in Statement interface .
+	<br/><br/>
+	<strong>execute() method : </strong>
+	<br/><br/>
+	execute() method is a generic type of method it can execute all kind of query or statement .
+	<br/>
+	<strong>Syntax : </strong>
+	<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	boolean execute(String sqlQuery);
+	<br/>
+	The return type of execute() method is boolean true or false .
+	<br/>
+	This method return true in the case of DQL statement and
+	return false in case of DQL and DDL statement .
+	<br/>
+	The out come of DML statement 0 to n integer value , which is given number of recode effected
+	we can used the bellow method
+	<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	public int getUpdateCount(); // DML statement
+	<br/>
+	The return type of getUpdateCount() methode always integer ,which can execute only DML statement.
+	<br/>
+	Apart from DML ,if either DQL or DDL is executed using getUpdateCount() method ,
+	then it throws SQLException .
+	<br/><br/>
+	<strong>executeUpdate() method : </strong>
+	executeUpdate() method is specialize method which is use to execute only DML statement .
+	<br/>
+	The return type for executeUpdate() is integer .
+	The out come of DML statement 0 to n integer value which is give to number of recode effected .
+	<br/>
+	Apart from DML ,if either DQL or DDL is executed,then it throws SQLException .
+	<br/>
+<!--	<pre class="viewPre">
+import java.sql.*;
+public class JDBC4thStep {
+    public static void main(String[] args) {
+        Connection con = null;
+        Statement stmt = null;
+        String query = " select * from student.login_info ";
+        try {
+            //  Loading and register the driver
+            Class.forName("com.mysql.jdbc.Driver");
+            // Establish a connection with the database server
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306?user=root&password=password");
+            // Createing Statement or platform
+            stmt = con.createStatement();
+            // Executing sql query
+            ResultSet rs = stmt.executeQuery(query);
+            System.out.println("Execute successfully ...");
+        } catch (ClassNotFoundException | SQLException e) {
+            e.printStackTrace();
+            System.out.println("Execute Faild ...");
+        }
+    }
+}
+	</pre>-->
+<pre class="viewPre " >
+<span class="kwd">import</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">sql</span><span class="pun">.*;</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">JDBC4thStep</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">Connection</span><span class="pln"> con </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">Statement</span><span class="pln"> stmt </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">String</span><span class="pln"> query </span><span class="pun">=</span><span class="pln"> </span><span class="str">" select * from student.login_info "</span><span class="pun">;</span><span class="pln">
+        </span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            </span><span class="com">//  Loading and register the driver</span><span class="pln">
+            </span><span class="typ">Class</span><span class="pun">.</span><span class="pln">forName</span><span class="pun">(</span><span class="str">"com.mysql.jdbc.Driver"</span><span class="pun">);</span><span class="pln">
+            </span><span class="com">// Establish a connection with the database server</span><span class="pln">
+            con </span><span class="pun">=</span><span class="pln"> </span><span class="typ">DriverManager</span><span class="pun">.</span><span class="pln">getConnection</span><span class="pun">(</span><span class="str">"jdbc:mysql://localhost:3306?user=root&amp;password=password"</span><span class="pun">);</span><span class="pln">
+            </span><span class="com">// Createing Statement or platform</span><span class="pln">
+            stmt </span><span class="pun">=</span><span class="pln"> con</span><span class="pun">.</span><span class="pln">createStatement</span><span class="pun">();</span><span class="pln">
+            </span><span class="com">// Executing sql query</span><span class="pln">
+            </span><span class="typ">ResultSet</span><span class="pln"> rs </span><span class="pun">=</span><span class="pln"> stmt</span><span class="pun">.</span><span class="pln">executeQuery</span><span class="pun">(</span><span class="pln">query</span><span class="pun">);</span><span class="pln">
+            </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Execute successfully ..."</span><span class="pun">);</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">ClassNotFoundException</span><span class="pln"> </span><span class="pun">|</span><span class="pln"> </span><span class="typ">SQLException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            e</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+            </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Execute Faild ..."</span><span class="pun">);</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+
+
+
+
+
+	<br/><br/><br/>
+	<center><strong style="font-size: 125%;"><u> JDBC 5th Step </u></strong></center>
+	<br/>
+	<strong>Process the Result set data (optional) : </strong>
+	<br/><br/>
+<!--	<strong>Feating the data from database : </strong>
+	<br/>-->
+	When ever is execute any DQL query ,then we may get the result which is refer as process data
+	or resulted data .
+	<br/>
+	The process data is store in cursor or buffer memory .
+	<br/>
+	We have to use java.sql.ResultSet to phase the process data from the cursor or buffer memory .
+	<br/>
+	The volume of data in cursor or buffer memory may different from the volume of table data .
+	<br/>
+	<strong>Note : </strong>Column name known as Column Label .
+	<br/> Column number is known as Column Index .
+	<br/><br/>
+	<strong>ResultSet : </strong>
+	java.sql.ResultSet is a interface which is a part of JDBC API and the implementation are provide
+	by different data base server or vender as a part of JDBC Driver .
+	<br/>
+	There are two overloaded method of ResultSet which to phase the result data from the courser memory
+	or buffer memory. which is known as getXxx() .
+	<br/>
+	<strong>Syntax : </strong>
+	<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 + Xxx getXxx(int ColumnNumber)    &nbsp;&nbsp;// + means public
+	<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 + Xxx getXxx(String ColumnName)
+	<br/>
+	<b>e.g.</b>
+	<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+	+ int getInt("ID")
+
+	<br/>or &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	+ int getInt(1)
+	<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+	+ String getString("Name")
+	<br/> or &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	+ String getString(2)
+	<br/><br/>
+	<strong>+ boolean next() </strong>
+	next() method is used only when there are limited number of data present in the database .
+	<br/><br/>
+	<strong>+ boolean absolute(int rowNo); </strong>
+	next() method is used only when there are n number of recode present in the database .
+	<br/>
+	<strong>Note : </strong> the return type of getXxx() method is appropriate data type .
+	<br/>
+	<strong>Example : </strong>
+	<br/><br/>
+<!--	<pre class="viewPre">
+import java.sql.*;
+public class JDBC5thStep {
+    public static void main(String[] args) {
+        Connection con = null;
+        Statement stmt = null;
+        String query = " select * from student.login_info ";
+        try {
+            //  Loading and register the driver
+            Class.forName("com.mysql.jdbc.Driver");
+            // Establish a connection with the database server
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306?user=root&password=password");
+            // Createing Statement or platform
+            stmt = con.createStatement();
+            // Executing sql query
+            ResultSet rs = stmt.executeQuery(query);
+           // Processing the Result set data
+            while(rs.next()){
+                int id=rs.getInt(1);
+                System.out.println("id - "+id);
+                String name = rs.getString(2);
+                System.out.println("name - " +name);
+                String mobileNo = rs.getString(3);
+                System.out.println("mobileNo - "+mobileNo);
+                String password = rs.getString(4);
+                System.out.println("password - "+password);
+            }
+            System.out.println("Execute successfully ...");
+        } catch (ClassNotFoundException | SQLException e) {
+            e.printStackTrace();
+            System.out.println("Execute Faild ...");
+        }
+    }
+}
+	</pre>-->
+<pre class="viewPre " ><span class="kwd">import</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">sql</span><span class="pun">.*;</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">JDBC5thStep</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">Connection</span><span class="pln"> con </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">Statement</span><span class="pln"> stmt </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">String</span><span class="pln"> query </span><span class="pun">=</span><span class="pln"> </span><span class="str">" select * from student.login_info "</span><span class="pun">;</span><span class="pln">
+        </span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            </span><span class="com">//  Loading and register the driver</span><span class="pln">
+            </span><span class="typ">Class</span><span class="pun">.</span><span class="pln">forName</span><span class="pun">(</span><span class="str">"com.mysql.jdbc.Driver"</span><span class="pun">);</span><span class="pln">
+            </span><span class="com">// Establish a connection with the database server</span><span class="pln">
+            con </span><span class="pun">=</span><span class="pln"> </span><span class="typ">DriverManager</span><span class="pun">.</span><span class="pln">getConnection</span><span class="pun">(</span><span class="str">"jdbc:mysql://localhost:3306?user=root&amp;password=password"</span><span class="pun">);</span><span class="pln">
+            </span><span class="com">// Createing Statement or platform</span><span class="pln">
+            stmt </span><span class="pun">=</span><span class="pln"> con</span><span class="pun">.</span><span class="pln">createStatement</span><span class="pun">();</span><span class="pln">
+            </span><span class="com">// Executing sql query</span><span class="pln">
+            </span><span class="typ">ResultSet</span><span class="pln"> rs </span><span class="pun">=</span><span class="pln"> stmt</span><span class="pun">.</span><span class="pln">executeQuery</span><span class="pun">(</span><span class="pln">query</span><span class="pun">);</span><span class="pln">
+           </span><span class="com">// Processing the Result set data</span><span class="pln">
+            </span><span class="kwd">while</span><span class="pun">(</span><span class="pln">rs</span><span class="pun">.</span><span class="kwd">next</span><span class="pun">()){</span><span class="pln">
+                </span><span class="kwd">int</span><span class="pln"> id</span><span class="pun">=</span><span class="pln">rs</span><span class="pun">.</span><span class="pln">getInt</span><span class="pun">(</span><span class="lit">1</span><span class="pun">);</span><span class="pln">
+                </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"id - "</span><span class="pun">+</span><span class="pln">id</span><span class="pun">);</span><span class="pln">
+                </span><span class="typ">String</span><span class="pln"> name </span><span class="pun">=</span><span class="pln"> rs</span><span class="pun">.</span><span class="pln">getString</span><span class="pun">(</span><span class="lit">2</span><span class="pun">);</span><span class="pln">
+                </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"name - "</span><span class="pln"> </span><span class="pun">+</span><span class="pln">name</span><span class="pun">);</span><span class="pln">
+                </span><span class="typ">String</span><span class="pln"> mobileNo </span><span class="pun">=</span><span class="pln"> rs</span><span class="pun">.</span><span class="pln">getString</span><span class="pun">(</span><span class="lit">3</span><span class="pun">);</span><span class="pln">
+                </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"mobileNo - "</span><span class="pun">+</span><span class="pln">mobileNo</span><span class="pun">);</span><span class="pln">
+                </span><span class="typ">String</span><span class="pln"> password </span><span class="pun">=</span><span class="pln"> rs</span><span class="pun">.</span><span class="pln">getString</span><span class="pun">(</span><span class="lit">4</span><span class="pun">);</span><span class="pln">
+                </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"password - "</span><span class="pun">+</span><span class="pln">password</span><span class="pun">);</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln">
+            </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Execute successfully ..."</span><span class="pun">);</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">ClassNotFoundException</span><span class="pln"> </span><span class="pun">|</span><span class="pln"> </span><span class="typ">SQLException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            e</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+            </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Execute Faild ..."</span><span class="pun">);</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+
+
+
+
+	<br/><br/><br/>
+	<center><strong style="font-size: 125%;"><u> JDBC 6th Step </u></strong></center>
+	<br/>
+	<strong>Close the all costly resources : </strong>
+	<br/><br/>
+	In the JDBC Connection we are use Connection Statement like costly resources ,it has to close within
+	finally block using if condition to avoid NullPointerException ,
+	since the costly resource it effect the performance of an application .
+	<br/><br/>
+	<strong>Example :</strong>
+	<br/><br/>
+<!--	<pre class="viewPre">
+import java.sql.*;
+public class JDBC6thStep {
+    public static void main(String[] args) {
+        Connection con = null;
+        Statement stmt = null;
+        String query = " select * from student.login_info ";
+        try {
+            //  Loading and register the driver
+            Class.forName("com.mysql.jdbc.Driver");
+            // Establish a connection with the database server
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306?user=root&password=password");
+            // Createing Statement or platform
+            stmt = con.createStatement();
+            // Executing sql query
+            ResultSet rs = stmt.executeQuery(query);
+           // Processing the Result set data
+            while(rs.next()){
+                int id=rs.getInt(1);
+                System.out.println("id - "+id);
+                String name = rs.getString(2);
+                System.out.println("name - " +name);
+                String mobileNo = rs.getString(3);
+                System.out.println("mobileNo - "+mobileNo);
+                String password = rs.getString(4);
+                System.out.println("password - "+password);
+            }
+            System.out.println("Execute successfully ...");
+        } catch (ClassNotFoundException | SQLException e) {
+            e.printStackTrace();
+            System.out.println("Execute Faild ...");
+        } finally {
+            //Close the all costly resources
+            if (stmt != null) {
+                try {
+                    stmt.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (con != null) {
+                try {
+                    con.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+}
+	</pre>-->
+<pre class="viewPre " ><span class="kwd">import</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">sql</span><span class="pun">.*;</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> JDBC6thStep </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">Connection</span><span class="pln"> con </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">Statement</span><span class="pln"> stmt </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">String</span><span class="pln"> query </span><span class="pun">=</span><span class="pln"> </span><span class="str">" select * from student.login_info "</span><span class="pun">;</span><span class="pln">
+        </span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            </span><span class="com">//  Loading and register the driver</span><span class="pln">
+            </span><span class="typ">Class</span><span class="pun">.</span><span class="pln">forName</span><span class="pun">(</span><span class="str">"com.mysql.jdbc.Driver"</span><span class="pun">);</span><span class="pln">
+            </span><span class="com">// Establish a connection with the database server</span><span class="pln">
+            con </span><span class="pun">=</span><span class="pln"> </span><span class="typ">DriverManager</span><span class="pun">.</span><span class="pln">getConnection</span><span class="pun">(</span><span class="str">"jdbc:mysql://localhost:3306?user=root&amp;password=password"</span><span class="pun">);</span><span class="pln">
+            </span><span class="com">// Createing Statement or platform</span><span class="pln">
+            stmt </span><span class="pun">=</span><span class="pln"> con</span><span class="pun">.</span><span class="pln">createStatement</span><span class="pun">();</span><span class="pln">
+            </span><span class="com">// Executing sql query</span><span class="pln">
+            </span><span class="typ">ResultSet</span><span class="pln"> rs </span><span class="pun">=</span><span class="pln"> stmt</span><span class="pun">.</span><span class="pln">executeQuery</span><span class="pun">(</span><span class="pln">query</span><span class="pun">);</span><span class="pln">
+           </span><span class="com">// Processing the Result set data</span><span class="pln">
+            </span><span class="kwd">while</span><span class="pun">(</span><span class="pln">rs</span><span class="pun">.</span><span class="kwd">next</span><span class="pun">()){</span><span class="pln">
+                </span><span class="kwd">int</span><span class="pln"> id</span><span class="pun">=</span><span class="pln">rs</span><span class="pun">.</span><span class="pln">getInt</span><span class="pun">(</span><span class="lit">1</span><span class="pun">);</span><span class="pln">
+                </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"id - "</span><span class="pun">+</span><span class="pln">id</span><span class="pun">);</span><span class="pln">
+                </span><span class="typ">String</span><span class="pln"> name </span><span class="pun">=</span><span class="pln"> rs</span><span class="pun">.</span><span class="pln">getString</span><span class="pun">(</span><span class="lit">2</span><span class="pun">);</span><span class="pln">
+                </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"name - "</span><span class="pln"> </span><span class="pun">+</span><span class="pln">name</span><span class="pun">);</span><span class="pln">
+                </span><span class="typ">String</span><span class="pln"> mobileNo </span><span class="pun">=</span><span class="pln"> rs</span><span class="pun">.</span><span class="pln">getString</span><span class="pun">(</span><span class="lit">3</span><span class="pun">);</span><span class="pln">
+                </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"mobileNo - "</span><span class="pun">+</span><span class="pln">mobileNo</span><span class="pun">);</span><span class="pln">
+                </span><span class="typ">String</span><span class="pln"> password </span><span class="pun">=</span><span class="pln"> rs</span><span class="pun">.</span><span class="pln">getString</span><span class="pun">(</span><span class="lit">4</span><span class="pun">);</span><span class="pln">
+                </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"password - "</span><span class="pun">+</span><span class="pln">password</span><span class="pun">);</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln">
+            </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Execute successfully ..."</span><span class="pun">);</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">ClassNotFoundException</span><span class="pln"> </span><span class="pun">|</span><span class="pln"> </span><span class="typ">SQLException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            e</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+            </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Execute Faild ..."</span><span class="pun">);</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">finally</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            </span><span class="com">//Close the all costly resources</span><span class="pln">
+            </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">stmt </span><span class="pun">!=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                </span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                    stmt</span><span class="pun">.</span><span class="pln">close</span><span class="pun">();</span><span class="pln">
+                </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">SQLException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                    e</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+                </span><span class="pun">}</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln">
+            </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">con </span><span class="pun">!=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                </span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                    con</span><span class="pun">.</span><span class="pln">close</span><span class="pun">();</span><span class="pln">
+                </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">SQLException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                    e</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+                </span><span class="pun">}</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle2()">
+        <h4> JDBC Example using Statement interface
+	    <span ng-hide ="jdbcConnection2" class= "caretright" ></span><span ng-show="jdbcConnection2" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="jdbcConnection2" class="view">
+	<strong>Code to insert recode into database  using Statement interface </strong>
+	<br/><br/>
+<!--	<pre class="viewPre">
+import java.sql.*;
+public class MySqlInsert {
+    public static void main(String[] args) {
+        Connection con = null;
+        Statement stmt = null;
+        String query = "insert into student.login_info (name, password, mobile_no, sex)"
+                      + " values('Anup','test','+919635499033','male')";
+        try {
+            //  Loading and register the driver
+            Class.forName("com.mysql.jdbc.Driver");
+            // Establish a connection with the database server
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306?user=root&password=password");
+            // Createing Statement or platform
+            stmt = con.createStatement();
+            // Executing sql query
+            stmt.executeUpdate(query);
+            System.out.println("Execute successfully ...");
+        } catch (ClassNotFoundException | SQLException e) {
+            e.printStackTrace();
+            System.out.println("Execute Faild ...");
+        } finally {
+            //Close the all costly resources
+            if (stmt != null) {
+                try {
+                    stmt.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (con != null) {
+                try {
+                    con.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+}
+	</pre>-->
+<pre class="viewPre " ><span class="kwd">import</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">sql</span><span class="pun">.*;</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">MySqlInsert</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">Connection</span><span class="pln"> con </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">Statement</span><span class="pln"> stmt </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">String</span><span class="pln"> query </span><span class="pun">=</span><span class="pln"> </span><span class="str">"insert into student.login_info (name, password, mobile_no, sex)"</span><span class="pln">
+                      </span><span class="pun">+</span><span class="pln"> </span><span class="str">" values('Anup','test','+919635499033','male')"</span><span class="pun">;</span><span class="pln">
+        </span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            </span><span class="com">//  Loading and register the driver</span><span class="pln">
+            </span><span class="typ">Class</span><span class="pun">.</span><span class="pln">forName</span><span class="pun">(</span><span class="str">"com.mysql.jdbc.Driver"</span><span class="pun">);</span><span class="pln">
+            </span><span class="com">// Establish a connection with the database server</span><span class="pln">
+            con </span><span class="pun">=</span><span class="pln"> </span><span class="typ">DriverManager</span><span class="pun">.</span><span class="pln">getConnection</span><span class="pun">(</span><span class="str">"jdbc:mysql://localhost:3306?user=root&amp;password=password"</span><span class="pun">);</span><span class="pln">
+            </span><span class="com">// Createing Statement or platform</span><span class="pln">
+            stmt </span><span class="pun">=</span><span class="pln"> con</span><span class="pun">.</span><span class="pln">createStatement</span><span class="pun">();</span><span class="pln">
+            </span><span class="com">// Executing sql query</span><span class="pln">
+            stmt</span><span class="pun">.</span><span class="pln">executeUpdate</span><span class="pun">(</span><span class="pln">query</span><span class="pun">);</span><span class="pln">
+            </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Execute successfully ..."</span><span class="pun">);</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">ClassNotFoundException</span><span class="pln"> </span><span class="pun">|</span><span class="pln"> </span><span class="typ">SQLException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            e</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+            </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Execute Faild ..."</span><span class="pun">);</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">finally</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            </span><span class="com">//Close the all costly resources</span><span class="pln">
+            </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">stmt </span><span class="pun">!=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                </span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                    stmt</span><span class="pun">.</span><span class="pln">close</span><span class="pun">();</span><span class="pln">
+                </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">SQLException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                    e</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+                </span><span class="pun">}</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln">
+            </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">con </span><span class="pun">!=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                </span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                    con</span><span class="pun">.</span><span class="pln">close</span><span class="pun">();</span><span class="pln">
+                </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">SQLException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                    e</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+                </span><span class="pun">}</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span><span class="pln"></span>
+</pre>
+
+
+	<br/><br/>
+	<strong>Code to phase recode into database using Statement interface </strong>
+	<br/><br/>
+<!--	<pre class="viewPre">
+import java.sql.*;
+public class MySqlSelect {
+    public static void main(String[] args) {
+        Connection con = null;
+        Statement stmt = null;
+        String query = " select * from student.login_info where id ='1'";
+        try {
+            //  Loading and register the driver
+            Class.forName("com.mysql.jdbc.Driver");
+            // Establish a connection with the database server
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306?user=root&password=password");
+            // Createing Statement or platform
+            stmt = con.createStatement();
+            // Executing sql query
+            ResultSet rs = stmt.executeQuery(query);
+           // Processing the Result set data
+            if(rs.next()){
+                int id=rs.getInt(1);
+                System.out.println("id - "+id);
+                String name = rs.getString(2);
+                System.out.println("name - " +name);
+                String mobileNo = rs.getString(3);
+                System.out.println("mobileNo - "+mobileNo);
+                String password = rs.getString(4);
+                System.out.println("password - "+password);
+            }
+            System.out.println("Execute successfully ...");
+        } catch (ClassNotFoundException | SQLException e) {
+            e.printStackTrace();
+            System.out.println("Execute Faild ...");
+        } finally {
+            //Close the all costly resources
+            if (stmt != null) {
+                try {
+                    stmt.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (con != null) {
+                try {
+                    con.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+}
+	</pre>-->
+<pre class="viewPre " ><span class="kwd">import</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">sql</span><span class="pun">.*;</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">MySqlSelect</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">Connection</span><span class="pln"> con </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">Statement</span><span class="pln"> stmt </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">String</span><span class="pln"> query </span><span class="pun">=</span><span class="pln"> </span><span class="str">" select * from student.login_info where id ='1'"</span><span class="pun">;</span><span class="pln">
+        </span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            </span><span class="com">//  Loading and register the driver</span><span class="pln">
+            </span><span class="typ">Class</span><span class="pun">.</span><span class="pln">forName</span><span class="pun">(</span><span class="str">"com.mysql.jdbc.Driver"</span><span class="pun">);</span><span class="pln">
+            </span><span class="com">// Establish a connection with the database server</span><span class="pln">
+            con </span><span class="pun">=</span><span class="pln"> </span><span class="typ">DriverManager</span><span class="pun">.</span><span class="pln">getConnection</span><span class="pun">(</span><span class="str">"jdbc:mysql://localhost:3306?user=root&amp;password=password"</span><span class="pun">);</span><span class="pln">
+            </span><span class="com">// Createing Statement or platform</span><span class="pln">
+            stmt </span><span class="pun">=</span><span class="pln"> con</span><span class="pun">.</span><span class="pln">createStatement</span><span class="pun">();</span><span class="pln">
+            </span><span class="com">// Executing sql query</span><span class="pln">
+            </span><span class="typ">ResultSet</span><span class="pln"> rs </span><span class="pun">=</span><span class="pln"> stmt</span><span class="pun">.</span><span class="pln">executeQuery</span><span class="pun">(</span><span class="pln">query</span><span class="pun">);</span><span class="pln">
+           </span><span class="com">// Processing the Result set data</span><span class="pln">
+            </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">rs</span><span class="pun">.</span><span class="kwd">next</span><span class="pun">()){</span><span class="pln">
+                </span><span class="kwd">int</span><span class="pln"> id</span><span class="pun">=</span><span class="pln">rs</span><span class="pun">.</span><span class="pln">getInt</span><span class="pun">(</span><span class="lit">1</span><span class="pun">);</span><span class="pln">
+                </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"id - "</span><span class="pun">+</span><span class="pln">id</span><span class="pun">);</span><span class="pln">
+                </span><span class="typ">String</span><span class="pln"> name </span><span class="pun">=</span><span class="pln"> rs</span><span class="pun">.</span><span class="pln">getString</span><span class="pun">(</span><span class="lit">2</span><span class="pun">);</span><span class="pln">
+                </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"name - "</span><span class="pln"> </span><span class="pun">+</span><span class="pln">name</span><span class="pun">);</span><span class="pln">
+                </span><span class="typ">String</span><span class="pln"> mobileNo </span><span class="pun">=</span><span class="pln"> rs</span><span class="pun">.</span><span class="pln">getString</span><span class="pun">(</span><span class="lit">3</span><span class="pun">);</span><span class="pln">
+                </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"mobileNo - "</span><span class="pun">+</span><span class="pln">mobileNo</span><span class="pun">);</span><span class="pln">
+                </span><span class="typ">String</span><span class="pln"> password </span><span class="pun">=</span><span class="pln"> rs</span><span class="pun">.</span><span class="pln">getString</span><span class="pun">(</span><span class="lit">4</span><span class="pun">);</span><span class="pln">
+                </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"password - "</span><span class="pun">+</span><span class="pln">password</span><span class="pun">);</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln">
+            </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Execute successfully ..."</span><span class="pun">);</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">ClassNotFoundException</span><span class="pln"> </span><span class="pun">|</span><span class="pln"> </span><span class="typ">SQLException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            e</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+            </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Execute Faild ..."</span><span class="pun">);</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">finally</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            </span><span class="com">//Close the all costly resources</span><span class="pln">
+            </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">stmt </span><span class="pun">!=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                </span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                    stmt</span><span class="pun">.</span><span class="pln">close</span><span class="pun">();</span><span class="pln">
+                </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">SQLException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                    e</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+                </span><span class="pun">}</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln">
+            </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">con </span><span class="pun">!=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                </span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                    con</span><span class="pun">.</span><span class="pln">close</span><span class="pun">();</span><span class="pln">
+                </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">SQLException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                    e</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+                </span><span class="pun">}</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+
+
+	<br/><br/>
+	<strong>Code to update recode into database using Statement interface </strong>
+	<br/><br/>
+<!--	<pre class="viewPre">
+import java.sql.*;
+public class MySqlUpdate {
+    public static void main(String[] args) {
+        Connection con = null;
+        Statement stmt = null;
+        String query = "update student.login_info set password='password' where id ='1'";
+        try {
+            //  Loading and register the driver
+            Class.forName("com.mysql.jdbc.Driver");
+            // Establish a connection with the database server
+            con = DriverManager.getConnection( "jdbc:mysql://localhost:3306?user=root&password=password");
+            // Createing Statement or platform
+            stmt = con.createStatement();
+            // Executing sql query
+            stmt.executeUpdate(query);
+            System.out.println("Execute successfully ...");
+        } catch (ClassNotFoundException | SQLException e) {
+            e.printStackTrace();
+            System.out.println("Execute Faild ...");
+        } finally {
+            //Close the all costly resources
+            if (stmt != null) {
+                try {
+                    stmt.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (con != null) {
+                try {
+                    con.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+}
+	</pre>-->
+<pre class="viewPre " ><span class="kwd">import</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">sql</span><span class="pun">.*;</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">MySqlUpdate</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">Connection</span><span class="pln"> con </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">Statement</span><span class="pln"> stmt </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">String</span><span class="pln"> query </span><span class="pun">=</span><span class="pln"> </span><span class="str">"update student.login_info set password='password' where id ='1'"</span><span class="pun">;</span><span class="pln">
+        </span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            </span><span class="com">//  Loading and register the driver</span><span class="pln">
+            </span><span class="typ">Class</span><span class="pun">.</span><span class="pln">forName</span><span class="pun">(</span><span class="str">"com.mysql.jdbc.Driver"</span><span class="pun">);</span><span class="pln">
+            </span><span class="com">// Establish a connection with the database server</span><span class="pln">
+            con </span><span class="pun">=</span><span class="pln"> </span><span class="typ">DriverManager</span><span class="pun">.</span><span class="pln">getConnection</span><span class="pun">(</span><span class="pln"> </span><span class="str">"jdbc:mysql://localhost:3306?user=root&amp;password=password"</span><span class="pun">);</span><span class="pln">
+            </span><span class="com">// Createing Statement or platform</span><span class="pln">
+            stmt </span><span class="pun">=</span><span class="pln"> con</span><span class="pun">.</span><span class="pln">createStatement</span><span class="pun">();</span><span class="pln">
+            </span><span class="com">// Executing sql query</span><span class="pln">
+            stmt</span><span class="pun">.</span><span class="pln">executeUpdate</span><span class="pun">(</span><span class="pln">query</span><span class="pun">);</span><span class="pln">
+            </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Execute successfully ..."</span><span class="pun">);</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">ClassNotFoundException</span><span class="pln"> </span><span class="pun">|</span><span class="pln"> </span><span class="typ">SQLException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            e</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+            </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Execute Faild ..."</span><span class="pun">);</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">finally</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            </span><span class="com">//Close the all costly resources</span><span class="pln">
+            </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">stmt </span><span class="pun">!=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                </span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                    stmt</span><span class="pun">.</span><span class="pln">close</span><span class="pun">();</span><span class="pln">
+                </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">SQLException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                    e</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+                </span><span class="pun">}</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln">
+            </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">con </span><span class="pun">!=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                </span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                    con</span><span class="pun">.</span><span class="pln">close</span><span class="pun">();</span><span class="pln">
+                </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">SQLException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                    e</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+                </span><span class="pun">}</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+
+
+	<br/><br/>
+	<strong>Code to delete recode into database using Statement interface </strong>
+	<br/><br/>
+<!--	<pre class="viewPre">
+import java.sql.*;
+public class MySqlDelete {
+    public static void main(String[] args) {
+        Connection con = null;
+        Statement stmt = null;
+        String query = "delete from student.login_info Where id='2'";
+        try {
+            //  Loading and register the driver
+            Class.forName("com.mysql.jdbc.Driver");
+            // Establish a connection with the database server
+            con = DriverManager.getConnection( "jdbc:mysql://localhost:3306?user=root&password=password");
+            // Createing Statement or platform
+            stmt = con.createStatement();
+            // Executing sql query
+            stmt.executeUpdate(query);
+            System.out.println("Execute successfully ...");
+        } catch (ClassNotFoundException | SQLException e) {
+            e.printStackTrace();
+            System.out.println("Execute Faild ...");
+        } finally {
+            //Close the all costly resources
+            if (stmt != null) {
+                try {
+                    stmt.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (con != null) {
+                try {
+                    con.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+}
+	</pre>-->
+<pre class="viewPre " ><span class="kwd">import</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">sql</span><span class="pun">.*;</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">MySqlDelete</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">Connection</span><span class="pln"> con </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">Statement</span><span class="pln"> stmt </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">String</span><span class="pln"> query </span><span class="pun">=</span><span class="pln"> </span><span class="str">"delete from student.login_info Where id='2'"</span><span class="pun">;</span><span class="pln">
+        </span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            </span><span class="com">//  Loading and register the driver</span><span class="pln">
+            </span><span class="typ">Class</span><span class="pun">.</span><span class="pln">forName</span><span class="pun">(</span><span class="str">"com.mysql.jdbc.Driver"</span><span class="pun">);</span><span class="pln">
+            </span><span class="com">// Establish a connection with the database server</span><span class="pln">
+            con </span><span class="pun">=</span><span class="pln"> </span><span class="typ">DriverManager</span><span class="pun">.</span><span class="pln">getConnection</span><span class="pun">(</span><span class="pln"> </span><span class="str">"jdbc:mysql://localhost:3306?user=root&amp;password=password"</span><span class="pun">);</span><span class="pln">
+            </span><span class="com">// Createing Statement or platform</span><span class="pln">
+            stmt </span><span class="pun">=</span><span class="pln"> con</span><span class="pun">.</span><span class="pln">createStatement</span><span class="pun">();</span><span class="pln">
+            </span><span class="com">// Executing sql query</span><span class="pln">
+            stmt</span><span class="pun">.</span><span class="pln">executeUpdate</span><span class="pun">(</span><span class="pln">query</span><span class="pun">);</span><span class="pln">
+            </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Execute successfully ..."</span><span class="pun">);</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">ClassNotFoundException</span><span class="pln"> </span><span class="pun">|</span><span class="pln"> </span><span class="typ">SQLException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            e</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+            </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Execute Faild ..."</span><span class="pun">);</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">finally</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            </span><span class="com">//Close the all costly resources</span><span class="pln">
+            </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">stmt </span><span class="pun">!=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                </span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                    stmt</span><span class="pun">.</span><span class="pln">close</span><span class="pun">();</span><span class="pln">
+                </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">SQLException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                    e</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+                </span><span class="pun">}</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln">
+            </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">con </span><span class="pun">!=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                </span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                    con</span><span class="pun">.</span><span class="pln">close</span><span class="pun">();</span><span class="pln">
+                </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">SQLException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                    e</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+                </span><span class="pun">}</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+
+
+	<br/><br/>
+	<strong>Code to insert multiple recode into database using Statement interface </strong>
+	<br/><br/>
+<!--	<pre class="viewPre">
+import java.sql.*;
+public class MySqlMultipleRecordInsert {
+    public static void main(String[] args) {
+	Connection con = null;
+	Statement stmt = null;
+	String query1 = "insert into student.login_info (name, password, mobile_no, sex)"
+		      + " values('AnupG','test','+919635499033','male')";
+
+	String query2 = "insert into student.login_info (name, password, mobile_no, sex)"
+	    + " values('Kamal','password','9999999999','male')";
+
+	String query3 = "insert into student.login_info (name, password, mobile_no, sex)"
+	    + " values('Rekash','test1','9999999999','male')";
+	try {
+	    //  Loading and register the driver
+	    Class.forName("com.mysql.jdbc.Driver");
+	    // Establish a connection with the database server
+	    con = DriverManager.getConnection( "jdbc:mysql://localhost:3306?user=root&password=password");
+	    // Createing Statement or platform
+	    stmt = con.createStatement();
+	    // Executing sql query
+	    stmt.executeUpdate(query1);
+	    stmt.executeUpdate(query2);
+	    stmt.executeUpdate(query3);
+
+	    System.out.println("Execute successfully ...");
+	} catch (ClassNotFoundException | SQLException e) {
+	    e.printStackTrace();
+	    System.out.println("Execute Faild ...");
+	} finally {
+	    //Close the all costly resources
+	    if (stmt != null) {
+		try {
+		    stmt.close();
+		} catch (SQLException e) {
+		    e.printStackTrace();
+		}
+	    }
+	    if (con != null) {
+		try {
+		    con.close();
+		} catch (SQLException e) {
+		    e.printStackTrace();
+		}
+	    }
+	}
+    }
+}
+	</pre>-->
+<pre class="viewPre " ><span class="kwd">import</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">sql</span><span class="pun">.*;</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">MySqlMultipleRecordInsert</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+	</span><span class="typ">Connection</span><span class="pln"> con </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln">
+	</span><span class="typ">Statement</span><span class="pln"> stmt </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln">
+	</span><span class="typ">String</span><span class="pln"> query1 </span><span class="pun">=</span><span class="pln"> </span><span class="str">"insert into student.login_info (name, password, mobile_no, sex)"</span><span class="pln">
+		      </span><span class="pun">+</span><span class="pln"> </span><span class="str">" values('AnupG','test','+919635499033','male')"</span><span class="pun">;</span><span class="pln">
+
+	</span><span class="typ">String</span><span class="pln"> query2 </span><span class="pun">=</span><span class="pln"> </span><span class="str">"insert into student.login_info (name, password, mobile_no, sex)"</span><span class="pln">
+	    </span><span class="pun">+</span><span class="pln"> </span><span class="str">" values('Kamal','password','9999999999','male')"</span><span class="pun">;</span><span class="pln">
+
+	</span><span class="typ">String</span><span class="pln"> query3 </span><span class="pun">=</span><span class="pln"> </span><span class="str">"insert into student.login_info (name, password, mobile_no, sex)"</span><span class="pln">
+	    </span><span class="pun">+</span><span class="pln"> </span><span class="str">" values('Rekash','test1','9999999999','male')"</span><span class="pun">;</span><span class="pln">
+	</span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+	    </span><span class="com">//  Loading and register the driver</span><span class="pln">
+	    </span><span class="typ">Class</span><span class="pun">.</span><span class="pln">forName</span><span class="pun">(</span><span class="str">"com.mysql.jdbc.Driver"</span><span class="pun">);</span><span class="pln">
+	    </span><span class="com">// Establish a connection with the database server</span><span class="pln">
+	    con </span><span class="pun">=</span><span class="pln"> </span><span class="typ">DriverManager</span><span class="pun">.</span><span class="pln">getConnection</span><span class="pun">(</span><span class="pln"> </span><span class="str">"jdbc:mysql://localhost:3306?user=root&amp;password=password"</span><span class="pun">);</span><span class="pln">
+	    </span><span class="com">// Createing Statement or platform</span><span class="pln">
+	    stmt </span><span class="pun">=</span><span class="pln"> con</span><span class="pun">.</span><span class="pln">createStatement</span><span class="pun">();</span><span class="pln">
+	    </span><span class="com">// Executing sql query</span><span class="pln">
+	    stmt</span><span class="pun">.</span><span class="pln">executeUpdate</span><span class="pun">(</span><span class="pln">query1</span><span class="pun">);</span><span class="pln">
+	    stmt</span><span class="pun">.</span><span class="pln">executeUpdate</span><span class="pun">(</span><span class="pln">query2</span><span class="pun">);</span><span class="pln">
+	    stmt</span><span class="pun">.</span><span class="pln">executeUpdate</span><span class="pun">(</span><span class="pln">query3</span><span class="pun">);</span><span class="pln">
+
+	    </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Execute successfully ..."</span><span class="pun">);</span><span class="pln">
+	</span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">ClassNotFoundException</span><span class="pln"> </span><span class="pun">|</span><span class="pln"> </span><span class="typ">SQLException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+	    e</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+	    </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Execute Faild ..."</span><span class="pun">);</span><span class="pln">
+	</span><span class="pun">}</span><span class="pln"> </span><span class="kwd">finally</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+	    </span><span class="com">//Close the all costly resources</span><span class="pln">
+	    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">stmt </span><span class="pun">!=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+		</span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+		    stmt</span><span class="pun">.</span><span class="pln">close</span><span class="pun">();</span><span class="pln">
+		</span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">SQLException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+		    e</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+		</span><span class="pun">}</span><span class="pln">
+	    </span><span class="pun">}</span><span class="pln">
+	    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">con </span><span class="pun">!=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+		</span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+		    con</span><span class="pun">.</span><span class="pln">close</span><span class="pun">();</span><span class="pln">
+		</span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">SQLException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+		    e</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+		</span><span class="pun">}</span><span class="pln">
+	    </span><span class="pun">}</span><span class="pln">
+	</span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle7()">
+	<h4> JDBC Example using PreparedStatement interface
+	<span ng-hide ="jdbcConnection7" class= "caretright" ></span><span ng-show="jdbcConnection7" class= "caretrightUp" ></span></h4>
+    </div>
+    <div ng-show="jdbcConnection7" class="view">
+
+	<br/><br/>
+	<strong>Code to insert multiple recode into database using PreparedStatement interface </strong>
+	<br/><br/>
+<!--	<pre class="prettyprint">
+import java.sql.*;
+public class MySqlMulRecordInsertByPStatement {
+    public static void main(String[] args) {
+	Connection con = null;
+	PreparedStatement pstmt = null;
+	String insertQuery = "insert into student.login_info (name, password, mobile_no, sex) values(?,?,?,?)";
+	try {
+	    //  Loading and register the driver
+	    Class.forName("com.mysql.jdbc.Driver");
+	    // Establish a connection with the database server
+	    con = DriverManager.getConnection( "jdbc:mysql://localhost:3306?user=root&password=password");
+	    // Createing Statement or platform
+	    pstmt = con.prepareStatement(insertQuery);
+
+	    // Executing sql query
+	    pstmt.setString(1, "Akash");
+	    pstmt.setString(2, "password");
+	    pstmt.setString(3, "9999999999");
+	    pstmt.setString(4, "male");
+	    pstmt.executeUpdate();
+
+	    pstmt.setString(1, "Rahul");
+	    pstmt.setString(2, "password123");
+	    pstmt.setString(3, "9999999999");
+	    pstmt.setString(4, "male");
+	    pstmt.executeUpdate();
+
+	    pstmt.setString(1, "Prakash");
+	    pstmt.setString(2, "Test123");
+	    pstmt.setString(3, "9999999999");
+	    pstmt.setString(4, "male");
+	    pstmt.executeUpdate();
+	    System.out.println("Execute successfully ...");
+	} catch (ClassNotFoundException | SQLException e) {
+	    e.printStackTrace();
+	    System.out.println("Execute Faild ...");
+	} finally {
+	    //Close the all costly resources
+	    if (pstmt != null) {
+		try {
+			pstmt.close();
+		} catch (SQLException e) {
+		    e.printStackTrace();
+		}
+	    }
+	    if (con != null) {
+		try {
+		    con.close();
+		} catch (SQLException e) {
+		    e.printStackTrace();
+		}
+	    }
+	}
+    }
+}
+	</pre>-->
+<pre class="viewPre " ><span class="kwd">import</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">sql</span><span class="pun">.*;</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">MySqlMulRecordInsertByPStatement</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+	</span><span class="typ">Connection</span><span class="pln"> con </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln">
+	</span><span class="typ">PreparedStatement</span><span class="pln"> pstmt </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln">
+	</span><span class="typ">String</span><span class="pln"> insertQuery </span><span class="pun">=</span><span class="pln"> </span><span class="str">"insert into student.login_info (name, password, mobile_no, sex) values(?,?,?,?)"</span><span class="pun">;</span><span class="pln">
+	</span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+	    </span><span class="com">//  Loading and register the driver</span><span class="pln">
+	    </span><span class="typ">Class</span><span class="pun">.</span><span class="pln">forName</span><span class="pun">(</span><span class="str">"com.mysql.jdbc.Driver"</span><span class="pun">);</span><span class="pln">
+	    </span><span class="com">// Establish a connection with the database server</span><span class="pln">
+	    con </span><span class="pun">=</span><span class="pln"> </span><span class="typ">DriverManager</span><span class="pun">.</span><span class="pln">getConnection</span><span class="pun">(</span><span class="pln"> </span><span class="str">"jdbc:mysql://localhost:3306?user=root&amp;password=password"</span><span class="pun">);</span><span class="pln">
+	    </span><span class="com">// Createing Statement or platform</span><span class="pln">
+	    pstmt </span><span class="pun">=</span><span class="pln"> con</span><span class="pun">.</span><span class="pln">prepareStatement</span><span class="pun">(</span><span class="pln">insertQuery</span><span class="pun">);</span><span class="pln">
+
+	    </span><span class="com">// Executing sql query</span><span class="pln">
+	    pstmt</span><span class="pun">.</span><span class="pln">setString</span><span class="pun">(</span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="str">"Akash"</span><span class="pun">);</span><span class="pln">
+	    pstmt</span><span class="pun">.</span><span class="pln">setString</span><span class="pun">(</span><span class="lit">2</span><span class="pun">,</span><span class="pln"> </span><span class="str">"password"</span><span class="pun">);</span><span class="pln">
+	    pstmt</span><span class="pun">.</span><span class="pln">setString</span><span class="pun">(</span><span class="lit">3</span><span class="pun">,</span><span class="pln"> </span><span class="str">"9999999999"</span><span class="pun">);</span><span class="pln">
+	    pstmt</span><span class="pun">.</span><span class="pln">setString</span><span class="pun">(</span><span class="lit">4</span><span class="pun">,</span><span class="pln"> </span><span class="str">"male"</span><span class="pun">);</span><span class="pln">
+	    pstmt</span><span class="pun">.</span><span class="pln">executeUpdate</span><span class="pun">();</span><span class="pln">
+
+	    pstmt</span><span class="pun">.</span><span class="pln">setString</span><span class="pun">(</span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="str">"Rahul"</span><span class="pun">);</span><span class="pln">
+	    pstmt</span><span class="pun">.</span><span class="pln">setString</span><span class="pun">(</span><span class="lit">2</span><span class="pun">,</span><span class="pln"> </span><span class="str">"password123"</span><span class="pun">);</span><span class="pln">
+	    pstmt</span><span class="pun">.</span><span class="pln">setString</span><span class="pun">(</span><span class="lit">3</span><span class="pun">,</span><span class="pln"> </span><span class="str">"9999999999"</span><span class="pun">);</span><span class="pln">
+	    pstmt</span><span class="pun">.</span><span class="pln">setString</span><span class="pun">(</span><span class="lit">4</span><span class="pun">,</span><span class="pln"> </span><span class="str">"male"</span><span class="pun">);</span><span class="pln">
+	    pstmt</span><span class="pun">.</span><span class="pln">executeUpdate</span><span class="pun">();</span><span class="pln">
+
+	    pstmt</span><span class="pun">.</span><span class="pln">setString</span><span class="pun">(</span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="str">"Prakash"</span><span class="pun">);</span><span class="pln">
+	    pstmt</span><span class="pun">.</span><span class="pln">setString</span><span class="pun">(</span><span class="lit">2</span><span class="pun">,</span><span class="pln"> </span><span class="str">"Test123"</span><span class="pun">);</span><span class="pln">
+	    pstmt</span><span class="pun">.</span><span class="pln">setString</span><span class="pun">(</span><span class="lit">3</span><span class="pun">,</span><span class="pln"> </span><span class="str">"9999999999"</span><span class="pun">);</span><span class="pln">
+	    pstmt</span><span class="pun">.</span><span class="pln">setString</span><span class="pun">(</span><span class="lit">4</span><span class="pun">,</span><span class="pln"> </span><span class="str">"male"</span><span class="pun">);</span><span class="pln">
+	    pstmt</span><span class="pun">.</span><span class="pln">executeUpdate</span><span class="pun">();</span><span class="pln">
+	    </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Execute successfully ..."</span><span class="pun">);</span><span class="pln">
+	</span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">ClassNotFoundException</span><span class="pln"> </span><span class="pun">|</span><span class="pln"> </span><span class="typ">SQLException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+	    e</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+	    </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Execute Faild ..."</span><span class="pun">);</span><span class="pln">
+	</span><span class="pun">}</span><span class="pln"> </span><span class="kwd">finally</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+	    </span><span class="com">//Close the all costly resources</span><span class="pln">
+	    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">pstmt </span><span class="pun">!=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+		</span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+			pstmt</span><span class="pun">.</span><span class="pln">close</span><span class="pun">();</span><span class="pln">
+		</span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">SQLException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+		    e</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+		</span><span class="pun">}</span><span class="pln">
+	    </span><span class="pun">}</span><span class="pln">
+	    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">con </span><span class="pun">!=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+		</span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+		    con</span><span class="pun">.</span><span class="pln">close</span><span class="pun">();</span><span class="pln">
+		</span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">SQLException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+		    e</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+		</span><span class="pun">}</span><span class="pln">
+	    </span><span class="pun">}</span><span class="pln">
+	</span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+
+
+<br/><br/>
+	<strong>Code to phase single recode into database using PreparedStatement interface </strong>
+<br/><br/>
+
+
+<!--<pre class="viewPre">
+import java.sql.*;
+public class MySqlPhaseSingleRecode {
+    public static void main(String[] args) {
+        Connection con = null;
+        PreparedStatement pstmt = null;
+        ResultSet rs = null ;
+        String query = " select * from student.login_info ";
+        try {
+            //  Loading and register the driver
+            Class.forName("com.mysql.jdbc.Driver");
+            // Establish a connection with the database server
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306?user=root&password=password");
+            // Createing Statement or platform
+            pstmt = con.prepareStatement(query);
+            // Executing sql query
+            rs = pstmt.executeQuery();
+           // Processing the Result set data
+            if(rs.next()){
+                int id=rs.getInt(1);
+                String name = rs.getString(2);
+                String mobileNo = rs.getString(3);
+                String password = rs.getString(4);
+                System.out.println("Id : "+id+", Name : " +name+", MobileNo : "+mobileNo+", Password : "+password);
+            }
+            System.out.println("Execute successfully ...");
+        } catch (ClassNotFoundException | SQLException e) {
+            e.printStackTrace();
+            System.out.println("Execute Faild ...");
+        } finally {
+            //Close the all costly resources
+            if (pstmt != null) {
+                try {
+                    pstmt.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (con != null) {
+                try {
+                    con.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (rs != null) {
+                try {
+                    rs.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+}
+</pre>-->
+<pre class="viewPre " ><span class="kwd">import</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">sql</span><span class="pun">.*;</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">MySqlPhaseSingleRecode</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">Connection</span><span class="pln"> con </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">PreparedStatement</span><span class="pln"> pstmt </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">ResultSet</span><span class="pln"> rs </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pln"> </span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">String</span><span class="pln"> query </span><span class="pun">=</span><span class="pln"> </span><span class="str">" select * from student.login_info "</span><span class="pun">;</span><span class="pln">
+        </span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            </span><span class="com">//  Loading and register the driver</span><span class="pln">
+            </span><span class="typ">Class</span><span class="pun">.</span><span class="pln">forName</span><span class="pun">(</span><span class="str">"com.mysql.jdbc.Driver"</span><span class="pun">);</span><span class="pln">
+            </span><span class="com">// Establish a connection with the database server</span><span class="pln">
+            con </span><span class="pun">=</span><span class="pln"> </span><span class="typ">DriverManager</span><span class="pun">.</span><span class="pln">getConnection</span><span class="pun">(</span><span class="str">"jdbc:mysql://localhost:3306?user=root&amp;password=password"</span><span class="pun">);</span><span class="pln">
+            </span><span class="com">// Createing Statement or platform </span><span class="pln">
+            pstmt </span><span class="pun">=</span><span class="pln"> con</span><span class="pun">.</span><span class="pln">prepareStatement</span><span class="pun">(</span><span class="pln">query</span><span class="pun">);</span><span class="pln">
+            </span><span class="com">// Executing sql query</span><span class="pln">
+            rs </span><span class="pun">=</span><span class="pln"> pstmt</span><span class="pun">.</span><span class="pln">executeQuery</span><span class="pun">();</span><span class="pln">
+           </span><span class="com">// Processing the Result set data</span><span class="pln">
+            </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">rs</span><span class="pun">.</span><span class="kwd">next</span><span class="pun">()){</span><span class="pln">
+                </span><span class="kwd">int</span><span class="pln"> id</span><span class="pun">=</span><span class="pln">rs</span><span class="pun">.</span><span class="pln">getInt</span><span class="pun">(</span><span class="lit">1</span><span class="pun">);</span><span class="pln">
+                </span><span class="typ">String</span><span class="pln"> name </span><span class="pun">=</span><span class="pln"> rs</span><span class="pun">.</span><span class="pln">getString</span><span class="pun">(</span><span class="lit">2</span><span class="pun">);</span><span class="pln">
+                </span><span class="typ">String</span><span class="pln"> mobileNo </span><span class="pun">=</span><span class="pln"> rs</span><span class="pun">.</span><span class="pln">getString</span><span class="pun">(</span><span class="lit">3</span><span class="pun">);</span><span class="pln">
+                </span><span class="typ">String</span><span class="pln"> password </span><span class="pun">=</span><span class="pln"> rs</span><span class="pun">.</span><span class="pln">getString</span><span class="pun">(</span><span class="lit">4</span><span class="pun">);</span><span class="pln">
+                </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Id : "</span><span class="pun">+</span><span class="pln">id</span><span class="pun">+</span><span class="str">", Name : "</span><span class="pln"> </span><span class="pun">+</span><span class="pln">name</span><span class="pun">+</span><span class="str">", MobileNo : "</span><span class="pun">+</span><span class="pln">mobileNo</span><span class="pun">+</span><span class="str">", Password : "</span><span class="pun">+</span><span class="pln">password</span><span class="pun">);</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln">
+            </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Execute successfully ..."</span><span class="pun">);</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">ClassNotFoundException</span><span class="pln"> </span><span class="pun">|</span><span class="pln"> </span><span class="typ">SQLException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            e</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+            </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Execute Faild ..."</span><span class="pun">);</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">finally</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            </span><span class="com">//Close the all costly resources</span><span class="pln">
+            </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">pstmt </span><span class="pun">!=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                </span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                    pstmt</span><span class="pun">.</span><span class="pln">close</span><span class="pun">();</span><span class="pln">
+                </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">SQLException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                    e</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+                </span><span class="pun">}</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln">
+            </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">con </span><span class="pun">!=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                </span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                    con</span><span class="pun">.</span><span class="pln">close</span><span class="pun">();</span><span class="pln">
+                </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">SQLException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                    e</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+                </span><span class="pun">}</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln">
+            </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">rs </span><span class="pun">!=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                </span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                    rs</span><span class="pun">.</span><span class="pln">close</span><span class="pun">();</span><span class="pln">
+                </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">SQLException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                    e</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+                </span><span class="pun">}</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span>
+</pre>
+
+
+<br/><br/>
+    <strong>Code to phase multiple recode into database using PreparedStatement interface </strong>
+<br/><br/>
+<pre class="viewPre " ><span class="kwd">import</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">sql</span><span class="pun">.*;</span><span class="pln">
+
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">MySqlPhaseSingleRecode</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">Connection</span><span class="pln"> con </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">PreparedStatement</span><span class="pln"> pstmt </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">ResultSet</span><span class="pln"> rs </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pln"> </span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">String</span><span class="pln"> query </span><span class="pun">=</span><span class="pln"> </span><span class="str">" select * from student.login_info "</span><span class="pun">;</span><span class="pln">
+        </span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            </span><span class="com">//  Loading and register the driver</span><span class="pln">
+            </span><span class="typ">Class</span><span class="pun">.</span><span class="pln">forName</span><span class="pun">(</span><span class="str">"com.mysql.jdbc.Driver"</span><span class="pun">);</span><span class="pln">
+            </span><span class="com">// Establish a connection with the database server</span><span class="pln">
+            con </span><span class="pun">=</span><span class="pln"> </span><span class="typ">DriverManager</span><span class="pun">.</span><span class="pln">getConnection</span><span class="pun">(</span><span class="str">"jdbc:mysql://localhost:3306?user=root&amp;password=password"</span><span class="pun">);</span><span class="pln">
+            </span><span class="com">// Createing Statement or platform </span><span class="pln">
+            pstmt </span><span class="pun">=</span><span class="pln"> con</span><span class="pun">.</span><span class="pln">prepareStatement</span><span class="pun">(</span><span class="pln">query</span><span class="pun">);</span><span class="pln">
+            </span><span class="com">// Executing sql query</span><span class="pln">
+            rs </span><span class="pun">=</span><span class="pln"> pstmt</span><span class="pun">.</span><span class="pln">executeQuery</span><span class="pun">();</span><span class="pln">
+           </span><span class="com">// Processing the Result set data</span><span class="pln">
+            </span><span class="kwd">while</span><span class="pun">(</span><span class="pln">rs</span><span class="pun">.</span><span class="kwd">next</span><span class="pun">()){</span><span class="pln">
+                </span><span class="kwd">int</span><span class="pln"> id</span><span class="pun">=</span><span class="pln">rs</span><span class="pun">.</span><span class="pln">getInt</span><span class="pun">(</span><span class="lit">1</span><span class="pun">);</span><span class="pln">
+                </span><span class="typ">String</span><span class="pln"> name </span><span class="pun">=</span><span class="pln"> rs</span><span class="pun">.</span><span class="pln">getString</span><span class="pun">(</span><span class="lit">2</span><span class="pun">);</span><span class="pln">
+                </span><span class="typ">String</span><span class="pln"> mobileNo </span><span class="pun">=</span><span class="pln"> rs</span><span class="pun">.</span><span class="pln">getString</span><span class="pun">(</span><span class="lit">3</span><span class="pun">);</span><span class="pln">
+                </span><span class="typ">String</span><span class="pln"> password </span><span class="pun">=</span><span class="pln"> rs</span><span class="pun">.</span><span class="pln">getString</span><span class="pun">(</span><span class="lit">4</span><span class="pun">);</span><span class="pln">
+                </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Id : "</span><span class="pun">+</span><span class="pln">id</span><span class="pun">+</span><span class="str">", Name : "</span><span class="pln"> </span><span class="pun">+</span><span class="pln">name</span><span class="pun">+</span><span class="str">", MobileNo : "</span><span class="pun">+</span><span class="pln">mobileNo</span><span class="pun">+</span><span class="str">", Password : "</span><span class="pun">+</span><span class="pln">password</span><span class="pun">);</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln">
+            </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Execute successfully ..."</span><span class="pun">);</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">ClassNotFoundException</span><span class="pln"> </span><span class="pun">|</span><span class="pln"> </span><span class="typ">SQLException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            e</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+            </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Execute Faild ..."</span><span class="pun">);</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">finally</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            </span><span class="com">//Close the all costly resources</span><span class="pln">
+            </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">pstmt </span><span class="pun">!=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                </span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                    pstmt</span><span class="pun">.</span><span class="pln">close</span><span class="pun">();</span><span class="pln">
+                </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">SQLException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                    e</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+                </span><span class="pun">}</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln">
+            </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">con </span><span class="pun">!=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                </span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                    con</span><span class="pun">.</span><span class="pln">close</span><span class="pun">();</span><span class="pln">
+                </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">SQLException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                    e</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+                </span><span class="pun">}</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln">
+            </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">rs </span><span class="pun">!=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                </span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                    rs</span><span class="pun">.</span><span class="pln">close</span><span class="pun">();</span><span class="pln">
+                </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">SQLException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                    e</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+                </span><span class="pun">}</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span>
+</pre>
+
+
+    </div>
+
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle8()">
+	<h4> Batch update
+	<span ng-hide ="jdbcConnection8" class= "caretright" ></span><span ng-show="jdbcConnection8" class= "caretrightUp" ></span></h4>
+    </div>
+    <div ng-show="jdbcConnection8" class="view">
+	Every individual database call from a java application to database server is consider as costly resources .
+	<br/>
+	The more number of database call reduce the performance of the application ,hence better used Batch update .
+	<br/><br/>
+	<strong>Batch update : </strong> Batch update is a collection of DML statement which is execute in a single
+	database call.
+	<br/>
+	Batch update generally improved the performance of the application .
+	<br/>
+	Batch update can be executed by using Statement and  PreparedStatement interface.
+	<br/><br/>
+	<strong>Batch with Statement : </strong> There are two important method with respect the
+	<br/>
+	<ul>
+	    <li><b> addBatch() : </b> This method is use to add multiple DML Statement into a batch .</li>
+	    <li><b> executeBatch() : </b>It is use to execute the enter batch by making a single database call to
+		the database server . The output of the executeBatch() method is an integer array which total
+		number of recode effected. The size of the array gives the total number of DML statement
+		added into batch
+	    </li>
+	</ul>
+	<br/><br/>
+	<strong>Example : </strong>
+	<br/><br/>
+
+<!--	<pre class="viewPre " >
+import java.sql.*;
+import java.util.Arrays;
+public class BatchUpdateTest {
+    public static void main(String[] args) {
+        Connection con = null;
+        Statement stmt = null;
+        String insertQuery = "insert into student.login_info (name, password, mobile_no, sex)"
+                      + " values('AnupGh','test','+919635499033','male')";
+
+        String deleteQuery = "delete from spring.emp_tbl Where id='2'";
+
+        String updateQuery = "update student.login_info set password='password' where id ='14'";
+
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306?user=root&password=password");
+            stmt = con.createStatement();
+            stmt.addBatch(insertQuery);
+            stmt.addBatch(deleteQuery);
+            stmt.addBatch(updateQuery);
+            int[] arr = stmt.executeBatch();
+            System.out.println("print batch Array : "+Arrays.toString(arr));
+            System.out.println("Batch update Successfuly done.....");
+        } catch (ClassNotFoundException | SQLException e) {
+            System.out.println("Execute Faild ...");
+            e.printStackTrace();
+        } finally {
+            if (stmt != null) {
+                try {
+                    stmt.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (con != null) {
+                try {
+                    con.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+}
+	</pre>-->
+
+	<pre class="viewPre " >
+<span class="kwd">import</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">sql</span><span class="pun">.*;</span><span class="pln">
+</span><span class="kwd">import</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">util</span><span class="pun">.</span><span class="typ">Arrays</span><span class="pun">;</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">BatchUpdateTest</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">Connection</span><span class="pln"> con </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">Statement</span><span class="pln"> stmt </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">String</span><span class="pln"> insertQuery </span><span class="pun">=</span><span class="pln"> </span><span class="str">"insert into student.login_info (name, password, mobile_no, sex)"</span><span class="pln">
+                      </span><span class="pun">+</span><span class="pln"> </span><span class="str">" values('AnupGh','test','+919635499033','male')"</span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">String</span><span class="pln"> deleteQuery </span><span class="pun">=</span><span class="pln"> </span><span class="str">"delete from admin.member_info Where id='2'"</span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">String</span><span class="pln"> updateQuery </span><span class="pun">=</span><span class="pln"> </span><span class="str">"update student.login_info set password='password' where id ='14'"</span><span class="pun">;</span><span class="pln">
+        </span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            </span><span class="typ">Class</span><span class="pun">.</span><span class="pln">forName</span><span class="pun">(</span><span class="str">"com.mysql.jdbc.Driver"</span><span class="pun">);</span><span class="pln">
+            con </span><span class="pun">=</span><span class="pln"> </span><span class="typ">DriverManager</span><span class="pun">.</span><span class="pln">getConnection</span><span class="pun">(</span><span class="str">"jdbc:mysql://localhost:3306?user=root&amp;password=password"</span><span class="pun">);</span><span class="pln">
+            stmt </span><span class="pun">=</span><span class="pln"> con</span><span class="pun">.</span><span class="pln">createStatement</span><span class="pun">();</span><span class="pln">
+            stmt</span><span class="pun">.</span><span class="pln">addBatch</span><span class="pun">(</span><span class="pln">insertQuery</span><span class="pun">);</span><span class="pln">
+            stmt</span><span class="pun">.</span><span class="pln">addBatch</span><span class="pun">(</span><span class="pln">deleteQuery</span><span class="pun">);</span><span class="pln">
+            stmt</span><span class="pun">.</span><span class="pln">addBatch</span><span class="pun">(</span><span class="pln">updateQuery</span><span class="pun">);</span><span class="pln">
+            </span><span class="kwd">int</span><span class="pun">[]</span><span class="pln"> arr </span><span class="pun">=</span><span class="pln"> stmt</span><span class="pun">.</span><span class="pln">executeBatch</span><span class="pun">();</span><span class="pln">
+            </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"print batch Array : "</span><span class="pun">+</span><span class="typ">Arrays</span><span class="pun">.</span><span class="pln">toString</span><span class="pun">(</span><span class="pln">arr</span><span class="pun">));</span><span class="pln">
+            </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Batch update Successfully done....."</span><span class="pun">);</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">ClassNotFoundException</span><span class="pln"> </span><span class="pun">|</span><span class="pln"> </span><span class="typ">SQLException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Execute Faild ..."</span><span class="pun">);</span><span class="pln">
+            e</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">finally</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">stmt </span><span class="pun">!=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                </span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                    stmt</span><span class="pun">.</span><span class="pln">close</span><span class="pun">();</span><span class="pln">
+                </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">SQLException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                    e</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+                </span><span class="pun">}</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln">
+            </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">con </span><span class="pun">!=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                </span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                    con</span><span class="pun">.</span><span class="pln">close</span><span class="pun">();</span><span class="pln">
+                </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">SQLException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                    e</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+                </span><span class="pun">}</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+	</pre>
+
+	<br/><br/>
+	<strong>Note :</strong>
+	<ul>
+	    <li>Whenever we use Batch with Statement interface , then a single batch can contain
+		any kind of DML Statement </li>
+	    <li>Whenever we use Batch with PreparedStatement interface , then a single batch can contain
+		only one kind of DML Statement </li>
+	</ul>
+
+    </div>
+
+
+    <div class="styleShet" ng-click="toggle9()">
+	<h4> JSBC Transaction
+	<span ng-hide ="jdbcConnection9" class= "caretright" ></span><span ng-show="jdbcConnection9" class= "caretrightUp" ></span></h4>
+    </div>
+    <div ng-show="jdbcConnection9" class="view">
+	Whenever we establish a connection with database server , all the executed query data are
+	automatically save into the database, since auto commit mode is enable set true by default whenever
+	implicit call .
+	<br/>
+	We can explicit disable auto commit mood by using bellow method .
+	<br/>
+	<strong>Syntax : </strong>
+	<br/><br/>
+	<pre class="viewPre">
+<span class="pln"> </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> setAutoCommit</span><span class="pun">(</span><span class="kwd">boolean</span><span class="pln"> autoCommit</span><span class="pun">)</span><span class="pln">
+	</pre>
+	<b>e.g.</b>
+	<br/><br/>
+	<pre class="viewPre">
+  con</span><span class="pun">.</span><span class="pln">setAutoCommit</span><span class="pun">(</span><span class="kwd">false</span><span class="pun">);</span>
+	</pre>
+	<br/>
+	Once we disable the autoCommit mood none of the data are automatic save into the .
+	<br/>
+	If all the execute query is successful ,then we have to explictly save those data into the database
+	by using the bellow method .
+	<br/>
+	<strong>Syntax : </strong>
+	<br/><br/>
+	<pre class="viewPre">
+<span class="pln"> </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> commit</span><span class="pun">()</span>
+	</pre>
+	<b>e.g.</b>
+	<br/><br/>
+	<pre class="viewPre">
+  con</span><span class="pun">.</span><span class="pln">commit</span><span class="pun">();</span>
+	</pre>
+	<br/>
+	If any one of the query fail then the entire executed database operation must be rollback ,
+	where transaction start from the beginning .
+	<br/>
+	JDBC transaction is use to achieved ACID property .
+	<br/><br/>
+	<strong>JDBC transaction : </strong> JDBC transaction is consider as a single business unite ,
+	which may have multiple SQL statement  which must be execute .
+	<br/><br/>
+	<strong> Example : </strong>
+	<br/><br/>
+<!--	<pre class="viewPre">
+import java.sql.*;
+
+/**
+ *
+ * @author anupg
+ */
+public class JDBCTransactionTest {
+    public static void main(String[] args) {
+        Connection con = null;
+         PreparedStatement pstmt = null;
+        PreparedStatement pstmt1 = null;
+        String insertQuery = "insert into student.login_info (name, password, mobile_no) values(?,?,?)";
+        String insertQuery1 = "insert into student.detail_info (name, add, mobile_no, sex) values(?,?,?,?)";
+
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306?user=root&password=password");
+            pstmt = con.prepareStatement(insertQuery);
+            con.setAutoCommit(false);
+            // Beginning Transaction
+            pstmt.setString(1, "Papun");
+            pstmt.setString(2, "password123");
+            pstmt.setString(3, "9999999999");
+            pstmt.executeUpdate();
+            // 1 oprtration done 2nd operation 'll start
+            pstmt1 = con.prepareStatement(insertQuery1);
+            pstmt1.setString(1, "Papun");
+            pstmt1.setString(2, "Kolkata");
+            pstmt1.setString(3, "9999999999");
+            pstmt1.setString(4, "male");
+            pstmt1.executeUpdate();
+            // 2nd operation done
+            con.commit();
+            System.out.println("Execute successfully .....");
+
+        } catch (ClassNotFoundException | SQLException e) {
+            e.printStackTrace();
+            System.out.println("Execute Faild ...");
+        } finally {
+            if (pstmt != null) {
+                try {
+                    pstmt.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (con != null) {
+                try {
+                    con.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+}
+	</pre>-->
+<pre class="viewPre" >
+<span class="kwd">import</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">sql</span><span class="pun">.*;</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">JDBCTransactionTest</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">Connection</span><span class="pln"> con </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln">
+         </span><span class="typ">PreparedStatement</span><span class="pln"> pstmt </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">PreparedStatement</span><span class="pln"> pstmt1 </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">String</span><span class="pln"> insertQuery </span><span class="pun">=</span><span class="pln"> </span><span class="str">"insert into student.login_info (name, password, mobile_no) values(?,?,?)"</span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">String</span><span class="pln"> insertQuery1 </span><span class="pun">=</span><span class="pln"> </span><span class="str">"insert into student.detail_info (name, add, mobile_no, sex) values(?,?,?,?)"</span><span class="pun">;</span><span class="pln">
+
+        </span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            </span><span class="typ">Class</span><span class="pun">.</span><span class="pln">forName</span><span class="pun">(</span><span class="str">"com.mysql.jdbc.Driver"</span><span class="pun">);</span><span class="pln">
+            con </span><span class="pun">=</span><span class="pln"> </span><span class="typ">DriverManager</span><span class="pun">.</span><span class="pln">getConnection</span><span class="pun">(</span><span class="str">"jdbc:mysql://localhost:3306?user=root&amp;password=password"</span><span class="pun">);</span><span class="pln">
+            pstmt </span><span class="pun">=</span><span class="pln"> con</span><span class="pun">.</span><span class="pln">prepareStatement</span><span class="pun">(</span><span class="pln">insertQuery</span><span class="pun">);</span><span class="pln">
+            con</span><span class="pun">.</span><span class="pln">setAutoCommit</span><span class="pun">(</span><span class="kwd">false</span><span class="pun">);</span><span class="pln">
+            </span><span class="com">// Beginning Transaction</span><span class="pln">
+            pstmt</span><span class="pun">.</span><span class="pln">setString</span><span class="pun">(</span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="str">"Papun"</span><span class="pun">);</span><span class="pln">
+            pstmt</span><span class="pun">.</span><span class="pln">setString</span><span class="pun">(</span><span class="lit">2</span><span class="pun">,</span><span class="pln"> </span><span class="str">"password123"</span><span class="pun">);</span><span class="pln">
+            pstmt</span><span class="pun">.</span><span class="pln">setString</span><span class="pun">(</span><span class="lit">3</span><span class="pun">,</span><span class="pln"> </span><span class="str">"9999999999"</span><span class="pun">);</span><span class="pln">
+            pstmt</span><span class="pun">.</span><span class="pln">executeUpdate</span><span class="pun">();</span><span class="pln">
+            </span><span class="com">// 1 oprtration done 2nd operation 'll start</span><span class="pln">
+            pstmt1 </span><span class="pun">=</span><span class="pln"> con</span><span class="pun">.</span><span class="pln">prepareStatement</span><span class="pun">(</span><span class="pln">insertQuery1</span><span class="pun">);</span><span class="pln">
+            pstmt1</span><span class="pun">.</span><span class="pln">setString</span><span class="pun">(</span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="str">"Papun"</span><span class="pun">);</span><span class="pln">
+            pstmt1</span><span class="pun">.</span><span class="pln">setString</span><span class="pun">(</span><span class="lit">2</span><span class="pun">,</span><span class="pln"> </span><span class="str">"Kolkata"</span><span class="pun">);</span><span class="pln">
+            pstmt1</span><span class="pun">.</span><span class="pln">setString</span><span class="pun">(</span><span class="lit">3</span><span class="pun">,</span><span class="pln"> </span><span class="str">"9999999999"</span><span class="pun">);</span><span class="pln">
+            pstmt1</span><span class="pun">.</span><span class="pln">setString</span><span class="pun">(</span><span class="lit">4</span><span class="pun">,</span><span class="pln"> </span><span class="str">"male"</span><span class="pun">);</span><span class="pln">
+            pstmt1</span><span class="pun">.</span><span class="pln">executeUpdate</span><span class="pun">();</span><span class="pln">
+            </span><span class="com">// 2nd operation done </span><span class="pln">
+            con</span><span class="pun">.</span><span class="pln">commit</span><span class="pun">();</span><span class="pln">
+            </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Execute successfully ....."</span><span class="pun">);</span><span class="pln">
+
+        </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">ClassNotFoundException</span><span class="pln"> </span><span class="pun">|</span><span class="pln"> </span><span class="typ">SQLException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            e</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+            </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Execute Faild ..."</span><span class="pun">);</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">finally</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">pstmt </span><span class="pun">!=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                </span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                    pstmt</span><span class="pun">.</span><span class="pln">close</span><span class="pun">();</span><span class="pln">
+                </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">SQLException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                    e</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+                </span><span class="pun">}</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln">
+            </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">con </span><span class="pun">!=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                </span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                    con</span><span class="pun">.</span><span class="pln">close</span><span class="pun">();</span><span class="pln">
+                </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">SQLException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                    e</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+                </span><span class="pun">}</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+
+
+    </div>
+
+
+    <div class="styleShet" ng-click="toggle10()">
+	<h4> Metadata
+	<span ng-hide ="jdbcConnection10" class= "caretright" ></span><span ng-show="jdbcConnection10" class= "caretrightUp" ></span></h4>
+    </div>
+    <div ng-show="jdbcConnection10" class="view">
+	<strong>Metadata : </strong>
+	<br/><br/>
+	Data about data is known as Metadata .
+	<br/>
+	<strong>Example : </strong> DataBase Name , Driver Name , Driver version , no of column present in the
+	DataBase table etc .
+	<br/>
+	Metadata or meta information about DB or Driver or Table can be knowing by using following
+	<br/>
+	<ul>
+	    <li>DatabaseMetaData</li>
+	    <li>ResultSetMetaData</li>
+	</ul>
+	Both DatabaseMetaData and ResultSetMetaData are interface which is a part of JDBC API and the
+	implementation provide by different DataBase server or vender .
+	<br/>
+	DatabaseMetaData is use to give meta information about DataBase server or driver name .
+	<br/>
+	ResultSetMetaData is use to give meta information about the table which is associated of  ResultSet ,
+	which in turn associated with SQL query .
+	<br/><br/>
+	<strong> getMetaData() </strong> this is helper method which is used to give meta information .
+	<br/>
+<!--
+    <pre class="viewPre">
+import java.sql.*;
+/**
+ *
+ * @author anupg
+ */
+public class MySqlMetaData {
+     public static void main(String[] args) {
+        Connection con = null;
+        Statement stmt = null;
+        ResultSet rs = null ;
+        String query = "select * from student.login_info ";
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306?user=root&password=password");
+            DatabaseMetaData metaData = con.getMetaData();
+            System.out.println("Driver Name "+metaData.getDriverName());
+            System.out.println("Driver Version "+metaData.getDriverVersion());
+            stmt = con.createStatement();
+            rs = stmt.executeQuery(query);
+            ResultSetMetaData rsmd =  rs.getMetaData();
+            System.out.println("Total No of column "+rsmd.getColumnCount());
+            System.out.println("Name of the 3nd column "+rsmd.getColumnLabel(3));
+
+            System.out.println("Execute successfully ...");
+        } catch (ClassNotFoundException | SQLException e) {
+            e.printStackTrace();
+            System.out.println("Execute Faild ...");
+        } finally {
+            //Close the all costly resources
+            if (stmt != null) {
+                try {
+                    stmt.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (con != null) {
+                try {
+                    con.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (rs != null) {
+                try {
+                    rs.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+}
+</pre>
+-->
+
+
+	<pre class="viewPre">
+<span class="kwd">import</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">sql</span><span class="pun">.*;</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">MySqlMetaData</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+     </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">Connection</span><span class="pln"> con </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">Statement</span><span class="pln"> stmt </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">ResultSet</span><span class="pln"> rs </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">null</span><span class="pln"> </span><span class="pun">;</span><span class="pln">
+        </span><span class="typ">String</span><span class="pln"> query </span><span class="pun">=</span><span class="pln"> </span><span class="str">"select * from student.login_info "</span><span class="pun">;</span><span class="pln">
+        </span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            </span><span class="typ">Class</span><span class="pun">.</span><span class="pln">forName</span><span class="pun">(</span><span class="str">"com.mysql.jdbc.Driver"</span><span class="pun">);</span><span class="pln">
+            con </span><span class="pun">=</span><span class="pln"> </span><span class="typ">DriverManager</span><span class="pun">.</span><span class="pln">getConnection</span><span class="pun">(</span><span class="str">"jdbc:mysql://localhost:3306?user=root&amp;password=password"</span><span class="pun">);</span><span class="pln">
+            </span><span class="typ">DatabaseMetaData</span><span class="pln"> metaData </span><span class="pun">=</span><span class="pln"> con</span><span class="pun">.</span><span class="pln">getMetaData</span><span class="pun">();</span><span class="pln">
+            </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Driver Name "</span><span class="pun">+</span><span class="pln">metaData</span><span class="pun">.</span><span class="pln">getDriverName</span><span class="pun">());</span><span class="pln">
+            </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Driver Version "</span><span class="pun">+</span><span class="pln">metaData</span><span class="pun">.</span><span class="pln">getDriverVersion</span><span class="pun">());</span><span class="pln">
+            stmt </span><span class="pun">=</span><span class="pln"> con</span><span class="pun">.</span><span class="pln">createStatement</span><span class="pun">();</span><span class="pln">
+            rs </span><span class="pun">=</span><span class="pln"> stmt</span><span class="pun">.</span><span class="pln">executeQuery</span><span class="pun">(</span><span class="pln">query</span><span class="pun">);</span><span class="pln">
+            </span><span class="typ">ResultSetMetaData</span><span class="pln"> rsmd </span><span class="pun">=</span><span class="pln">  rs</span><span class="pun">.</span><span class="pln">getMetaData</span><span class="pun">();</span><span class="pln">
+            </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Total No of column "</span><span class="pun">+</span><span class="pln">rsmd</span><span class="pun">.</span><span class="pln">getColumnCount</span><span class="pun">());</span><span class="pln">
+            </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Name of the 3nd column "</span><span class="pun">+</span><span class="pln">rsmd</span><span class="pun">.</span><span class="pln">getColumnLabel</span><span class="pun">(</span><span class="lit">3</span><span class="pun">));</span><span class="pln">
+
+            </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Execute successfully ..."</span><span class="pun">);</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">ClassNotFoundException</span><span class="pln"> </span><span class="pun">|</span><span class="pln"> </span><span class="typ">SQLException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            e</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+            </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Execute Faild ..."</span><span class="pun">);</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">finally</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            </span><span class="com">//Close the all costly resources</span><span class="pln">
+            </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">stmt </span><span class="pun">!=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                </span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                    stmt</span><span class="pun">.</span><span class="pln">close</span><span class="pun">();</span><span class="pln">
+                </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">SQLException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                    e</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+                </span><span class="pun">}</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln">
+            </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">con </span><span class="pun">!=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                </span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                    con</span><span class="pun">.</span><span class="pln">close</span><span class="pun">();</span><span class="pln">
+                </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">SQLException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                    e</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+                </span><span class="pun">}</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln">
+            </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">rs </span><span class="pun">!=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                </span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                    rs</span><span class="pun">.</span><span class="pln">close</span><span class="pun">();</span><span class="pln">
+                </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">SQLException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                    e</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+                </span><span class="pun">}</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span>
+	</pre>
+
+    </div>
+
+<!--    <div class="styleShet" ng-click="toggle11()">
+	<h4> Batch update
+	<span ng-hide ="jdbcConnection11" class= "caretright" ></span><span ng-show="jdbcConnection11" class= "caretrightUp" ></span></h4>
+    </div>
+    <div ng-show="jdbcConnection11" class="view">
+
+    </div>-->
+
+
+</div>

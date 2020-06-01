@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<div  class="pagePaddingBottom">
+    <h2 class="mainCenterAlign"> Java linuxCommand </h2>
+
+<!-- <br/><br/><br/>
+  <h2 style="text-align: center;" > Coming soon .....</h2>
+ <br/><br/><br/>-->
+
+
+
+    <div class="styleShet" ng-click="toggle()">
+        <h4 >
+            File Related Commands
+            <span ng-hide ="linuxCommand" class= "caretright" ></span><span ng-show="linuxCommand" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="linuxCommand" class="view">
+         <table class="table table-bordered" >
+            <tr class="trHeading">
+                <th>Commands</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>ls </td>
+                <td>directory listing</td>
+            </tr>
+            <tr>
+                <td>ls -al </td>
+                <td> formatted listing with hidden files</td>
+            </tr>
+            <tr>
+                <td>ls -lt </td>
+                <td>Sorting the Formatted listing by time modification files</td>
+            </tr>
+            <tr>
+                <td>ls -l --color </td>
+                <td> Lists files in “long” format As above, with colourized output</td>
+            </tr>
+            <tr>
+                <td>cd dir_Name</td>
+                <td> change directory to dir_Name</td>
+            </tr>
+            <tr>
+                <td>cd </td>
+                <td>change to home</td>
+            </tr>
+            <tr>
+                <td>pwd </td>
+                <td> show current directory</td>
+            </tr>
+            <tr>
+                <td>mkdir dir_Name  </td>
+                <td>create a directory dir_Name</td>
+            </tr>
+            <tr>
+                <td>rm file_Name</td>
+                <td>delete file_Name</td>
+            </tr>
+            <tr>
+                <td>rm -r dir_Name </td>
+                <td> delete directory dir_Name</td>
+            </tr>
+            <tr>
+                <td>rm -f file_Name </td>
+                <td>force remove file_Name</td>
+            </tr>
+            <tr>
+                <td>rm -rf dir_Name </td>
+                <td> force remove directory dir_Name*</td>
+            </tr>
+            <tr>
+                <td>cp file_Name1 file_Name2 </td>
+                <td>copy file_Name1 to file_Name2</td>
+            </tr>
+            <tr>
+                <td>cp -r dir_Name1 dir_Name2 </td>
+                <td> copy dir_Name1 to dir_Name2; create dir_Name2 if it doesn't exist</td>
+            </tr>
+            <tr>
+                <td>mv file_Name1 file_Name2 </td>
+                <td> rename or move file_Name1 to file_Name2 if file_Name2 is an existing dir_Nameectory,
+                    moves file_Name1 into dir_Nameectory file_Name2</td>
+            </tr><tr>
+                <td>ln -s file_Name </td>
+                <td>link  create symbolic link link to file_Name</td>
+            </tr>
+            <tr>
+                <td>touch file_Name</td>
+                <td> create or update file_Name</td>
+            </tr>
+            <tr>
+                <td>cat file_Name </td>
+                <td> Show contents of a file_Name</td>
+            </tr>
+            <tr>
+                <td>cat -n file_Name</td>
+                <td> Show contents of a file, with line numbers</td>
+            </tr>
+            <tr>
+                <td>cat > file_Name </td>
+                <td> places standard input into file_Name</td>
+            </tr>
+            <tr>
+                <td>cat file.a > file.b</td>
+                <td>Copy content file.a to file.b</td>
+            </tr>
+            <tr>
+                <td>more file_Name</td>
+                <td>output the contents of file_Name</td>
+            </tr>
+            <tr>
+                <td>head file_Name</td>
+                <td>output the first 10 lines of file_Name</td>
+            </tr>
+            <tr>
+                <td>tail file_Name </td>
+                <td>output the last 10 lines of file_Name</td>
+            </tr>
+            <tr>
+                <td>tail -f file_Name </td>
+                <td> output the contents of file_Name as it grows, starting with the last 10 lines</td>
+            </tr>
+
+        </table>
+    </div>
+
+
+    <div class="styleShet" ng-click="toggle1()">
+        <h4 >
+            File Permissions
+            <span ng-hide ="linuxCommand1" class= "caretright" ></span><span ng-show="linuxCommand1" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="linuxCommand1" class="view">
+        <table class="table table-bordered" >
+            <tr class="trHeading">
+                <th>Commands</th>
+                <th>Description</th>
+            </tr>
+	    <tr>
+                <td>chmod octal file</td>
+                <td>Change the permission of file to octal,which can
+be found separately for user,group,world by
+adding, <br/>
+• 4-read(r)<br/>
+• 2-write(w)<br/>
+• 1-execute(x)</td>
+            </tr>
+	    <tr>
+                <td>chmod 777</td>
+                <td>read, write, execute for all</td>
+            </tr>
+	    <tr>
+                <td>chmod 755</td>
+                <td>rwx for owner, rx for group and world For more options, see man chmod.</td>
+            </tr>
+<!--	    <tr>
+                <td></td>
+                <td></td>
+            </tr>
+			<tr>
+                <td></td>
+                <td></td>
+            </tr>
+			<tr>
+                <td></td>
+                <td></td>
+            </tr>
+			<tr>
+                <td></td>
+                <td></td>
+            </tr>
+			<tr>
+                <td></td>
+                <td></td>
+            </tr>
+			<tr>
+                <td></td>
+                <td></td>
+            </tr>
+			<tr>
+                <td></td>
+                <td></td>
+            </tr>
+			<tr>
+                <td></td>
+                <td></td>
+            </tr>
+			<tr>
+                <td></td>
+                <td></td>
+            </tr>
+			<tr>
+                <td></td>
+                <td></td>
+            </tr>
+			<tr>
+                <td></td>
+                <td></td>
+            </tr>
+			<tr>
+                <td></td>
+                <td></td>
+            </tr>
+			<tr>
+                <td></td>
+                <td></td>
+            </tr> -->
+
+        </table>
+    </div>
+
+
+<div class="styleShet" ng-click="toggle2()">
+        <h4 >
+            Process management
+            <span ng-hide ="linuxCommand2" class= "caretright" ></span><span ng-show="linuxCommand2" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="linuxCommand2" class="view">
+        <table class="table table-bordered" >
+            <tr class="trHeading">
+                <th>Commands</th>
+                <th>Description</th>
+            </tr>
+	    <tr>
+                <td> ps</td>
+                <td> To display the currently working processes</td>
+            </tr>
+	    <tr>
+                <td>top</td>
+                <td>Display all running process</td>
+            </tr>
+	    <tr>
+                <td>kill pid</td>
+                <td>Kill the process with given pid</td>
+            </tr>
+	    <tr>
+                <td>killall proc</td>
+                <td>Kill all the process named proc</td>
+            </tr>
+	    <tr>
+                <td>pkill pattern</td>
+                <td>Will kill all processes matching the pattern</td>
+            </tr>
+	    <tr>
+                <td>bg</td>
+                <td>List stopped or background jobs,resume a stopped
+job in the background</td>
+            </tr>
+	    <tr>
+                <td>fg</td>
+                <td>Brings the most recent job to foreground</td>
+            </tr>
+	    <tr>
+                <td>fg n</td>
+                <td>Brings job n to the foreground</td>
+            </tr>
+<!--	    <tr>
+                <td></td>
+                <td></td>
+            </tr>
+			<tr>
+                <td></td>
+                <td></td>
+            </tr>
+			<tr>
+                <td></td>
+                <td></td>
+            </tr>
+			<tr>
+                <td></td>
+                <td></td>
+            </tr>
+			<tr>
+                <td></td>
+                <td></td>
+            </tr>
+			<tr>
+                <td></td>
+                <td></td>
+            </tr>
+			<tr>
+                <td></td>
+                <td></td>
+            </tr>
+			<tr>
+                <td></td>
+                <td></td>
+            </tr>-->
+
+        </table>
+    </div>
+
+
+       <div class="styleShet" ng-click="toggle3()">
+        <h4>System Info
+            <span ng-hide ="linuxCommand3" class= "caretright" ></span><span ng-show="linuxCommand3" class= "caretrightUp" ></span></h4>
+    </div>
+<div ng-show="linuxCommand3" class="view">
+    <table class="table table-bordered" >
+	<tr class="trHeading">
+	    <th>Commands</th>
+	    <th>Description</th>
+	</tr>
+	<tr>
+	    <td>date</td>
+	    <td>Show the current date and time</td>
+	</tr>
+	<tr>
+	    <td>cal</td>
+	    <td>Show this month's calender</td>
+	</tr>
+	<tr>
+	    <td>uptime</td>
+	    <td>Show current uptime</td>
+	</tr>
+	<tr>
+	    <td>w</td>
+	    <td>Display who is on line</td>
+	</tr>
+	<tr>
+	    <td>whoami</td>
+	    <td>Who you are logged in as</td>
+	</tr>
+	<tr>
+	    <td>finger user</td>
+	    <td>Display information about user</td>
+	</tr>
+	<tr>
+	    <td>uname -a</td>
+	    <td>Show kernel information</td>
+	</tr>
+	<tr>
+	    <td>cat /proc/cpuinfo</td>
+	    <td>Cpu information</td>
+	</tr>
+	<tr>
+	    <td>cat proc/meminfo</td>
+	    <td>Memory information</td>
+	</tr>
+	<tr>
+	    <td>man command</td>
+	    <td>Show the manual for command</td>
+	</tr>
+	<tr>
+	    <td>df</td>
+	    <td>Show the disk usage</td>
+	</tr>
+	<tr>
+	    <td>du</td>
+	    <td>Show directory space usage</td>
+	</tr>
+	<tr>
+	    <td>free</td>
+	    <td>Show memory and swap usage</td>
+	</tr>
+	<tr>
+	    <td>whereis app</td>
+	    <td>Show possible locations of app</td>
+	</tr>
+	<tr>
+	    <td>which app</td>
+	    <td>Show which applications will be run by default</td>
+	</tr>
+<!--	<tr>
+	    <td></td>
+	    <td></td>
+	</tr>-->
+
+    </table>
+    </div>
+
+
+     <div class="styleShet" ng-click="toggle4()">
+        <h4> Network
+            <span ng-hide ="linuxCommand4" class= "caretright" ></span><span ng-show="linuxCommand4" class= "caretrightUp" ></span></h4>
+    </div>
+    <div ng-show="linuxCommand4" class="view">
+        <table class="table table-bordered" >
+            <tr class="trHeading">
+                <th>Commands</th>
+                <th>Description</th>
+            </tr>
+	    <tr>
+                <td>ping host</td>
+                <td>Ping host and output results</td>
+            </tr>
+	    <tr>
+                <td>whois domain</td>
+                <td>Get whois information for domains</td>
+            </tr>
+	    <tr>
+                <td>dig domain</td>
+                <td>Get DNS information for domain</td>
+            </tr>
+	    <tr>
+                <td>dig -x host</td>
+                <td>Reverse lookup host</td>
+            </tr>
+	    <tr>
+                <td>wget file</td>
+                <td>Download file</td>
+            </tr>
+	    <tr>
+                <td>wget -c file</td>
+                <td>Continue a stopped download</td>
+            </tr>
+<!--	    <tr>
+                <td></td>
+                <td></td>
+            </tr>
+			<tr>
+                <td></td>
+                <td></td>
+            </tr>
+			<tr>
+                <td></td>
+                <td></td>
+            </tr>
+			<tr>
+                <td></td>
+                <td></td>
+            </tr>
+			<tr>
+                <td></td>
+                <td></td>
+            </tr>
+			<tr>
+                <td></td>
+                <td></td>
+            </tr>
+			<tr>
+                <td></td>
+                <td></td>
+            </tr>
+			<tr>
+                <td></td>
+                <td></td>
+            </tr>
+			<tr>
+                <td></td>
+                <td></td>
+            </tr>
+			<tr>
+                <td></td>
+                <td></td>
+            </tr>-->
+
+        </table>
+    </div>
+
+
+
+
+   <div class="styleShet" ng-click="toggle5()">
+        <h4 >Compression
+            <span ng-hide ="linuxCommand5" class= "caretright" ></span><span ng-show="linuxCommand5" class= "caretrightUp" ></span></h4>
+    </div>
+    <div ng-show="linuxCommand5" class="view">
+        <table class="table table-bordered" >
+            <tr class="trHeading">
+                <th>Commands</th>
+                <th>Description</th>
+            </tr>
+	    <tr>
+                <td>tar cf file.tar file</td>
+                <td>Create tar named file.tar containing file</td>
+            </tr>
+	    <tr>
+                <td>tar xf file.tar</td>
+                <td>Extract the files from file.tar</td>
+            </tr>
+	    <tr>
+                <td>tar czf file.tar.gz files</td>
+                <td>Create a tar with Gzip compression</td>
+            </tr>
+	    <tr>
+                <td>tar xzf file.tar.gz</td>
+                <td>Extract a tar using Gzip</td>
+            </tr>
+	    <tr>
+                <td>tar cjf file.tar.bz2</td>
+                <td> Create tar with Bzip2 compression</td>
+            </tr>
+	    <tr>
+                <td>tar xjf file.tar.bz2</td>
+                <td>Extract a tar using Bzip2</td>
+            </tr>
+	    <tr>
+                <td>gzip file</td>
+                <td>Compresses file and renames it to file.gz</td>
+            </tr>
+	    <tr>
+                <td>gzip -d file.gz</td>
+                <td>gzip -d file.gz</td>
+            </tr>
+<!--	    <tr>
+                <td></td>
+                <td></td>
+            </tr>-->
+	</table>
+    </div>
+
+
+ <div class="styleShet" ng-click="toggle6()">
+        <h4>Searching
+            <span ng-hide ="linuxCommand6" class= "caretright" ></span><span ng-show="linuxCommand6" class= "caretrightUp" ></span></h4>
+    </div>
+    <div ng-show="linuxCommand6" class="view">
+        <table class="table table-bordered" >
+            <tr class="trHeading">
+                <th>Commands</th>
+                <th>Description</th>
+            </tr>
+
+	    <tr>
+                <td>grep pattern file</td>
+                <td>Search for pattern in file</td>
+            </tr>
+	    <tr>
+                <td>grep -r pattern dir</td>
+                <td>Search recursively for pattern in dir</td>
+            </tr>
+	    <tr>
+                <td>command | grep pattern</td>
+                <td>Search pattern in the output of a command</td>
+            </tr>
+	    <tr>
+                <td>locate file</td>
+                <td>Find all instances of file </td>
+            </tr>
+	    <tr>
+                <td>find . -name filename</td>
+                <td>Searches in the current directory (represented by
+a period) and below it, for files and directories with
+names starting with filename</td>
+            </tr>
+	    <tr>
+                <td>pgrep pattern</td>
+                <td>Searches for all the named processes , that
+matches with the pattern and, by default, returns
+their ID</td>
+            </tr>
+	</table>
+    </div>
+
+
+    <!--    <div class="styleShet" ng-click="toggle7()">
+        <h4 >{heading Name}
+            <span ng-hide ="linuxCommand7" class= "caretright" ></span><span ng-show="linuxCommand7" class= "caretrightUp" ></span></h4>
+    </div>
+    <div ng-show="linuxCommand7" class="view">
+        <table class="table table-bordered" >
+            <tr class="trHeading">
+                <th>Commands</th>
+                <th>Description</th>
+            </tr>
+
+	    <tr>
+                <td></td>
+                <td></td>
+            </tr>
+	    <tr>
+                <td></td>
+                <td></td>
+            </tr>
+	    <tr>
+                <td></td>
+                <td></td>
+            </tr>
+	    <tr>
+                <td></td>
+                <td> </td>
+            </tr>
+	    <tr>
+                <td></td>
+                <td></td>
+            </tr>
+	</table>
+    </div>
+
+
+    <div class="styleShet" ng-click="toggle8()">
+        <h4 >{heading Name}
+            <span ng-hide ="linuxCommand8" class= "caretright" ></span><span ng-show="linuxCommand8" class= "caretrightUp" ></span></h4>
+    </div>
+    <div ng-show="linuxCommand8" class="view">
+        <table class="table table-bordered" >
+            <tr class="trHeading">
+                <th>Commands</th>
+                <th>Description</th>
+            </tr>
+	    <tr>
+                <td></td>
+                <td></td>
+            </tr>
+	    <tr>
+                <td></td>
+                <td></td>
+            </tr>
+	    <tr>
+                <td></td>
+                <td></td>
+            </tr>
+	    <tr>
+                <td></td>
+                <td> </td>
+            </tr>
+	    <tr>
+                <td></td>
+                <td></td>
+            </tr>
+	</table>
+    </div>
+
+    <div class="styleShet" ng-click="toggle9()">
+        <h4 >{heading Name}
+            <span ng-hide ="linuxCommand9" class= "caretright" ></span><span ng-show="linuxCommand9" class= "caretrightUp" ></span></h4>
+    </div>
+    <div ng-show="linuxCommand9" class="view">
+        {keep defination }
+    </div>
+
+
+    <div class="styleShet" ng-click="toggle10()">
+        <h4 >{heading Name}
+            <span ng-hide ="linuxCommand10" class= "caretright" ></span><span ng-show="linuxCommand10" class= "caretrightUp" ></span></h4>
+    </div>
+    <div ng-show="linuxCommand10" class="view">
+        {keep defination }
+    </div>
+
+    <div class="styleShet" ng-click="toggle11()">
+        <h4 >{heading Name}
+            <span ng-hide ="linuxCommand11" class= "caretright" ></span><span ng-show="linuxCommand11" class= "caretrightUp" ></span></h4>
+    </div>
+    <div ng-show="linuxCommand11" class="view">
+        {keep defination }
+    </div>-->
+
+</div>

@@ -1,0 +1,330 @@
+
+<div class="pagePaddingBottom">
+    <h2 class="mainCenterAlign"> Java ExceptionHendaling    </h2>
+
+
+
+    <div class="styleShet" ng-click="toggle()">
+        <h4>
+            Exception
+            <span ng-hide ="exceptionHendaling" class= "caretright" ></span><span ng-show="exceptionHendaling" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="exceptionHendaling" class="view">
+        <strong>Exception : </strong> Exception is an unexpectation event occur at the run time is known as  Exception.
+        <br/> <b>or </b> An exception is an event that occurs during the execution of a program that disrupts
+        the normal flow of instructions.
+        <br/>
+        During execution if any unexpected event occur an object will be created to represent
+        that unexpected event ,that object is refers as Exception.
+        <br/>
+        To create an Exception object we are use throw.
+        <br/>
+        Throw Exception should be handle , other wise program execution should stop.
+        To handle this thing we used <b>try catch</b> block in a class.
+    </div>
+
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle3()">
+            <h4>What is exception handling ?
+            <span ng-hide ="exceptionHendaling3" class= "caretright" ></span><span ng-show="exceptionHendaling3" class= "caretrightUp" ></span></h4>
+    </div>
+    <div ng-show="exceptionHendaling3" class="view">
+       The process of converting system error messages into user friendly error message is known as Exception handling.
+    </div>
+
+
+
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle2()">
+        <h4>
+            Hierarchy of Java Exception classes
+            <span ng-hide ="exceptionHendaling2" class= "caretright" ></span><span ng-show="exceptionHendaling2" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="exceptionHendaling2" class="view">
+	<a href="img/exception.jpg">
+	    <img  class="img-div80" alt="Smilly face" src="img/exception.jpg">
+	</a>
+    </div>
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle1()">
+        <h4>
+            Exception propagation
+            <span ng-hide ="exceptionHendaling1" class= "caretright" ></span><span ng-show="exceptionHendaling1" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="exceptionHendaling1" class="view">
+         <strong>Exception propagation : </strong>  passing the Exception from one method to another method
+         is known as Exception propagation.
+	 <br/><br/>
+<!--         <pre class="viewPre">
+public class ExceptionPropagation {
+    void method3() {
+        int result = 10 / 0; // Exception Generated
+    }
+    void method2() {
+        method3();
+    }
+    void method1() {
+        try {
+            method2();
+        } catch (Exception e) {
+            System.out.println("Exception is handled here");
+        }
+    }
+
+    public static void main(String args[]) {
+        ExceptionPropagation obj = new ExceptionPropagation();
+        obj.method1();
+    }
+}
+         </pre>-->
+<pre class="prettyprint viewPre prettyprinted" style="">
+<span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">ExceptionPropagation</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">void</span><span class="pln"> method3</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">int</span><span class="pln"> result </span><span class="pun">=</span><span class="pln"> </span><span class="lit">10</span><span class="pln"> </span><span class="pun">/</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln"> </span><span class="com">// Exception Generated</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+    </span><span class="kwd">void</span><span class="pln"> method2</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        method3</span><span class="pun">();</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+    </span><span class="kwd">void</span><span class="pln"> method1</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            method2</span><span class="pun">();</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">Exception</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Exception is handled here"</span><span class="pun">);</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> args</span><span class="pun">[])</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">ExceptionPropagation</span><span class="pln"> obj </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">ExceptionPropagation</span><span class="pun">();</span><span class="pln">
+        obj</span><span class="pun">.</span><span class="pln">method1</span><span class="pun">();</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span><span class="pln"> </span>
+</pre>
+
+    </div>
+
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle4()">
+            <h4> Types of exceptions
+            <span ng-hide ="exceptionHendaling4" class= "caretright" ></span><span ng-show="exceptionHendaling4" class= "caretrightUp" ></span></h4>
+    </div>
+    <div ng-show="exceptionHendaling4" class="view">
+       There are two types of exceptions
+       <ul>
+           <li>Checked exceptions</li>
+           <li>Unchecked exceptions</li>
+       </ul>
+    </div>
+
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle5()">
+            <h4> Checked exceptions
+            <span ng-hide ="exceptionHendaling5" class= "caretright" ></span><span ng-show="exceptionHendaling5" class= "caretrightUp" ></span></h4>
+    </div>
+    <div ng-show="exceptionHendaling5" class="view">
+        <strong>Checked exceptions : </strong> Exception Which are directly subclass of the Exception class is known as Checked exceptions.
+        <br/> <b>or </b>All exceptions other than Runtime Exceptions are known as Checked exceptions.
+
+        <br/>
+        <ul>
+           <li>Checked exceptions are checked in compile time .</li>
+           <li> try catch is mandatory for checked exceptions other wise compiler generate compile time error. </li>
+       </ul>
+    </div>
+
+
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle6()">
+            <h4>Unchecked exceptions
+            <span ng-hide ="exceptionHendaling6" class= "caretright" ></span><span ng-show="exceptionHendaling6" class= "caretrightUp" ></span></h4>
+    </div>
+    <div ng-show="exceptionHendaling6" class="view">
+       <strong>Unchecked exceptions : </strong> Exception Which are subclass of the  RunTimeException are known as Unchecked exceptions.
+        <br/>
+        <ul>
+           <li>Unchecked exceptions are not checked in compile time .</li>
+           <li> try catch is not mandatory for Unchecked exceptions . </li>
+       </ul>
+    </div>
+
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle7()">
+            <h4> try , catch and finally blocks
+            <span ng-hide ="exceptionHendaling7" class= "caretright" ></span><span ng-show="exceptionHendaling7" class= "caretrightUp" ></span></h4>
+    </div>
+    <div ng-show="exceptionHendaling7" class="view">
+        <strong>try : </strong>The try block contains set of code which might occur exception (or risky statement).
+        <br/>
+        <ul>
+           <li>try block must be used within the method.</li>
+           <li>try block must be followed by either catch or finally block.</li>
+       </ul>
+
+        <br/>
+         <strong>catch : </strong>The catch block is used to handle the exceptions. .
+        <br/>
+        <ul>
+           <li>A catch block must be associated with a try block. </li>
+           <li>multiple catch blocks are allow for a single try .</li>
+           <li>when there are multiple catch blocks,catch block order should be from specific type to generic type .</li>
+        </ul>
+
+        <br/>
+         <strong>finally : </strong>finally is execute always where there is exceptions or not .
+        <br/>
+        <ul>
+           <li>finally block is used to execute important code such as closing database connection , closing file etc. </li>
+           <li>finally is used to along with try or try catch .</li>
+           <li>only one finally keyword is allow for particular try .</li>
+        </ul>
+
+    </div>
+
+
+
+
+
+        <div class="styleShet" ng-click="toggle8()">
+            <h4>Throw and Throws Keyword
+            <span ng-hide ="exceptionHendaling8" class= "caretright" ></span><span ng-show="exceptionHendaling8" class= "caretrightUp" ></span></h4>
+        </div>
+        <div ng-show="exceptionHendaling8" class="view">
+            <strong> throw Keyword :</strong> throw keyword is used to throw an exception explicitly.
+            <br/> throw keyword is used inside method body .
+            <br/><br/>
+            <strong>throws Keyword : </strong> throws keyword is used to declare an exception .
+            <table class="table table-bordered" >
+                   <tr class="trHeading">
+                        <th>throw</th>
+                        <th>throws</th>
+                    </tr>
+                    <tr>
+                        <td> throw keyword is used to throw an exception explicitly .</td>
+                        <td> throws keyword is used to declare an exception.</td>
+                    </tr>
+                    <tr>
+                        <td>throw is used within the method.</td>
+                        <td>throws is used with the method signature.</td>
+                    </tr>
+                    <tr>
+                        <td>throw is followed by an object .</td>
+                        <td>throws is followed by class.</td>
+                    </tr>
+                    <tr>
+                        <td>throw can throw only one exceptions.</td>
+                        <td>throws can declare multiple exceptions.</td>
+                    </tr>
+<!--                    <tr>
+                        <td>Checked exception cannot be propagated using throw only.</td>
+                        <td>Checked exception can be propagated with throws.</td>
+                    </tr>-->
+            </table>
+        </div>
+
+        <div class="styleShet" ng-click="toggle9()">
+            <h4> Which situation finally block is not execute ?
+            <span ng-hide ="exceptionHendaling9" class= "caretright" ></span><span ng-show="exceptionHendaling9" class= "caretrightUp" ></span></h4>
+        </div>
+        <div ng-show="exceptionHendaling9" class="view">
+           finally block is not execute in the situation of below condition
+           <ul>
+               <li>When System.exit() is executed. </li>
+               <li> When Object of type Error is thrown .</li>
+<!--               <li></li>-->
+           </ul>
+        </div>
+
+    
+    <div class="styleShet" ng-click="toggle10()">
+        <h4> Error
+            <span ng-hide ="exceptionHendaling10" class= "caretright" ></span><span ng-show="exceptionHendaling10" class= "caretrightUp" ></span></h4>
+    </div>
+    <div ng-show="exceptionHendaling10" class="view">
+        <strong>Error : </strong>Error is a subclass of the Throwable class .
+        <ul>
+            <li>Errors are the critical conditions that occur due to the lack of the system resources .</li>
+            <li>Errors can not be handled by the code of the program .</li>
+            <li>Ex.  OutOfMemoryError occurs when JVM runs out of memory or StackOverflowError occurs when stack overflows etc .</li>
+        </ul>
+        
+    </div>
+    
+    <div class="styleShet" ng-click="toggle12()">
+        <h4>Difference between Error and Exception 
+            <span ng-hide ="exceptionHendaling12" class= "caretright" ></span><span ng-show="exceptionHendaling11" class= "caretrightUp" ></span></h4>
+    </div>
+    <div ng-show="exceptionHendaling12" class="view">
+        <table class="table table-bordered" >
+            <tr class="trHeading">
+                <th>Error</th>
+                <th>Exception</th>
+            </tr>
+            <tr>
+                <td>All errors in java are unchecked type.</td>
+                <td>Exceptions include both checked as well as unchecked type.</td>
+            </tr>
+            <tr>
+                <td>An error is caused due to lack of system resources.</td>
+                <td>An exception is caused because of the code.</td>
+            </tr>
+            <tr>
+                <td>We can not handle an error by the program code.</td>
+                <td>Exceptions are handled using three keywords "try", "catch", and "throw".</td>
+            </tr>
+            <tr>
+                <td>In Java, errors are defined "java.lang.Error" package.</td>
+                <td>In Java, an exceptions are defined in"java.lang.Exception".</td>
+            </tr>
+<!--            <tr>
+                <td></td>
+                <td></td>
+            </tr>-->
+            <tr>
+                <td>Ex. java.lang.StackOverflowError, java.lang.OutOfMemoryError</td>
+                <td>Ex. Checked Exceptions : SQLException, IOException Unchecked Exceptions : ArrayIndexOutOfBoundException, ClassCastException, NullPointerException</td>
+            </tr>
+        </table>
+    </div>
+
+<!--        
+
+        <div class="styleShet" ng-click="toggle11()">
+            <h4>{heading Name}
+            <span ng-hide ="exceptionHendaling11" class= "caretright" ></span><span ng-show="exceptionHendaling11" class= "caretrightUp" ></span></h4>
+        </div>
+        <div ng-show="exceptionHendaling11" class="view">
+           {keep defination }
+        </div>-->
+
+
+</div>

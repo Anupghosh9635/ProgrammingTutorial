@@ -1,0 +1,598 @@
+<div  class="pagePaddingBottom">
+    <h2 class="mainCenterAlign"> Java basic J2EE </h2>
+
+
+    <div class="styleShet" ng-click="toggle12()">
+        <h4>
+	    Java Enterprise Edition
+            <span ng-hide ="basicj2ee12" class= "caretright" ></span><span ng-show="basicj2ee12" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="basicj2ee12" class="view">
+	<strong>Java Enterprise Edition (JEE) </strong> It is a specification for developing web and enterprise
+	application given in the from of abstraction API to achieved lose coupling between application and server .
+	<br/><br/>
+	<strong>Few of JEE API : </strong>
+	<br/>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 ) Servlet , &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2 ) JSP (Java Server Page) ,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3 ) EJB (Enterprise Java Bean) ,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4 ) JMA (Java Mail API) ,
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5 ) JTA (java Transaction API ) ,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6 ) JPA (Java Persistence API)
+
+	<br/><br/>
+	<strong>Note : </strong> Since server is basically provide the runtime environment , we have to always
+	deploy all the resources on to the server mandatorily in the form of class file .
+
+    </div>
+
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle()">
+        <h4>
+            Software Application
+            <span ng-hide ="basicj2ee" class= "caretright" ></span><span ng-show="basicj2ee" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="basicj2ee" class="view">
+        <strong>Software Application : </strong>A set of code which is use to perform a specific task is known
+	    as Software Application .
+	<br/><br/>
+	<strong>Contain of software application : </strong>
+	<ul>
+	    <li> User Interface </li>
+	    <li> Business Logic </li>
+	    <li> Data Base </li>
+	</ul>
+	<strong>User Interface : </strong> It is media which help in comminuting the user to any device .
+	<br/><br/>
+	<strong> Business Logic : </strong> It is the logic which helps in getting connecting to particular application.
+	<br/><br/>
+	<strong>Data Base : </strong> Data base is used to deal with data only.
+    </div>
+
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle1()">
+        <h4>
+	    Type of Software Application
+            <span ng-hide ="basicj2ee1" class= "caretright" ></span><span ng-show="basicj2ee1" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="basicj2ee1" class="view">
+	There are three type of Software Application .
+	<ul>
+	    <li> Stand alone </li>
+	    <li> Clint / Server</li>
+	    <li> Web Application </li>
+	</ul>
+
+	<strong> Stand alone : </strong> Computer software that can work offline, i.e. does not necessarily require network connection to function.
+	<br/><br/>
+	<strong> Clint / Server : </strong> A client/server application is a piece of software that runs on
+	    a client computer and makes requests to a remote server.
+	<br/><br/>
+	<strong> Web Application : </strong> Applications of this type typically support connected scenarios and
+	    can support different browsers running on a range of operating systems and platforms.
+    </div>
+
+
+
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle2()">
+        <h4>
+            JAR file
+            <span ng-hide ="basicj2ee2" class= "caretright" ></span><span ng-show="basicj2ee2" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="basicj2ee2" class="view">
+	<strong>JAR file : </strong> JAR means Java ARchive , it is a file formate Which is based on zip file
+	    formate used to compress many files into one file .
+	    <br/><br/>
+	<strong>Contain of JAR file : </strong>
+	<br/>
+	<ul>
+	    <li><b> .class : </b> contain byte code statement </li>
+	    <li><b> java (optional) :</b>contain source code</li>
+	    <li><b> config file : </b>contain only configuration data</li>
+	    <li><b> .xml file : </b> use to configure resource by using custom text </li>
+	    <li><b> .properties : </b> used to provide some property in the from of key and value pair .</li>
+	</ul>
+	<strong>advantage of JAR file : </strong> We need to JAR file to import property base on requirement .
+	<br/><br/>
+	<strong>Create JAR file using command prompt : </strong> change the path where code is avaliable
+		jar cvf myProgram.jar *
+	<br/><br/>
+	<strong>Creating a jar File in Eclipse : </strong>
+	<ul>
+	    <li>If you don't have existing project, create a project with some set of existing code .</li>
+	    <li>select the project right click on the project select Export option . </li>
+	    <li>open java perspective and click on jar file and click next button .</li>
+	    <li>In the Select the export destination field, either type or click Browse
+		to select a location for the JAR file and name the jar file </li>
+	    <li> At last click Finish .</li>
+	    <li>You can get the file in your destination folder .</li>
+	</ul>
+
+    </div>
+
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle3()">
+        <h4>Standard package Structure
+            <span ng-hide ="basicj2ee3" class= "caretright" ></span><span ng-show="basicj2ee3" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="basicj2ee3" class="view">
+	<div class="row" >
+            <div class="col-xs-12 col-sm-6 col-lg-6" style="margin-top:5px">
+		<a href="img/packageGeneral.jpg">
+		    <img class="img-div-Col-100-pure"  alt="Smilly face" src="img/packageGeneral.jpg">
+		</a>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-lg-6" style="margin-top:5px">
+		<a href="img/packageMaven.jpg">
+		    <img class="img-div-Col-100-pure" alt="Smilly face" src="img/packageMaven.jpg">
+		</a>
+            </div>
+        </div>
+	<br/><br/>
+	<ul>
+	    <li>In case of standard package structure dot(<b>.</b>) is use for separator .</li>
+	    <li>In case of standard folder structure we used slash(<b>/</b>) as separator . </li>
+	</ul>
+    </div>
+
+
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle4()">
+        <h4> Design patterns
+            <span ng-hide ="basicj2ee4" class= "caretright" ></span><span ng-show="basicj2ee4" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="basicj2ee4" class="view">
+	 An optimize solution for commonly recurring  design problem or design need is known as design patterns .
+	 <br/><br/>
+	 <strong>Categorize of design patterns : </strong>
+	 <br/><br/>
+	 <ul>
+	     <li>Creational design pattern</li>
+	     <li>Factory design pattern</li>
+	 </ul>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle5()">
+        <h4>Factory design pattern
+            <span ng-hide ="basicj2ee5" class= "caretright" ></span><span ng-show="basicj2ee5" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="basicj2ee5" class="view">
+	<strong>Factory design pattern : </strong> Factory is the one which create or produces different
+	    object of same or similar type .
+	<br/><br/>
+	Factory generally takes an input of <b>String</b> type .
+	<br/><br/>
+	<strong>Note : </strong>All the implementation object are created by using facory method or
+	    helper method with in a factory class .
+	<br/><br/>
+<!--	<pre class="viewPre">
+class Car{
+}
+class Audi extends Car{
+}
+class Benz extends Car{
+}
+public class CarFactory {
+    public static Car getCar(String type){
+        if(type.equalsIgnoreCase("Audi")){
+            return new Audi();
+        }else if(type.equalsIgnoreCase("Benz")){
+            return new Benz();
+        }else
+        return null;
+    }
+}
+	</pre>-->
+<pre class="prettyprint prettyprinted viewPre" style=""><span class="kwd">class</span><span class="pln"> </span><span class="typ">Car</span><span class="pun">{</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="kwd">class</span><span class="pln"> </span><span class="typ">Audi</span><span class="pln"> </span><span class="kwd">extends</span><span class="pln"> </span><span class="typ">Car</span><span class="pun">{</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="kwd">class</span><span class="pln"> </span><span class="typ">Benz</span><span class="pln"> </span><span class="kwd">extends</span><span class="pln"> </span><span class="typ">Car</span><span class="pun">{</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">CarFactory</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="typ">Car</span><span class="pln"> getCar</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> type</span><span class="pun">){</span><span class="pln">
+        </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">type</span><span class="pun">.</span><span class="pln">equalsIgnoreCase</span><span class="pun">(</span><span class="str">"Audi"</span><span class="pun">)){</span><span class="pln">
+            </span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Audi</span><span class="pun">();</span><span class="pln">
+        </span><span class="pun">}</span><span class="kwd">else</span><span class="pln"> </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">type</span><span class="pun">.</span><span class="pln">equalsIgnoreCase</span><span class="pun">(</span><span class="str">"Benz"</span><span class="pun">)){</span><span class="pln">
+            </span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Benz</span><span class="pun">();</span><span class="pln">
+        </span><span class="pun">}</span><span class="kwd">else</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="styleShet" ng-click="toggle6()">
+        <h4> Abstraction
+            <span ng-hide ="basicj2ee6" class= "caretright" ></span><span ng-show="basicj2ee6" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="basicj2ee6" class="view">
+	<strong>Abstraction : </strong> Hiding the implementation and providing the functionality
+	    to the user is known as Abstraction .
+	<br/><br/>
+	<strong>Output of Abstraction : </strong> Output of Abstraction is  Loose Coupling .
+	<br/><br/>
+	<strong>Loose Coupling : </strong> Change the implementation which does not effect the user
+	    is known as loose Coupling .
+	    <br/>
+	    We can achieved Loose Coupling  by the help of interface.
+	<br/><br/>
+	<strong>interface : </strong> It is media type which helps in communicating the user and any device .
+    </div>
+
+
+
+
+
+
+
+   <div class="styleShet" ng-click="toggle7()">
+        <h4>Diffrent logic of Factory design pattern
+            <span ng-hide ="basicj2ee7" class= "caretright" ></span><span ng-show="basicj2ee7" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="basicj2ee7" class="view">
+	Factory design pattern deals with three (3) type of logic, this are
+	<br/>
+	<ul>
+	    <li>Implementation logic </li>
+	    <li>Object creating logic</li>
+	    <li>Consumer / utilization logic  </li>
+	</ul>
+	<br/>
+	<a href="img/factoryDesign.jpg">
+	    <img class="img-div90" alt="Smilly face" src="img/factoryDesign.jpg">
+	</a>
+
+	<br/><br/>
+	<strong> Example : </strong>
+        <br/><br/>
+<!--	<pre>
+public interface ISwitch{
+    void switchOn();
+    void switchOff();
+}
+
+public class TubeLight implements ISwitch{
+    // Implementation logic
+    @Override
+    public void switchOn() {
+        System.out.println("Tube Light is on ....");
+    }
+    @Override
+    public void switchOff() {
+        System.out.println("Tube Light is off ....");
+    }
+}
+public class LedLight implements ISwitch{
+    // Implementation logic
+    @Override
+    public void switchOn() {
+        System.out.println("LED Light is on ....");
+    }
+    @Override
+    public void switchOff() {
+        System.out.println("LED Light is off ....");
+    }
+}
+
+public class LightFactor{
+    // Object creating logic
+    public static ISwitch getlight(String type){
+        if(type.equalsIgnoreCase("TubeLight")){
+            return new TubeLight();
+        }else if(type.equalsIgnoreCase("LedLight")){
+            return new LedLight();
+        }else{
+            System.out.println("No implementation found ");
+        }
+        return null;
+    }
+}
+
+public class LightFactorTest {
+    // Consumer logic
+    public static void main(String[] args) {
+        java.util.Scanner scn = new java.util.Scanner(System.in);
+        System.out.println("Enter the type of light ");
+        String type = scn.next();
+        scn.close();
+        ISwitch iSwitch = LightFactor.getlight(type);
+        if(iSwitch != null){
+            iSwitch.switchOn();
+            iSwitch.switchOff();
+        }
+    }
+}
+	</pre>-->
+<pre class="prettyprint prettyprinted viewPre" style=""><span class="kwd">public</span><span class="pln"> </span><span class="kwd">interface</span><span class="pln"> </span><span class="typ">ISwitch</span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">void</span><span class="pln"> switchOn</span><span class="pun">();</span><span class="pln">
+    </span><span class="kwd">void</span><span class="pln"> switchOff</span><span class="pun">();</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">TubeLight</span><span class="pln"> </span><span class="kwd">implements</span><span class="pln"> </span><span class="typ">ISwitch</span><span class="pun">{</span><span class="pln">
+    </span><span class="com">// Implementation logic</span><span class="pln">
+    </span><span class="lit">@Override</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> switchOn</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Tube Light is on ...."</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+    </span><span class="lit">@Override</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> switchOff</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Tube Light is off ...."</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">LedLight</span><span class="pln"> </span><span class="kwd">implements</span><span class="pln"> </span><span class="typ">ISwitch</span><span class="pun">{</span><span class="pln">
+    </span><span class="com">// Implementation logic</span><span class="pln">
+    </span><span class="lit">@Override</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> switchOn</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"LED Light is on ...."</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+    </span><span class="lit">@Override</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> switchOff</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"LED Light is off ...."</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">LightFactor</span><span class="pun">{</span><span class="pln">
+    </span><span class="com">// Object creating logic</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="typ">ISwitch</span><span class="pln"> getlight</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> type</span><span class="pun">){</span><span class="pln">
+        </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">type</span><span class="pun">.</span><span class="pln">equalsIgnoreCase</span><span class="pun">(</span><span class="str">"TubeLight"</span><span class="pun">)){</span><span class="pln">
+            </span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">TubeLight</span><span class="pun">();</span><span class="pln">
+        </span><span class="pun">}</span><span class="kwd">else</span><span class="pln"> </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">type</span><span class="pun">.</span><span class="pln">equalsIgnoreCase</span><span class="pun">(</span><span class="str">"LedLight"</span><span class="pun">)){</span><span class="pln">
+            </span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">LedLight</span><span class="pun">();</span><span class="pln">
+        </span><span class="pun">}</span><span class="kwd">else</span><span class="pun">{</span><span class="pln">
+            </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"No implementation found "</span><span class="pun">);</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">LightFactorTest</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="com">// Consumer logic</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        java</span><span class="pun">.</span><span class="pln">util</span><span class="pun">.</span><span class="typ">Scanner</span><span class="pln"> scn </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">util</span><span class="pun">.</span><span class="typ">Scanner</span><span class="pun">(</span><span class="typ">System</span><span class="pun">.</span><span class="kwd">in</span><span class="pun">);</span><span class="pln">
+        </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Enter the type of light "</span><span class="pun">);</span><span class="pln">
+        </span><span class="typ">String</span><span class="pln"> type </span><span class="pun">=</span><span class="pln"> scn</span><span class="pun">.</span><span class="kwd">next</span><span class="pun">();</span><span class="pln">
+        scn</span><span class="pun">.</span><span class="pln">close</span><span class="pun">();</span><span class="pln">
+        </span><span class="typ">ISwitch</span><span class="pln"> iSwitch </span><span class="pun">=</span><span class="pln"> </span><span class="typ">LightFactor</span><span class="pun">.</span><span class="pln">getlight</span><span class="pun">(</span><span class="pln">type</span><span class="pun">);</span><span class="pln">
+        </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">iSwitch </span><span class="pun">!=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">){</span><span class="pln">
+            iSwitch</span><span class="pun">.</span><span class="pln">switchOn</span><span class="pun">();</span><span class="pln">
+            iSwitch</span><span class="pun">.</span><span class="pln">switchOff</span><span class="pun">();</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+     <div class="styleShet" ng-click="toggle8()">
+        <h4> Class Loading
+            <span ng-hide ="basicj2ee8" class= "caretright" ></span><span ng-show="basicj2ee8" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="basicj2ee8" class="view">
+           Loading a class file in the JVM memory is known as Class Loading .
+	   <br/><br/>
+	   There are two different way to load a class file .
+	   <br/><br/>
+	   <b>1 ) . &nbsp; </b>By calling any of the member of class such as method , constructor , block etc.
+	   <br/><br/>
+	   <b> 2 ) . &nbsp; </b> By using static method forName() .
+	   <br/>
+	   Which present in the java.lang package .
+	   <br/>
+	   This method may possible throw checked Exception call ClassNotFoundException
+	   handle it by using try and catch statement .
+
+	<br/><br/>
+	<strong>Example :</strong>
+	<br/><br/>
+<!--	   <pre class="viewPre">
+package com.anup.test;
+class Test {
+    static {
+	System.out.println("Test class is loading .... ");
+    }
+}
+public class ClassloadingTest {
+    public static void main(String[] args) {
+	try {
+	    Class.forName("com.anup.test.Test");
+	} catch (ClassNotFoundException e) {
+	    e.printStackTrace();
+	}
+    }
+}
+	   </pre>-->
+<pre class="prettyprint prettyprinted viewPre" style=""><span class="kwd">package</span><span class="pln"> com</span><span class="pun">.</span><span class="pln">anup</span><span class="pun">.</span><span class="pln">test</span><span class="pun">;</span><span class="pln">
+</span><span class="kwd">class</span><span class="pln"> </span><span class="typ">Test</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">static</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+	</span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Test class is loading .... "</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">ClassloadingTest</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+	</span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+	    </span><span class="typ">Class</span><span class="pun">.</span><span class="pln">forName</span><span class="pun">(</span><span class="str">"com.anup.test.Test"</span><span class="pun">);</span><span class="pln">
+	</span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">ClassNotFoundException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+	    e</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+	</span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+</pre>
+    </div>
+
+
+
+
+
+
+
+  <div class="styleShet" ng-click="toggle9()">
+        <h4>Costly resource / heavy weight object
+            <span ng-hide ="basicj2ee9" class= "caretright" ></span><span ng-show="basicj2ee9" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="basicj2ee9" class="view">
+	<strong>Costly resource / heavy weight object :</strong>
+	<br/><br/>
+	<ul>
+	    <li>Resource which makes use of sysytem properties or network properties in the from of system
+		is know as Costly resource or heavy weight object .
+	    </li>
+	    <li>Costly resource must be close close in general since it effect the performance of the
+		application .
+	    </li>
+	    <li>It is always a good practices to close all costly resource with in finally block ,
+		using if condition to avoid NullPointerException .
+	    </li>
+	</ul>
+
+	<br/>
+	<strong>Example : </strong>
+	<br/><br/>
+<!--	<pre class="viewPre">
+public class Test {
+    public static void main(String[] args) {
+	FileReader fr =null;
+	try {
+	    fr = new FileReader("data.text");
+	} catch (FileNotFoundException e) {
+	    e.printStackTrace();
+	}finally {
+	    if (fr != null){
+		try {
+		    fr.close();
+		} catch (IOException e) {
+		    e.printStackTrace();
+		}
+	    }
+	}
+    }
+}
+	</pre>-->
+	<pre class="prettyprint prettyprinted viewPre" style=""><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">Test</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pun">[]</span><span class="pln"> args</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+	</span><span class="typ">FileReader</span><span class="pln"> fr </span><span class="pun">=</span><span class="kwd">null</span><span class="pun">;</span><span class="pln">
+	</span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+	    fr </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">FileReader</span><span class="pun">(</span><span class="str">"data.text"</span><span class="pun">);</span><span class="pln">
+	</span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">FileNotFoundException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+	    e</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+	</span><span class="pun">}</span><span class="kwd">finally</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+	    </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">fr </span><span class="pun">!=</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">){</span><span class="pln">
+		</span><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+		    fr</span><span class="pun">.</span><span class="pln">close</span><span class="pun">();</span><span class="pln">
+		</span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pln"> </span><span class="pun">(</span><span class="typ">IOException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+		    e</span><span class="pun">.</span><span class="pln">printStackTrace</span><span class="pun">();</span><span class="pln">
+		</span><span class="pun">}</span><span class="pln">
+	    </span><span class="pun">}</span><span class="pln">
+	</span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span>
+	</pre>
+    </div>
+
+
+
+
+
+
+
+   <!--   <div class="styleShet" ng-click="toggle10()">
+        <h4>{heading Name}
+            <span ng-hide ="basicj2ee10" class= "caretright" ></span><span ng-show="basicj2ee10" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="basicj2ee10" class="view">
+	<br/><br/>
+	<ul>
+	    <li></li>
+	    <li></li>
+	</ul>
+    </div>
+-->
+
+    <div class="styleShet" ng-click="toggle11()">
+        <h4> Notes
+            <span ng-hide ="basicj2ee11" class= "caretright" ></span><span ng-show="basicj2ee11" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="basicj2ee11" class="view">
+	 <ul>
+	     <li>JDBC is a part of JSE (Java Standard Edition) .</li>
+	     <li>Servlet is a part of JEE (Java Enterprise Edition) .</li>
+	     <li>parameter is the one which hold an argument .</li>
+	     <li>Data pass to any method is known as argument .</li>
+	     <li>When ever the method parameter type is an interface ,then the argument for that
+		method  must be any of it sub class or implementation class object .</li>
+	     <li>When ever the method parameter type in super class ,then the argument for this
+		 method must be any of it sub class object .</li>
+	     <li>When ever the method parameter type is an abstract class, then the argument for
+		 that method must be any of it sub class  object or implementation class object. </li>
+<!--	     <li></li>
+	     <li></li>
+	     <li></li>-->
+	 </ul>
+    </div>
+
+
+
+
+
+
+</div>

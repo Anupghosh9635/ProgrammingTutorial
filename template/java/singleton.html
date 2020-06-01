@@ -1,0 +1,188 @@
+<div  class="pagePaddingBottom">
+    <h2 class="mainCenterAlign"> Singleton  </h2>
+
+
+
+    <div class="styleShet" ng-click="toggle()">
+        <h4>
+            Singleton
+            <span ng-hide ="singleton" class= "caretright" ></span><span ng-show="singleton" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="singleton" class="view">
+        <strong>Singleton : </strong> Singleton is concept of use one object throw out the application is known as Singleton.
+        <br/>
+		<br/>
+		<strong> To implement Singleton pattern : <strong>
+		 <ul>
+             <li>Private constructor to restrict instantiation of the class from other classes.</li>
+             <li>Private static variable of the same class that is the only instance of the class.</li>
+             <li>Public static method that returns the instance of the class, this is the global access point for outer world to get the instance of the singleton class.</li>
+             <li>Object-oriented</li>                     
+         </ul>
+
+
+
+    </div>
+
+
+    <div class="styleShet" ng-click="toggle1()">
+        <h4>
+            Example of Singleton Class 
+            <span ng-hide ="singleton1" class= "caretright" ></span><span ng-show="singleton1" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="singleton1" class="view">
+  <!--   
+public class MySingleTon {
+     
+    private static MySingleTon myObj;
+    /**
+     * Create private constructor
+     */
+    private MySingleTon(){
+         
+    }
+    /**
+     * Create a static method to get instance.
+     */
+    public static MySingleTon getInstance(){
+        if(myObj == null){
+            myObj = new MySingleTon();
+        }
+        return myObj;
+    }
+  
+    public static void main(String arrs[]){
+        MySingleTon st = MySingleTon.getInstance();
+
+    }
+}	
+--> 
+<pre class="prettyprint viewPre prettyprinted" style=""><span class="kwd">public</span><span class="pln"> </span><span class="kwd">class</span><span class="pln"> </span><span class="typ">MySingleTon</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+     
+    </span><span class="kwd">private</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="typ">MySingleTon</span><span class="pln"> myObj</span><span class="pun">;</span><span class="pln">
+    </span><span class="com">/**
+     * Create private constructor
+     */</span><span class="pln">
+    </span><span class="kwd">private</span><span class="pln"> </span><span class="typ">MySingleTon</span><span class="pun">(){</span><span class="pln">
+         
+    </span><span class="pun">}</span><span class="pln">
+    </span><span class="com">/**
+     * Create a static method to get instance.
+     */</span><span class="pln">
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="typ">MySingleTon</span><span class="pln"> getInstance</span><span class="pun">(){</span><span class="pln">
+        </span><span class="kwd">if</span><span class="pun">(</span><span class="pln">myObj </span><span class="pun">==</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">){</span><span class="pln">
+            myObj </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">MySingleTon</span><span class="pun">();</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> myObj</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+  
+    </span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> arrs</span><span class="pun">[]){</span><span class="pln">
+        </span><span class="typ">MySingleTon</span><span class="pln"> st </span><span class="pun">=</span><span class="pln"> </span><span class="typ">MySingleTon</span><span class="pun">.</span><span class="pln">getInstance</span><span class="pun">();</span><span class="pln">
+
+    </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span></pre>
+	  
+    </div>
+<!--
+
+    <div class="styleShet" ng-click="toggle2()">
+        <h4>
+            {heading Name}
+            <span ng-hide ="singleton2" class= "caretright" ></span><span ng-show="singleton2" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="singleton2" class="view">
+	   {keep defination }
+    </div>
+
+
+    <div class="styleShet" ng-click="toggle3()">
+        <h4>{heading Name}
+            <span ng-hide ="singleton3" class= "caretright" ></span><span ng-show="singleton3" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="singleton3" class="view">
+	   {keep defination }
+    </div>
+
+
+    <div class="styleShet" ng-click="toggle4()">
+        <h4>{heading Name}
+            <span ng-hide ="singleton4" class= "caretright" ></span><span ng-show="singleton4" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="singleton4" class="view">
+	   {keep defination }
+    </div>
+
+
+
+    <div class="styleShet" ng-click="toggle5()">
+        <h4>{heading Name}
+            <span ng-hide ="singleton5" class= "caretright" ></span><span ng-show="singleton5" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="singleton5" class="view">
+	   {keep defination }
+    </div>
+
+
+    <div class="styleShet" ng-click="toggle6()">
+        <h4>{heading Name}
+            <span ng-hide ="singleton6" class= "caretright" ></span><span ng-show="singleton6" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="singleton6" class="view">
+	   {keep defination }
+    </div>
+
+
+    <div class="styleShet" ng-click="toggle7()">
+        <h4>{heading Name}
+            <span ng-hide ="singleton7" class= "caretright" ></span><span ng-show="singleton7" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="singleton7" class="view">
+	   {keep defination }
+    </div>
+
+
+    <div class="styleShet" ng-click="toggle8()">
+        <h4>{heading Name}
+            <span ng-hide ="singleton8" class= "caretright" ></span><span ng-show="singleton8" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="singleton8" class="view">
+           {keep defination }
+    </div>
+
+    <div class="styleShet" ng-click="toggle9()">
+        <h4>{heading Name}
+            <span ng-hide ="singleton9" class= "caretright" ></span><span ng-show="singleton9" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="singleton9" class="view">
+           {keep defination }
+    </div>
+
+
+    <div class="styleShet" ng-click="toggle10()">
+        <h4>{heading Name}
+            <span ng-hide ="singleton10" class= "caretright" ></span><span ng-show="singleton10" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="singleton10" class="view">
+           {keep defination }
+    </div>
+
+    <div class="styleShet" ng-click="toggle11()">
+        <h4>{heading Name}
+            <span ng-hide ="singleton11" class= "caretright" ></span><span ng-show="singleton11" class= "caretrightUp" ></span>
+        </h4>
+    </div>
+    <div ng-show="singleton11" class="view">
+           {keep defination }
+    </div>-->
+</div>

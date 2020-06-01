@@ -1,0 +1,99 @@
+
+<span ng-hide="hideMenuBarButt" id="naviBar">
+
+        <div ng-show="isMobile" >
+
+            <div class="closebtn" ng-click="toggle6()" style="margin-bottom: 10px">&times;</div>
+<!--                <span class= "closebtn"  ng-click="toggle6()" > &times;</span>-->
+
+        </div>
+
+        <div class="fontStyle2" ng-click="toggle()">Core Java <span ng-hide ="menuBarCoreJava" class= "caretRtNav" id="goToUp"></span>
+            <span ng-show="menuBarCoreJava" class= "caretRtUpnav" ></span>
+        </div>
+
+        <span ng-show="menuBarCoreJava" class="naviSt">
+            <div  class="naviSt"><a class="fontStyle" href="#/" ng-click="closeNaviBarinMob()"> Overview</a></div>
+            <div class="naviSt" ><a class="fontStyle" href="#basicProgram" ng-click="closeNaviBarinMob()" >Basic Programe</a></div>
+<!--        <div class="naviSt"><a class="fontStyle" href="#basicProgram?scrollTo=basicProgram">Basic Programe</a></div>-->
+            <div class="naviSt"><a class="fontStyle" href="#starPattern" ng-click="closeNaviBarinMob()">Star Pattern</a></div>
+            <div class="naviSt"><a class="fontStyle" href="#constructor" ng-click="closeNaviBarinMob()">Constructor</a></div>
+            <div class="naviSt"><a class="fontStyle" href="#oppConcept" ng-click="closeNaviBarinMob()">OOP Concept</a></div>
+            <div class="naviSt"><a class="fontStyle" href="#overloading" ng-click="closeNaviBarinMob()">Method Overloading</a></div>
+            <div class="naviSt"><a class="fontStyle" href="#overriding" ng-click="closeNaviBarinMob()">Method Overriding</a></div>
+            <div class="naviSt"><a class="fontStyle" href="#array" ng-click="closeNaviBarinMob()">Array</a></div>
+            <div class="naviSt"><a class="fontStyle" href="#string" ng-click="closeNaviBarinMob()">String</a></div>
+            <div class="naviSt"><a class="fontStyle" href="#singleton" ng-click="closeNaviBarinMob()">Singleton</a></div>
+            <div class="naviSt"><a class="fontStyle" href="#exceptionHendaling" ng-click="closeNaviBarinMob()">Exception Hendaleing</a></div>
+            <div><a class="fontStyle" href="#collection" ng-click="closeNaviBarinMob()">Collection</a></div>
+            <div><a class="fontStyle" href="#multiThrading" ng-click="closeNaviBarinMob()">Multithreading</a></div>
+            <div><a class="fontStyle" href="#date">Date</a></div>
+            <!--                            <div><a class="fontStyle" href="#jdbcConnection">Jdbc Connection</a></div>-->
+        </span>
+
+
+        <div class="fontStyle2" ng-click="toggle1()">J2EE <span ng-hide ="menuBarJ2ee" class= "caretRtNav" ></span>
+            <span ng-show="menuBarJ2ee" class= "caretRtUpnav"  ></span>
+        </div>
+        <span ng-show="menuBarJ2ee" class="naviSt">
+	    <div><a class="fontStyle" href="#basicJ2EE" ng-click="closeNaviBarinMob()">Basic J2EE </a></div>
+            <div><a class="fontStyle" href="#jdbcConnection" ng-click="closeNaviBarinMob()" >Jdbc Connection</a></div>
+            <div><a class="fontStyle" href="#servlet" ng-click="closeNaviBarinMob()" >Java Servlets</a></div>
+            <div><a class="fontStyle" href="#jsp" ng-click="closeNaviBarinMob()" >JavaServer Pages (JSP)</a></div>
+        </span>
+
+
+        <div class="fontStyle2" ng-click="toggle2()">LINUX <span ng-hide ="menuBarUnix" class= "caretRtNav" ></span>
+            <span ng-show="menuBarUnix" class= "caretRtUpnav"  ></span>
+        </div>
+        <span ng-show="menuBarUnix" class="naviSt">
+            <div><a class="fontStyle" href="#basicLinux" ng-click="closeNaviBarinMob()" >Linux basic</a></div>
+            <div><a class="fontStyle" href="#linuxCommand" ng-click="closeNaviBarinMob()" >Linux Commund</a></div>
+        </span>
+
+
+        <div class="fontStyle2" ng-click="toggle3()">MISCELLANEOUS<span ng-hide ="menuBarMic" class= "caretRtNav" ></span>
+            <span ng-show="menuBarMic" class= "caretRtUpnav"  ></span>
+        </div>
+        <span ng-show="menuBarMic" class="naviSt" >
+            <div><a class="fontStyle" href="#windowsShortcut" ng-click="closeNaviBarinMob()" >Windows Shortcut</a></div>
+            <div><a class="fontStyle" href="#questionPaper" ng-click="closeNaviBarinMob()" >Interview Questions</a></div>
+            <div><a class="fontStyle" href="#suggetionPaper" ng-click="closeNaviBarinMob()" >Suggetion Paper</a></div>
+            <div ><a class="fontStyle" href="#quiz" ng-click="closeNaviBarinMob()" > Quiz Paper </a></div>
+            <div><a  class="fontStyle" href="#askQuestion" ng-click="closeNaviBarinMob()" >Ask Question</a></div>
+        </span>
+
+
+        <div id="NaviGeatPage" style="font-size: 165%;color: black;font-weight: bold; font-style: oblique;"> <a style="color: black" href="#googleMap" ng-click="closeNaviBarinMob()" >Google Map</a></div>
+
+
+        <div id="testNaviMenu" style="font-size: 165%;color: black;font-weight: bold; font-style: oblique;"> <a style="color: black" href="#codeTest" ng-click="closeNaviBarinMob()" >Java Code Test</a></div>
+        
+<!--        <div id="testNaviMenu" style="font-size: 130%;color: black;font-weight: bold; font-style: oblique;"> <a style="color: black" href="#generalKnowledge" ng-click="closeNaviBarinMob()" >General Knowledge</a></div>-->
+
+
+        <!--                        <div style="margin-top:20px;">
+
+                                    <div><a class="fontStyle1" href="#questionPaper">Quetion Paper</a></div>
+                                    <div><a class="fontStyle1" href="#suggetionPaper">Suggetion Paper</a></div>
+                                    <div><a class="fontStyle1" href="#quiz"> Quiz Paper </a></div>
+                                    <div><a class="fontStyle1" href="#askQuestion">Ask Question</a></div>
+
+                                </div>-->
+        <div class="fontStyle2" ng-click="toggle7()"> G. K <span ng-hide ="menuBarGK" class= "caretRtNav" ></span>
+            <span ng-show="menuBarGK" class= "caretRtUpnav"  ></span>
+        </div>
+        <span ng-show="menuBarGK" class="naviSt">
+	    <div><a class="fontStyle" href="#higest-largest-biggest-smallest" ng-click="closeNaviBarinMob()">Largest Smallest</a></div>
+<!--            <div><a class="fontStyle" href="#capital-Currency" ng-click="closeNaviBarinMob()" >Country & Capital</a></div>-->
+            <div><a class="fontStyle" href="#river" ng-click="closeNaviBarinMob()" >River</a></div>
+            <div><a class="fontStyle" href="#nicknames" ng-click="closeNaviBarinMob()" >Nicknames</a></div>
+            <div><a class="fontStyle" href="#boundaries-lines" ng-click="closeNaviBarinMob()" >Boundaries Lines</a></div>
+            <div><a class="fontStyle" href="#capital" ng-click="closeNaviBarinMob()" >Capital</a></div>
+            <div><a class="fontStyle" href="#dances" ng-click="closeNaviBarinMob()" >Dances</a></div>
+            <div><a class="fontStyle" href="#temple" ng-click="closeNaviBarinMob()" >Temple</a></div>
+            <div><a class="fontStyle" href="#emblem" ng-click="closeNaviBarinMob()" >Emblem</a></div>
+            
+        </span>
+        
+</span>
